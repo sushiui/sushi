@@ -18,7 +18,7 @@ brew install sass/sass/sass
 Add watch command : After the first round compilation is done Sass stays open and continues compiling stylesheets whenever they or their dependencies change.
 
 ```
-sass --watch sushi.scss:sushi.css
+sass --watch scss/sushi.scss:sushi.css
 ```
 
 

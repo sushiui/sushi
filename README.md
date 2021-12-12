@@ -14,7 +14,9 @@ _will move to SET domain when ready_
 
 If you don't have npm
 
-* Install Homebrew: 
+* Install Homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+
+* Install node: `brew install node`
 
 ## Run
 

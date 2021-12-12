@@ -1,23 +1,61 @@
-@import "font_icon";
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,500;0,800;1,500&display=swap');
+@import "font_icon";
+@import "variable";
 
-$radius: 4px;
-
-html {
-  font-size: 14px;
+HTML {
   font-family: 'Sarabun', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 145%;
+  color: $primary-black;
+}
+
+BODY, INPUT, TEXTAREA, BUTTON {
+  font-family: inherit 
 }
 
 H3 {
-  font-size: 1.5em;
+  font-weight: 800;
+  font-size: 1.5em;  
+  line-height: 145%; 
+}
+
+BODY {
+  background-color: #fff;
+}
+
+BUTTON, a.ss-button {
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+  align-items: center;
+  padding: 6px 12px;
+  margin: 0 -4px;
+  gap: 4px;
+  position: relative;
+  width: fit-content;
+
+  text-decoration: none;
+  color: $primary-black;
+
+  background: $gradient-yellow;
+  border-radius: 4px;
+  border: none;  
+
+  span{
+    font-size: $body-icon;
+  }
+
+  &.disable {
+    background: $transparent-black-10;
+    color: $transparent-black-35;
+  }
+
 }
 
 .small {
   font-size: 0.429em;
-}
-
-body {
-  background-color: #fff;
 }
 
 .card {
@@ -26,3 +64,4 @@ body {
   padding: 16px;
   margin: 32px;
 }
+

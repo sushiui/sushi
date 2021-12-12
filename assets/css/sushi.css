@@ -481,21 +481,69 @@
   content: "\e972";
 }
 
-html {
-  font-size: 14px;
+HTML {
   font-family: "Sarabun", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 145%;
+  color: #231F20;
+}
+
+BODY, INPUT, TEXTAREA, BUTTON {
+  font-family: inherit;
 }
 
 H3 {
+  font-weight: 800;
   font-size: 1.5em;
+  line-height: 145%;
+}
+
+BODY {
+  background-color: #fff;
+}
+
+BUTTON, a.ss-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 6px 12px;
+  margin: 0 -4px;
+  gap: 4px;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  color: #231F20;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFCF36), color-stop(88.02%, #FCB034));
+  background: -o-linear-gradient(top, #FFCF36 0%, #FCB034 88.02%);
+  background: linear-gradient(180deg, #FFCF36 0%, #FCB034 88.02%);
+  border-radius: 4px;
+  border: none;
+}
+
+BUTTON span, a.ss-button span {
+  font-size: 1.142em;
+}
+
+BUTTON.disable, a.ss-button.disable {
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.35);
 }
 
 .small {
   font-size: 0.429em;
-}
-
-body {
-  background-color: #fff;
 }
 
 .card {

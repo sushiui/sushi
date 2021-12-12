@@ -12,6 +12,10 @@ _will move to SET domain when ready_
 * Navigate to the directory where the sushi folder is located using Terminal.
 * Execute `npm install`.
 
+If you don't have npm
+
+* Install Homebrew: 
+
 ## Run
 
 * Execute `npm start` or `gulp`.

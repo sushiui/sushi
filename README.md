@@ -1,6 +1,11 @@
 # sushi
 Sushi is Design System build for SET
 
+## Demo
+
+https://apirak.com/sushi/
+
+_will move to SET domain when ready_
 
 ## Install
 

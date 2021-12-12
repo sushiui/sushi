@@ -2,44 +2,55 @@
 Sushi is Design System build for SET
 
 
+## Install
 
-## SASS
+* Navigate to the directory where the sushi folder is located using Terminal.
+* Execute `npm install`.
 
-### Install SASS on Mac OS X or Linux (Homebrew)
+## Run
 
-If you use the Homebrew package manager for Mac OS X or Linux, you can install Dart Sass by running
+* Execute `npm start` or `gulp`.
+* Open http://localhost:8080/ on your web browser.
+
+## Build
+
+* Execute `gulp build`.
+
+## Folder Structure
 
 ```
-brew install sass/sass/sass
++ assets : Asset after compiled
+  + css
+  + fonts
+  + images 
+  + js
++ src
+  + pug
+    + base
+      - base.pug : HTML, HEADER, BODY, CSS, Java Script.
+    + content
+      - [component].png : Each component will implement here
+    + pages
+      - index.pug : Main index.
+  + sass
+    + components
+      - _components.sass : will put component style here
+    - sushi.sass : All Style here (for now)
+    - font_icon.sass: Font name
+    - font_variables.sass : Font code;
+- index.html : Prebuild HTML file.
 ```
 
-### Compile SASS 
 
-Add watch command : After the first round compilation is done Sass stays open and continues compiling stylesheets whenever they or their dependencies change.
+## Why Pug & SCSS
 
-```
-sass --watch scss/sushi.scss:sushi.css
-```
+It's not just about beautiful syntax. Pug and SCSS allow us to write modular and reusable markup. 
 
+* Learn Pug https://www.sitepoint.com/a-beginners-guide-to-pug/
+* Learn SASS https://sass-lang.com/guide
 
-### SASS Style
+### SASS Guideline
 
 https://rscss.apirak.com/
 
-![This is an image](images/rscss.png)
-
-## HTML
-
-### Install Pug
-
-```
-brew install node
-npm install pug-cli -g
-npm install pug
-```
-
-### Watch HTML
-
-```
-pug -wP demo.pug
-```
+![This is an image](assets/images/rscss.png)

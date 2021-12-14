@@ -5,6 +5,7 @@ HTML {
   font-size: 14px;
   line-height: 145%;
   color: $primary-black;
+  height: 100%;
 }
 
 BODY, INPUT, TEXTAREA, BUTTON {
@@ -18,7 +19,11 @@ H3 {
 }
 
 BODY {
-  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 100%;
+  background-color: $primary-white;
 }
 
 TABLE {
@@ -33,3 +38,47 @@ TABLE {
   font-size: 0.429em;
 }
 
+.card {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border-radius: $radius;
+  padding: 16px;
+  margin: 32px;
+  background-color: $primary-white;
+}
+
+.header {
+  background-color: $primary-white;
+  height: 48px;
+  border-bottom: 4px solid $primary-yellow;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 0px 0px 32px;
+  box-shadow: $shadow-10;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 100%;
+  flex-grow: 1;
+  background-color: $background-gray-basic;
+}
+
+.menu {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: $primary-white;
+  align-self: stretch;
+  width: 200px;
+  box-shadow: $shadow-10;
+}
+
+.content {
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+  align-self: stretch;
+}

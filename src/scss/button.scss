@@ -26,6 +26,7 @@ BUTTON.color, a.ss-button.color {
   --hover-outline: none;
   --active-background: #{$secondary-Light-gray};
   --active-outline: solid 1px #{$secondary-Midle-gray};
+  --active-color: #{$primary-white};
   --outline: none;
 }
 
@@ -35,6 +36,7 @@ BUTTON.color.green, a.ss-button.color.green {
   --hover-background: #{$secondary-Midle-green};
   --active-background: #{$secondary-Light-green};
   --active-outline: solid 1px #{$secondary-Midle-green}; 
+  --active-color: #{$primary-black};
 }
 
 a.ss-link {

@@ -4,6 +4,8 @@ $primary-yellow: #FCB034;
 $primary-black: #231F20;
 $primary-white: #FFFFFF;
 
+$tertiary100-yellow: #FFD200;
+
 $background-gray-basic: #F3F3F3;
 
 $transparent-yellow-30: rgba(255, 210, 0, 0.3);
@@ -28,3 +30,7 @@ $radius: 4px;
 // Icon
 
 $body-icon: 1.142em;
+
+:root {
+  --primary-yellow: #{$primary-yellow};
+}

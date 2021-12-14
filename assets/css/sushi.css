@@ -8,9 +8,10 @@
   font-display: block;
 }
 [class^=icon-], [class*=" icon-"] {
+  /* if a browser should not speak the content it reads, such as through a screen reader for diability*/
+  speak: never;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "SET" !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -481,6 +482,10 @@
   content: "\e972";
 }
 
+:root {
+  --primary-yellow: #FCB034;
+}
+
 HTML {
   font-family: "Sarabun", sans-serif;
   font-style: normal;
@@ -505,6 +510,21 @@ BODY {
 }
 
 BUTTON, a.ss-button {
+  --color: #231F20;
+  --background: linear-gradient(180deg, #FFCF36 0%, #FCB034 88.02%);
+  --hover-background: #FCB034;
+  --outline: none;
+  --outline: none;
+}
+
+BUTTON.secondary, a.ss-button.secondary {
+  --background: linear-gradient(180deg, #FFFFFF 0%, #EFEFEF 88.02%);
+  --outline: solid 1px rgba(0, 0, 0, 0.1);
+  --hover-background: linear-gradient(180deg, #FFFFFF 0%, #EFEFEF 88.02%);
+  --hover-outline: solid 1px #FCB034;
+}
+
+BUTTON, a.ss-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,22 +544,34 @@ BUTTON, a.ss-button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  text-decoration: none;
-  color: #231F20;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFCF36), color-stop(88.02%, #FCB034));
-  background: -o-linear-gradient(top, #FFCF36 0%, #FCB034 88.02%);
-  background: linear-gradient(180deg, #FFCF36 0%, #FCB034 88.02%);
-  border-radius: 4px;
   border: none;
+  outline: var(--outline);
+  text-decoration: none;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: var(--color);
+  background: var(--background);
 }
 
 BUTTON span, a.ss-button span {
   font-size: 1.142em;
 }
 
-BUTTON.disable, a.ss-button.disable {
+BUTTON:hover, a.ss-button:hover {
+  background: var(--hover-background);
+  outline: var(--hover-outline);
+}
+
+BUTTON:active, a.ss-button:active {
+  background: #FFD200;
+}
+
+BUTTON.disable, BUTTON:DISABLED, a.ss-button.disable, a.ss-button:DISABLED {
   background: rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.35);
+  pointer-events: none;
 }
 
 .small {

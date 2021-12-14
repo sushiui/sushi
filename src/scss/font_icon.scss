@@ -13,9 +13,12 @@
 }
 
 [class^="icon-"], [class*=" icon-"] {
+  /* if a browser should not speak the content it reads, such as through a screen reader for diability*/
+  speak: never;
+
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: '#{$icomoon-font-family}' !important;
-  speak: never;
+  
   font-style: normal;
   font-weight: normal;
   font-variant: normal;

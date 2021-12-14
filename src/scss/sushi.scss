@@ -25,6 +25,22 @@ BODY {
   background-color: #fff;
 }
 
+
+BUTTON, a.ss-button {
+  --color: #{$primary-black};
+  --background: #{$gradient-yellow};
+  --hover-background: #{$primary-yellow};
+  --outline: none;
+  --outline: none;
+}
+
+BUTTON.secondary, a.ss-button.secondary {
+  --background: #{$gradient-white};
+  --outline: solid 1px #{$transparent-black-10};
+  --hover-background: #{$gradient-white};
+  --hover-outline: solid 1px #{$primary-yellow};
+}
+
 BUTTON, a.ss-button {
   display: flex;
   flex-direction: row;
@@ -35,21 +51,35 @@ BUTTON, a.ss-button {
   gap: 4px;
   position: relative;
   width: fit-content;
-
+  border: none;
+  outline: var(--outline); 
   text-decoration: none;
-  color: $primary-black;
-
-  background: $gradient-yellow;
   border-radius: 4px;
-  border: none;  
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  color: var(--color);
+  background: var(--background);  
 
   span{
     font-size: $body-icon;
   }
 
-  &.disable {
+  &:hover {
+    background: var(--hover-background);
+    outline: var(--hover-outline);      
+  }
+
+  &:active {
+    background: $tertiary100-yellow;
+  }
+
+  &.disable, &:DISABLED{
     background: $transparent-black-10;
     color: $transparent-black-35;
+    pointer-events: none;
+    // cursor: default;
   }
 
 }

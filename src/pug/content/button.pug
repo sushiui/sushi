@@ -2,12 +2,26 @@
 
     H1 Button
 
-    a.ss-button(href="#")
+    a.ss-button(href="javascript:void(0)")
       span.icon-edit-filled
-      | bank
+      | Primary Link
       span.icon-edit-filled
     br
     br
+
+    a.ss-button.disable(href="javascript:void(0)")
+      span.icon-edit-filled
+      | Primary Link
+      span.icon-edit-filled
+    br
+    br
+
+    a.ss-button.secondary(href="javascript:void(0)")
+      span.icon-edit-filled
+      | Secondary Link
+      span.icon-edit-filled
+    br
+    br    
 
     button
       span.icon-Documents
@@ -27,17 +41,24 @@
     br
     br
 
+    button.secondary
+      span.icon-Search
+      | Secondary Button
+      span.icon-Next
+    br
+    br    
+
     button 
       span.icon-Search
       | Primary Button
     br
     br
 
-    button.disable Disabled Button
+    button(disabled) Disabled Button
     br
     br
 
-    button.disable
+    button(disabled)
       span.icon-Search
       | Primary Button
       span.icon-Next

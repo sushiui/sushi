@@ -1,31 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Demo Sushi framework</title>
-    <link href="./assets/css/sushi.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="card">
-      <H1>Sushi HTML & CSS Design System Component</H1>
-    </div>
-    <div class="card">
-      <H1>Font </H1>
-      <H3>Header font size </H3>Body font size
-    </div>
-    <div class="card">
-      <H1>Button</H1><a class="ss-button" href="javascript:void(0)"><span class="icon-edit-filled"></span>Primary Link<span class="icon-edit-filled"></span></a><br><br><a class="ss-button disable" href="javascript:void(0)"><span class="icon-edit-filled"></span>Primary Link<span class="icon-edit-filled"></span></a><br><br><a class="ss-button secondary" href="javascript:void(0)"><span class="icon-edit-filled"></span>Secondary Link<span class="icon-edit-filled"></span></a><br><br>
-      <button><span class="icon-Documents"></span>เมื่อเนื้อหาเป็น<br>ภาษาไทย<br>แถมยังยาวด้วย<span class="icon-External-link"></span></button><br><br>
-      <button> <span class="icon-Search"></span>Primary Button<span class="icon-Next"></span></button><br><br>
-      <button class="secondary"><span class="icon-Search"></span>Secondary Button<span class="icon-Next"></span></button><br><br>
-      <button> <span class="icon-Search"></span>Primary Button</button><br><br>
-      <button disabled>Disabled Button</button><br><br>
-      <button disabled><span class="icon-Search"></span>Primary Button<span class="icon-Next"></span></button><br><br>
-    </div>
-    <div class="card"> 
-      <H1>Icon </H1><span class="icon-edit-filled"></span><span class="icon-Approves"></span><span class="icon-Thumb-up-filled"></span>
-    </div>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Demo Sushi framework</title>
+  <link href="./assets/css/sushi.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="card">
+    <H1>Sushi HTML & CSS Design System Component</H1>
+  </div>
+  <div class="card">
+    <H1>Font </H1>
+    <H3>Header font size </H3>Body font size
+  </div>
+  <div class="card">
+    <h1>Button</h1>
+    <h3>Link &lt;a&gt;</h3>
+    <table>
+      <th>
+      <td>Primary Button </td>
+      <td>Secondary Button </td>
+      </th>
+      <tr>
+        <td>Enable </td>
+        <td><a class="ss-button" href="javascript:void(0)"><span class="icon-edit-filled"></span>Primary Link<span class="icon-edit-filled"></span></a></td>
+        <td> <a class="ss-button secondary" href="javascript:void(0)"><span class="icon-edit-filled"></span>Secondary Link<span class="icon-edit-filled"></span></a></td>
+      </tr>
+      <tr>
+        <td>Disable</td>
+        <td><a class="ss-button disable" href="javascript:void(0)"><span class="icon-edit-filled"></span>Primary Link<span class="icon-edit-filled"></span></a></td>
+        <td> <a class="ss-button secondary disable" href="javascript:void(0)"><span class="icon-edit-filled"></span>Secondary Link<span class="icon-edit-filled"></span></a></td>
+      </tr>
+    </table>
+    <H3>Button &lt;button&gt;</H3>
+    <table>
+      <th>
+      <td>Primary Button </td>
+      <td>Secondary Button </td>
+      </th>
+      <tr>
+        <td>Enable</td>
+        <td> <button> <span class="icon-Search"></span>Primary Button<span class="icon-Next"></span></button></td>
+        <td><button class="secondary"><span class="icon-Search"></span>Secondary Button<span class="icon-Next"></span></button></td>
+      </tr>
+      <tr>
+        <td>Disable</td>
+        <td><button disabled>Disabled Button</button></td>
+        <td><button class="secondary" disabled><span class="icon-Search"></span>Secondary Button<span class="icon-Next"></span></button></td>
+      </tr>
+    </table>
+    <H3>TEST edge case</H3>For long text<button><span class="icon-Documents"></span>เมื่อเนื้อหาเป็น<br>ภาษาไทย<br>แบบมีหลายบรรทัด<span class="icon-External-link">     </span></button><br>
+    For one side icon<button> <span class="icon-Search"></span>Primary Button </button><br>
+    <button> Primary Button <span class="icon-Search"></span></button>
+  </div>
+  <div class="card">
+    <H1>Icon </H1><span class="icon-edit-filled"></span><span class="icon-Approves"></span><span class="icon-Thumb-up-filled"></span>
+  </div>
+</body>
+
 </html>

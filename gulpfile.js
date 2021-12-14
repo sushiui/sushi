@@ -5,6 +5,7 @@ var gulp    = require('gulp'),
     plumber = require('gulp-plumber'),
     rename  = require('gulp-rename'),
     uglify  = require('gulp-uglify'),
+    prettyHtml = require('gulp-pretty-html'),
     autoprefixer = require('gulp-autoprefixer');
 
 function reload(done) {
@@ -57,8 +58,12 @@ function views() {
   return (
     gulp.src('src/pug/pages/*.pug')
     .pipe(plumber())
-    .pipe(pug({
-        pretty: true
+    .pipe(pug({pretty: false}))
+    .pipe(prettyHtml({
+      indent_size: 2,
+      indent_char: ' ',
+      preserve_newlines: true,
+      unformatted: ['code', 'pre', 'em', 'strong', 'span', 'i', 'b']
     }))
     .pipe(gulp.dest('./'))
     .pipe(connect.reload())

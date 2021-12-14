@@ -1,0 +1,35 @@
+HTML {
+  font-family: 'Sarabun', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 145%;
+  color: $primary-black;
+}
+
+BODY, INPUT, TEXTAREA, BUTTON {
+  font-family: inherit 
+}
+
+H3 {
+  font-weight: 800;
+  font-size: 1.5em;  
+  line-height: 145%; 
+}
+
+BODY {
+  background-color: #fff;
+}
+
+TABLE {
+  border: 1px solid #EEE;
+
+  TH, TD {
+    padding: 20px;
+  }
+}
+
+.small {
+  font-size: 0.429em;
+}
+

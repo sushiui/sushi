@@ -4,6 +4,12 @@ $primary-yellow: #FCB034;
 $primary-black: #231F20;
 $primary-white: #FFFFFF;
 
+$secondary-Light-gray: #9DA6AD;
+$secondary-Midle-gray: #78797B;
+
+$secondary-Light-green: #DAE882;
+$secondary-Midle-green: #C1D82F;
+
 $tertiary100-yellow: #FFD200;
 
 $background-gray-basic: #F3F3F3;
@@ -17,6 +23,9 @@ $transparent-black-35: rgba(0, 0, 0, 0.35);
 
 $gradient-yellow: linear-gradient(180deg, #FFCF36 0%, #FCB034 88.02%);
 $gradient-white: linear-gradient(180deg, #FFFFFF 0%, #EFEFEF 88.02%);
+
+$gradient-dark: linear-gradient(180deg, $secondary-Light-gray 0%, $secondary-Midle-gray 88.02%);
+$gradient-green: linear-gradient(180deg, $secondary-Light-green 0%, $secondary-Midle-green 88.02%);
 
 $accessible-blue: #0064C5;
 $accessible-red: #B60000;

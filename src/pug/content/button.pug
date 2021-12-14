@@ -7,8 +7,10 @@
 
   table
     th 
-      td Primary Button 
-      td Secondary Button 
+      td Primary  
+      td Secondary 
+      td Color 
+      td Color Green
     tr 
       td Enable 
       td
@@ -21,6 +23,16 @@
           span.icon-edit-filled
           | Secondary Link
           span.icon-edit-filled
+      td 
+        a.ss-button.color(href="javascript:void(0)")
+          span.icon-edit-filled
+          | Secondary Link
+          span.icon-edit-filled
+      td 
+        a.ss-button.color.green(href="javascript:void(0)")
+          span.icon-edit-filled
+          | Secondary Link
+          span.icon-edit-filled      
     tr 
       td Disable
       td
@@ -33,6 +45,16 @@
           span.icon-edit-filled
           | Secondary Link
           span.icon-edit-filled
+      td 
+        a.ss-button.color.disable(href="javascript:void(0)")
+          span.icon-edit-filled
+          | Secondary Link
+          span.icon-edit-filled
+      td 
+        a.ss-button.color.green.disable(href="javascript:void(0)")
+          span.icon-edit-filled
+          | Secondary Link
+          span.icon-edit-filled            
 
   H3 Button &lt;button&gt;
 
@@ -40,6 +62,8 @@
     th 
       td Primary Button 
       td Secondary Button 
+      td Color
+      td Color Green
     tr  
       td Enable
       td 
@@ -52,15 +76,38 @@
           span.icon-Search
           | Secondary Button
           span.icon-Next
+      td
+        button.color
+          span.icon-Search
+          | Secondary Button
+          span.icon-Next        
+      td
+        button.color.green
+          span.icon-Search
+          | Secondary Button
+          span.icon-Next              
     tr
       td Disable
       td
-        button(disabled) Disabled Button
+        button(disabled)
+          span.icon-Search
+          | Primary Button
+          span.icon-Next
       td
         button.secondary(disabled)
           span.icon-Search
           | Secondary Button
           span.icon-Next
+      td
+        button.color(disabled)
+          span.icon-Search
+          | Primary Button
+          span.icon-Next   
+      td
+        button.color.green(disabled)
+          span.icon-Search
+          | Primary Button
+          span.icon-Next                    
 
 
   H3 TEST edge case

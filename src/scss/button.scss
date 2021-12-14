@@ -3,13 +3,14 @@ BUTTON, a.ss-button {
   --background: #{$gradient-yellow};
   --hover-background: #{$primary-yellow};
   --hover-outline: none;
+  --active-color: #{$primary-black};  
   --active-background: #{$tertiary100-yellow};
   --active-outline: solid 1px #{$primary-yellow};   
   --outline: none;
+  --disable-background: #{$transparent-black-10};
 }
 
 BUTTON.secondary, a.ss-button.secondary {
-  // --color: #{$primary-black};
   --background: #{$gradient-white};
   --hover-background: #{$gradient-white};
   --hover-outline: solid 1px #{$primary-yellow};
@@ -36,7 +37,13 @@ BUTTON.color.green, a.ss-button.color.green {
   --active-outline: solid 1px #{$secondary-Midle-green}; 
 }
 
-BUTTON, a.ss-button {
+a.ss-link {
+  --color: #{$secondary-blue};
+  --active-color: #{$tertiary60-sky-blue};
+  --disable-background: none;
+}
+
+BUTTON, a.ss-button, a.ss-link {
   display: flex;
   flex-direction: row;
   flex-basis: auto;
@@ -65,15 +72,15 @@ BUTTON, a.ss-button {
   }
 
   &:active {
+    color: var(--active-color);
     background: var(--active-background);
     outline: var(--active-outline);
   }
 
   &.disable, &:DISABLED{
-    background: $transparent-black-10;
+    background: var(--disable-background);
     color: $transparent-black-35;
     pointer-events: none;
-    // cursor: default;
   }
 
 }

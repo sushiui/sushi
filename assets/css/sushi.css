@@ -526,9 +526,11 @@ BUTTON, a.ss-button {
   --background: linear-gradient(180deg, #FFCF36 0%, #FCB034 88.02%);
   --hover-background: #FCB034;
   --hover-outline: none;
+  --active-color: #231F20;
   --active-background: #FFD200;
   --active-outline: solid 1px #FCB034;
   --outline: none;
+  --disable-background: rgba(0, 0, 0, 0.1);
 }
 
 BUTTON.secondary, a.ss-button.secondary {
@@ -558,7 +560,13 @@ BUTTON.color.green, a.ss-button.color.green {
   --active-outline: solid 1px #C1D82F;
 }
 
-BUTTON, a.ss-button {
+a.ss-link {
+  --color: #009FD4;
+  --active-color: #66C5DA;
+  --disable-background: none;
+}
+
+BUTTON, a.ss-button, a.ss-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,22 +595,23 @@ BUTTON, a.ss-button {
   background: var(--background);
 }
 
-BUTTON span, a.ss-button span {
+BUTTON span, a.ss-button span, a.ss-link span {
   font-size: 1.142em;
 }
 
-BUTTON:hover, a.ss-button:hover {
+BUTTON:hover, a.ss-button:hover, a.ss-link:hover {
   background: var(--hover-background);
   outline: var(--hover-outline);
 }
 
-BUTTON:active, a.ss-button:active {
+BUTTON:active, a.ss-button:active, a.ss-link:active {
+  color: var(--active-color);
   background: var(--active-background);
   outline: var(--active-outline);
 }
 
-BUTTON.disable, BUTTON:DISABLED, a.ss-button.disable, a.ss-button:DISABLED {
-  background: rgba(0, 0, 0, 0.1);
+BUTTON.disable, BUTTON:DISABLED, a.ss-button.disable, a.ss-button:DISABLED, a.ss-link.disable, a.ss-link:DISABLED {
+  background: var(--disable-background);
   color: rgba(0, 0, 0, 0.35);
   pointer-events: none;
 }

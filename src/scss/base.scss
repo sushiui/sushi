@@ -9,12 +9,13 @@ HTML {
 }
 
 BODY, INPUT, TEXTAREA, BUTTON {
-  font-family: inherit 
+  font-family: inherit;
+  font-size: $font-size-body;  
 }
 
 H3 {
   font-weight: 800;
-  font-size: 1.5em;  
+  font-size: $font-size-h3;  
   line-height: 145%; 
 }
 
@@ -70,7 +71,7 @@ TABLE {
   flex: none;
   order: 0;
   flex-grow: 0;
-  background-color: $primary-white;
+  background-color: $transparent-white-80;
   align-self: stretch;
   width: 200px;
   box-shadow: $shadow-10;

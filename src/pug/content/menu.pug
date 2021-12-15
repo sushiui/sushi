@@ -1,0 +1,92 @@
+.card
+
+  h1 Menu
+  ='\n'
+
+  h3 Generic Menu
+
+  .menu 
+    ul.ss-menu
+      li 
+        a(href="index.html")
+          span.icon-Home
+          span.label Home
+      li 
+        a(href="index.html")
+          span.icon-Euro
+          span.label Font  
+      li 
+        a(href="index.html")
+          span.icon-Terrain
+          span.label Icon
+          span.icon-Maximize-arrow           
+      li 
+        a(href="index.html")
+          span.icon-Main-Component-filled
+          span.label Component
+          span.icon-Maximize-arrow        
+      li.selected
+        a(href="button.html")
+          span.icon-Status-circle
+          span.label Button
+          .selected-box &nbsp;
+      li 
+        a(href="menu.html")
+          span.icon-Status-circle
+          span.label Menu
+      li 
+        a(href="button.html")
+          span.icon-Status-circle
+          span.label Abc
+      li 
+        a.disable(href="index.html")
+          span.icon-Document
+          span.label Note             
+
+  h3 Step Menu
+
+  .menu 
+    ul.ss-menu-step
+      li.first.selected
+        .zero-line
+          .line
+            .line-top &nbsp;
+            .line-background &nbsp;
+            .line-bottom &nbsp;
+        .status
+          .circle &nbsp;
+        .label เมนูแบบบรรทัดเดียว
+        .selected-bar &nbsp;
+      li
+        .zero-line
+          .line
+            .line-top &nbsp;
+            .line-background &nbsp;
+            .line-bottom &nbsp;
+        .status
+          .circle &nbsp;
+        .label
+          | ชื่อยาวๆ ในเมนู ยาวๆ หลายบรรทัด 
+          | จะได้เห็นว่ามันยาวได้จริงหรือเปล่า 
+          | แม้แต่สี่บรรทัดก็ทำได้
+        .selected-bar &nbsp;   
+      li
+        .zero-line
+          .line
+            .line-top &nbsp;
+            .line-background &nbsp;
+            .line-bottom &nbsp;
+        .status
+          .circle &nbsp;
+        .label ชื่อสั้นๆ ในเมนูสั้นๆ
+        .selected-bar &nbsp;
+      li.last
+        .zero-line
+          .line
+            .line-top &nbsp;
+            .line-background &nbsp;
+            .line-bottom &nbsp;
+        .status
+          .circle &nbsp;
+        .label ชื่อสั้นๆ ในเมนูสั้นๆ
+        .selected-bar &nbsp;           

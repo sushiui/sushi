@@ -1,0 +1,206 @@
+UL.ss-menu li {
+  --color: #{$primary-black};
+  --background: none;
+  --hover-background: #{$level10-orange};
+  --hover-outline: none;
+  --active-color: #{$primary-black};  
+  --active-background: #{$primary-white};
+  --active-outline: none;   
+  --outline: none;
+  --disable-background: #{$transparent-black-10};
+}
+
+UL.ss-menu li.selected {
+  --color: #{$primary-black};
+  --background: #{$level10-orange};
+  --hover-background: #{$level10-orange};
+  --hover-outline: none;
+  --active-color: #{$primary-black};  
+  --active-background: #{$primary-white};
+  --active-outline: none;   
+  --outline: none;
+  --disable-background: #{$transparent-black-10};
+}
+
+UL.ss-menu {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0px;
+  padding: 16px;
+  gap: 8px;  
+
+  li {
+    flex-grow: 0;
+    // background-color: #def;
+
+    a {
+      display: flex;
+      flex-direction: row;
+      flex-basis: auto;
+      align-items: center;
+      padding: 4px 6px;
+      margin: 0 -4px;
+      gap: 4px;
+      position: relative;
+      // width: fit-content;
+      border: none;
+      outline: var(--outline); 
+      text-decoration: none;
+      border-radius: $radius;
+      cursor: pointer;
+    
+      color: var(--color);
+      background: var(--background);
+    
+      span{
+        font-size: $body-icon;
+        flex-grow: 0;
+        &.label {
+          font-size: 1em;
+          flex-grow: 1;
+        }
+      }
+
+      .selected-box{
+        background-color: $primary-yellow;
+        width: $radius;
+        border-radius: $radius;
+      }
+    
+      &:hover {
+        background: var(--hover-background);
+        outline: var(--hover-outline);      
+      }
+    
+      &:active {
+        color: var(--active-color);
+        background: var(--active-background);
+        outline: var(--active-outline);
+      }
+    
+      &.disable, &:DISABLED{
+        color: $transparent-black-35;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.card .menu {
+  width: 500px;
+}
+
+UL.ss-menu-step {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  background-color: #ffffff;
+
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 4px 4px 0px;
+    border-radius: 4px;
+    margin: 16px 0px 0px 0px;
+
+    div {
+      position: static;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 0px 0px;
+    }
+
+    .selected-bar {
+      width: 4px;
+      height: 18px;
+      border-radius: 2px;
+      display: none;
+    }    
+
+    .status {
+      position: relative;
+      padding: 4px;
+      width: 24px;
+      height: 24px;
+    }    
+
+    .circle {
+      position: absolute;
+      border-radius: 6px;
+      width: 12px;
+      height: 12px;
+      background-color: #0064C5;
+      left: calc(50% - 12px/2);
+      top: calc(50% - 12px/2);
+    }    
+
+    .label {
+      flex-grow: 1;
+      position: static;
+      width: 196px;
+    }    
+
+    .zero-line {
+      position: relative;
+      align-self: stretch;
+      width: 0px;
+      background-color: #aaa;
+
+      .line {
+        width: 2px;
+        margin: 0px 0px 0px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        position: absolute;
+        top: -12px;
+        bottom: -12px;
+
+        .line-top {
+          background-color: rgba(0, 0, 0, 0.1);
+          width: 2px;
+          flex-grow: 1;
+        }    
+
+        .line-bottom {
+          background-color: rgba(0, 0, 0, 0.1);
+          width: 2px;
+          flex-grow: 1;
+        }   
+
+        .line-background {
+          border-radius: 6px;
+          width: 12px;
+          height: 12px;
+          background-color: #FEF4E9;
+          flex-grow: 0;
+        }        
+      }
+    }
+  }
+}
+
+UL.ss-menu-step li{
+  &.first .line-top {
+    background-color: rgba(0, 0, 0, 0.0);  
+  }
+  
+  &.last .line-bottom {
+    background-color: rgba(0, 0, 0, 0.0);  
+  }
+  
+  &.selected .selected-bar {
+    display: block;
+    background-color: #FCB034;
+  }
+  
+  &.selected {
+    background-color: #FEF4E9;
+  }
+}

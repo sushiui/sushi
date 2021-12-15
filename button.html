@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>Demo Sushi framework</title>
   <link href="./assets/css/sushi.css" rel="stylesheet">
+  <link href="./assets/css/prism.css" rel="stylesheet">
 </head>
 
 <body>
@@ -31,7 +32,12 @@
     <div class="content">
       <div class="card">
         <h1>Button</h1>
-        <h3>Link &lt;a&gt; as a button</h3>
+        <h3>Link &lt;a&gt; as a button</h3><pre> <code class="language-html"> 
+&lt;a class="ss-button color green" href="#">
+   &lt;span class="icon-Search">&lt;/span>
+   Color green Link
+   &lt;span class="icon-Next">&lt;/span>
+&lt;/a>  </code></pre>
         <table>
           <tr>
             <th>&nbsp;</th>
@@ -70,7 +76,12 @@
             <td> <a class="ss-link disable" href="javascript:void(0)"><span class="icon-Search"></span>General Link<span class="icon-Next">           </span></a></td>
           </tr>
         </table>
-        <H3>Button &lt;button&gt;</H3>
+        <H3>Button &lt;button&gt;</H3><pre> <code class="language-html"> 
+ &lt;button>
+   &lt;span class="icon-Search">&lt;/span>
+   Primary Button
+   &lt;span class="icon-Next">&lt;/span>
+ &lt;/button>  </code></pre>
         <table>
           <tr>
             <th>&nbsp; </th>
@@ -110,6 +121,7 @@
       </div>
     </div>
   </div>
+  <script src="./assets/js/prism.js"></script>
 </body>
 
 </html>

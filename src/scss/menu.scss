@@ -91,116 +91,120 @@ UL.ss-menu {
   width: 500px;
 }
 
+UL.ss-menu-step .first .line-top {
+  background-color: rgba(0, 0, 0, 0.0);  
+}
+
+UL.ss-menu-step .last .line-bottom {
+  background-color: rgba(0, 0, 0, 0.0);  
+}
+
+UL.ss-menu-step .selected .selected-bar {
+  display: block;
+  background-color: #FCB034;
+}
+
+UL.ss-menu-step li.selected {
+  background-color: #FEF4E9;
+}
+
+
 UL.ss-menu-step {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 16px;
   background-color: #ffffff;
-
-  li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 4px 4px 4px 0px;
-    border-radius: 4px;
-    margin: 16px 0px 0px 0px;
-
-    div {
-      position: static;
-      flex: none;
-      order: 0;
-      flex-grow: 0;
-      margin: 0px 0px;
-    }
-
-    .selected-bar {
-      width: 4px;
-      height: 18px;
-      border-radius: 2px;
-      display: none;
-    }    
-
-    .status {
-      position: relative;
-      padding: 4px;
-      width: 24px;
-      height: 24px;
-    }    
-
-    .circle {
-      position: absolute;
-      border-radius: 6px;
-      width: 12px;
-      height: 12px;
-      background-color: #0064C5;
-      left: calc(50% - 12px/2);
-      top: calc(50% - 12px/2);
-    }    
-
-    .label {
-      flex-grow: 1;
-      position: static;
-      width: 196px;
-    }    
-
-    .zero-line {
-      position: relative;
-      align-self: stretch;
-      width: 0px;
-      background-color: #aaa;
-
-      .line {
-        width: 2px;
-        margin: 0px 0px 0px 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        position: absolute;
-        top: -12px;
-        bottom: -12px;
-
-        .line-top {
-          background-color: rgba(0, 0, 0, 0.1);
-          width: 2px;
-          flex-grow: 1;
-        }    
-
-        .line-bottom {
-          background-color: rgba(0, 0, 0, 0.1);
-          width: 2px;
-          flex-grow: 1;
-        }   
-
-        .line-background {
-          border-radius: 6px;
-          width: 12px;
-          height: 12px;
-          background-color: #FEF4E9;
-          flex-grow: 0;
-        }        
-      }
-    }
-  }
+  width: 340px;
 }
 
-UL.ss-menu-step li{
-  &.first .line-top {
-    background-color: rgba(0, 0, 0, 0.0);  
+UL.ss-menu-step li {  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 4px 4px 0px;
+  width: 240px;
+  border-radius: 4px;
+  margin: 16px 0px 0px 0px;
+
+  div {
+    position: static;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
   }
-  
-  &.last .line-bottom {
-    background-color: rgba(0, 0, 0, 0.0);  
+
+  .selected-bar {
+    width: 4px;
+    height: 18px;
+    border-radius: 2px;
+    display: none;
   }
-  
-  &.selected .selected-bar {
-    display: block;
-    background-color: #FCB034;
+
+  .status {
+    position: relative;
+    padding: 4px;
+    width: 24px;
+    height: 24px;
   }
+
+  .circle {
+    position: absolute;
+    border-radius: 6px;
+    width: 12px;
+    height: 12px;
+    background-color: #0064C5;
+    left: calc(50% - 12px/2);
+    top: calc(50% - 12px/2);
+  }
+
+  .label {
+    flex-grow: 1;
+    position: static;
+    width: 196px;
+  }  
+
+}
+
+// Draw transparent line
+
+UL.ss-menu-step .relative-line {
+    position: relative;
+    align-self: stretch;
+    width: 0px;
+    background-color: #aaa;
+}
+
+.relative-line .line {
+  width: 2px;
+  margin: 0px 0px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
-  &.selected {
+  position: absolute;
+  top: -12px;
+  bottom: -12px;
+
+  .line-top {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 2px;
+    flex-grow: 1;
+  }
+
+  .line-bottom {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 2px;
+    flex-grow: 1;
+  }
+
+  .line-background {
+    border-radius: 6px;
+    width: 12px;
+    height: 12px;
     background-color: #FEF4E9;
+    flex-grow: 0;
   }
 }

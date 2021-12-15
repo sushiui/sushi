@@ -816,6 +816,23 @@ UL.ss-menu li a.disable, UL.ss-menu li a:DISABLED {
   width: 500px;
 }
 
+UL.ss-menu-step .first .line-top {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+UL.ss-menu-step .last .line-bottom {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+UL.ss-menu-step .selected .selected-bar {
+  display: block;
+  background-color: #FCB034;
+}
+
+UL.ss-menu-step li.selected {
+  background-color: #FEF4E9;
+}
+
 UL.ss-menu-step {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -829,6 +846,7 @@ UL.ss-menu-step {
   align-items: flex-start;
   padding: 16px;
   background-color: #ffffff;
+  width: 340px;
 }
 
 UL.ss-menu-step li {
@@ -843,6 +861,7 @@ UL.ss-menu-step li {
   -ms-flex-align: center;
   align-items: center;
   padding: 4px 4px 4px 0px;
+  width: 240px;
   border-radius: 4px;
   margin: 16px 0px 0px 0px;
 }
@@ -892,7 +911,7 @@ UL.ss-menu-step li .label {
   width: 196px;
 }
 
-UL.ss-menu-step li .zero-line {
+UL.ss-menu-step .relative-line {
   position: relative;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -900,7 +919,7 @@ UL.ss-menu-step li .zero-line {
   background-color: #aaa;
 }
 
-UL.ss-menu-step li .zero-line .line {
+.relative-line .line {
   width: 2px;
   margin: 0px 0px 0px 15px;
   display: -webkit-box;
@@ -921,7 +940,7 @@ UL.ss-menu-step li .zero-line .line {
   bottom: -12px;
 }
 
-UL.ss-menu-step li .zero-line .line .line-top {
+.relative-line .line .line-top {
   background-color: rgba(0, 0, 0, 0.1);
   width: 2px;
   -webkit-box-flex: 1;
@@ -929,7 +948,7 @@ UL.ss-menu-step li .zero-line .line .line-top {
   flex-grow: 1;
 }
 
-UL.ss-menu-step li .zero-line .line .line-bottom {
+.relative-line .line .line-bottom {
   background-color: rgba(0, 0, 0, 0.1);
   width: 2px;
   -webkit-box-flex: 1;
@@ -937,7 +956,7 @@ UL.ss-menu-step li .zero-line .line .line-bottom {
   flex-grow: 1;
 }
 
-UL.ss-menu-step li .zero-line .line .line-background {
+.relative-line .line .line-background {
   border-radius: 6px;
   width: 12px;
   height: 12px;
@@ -945,21 +964,4 @@ UL.ss-menu-step li .zero-line .line .line-background {
   -webkit-box-flex: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
-}
-
-UL.ss-menu-step li.first .line-top {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-UL.ss-menu-step li.last .line-bottom {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-UL.ss-menu-step li.selected .selected-bar {
-  display: block;
-  background-color: #FCB034;
-}
-
-UL.ss-menu-step li.selected {
-  background-color: #FEF4E9;
 }

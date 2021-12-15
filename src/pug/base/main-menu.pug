@@ -1,37 +1,23 @@
 .menu 
+  - 
+    var items = { 
+      index: ['Home','icon-Home'], 
+      component: ['Component','icon-Main-Component-filled'], 
+      menu: ['Menu','icon-Status-circle'], 
+      button: ['Button','icon-Status-circle']   
+    }
+
   ul.ss-menu
-    li 
-      a(href="index.html")
-        span.icon-Home
-        span.label Home
-    li 
-      a(href="index.html")
-        span.icon-Euro
-        span.label Font  
-    li 
-      a(href="index.html")
-        span.icon-Terrain
-        span.label Icon
-        span.icon-Maximize-arrow           
-    li 
-      a(href="index.html")
-        span.icon-Main-Component-filled
-        span.label Component
-        span.icon-Maximize-arrow        
-    li.selected
-      a(href="button.html")
-        span.icon-Status-circle
-        span.label Button
-        .selected-box &nbsp;
-    li 
-      a(href="menu.html")
-        span.icon-Status-circle
-        span.label Menu
-    li 
-      a(href="button.html")
-        span.icon-Status-circle
-        span.label Abc
-    li 
-      a.disable(href="index.html")
-        span.icon-Document
-        span.label Note             
+    each val, key in items
+      - var url = key
+      if(current == key)
+        li.selected 
+          a(href= key + '.html')
+            span(class=val[1])
+            span.label #{val[0]}
+            .selected-box &nbsp;
+      else 
+        li 
+          a(href= key + '.html')
+            span(class=val[1])
+            span.label #{val[0]}

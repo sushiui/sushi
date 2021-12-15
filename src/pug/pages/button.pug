@@ -1,5 +1,9 @@
 extends ../base/base.pug
 
 block content
-
-    include ../content/button.pug
+  - var current = "button"
+  
+  .container
+    include ../base/main-menu.pug
+    .content
+        include ../content/button.pug

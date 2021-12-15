@@ -1,6 +1,10 @@
 extends ../base/base.pug
 
 block content
-
-  include ../content/font.pug
-  include ../content/icon.pug
+  - var current = "index"
+  
+  .container
+    include ../base/main-menu.pug
+    .content
+      include ../content/font.pug
+      include ../content/icon.pug

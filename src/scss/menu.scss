@@ -2,11 +2,13 @@
   width: 240px;
 }
 
+// Generic Menu
+
 UL.ss-menu li {
   --color: #{$primary-black};
   --background: none;
   --hover-background: #{$level10-orange};
-  --active-color: #{$primary-black};  
+  --active-color: #{$primary-black};
   --active-background: #{$primary-white};
   --disable-background: #{$transparent-black-10};
 }
@@ -15,7 +17,7 @@ UL.ss-menu li.selected {
   --color: #{$primary-black};
   --background: #{$level10-orange};
   --hover-background: #{$level10-orange};
-  --active-color: #{$primary-black};  
+  --active-color: #{$primary-black};
   --active-background: #{$primary-white};
   --disable-background: #{$transparent-black-10};
 }
@@ -41,14 +43,14 @@ UL.ss-menu {
       gap: 4px;
       position: relative;
       border: none;
-      outline: var(--outline); 
+      outline: var(--outline);
       text-decoration: none;
       border-radius: $radius;
       cursor: pointer;
-    
+
       color: var(--color);
       background: var(--background);
-    
+
       span{
         font-size: $body-icon;
         flex-grow: 0;
@@ -63,16 +65,16 @@ UL.ss-menu {
         width: $radius;
         border-radius: $radius;
       }
-    
+
       &:hover {
-        background: var(--hover-background);  
+        background: var(--hover-background);
       }
-    
+
       &:active {
         color: var(--active-color);
         background: var(--active-background);
       }
-    
+
       &.disable{
         color: $transparent-black-35;
         pointer-events: none;
@@ -81,15 +83,17 @@ UL.ss-menu {
   }
 }
 
+// Woven Menu
+
 UL.ss-menu-woven li {
   --color: #{$primary-black};
   --background: none;
-  --line-top-background: rgba(0, 0, 0, 0.1); 
-  --line-bottom-background: rgba(0, 0, 0, 0.1); 
+  --line-top-background: rgba(0, 0, 0, 0.1);
+  --line-bottom-background: rgba(0, 0, 0, 0.1);
   --hover-background: #{$level10-orange};
-  --active-color: #{$primary-black};  
+  --active-color: #{$primary-black};
   --active-background: #{$primary-white};
-  --disable-background: #{$transparent-black-10};  
+  --disable-background: #{$transparent-black-10};
 }
 
 UL.ss-menu-woven li.selected {
@@ -97,11 +101,11 @@ UL.ss-menu-woven li.selected {
 }
 
 UL.ss-menu-woven li.first {
-  --line-top-background: rgba(0, 0, 0, 0.0); 
+  --line-top-background: rgba(0, 0, 0, 0.0);
 }
 
 UL.ss-menu-woven li.last {
-  --line-bottom-background: rgba(0, 0, 0, 0.0); 
+  --line-bottom-background: rgba(0, 0, 0, 0.0);
 }
 
 UL.ss-menu-woven {
@@ -118,17 +122,17 @@ UL.ss-menu-woven {
     flex-direction: row;
 
     a {
-      flex-grow: 1;      
+      flex-grow: 1;
       display: flex;
       flex-direction: row;
       flex-basis: auto;
       align-items: center;
       text-decoration: none;
-      border-radius: $radius;      
+      border-radius: $radius;
       padding: 4px 6px;
       gap: 4px;
       color: var(--color);
-      background: var(--background);      
+      background: var(--background);
 
       .status {
         flex-grow: 0;
@@ -161,7 +165,7 @@ UL.ss-menu-woven {
         flex-grow: 1;
         position: static;
         width: 80px;
-      }        
+      }
 
       .selected-box{
         background-color: $primary-yellow;
@@ -170,177 +174,57 @@ UL.ss-menu-woven {
       }
 
       &:hover {
-        background: var(--hover-background);    
+        background: var(--hover-background);
       }
-    
+
       &:active {
         color: var(--active-color);
         background: var(--active-background);
       }
-    
+
       &.disable{
         color: $transparent-black-35;
         pointer-events: none;
-      }      
+      }
     }
   }
-} 
+}
 
 UL.ss-menu-woven .relative-box {
   position: relative;
   align-self: stretch;
   width: 0px;
-}
 
-UL.ss-menu-woven .relative-box .line {
-  width: 0px;
-  margin: 0px 0px 0px 18px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-  position: absolute;
-  top: -2px;
-  bottom: -2px;
-
-  .line-top {
-    background-color: var(--line-top-background);
-    width: 2px;
-    flex-grow: 1;
-  }
-
-  .line-bottom {
-    background-color: var(--line-bottom-background);
-    width: 2px;
-    flex-grow: 1;
-  }
-
-  .line-background {
-    border-radius: 6px;
-    width: 12px;
-    height: 12px;
-    background-color: #FEF4E9;
-    flex-grow: 0;
-  }
-}
-
-
-
-UL.ss-menu-step .first .line-top {
-  background-color: rgba(0, 0, 0, 0.0);  
-}
-
-UL.ss-menu-step .last .line-bottom {
-  background-color: rgba(0, 0, 0, 0.0);  
-}
-
-UL.ss-menu-step .selected .selected-bar {
-  display: block;
-  background-color: #FCB034;
-}
-
-UL.ss-menu-step li.selected {
-  background-color: #FEF4E9;
-}
-
-
-UL.ss-menu-step {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 16px;
-  background-color: #ffffff;
-}
-
-UL.ss-menu-step li {
-  flex-grow: 0;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 4px 4px 4px 0px;
-  border-radius: 4px;
-  margin: 16px 0px 0px 0px;
-
-  div {
-    position: static;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 0px;
-  }
-
-  .selected-bar {
-    width: 4px;
-    height: 18px;
-    border-radius: 2px;
-    display: none;
-  }
-
-  .status {
-    position: relative;
-    padding: 4px;
-    width: 24px;
-    height: 24px;
-  }
-
-  .circle {
-    position: absolute;
-    border-radius: 6px;
-    width: 12px;
-    height: 12px;
-    background-color: #0064C5;
-    left: calc(50% - 12px/2);
-    top: calc(50% - 12px/2);
-  }
-
-  .label {
-    flex-grow: 1;
-    position: static;
-    width: 196px;
-  }  
-
-}
-
-// Draw transparent line
-
-UL.ss-menu-step .relative-line {
-    position: relative;
-    align-self: stretch;
+  .line {
     width: 0px;
-    background-color: #aaa;
-}
+    margin: 0px 0px 0px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-.relative-line .line {
-  width: 2px;
-  margin: 0px 0px 0px 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-  position: absolute;
-  top: -12px;
-  bottom: -12px;
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
 
-  .line-top {
-    background-color: rgba(0, 0, 0, 0.1);
-    width: 2px;
-    flex-grow: 1;
-  }
+    .line-top {
+      background-color: var(--line-top-background);
+      width: 2px;
+      flex-grow: 1;
+    }
 
-  .line-bottom {
-    background-color: rgba(0, 0, 0, 0.1);
-    width: 2px;
-    flex-grow: 1;
-  }
+    .line-bottom {
+      background-color: var(--line-bottom-background);
+      width: 2px;
+      flex-grow: 1;
+    }
 
-  .line-background {
-    border-radius: 6px;
-    width: 12px;
-    height: 12px;
-    background-color: #FEF4E9;
-    flex-grow: 0;
+    .line-background {
+      border-radius: 6px;
+      width: 12px;
+      height: 12px;
+      background-color: #FEF4E9;
+      flex-grow: 0;
+    }
   }
 }

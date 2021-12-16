@@ -5,54 +5,84 @@
 
   h3 Generic Menu
 
-  .menu 
+  pre
+    code.language-html
+      |
+      | &lt;ul class="ss-menu">
+      |  &lt;li>
+      |   &lt;a href="index.html">
+      |     &lt;span class="icon-Home"></span>
+      |     &lt;span class="label">Home</span></a>
+      |  &lt;/li>
+      | &lt;ul>
+
+  .menu
     ul.ss-menu
-      li 
+      li
         a(href="javascript:void(0);")
           span.icon-Home
           span.label Home
-      li 
+      li
         a(href="javascript:void(0);")
           span.icon-Euro
-          span.label Font  
-      li 
+          span.label Font
+      li
         a(href="javascript:void(0);")
           span.icon-Terrain
           span.label Icon
-          span.icon-Maximize-arrow           
-      li 
+          span.icon-Maximize-arrow
+      li
         a(href="javascript:void(0);")
           span.icon-Main-Component-filled
           span.label Component
-          span.icon-Maximize-arrow        
+          span.icon-Maximize-arrow
       li.selected
         a(href="javascript:void(0);")
           span.icon-Status-circle
           span.label Button
           .selected-box &nbsp;
-      li 
+      li
         a(href="javascript:void(0);")
           span.icon-Status-circle
           span.label Menu
-      li 
+      li
         a(href="javascript:void(0);")
           span.icon-Status-circle
           span.label Abc
-      li 
+      li
         a.disable(href="javascript:void(0);")
           span.icon-Document
-          span.label Note       
-  
+          span.label Note
+
   h3 Woven Menu
 
-  .menu 
+  pre
+    code.language-html
+      |
+      | &lt;ul class="ss-menu-woven">
+      |   &lt;li class="first">
+      |     &lt;div class="relative-box">
+      |       &lt;div class="line">
+      |         &lt;div class="line-top">&lt;/div>
+      |         &lt;div class="line-background">&lt;/div>
+      |         &lt;div class="line-bottom">&lt;/div>
+      |       &lt;/div>
+      |     &lt;/div>&lt;a href="javascript:void(0);">
+      |       &lt;div class="status">
+      |         &lt;div class="big-circle">&nbsp;&lt;/div>
+      |       &lt;/div>&lt;span class="label">รายงานการขาย&lt;/span>
+      |     &lt;/a>
+      |   &lt;/li>
+      | &lt;/ul>
+
+  .menu
     ul.ss-menu-woven
       li.first
         .relative-box
           .line
             .line-top
             .line-background
-            .line-bottom        
+            .line-bottom
         a(href="javascript:void(0);")
           .status
             .big-circle &nbsp;
@@ -62,51 +92,51 @@
           .line
             .line-top
             .line-background
-            .line-bottom        
+            .line-bottom
         a(href="javascript:void(0);")
           .status
             .circle &nbsp;
-          span.label รายงานการขาย          
+          span.label รายงานการขาย
       li.selected
         .relative-box
           .line
             .line-top
             .line-background
-            .line-bottom      
+            .line-bottom
         a(href="javascript:void(0);")
           .status
             .circle &nbsp;
-          span.label รายงานการขาย    
-          .selected-box &nbsp;                   
+          span.label รายงานการขาย
+          .selected-box &nbsp;
       li
         .relative-box
           .line
             .line-top
             .line-background
-            .line-bottom      
+            .line-bottom
         a(href="javascript:void(0);")
           .status
             .circle &nbsp;
           span.label
-            | ชื่อยาวๆ ในเมนู ยาวๆ หลายบรรทัด 
-            | จะได้เห็นว่ามันยาวได้จริงหรือเปล่า 
+            | ชื่อยาวๆ ในเมนู ยาวๆ หลายบรรทัด
+            | จะได้เห็นว่ามันยาวได้จริงหรือเปล่า
             | แม้แต่สี่บรรทัดก็ทำได้
       li
         .relative-box
           .line
             .line-top
             .line-background
-            .line-bottom        
+            .line-bottom
         a(href="javascript:void(0);")
           .status
             .big-circle &nbsp;
-          span.label รายงานการขาย            
+          span.label รายงานการขาย
       li
         .relative-box
           .line
             .line-top
             .line-background
-            .line-bottom      
+            .line-bottom
         a.disable(href="javascript:void(0);")
           .status
             .circle &nbsp;
@@ -116,7 +146,7 @@
           .line
             .line-top
             .line-background
-            .line-bottom      
+            .line-bottom
         a(href="javascript:void(0);")
           .status
             .circle &nbsp;

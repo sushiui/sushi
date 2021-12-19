@@ -1,9 +1,201 @@
 extends ../base/base.pug
 
-block content
+
+block append page-variable
   - var current = "button"
-  
-  .container
-    include ../base/main-menu.pug
-    .content
-        include ../content/button.pug
+
+block content
+  .card
+
+    h1 Button
+    ='\n'
+
+  .card
+    h3 Link &lt;a&gt; as a button
+
+    pre
+      code.language-html
+        |
+        | &lt;a class="ss-button color green" href="#">
+        |    &lt;span class="icon-Search">&lt;/span>
+        |    Color green Link
+        |    &lt;span class="icon-Next">&lt;/span>
+        | &lt;/a>
+        | &nbsp;
+    table
+      tr
+        th &nbsp;
+        th Primary
+        th Secondary
+        th Color
+        th Color Green
+      tr
+        td Enable
+        td
+          a.ss-button(href="javascript:void(0)")
+            span.icon-Search
+            | Primary Link
+            span.icon-Next
+        td
+          a.ss-button.secondary(href="javascript:void(0)")
+            span.icon-Search
+            | Secondary Link
+            span.icon-Next
+        td
+          a.ss-button.color(href="javascript:void(0)")
+            span.icon-Search
+            | Color Link
+            span.icon-Next
+        td
+          a.ss-button.color.green(href="javascript:void(0)")
+            span.icon-Search
+            | Color green Link
+            span.icon-Next
+      tr
+        td Disable
+        td
+          a.ss-button.disable(href="javascript:void(0)")
+            span.icon-Search
+            | Primary Link
+            span.icon-Next
+        td
+          a.ss-button.secondary.disable(href="javascript:void(0)")
+            span.icon-Search
+            | Secondary Link
+            span.icon-Next
+        td
+          a.ss-button.color.disable(href="javascript:void(0)")
+            span.icon-Search
+            | Color Link
+            span.icon-Next
+        td
+          a.ss-button.color.green.disable(href="javascript:void(0)")
+            span.icon-Search
+            | Color green Link
+            span.icon-Next
+
+  .card
+    h3 Link &lt;a&gt; as a link
+
+    pre
+      code.language-html
+        |
+        | &lt;a class="ss-link color green" href="#">
+        |    &lt;span class="icon-Search">&lt;/span>
+        |    Color green Link
+        |    &lt;span class="icon-Next">&lt;/span>
+        | &lt;/a>
+        | &nbsp;
+
+    table
+      tr
+        th &nbsp;
+        th Link
+      tr
+        td Enable
+        td
+          a.ss-link(href="javascript:void(0)")
+            span.icon-Search
+            | General Link
+            span.icon-Next
+      tr
+        td Disable
+        td
+          a.ss-link.disable(href="javascript:void(0)")
+            span.icon-Search
+            | General Link
+            span.icon-Next
+
+  .card
+    H3 Button &lt;button&gt;
+
+    pre
+      code.language-html
+        |
+        |  &lt;button>
+        |    &lt;span class="icon-Search">&lt;/span>
+        |    Primary Button
+        |    &lt;span class="icon-Next">&lt;/span>
+        |  &lt;/button>
+        |  &nbsp;
+    table
+      tr
+        th &nbsp;
+        th Primary Button
+        th Secondary Button
+        th Color
+        th Color Green
+      tr
+        td Enable
+        td
+          button
+            span.icon-Search
+            | Primary Button
+            span.icon-Next
+        td
+          button.secondary
+            span.icon-Search
+            | Secondary Button
+            span.icon-Next
+        td
+          button.color
+            span.icon-Search
+            | Color Button
+            span.icon-Next
+        td
+          button.color.green
+            span.icon-Search
+            | Color green Button
+            span.icon-Next
+      tr
+        td Disable
+        td
+          button(disabled)
+            span.icon-Search
+            | Primary Button
+            span.icon-Next
+        td
+          button.secondary(disabled)
+            span.icon-Search
+            | Secondary Button
+            span.icon-Next
+        td
+          button.color(disabled)
+            span.icon-Search
+            | Color Button
+            span.icon-Next
+        td
+          button.color.green(disabled)
+            span.icon-Search
+            | Color Green Button
+            span.icon-Next
+
+  .card
+    H3 TEST edge case
+
+    table
+      tr
+        th For long text
+        th For long text
+      tr
+        td
+          button
+            span.icon-Documents
+            | เมื่อเนื้อหาเป็น
+            br
+            | ภาษาไทย
+            br
+            | แบบมีหลายบรรทัด
+            span.icon-External-link
+        td
+          button
+            span.icon-Search
+            | Primary Button
+
+          br
+          ='\n'
+
+          button
+            | Primary Button
+            span.icon-Search
+

@@ -1,29 +1,30 @@
-.menu 
-  - 
-    var items = { 
-      Home: ['index','icon-Home'], 
-      Component: ['','icon-Main-Component-filled'], 
-      Menu: ['menu','icon-Status-circle'], 
-      Button: ['button','icon-Status-circle']   
+.menu
+  -
+    var items = {
+      Home: ['index','icon-Home'],
+      Icon: ['icon','icon-Home'],
+      Component: ['','icon-Main-Component-filled'],
+      Menu: ['menu','icon-Status-circle'],
+      Button: ['button','icon-Status-circle']
     }
 
   ul.ss-menu
     each val, key in items
       - var url = key
       if(val[0] == current)
-        li.selected 
+        li.selected
           a(href= val[0] + '.html')
             span(class=val[1])
             span.label #{key}
             .selected-box &nbsp;
       else if (val[0] != '')
-        li 
+        li
           a(href= val[0] + '.html')
             span(class=val[1])
             span.label #{key}
       else
-        li 
+        li
           a(href="javascript:void(0)")
             span(class=val[1])
             span.label #{key}
-            span.icon-Maximize-arrow 
+            span.icon-Maximize-arrow

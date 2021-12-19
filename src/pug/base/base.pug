@@ -8,9 +8,17 @@ html(lang="en")
     link(href="./assets/css/sushi.css", rel="stylesheet")
     link(href="./assets/css/prism.css" rel="stylesheet")
   body
+
+    block page-variable
+      - var current = "home"
+
     .header
       h3 Implement HTML & CSS for SUSHI Design System
+      p= current
 
-    block content
+    .container
+      include ../base/main-menu.pug
+      .content
+        block content
 
     script(src="./assets/js/prism.js")

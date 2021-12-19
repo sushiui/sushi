@@ -1,9 +1,170 @@
 extends ../base/base.pug
 
-
 block append page-variable
   - var current = "icon"
 
 block content
-  include ../content/font.pug
-  include ../content/icon.pug
+
+  -
+    var icons = [
+      "icon-Access-alarm",
+      "icon-Account-circle",
+      "icon-Add",
+      "icon-Alert",
+      "icon-Approve",
+      "icon-Approves-filled",
+      "icon-Approves",
+      "icon-Assign",
+      "icon-Attach-Money",
+      "icon-Attachment",
+      "icon-Auditor",
+      "icon-Back-Android",
+      "icon-Back-iOS",
+      "icon-Back",
+      "icon-Bookmark",
+      "icon-Bookmarks-filled",
+      "icon-Business",
+      "icon-Calendar",
+      "icon-Callcenter",
+      "icon-cancel-filled",
+      "icon-Category",
+      "icon-Check-list",
+      "icon-Checkbox-selected",
+      "icon-Checkbox",
+      "icon-Checked",
+      "icon-Circle-filled",
+      "icon-Classroom",
+      "icon-Close-or-Reject",
+      "icon-Company",
+      "icon-Content-copy",
+      "icon-Dash",
+      "icon-Date",
+      "icon-Decrease",
+      "icon-Delete",
+      "icon-DOC",
+      "icon-Document-1",
+      "icon-Document",
+      "icon-Documents",
+      "icon-Down",
+      "icon-Download",
+      "icon-Edit-filled",
+      "icon-Edit",
+      "icon-Email",
+      "icon-ESG",
+      "icon-Euro",
+      "icon-Exit",
+      "icon-External-link",
+      "icon-Eye-close",
+      "icon-Eye",
+      "icon-Fax",
+      "icon-File-upload",
+      "icon-Fill-color",
+      "icon-Filter",
+      "icon-Fire",
+      "icon-Folder-open",
+      "icon-Github",
+      "icon-Help",
+      "icon-Home-filled",
+      "icon-Home",
+      "icon-Increase",
+      "icon-Information",
+      "icon-Language",
+      "icon-Link",
+      "icon-Location",
+      "icon-Lock",
+      "icon-Logout",
+      "icon-Main-Component-filled",
+      "icon-Market",
+      "icon-Maximize-arrow",
+      "icon-Maximize-filled",
+      "icon-Minimize-arrow",
+      "icon-Minimize-filled",
+      "icon-Mobile-phone",
+      "icon-More-Android",
+      "icon-More-iOS",
+      "icon-More-Hamburger",
+      "icon-Mouse-cursor-filled",
+      "icon-Move",
+      "icon-News-filled",
+      "icon-News",
+      "icon-Next-big",
+      "icon-Next",
+      "icon-Notification-filled",
+      "icon-Notification",
+      "icon-One-Report",
+      "icon-Page-filled",
+      "icon-PDF-EN",
+      "icon-PDF-TH",
+      "icon-PDF",
+      "icon-Phone-call-filled",
+      "icon-Phone",
+      "icon-Picture",
+      "icon-Printer",
+      "icon-Profile-filled",
+      "icon-Profile",
+      "icon-Push-pin",
+      "icon-Radio-button-selected",
+      "icon-Radio-button",
+      "icon-Reader",
+      "icon-Refresh",
+      "icon-Search",
+      "icon-Set-link",
+      "icon-Set",
+      "icon-Setting",
+      "icon-Settings-suggest",
+      "icon-Sorting",
+      "icon-Star-Filled",
+      "icon-Star",
+      "icon-Status-circle",
+      "icon-Suitcase",
+      "icon-Supervisor",
+      "icon-Sushi",
+      "icon-Table-view",
+      "icon-Table",
+      "icon-Terrain",
+      "icon-Thumb-up-filled",
+      "icon-Thumbnail",
+      "icon-Time",
+      "icon-TXT-EN",
+      "icon-TXT-TH",
+      "icon-TXT",
+      "icon-Unchange",
+      "icon-Underline",
+      "icon-Up",
+      "icon-Video",
+      "icon-Vpn-key",
+      "icon-Waiting",
+      "icon-Warning",
+      "icon-Web",
+      "icon-XML",
+      "icon-Zoom-in",
+      "icon-Zoom-out"]
+
+  .card
+
+    h3 Font icon
+
+    pre
+      code.language-html
+        |
+        | &lt;span class="icon-Access-alarm">&lt;/span>
+        | &nbsp;
+
+    a.ss-link.color.green(href="./assets/fonts/SET.ttf")
+      span.icon-Download
+      | Download Font
+
+    a.ss-link.color.green(href="./assets/download/SET-icon-example.zip")
+      span.icon-Download
+      | Download Example
+
+    br
+    br
+
+  .card
+    .show-icons
+      each iconName in icons
+        .each-icon
+          span(class=iconName)
+          br
+          = iconName

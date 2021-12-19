@@ -3,9 +3,9 @@ BUTTON, a.ss-button {
   --background: #{$gradient-yellow};
   --hover-background: #{$primary-yellow};
   --hover-outline: none;
-  --active-color: #{$primary-black};  
+  --active-color: #{$primary-black};
   --active-background: #{$tertiary100-yellow};
-  --active-outline: solid 1px #{$primary-yellow};   
+  --active-outline: solid 1px #{$primary-yellow};
   --outline: none;
   --disable-background: #{$transparent-black-10};
 }
@@ -15,7 +15,7 @@ BUTTON.secondary, a.ss-button.secondary {
   --hover-background: #{$gradient-white};
   --hover-outline: solid 1px #{$primary-yellow};
   --active-background: #{$gradient-white};
-  --active-outline: solid 1px #{$primary-white};  
+  --active-outline: solid 1px #{$primary-white};
   --outline: solid 1px #{$transparent-black-10};
 }
 
@@ -35,7 +35,7 @@ BUTTON.color.green, a.ss-button.color.green {
   --background: #{$gradient-green};
   --hover-background: #{$secondary-Midle-green};
   --active-background: #{$secondary-Light-green};
-  --active-outline: solid 1px #{$secondary-Midle-green}; 
+  --active-outline: solid 1px #{$secondary-Midle-green};
   --active-color: #{$primary-black};
 }
 
@@ -56,13 +56,14 @@ BUTTON, a.ss-button, a.ss-link {
   position: relative;
   width: fit-content;
   border: none;
-  outline: var(--outline); 
+  outline: var(--outline);
   text-decoration: none;
   border-radius: 4px;
   cursor: pointer;
+  float: left;
 
   color: var(--color);
-  background: var(--background);  
+  background: var(--background);
 
   span{
     font-size: $body-icon;
@@ -70,7 +71,7 @@ BUTTON, a.ss-button, a.ss-link {
 
   &:hover {
     background: var(--hover-background);
-    outline: var(--hover-outline);      
+    outline: var(--hover-outline);
   }
 
   &:active {

@@ -14,3 +14,12 @@
     }
   }
 }
+
+.card {
+  .icon-in-css:after {
+    content: $icon-Close-or-Reject;
+    font-family: '#{$icomoon-font-family}';
+    padding-left: 10px !important;
+    vertical-align: middle;
+  }
+}

@@ -168,3 +168,25 @@ block content
           span(class=iconName)
           br
           = iconName
+
+  .card
+
+    h3 Font icon from css
+
+    pre
+      code.language-html
+        |
+        | .card {
+        |   .icon-in-css:after {
+        |     content: $icon-Close-or-Reject;
+        |     font-family: '&num;{$icomoon-font-family}';
+        |     padding-left: 10px !important;
+        |     vertical-align: middle;
+        |   }
+        | }
+        |
+
+    | Show x icon ->
+
+    span.icon-in-css
+

@@ -1079,3 +1079,10 @@ UL.ss-menu-woven .relative-box .line .line-background {
 .card .show-icons .each-icon span {
   font-size: 1.142em;
 }
+
+.card .icon-in-css:after {
+  content: "\e91b";
+  font-family: "SET";
+  padding-left: 10px !important;
+  vertical-align: middle;
+}

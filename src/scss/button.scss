@@ -46,7 +46,7 @@ a.ss-link {
 }
 
 BUTTON, a.ss-button, a.ss-link {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   flex-basis: auto;
   align-items: center;

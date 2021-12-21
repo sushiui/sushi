@@ -5,8 +5,13 @@ var gulp    = require('gulp'),
     plumber = require('gulp-plumber'),
     rename  = require('gulp-rename'),
     uglify  = require('gulp-uglify'),
-    prettyHtml = require('gulp-pretty-html'),
-    autoprefixer = require('gulp-autoprefixer');
+    iconfont = require('gulp-iconfont'),
+    prettyHtml   = require('gulp-pretty-html'),
+    autoprefixer = require('gulp-autoprefixer'),
+    consolidate  = require('gulp-consolidate');
+
+
+var runTimestamp = Math.round(Date.now()/1000);
 
 function reload(done) {
   connect.server({
@@ -69,6 +74,42 @@ function views() {
     .pipe(connect.reload())
   )
 }
+
+
+var fontName = 'SET';
+
+gulp.task('Iconfont', function(){
+  return gulp.src(['assets/icons/*.svg'])
+    .pipe(iconfont({
+      fontName: fontName, // required
+      formats: ['ttf', 'eot', 'woff'], // default, 'woff2' and 'svg' are available
+      timestamp: runTimestamp, // recommended to get consistent builds when watching files
+      fontHeight: 1024,
+      fixedWidth: true,
+      centerhorizontally: true,
+      centervertically: true,
+      normalize: true,
+      descent: 60
+    }))
+      .on('glyphs', function(glyphs, options) {
+
+        console.log("start");
+
+        gulp.src('templates/icon_font.scss')
+          .pipe(consolidate('lodash', {
+            glyphs: glyphs,
+            fontName: fontName,
+            fontPath: '../fonts',
+            className: 'icon',
+          }))
+          .pipe(gulp.dest('src/scss/'));
+
+        console.log(glyphs, options);
+        console.log("stop");
+      })
+    .pipe(gulp.dest('assets/fonts'));
+});
+
 
 function watchTask(done) {
   gulp.watch('*.html', html);

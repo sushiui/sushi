@@ -1,11 +1,8 @@
-@import "icon_variables";
-
 @font-face {
-  font-family: '#{$icomoon-font-family}';
+  font-family: "SET";
   src:
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?355p9m') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?355p9m') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?355p9m##{$icomoon-font-family}') format('svg');
+    url('../fonts/SET.ttf?355p9m') format('truetype'),
+    url('../fonts/SET.woff?355p9m') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,7 +10,7 @@
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: '#{$icomoon-font-family}' !important;
+  font-family: 'SET' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -26,664 +23,1028 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
+
+$icon-Access-alarm: "\EA01";
 .icon-Access-alarm {
   &:before {
     content: $icon-Access-alarm;
   }
 }
+
+
+$icon-Account-circle: "\EA02";
 .icon-Account-circle {
   &:before {
     content: $icon-Account-circle;
   }
 }
+
+
+$icon-Add: "\EA03";
 .icon-Add {
   &:before {
     content: $icon-Add;
   }
 }
+
+
+$icon-Alert: "\EA04";
 .icon-Alert {
   &:before {
     content: $icon-Alert;
   }
 }
+
+
+$icon-Approve: "\EA05";
 .icon-Approve {
   &:before {
     content: $icon-Approve;
   }
 }
+
+
+$icon-Approves-filled: "\EA06";
 .icon-Approves-filled {
   &:before {
     content: $icon-Approves-filled;
   }
 }
+
+
+$icon-Approves: "\EA07";
 .icon-Approves {
   &:before {
     content: $icon-Approves;
   }
 }
+
+
+$icon-Assign: "\EA08";
 .icon-Assign {
   &:before {
     content: $icon-Assign;
   }
 }
+
+
+$icon-Attach-Money: "\EA09";
 .icon-Attach-Money {
   &:before {
     content: $icon-Attach-Money;
   }
 }
+
+
+$icon-Attachment: "\EA0A";
 .icon-Attachment {
   &:before {
     content: $icon-Attachment;
   }
 }
+
+
+$icon-Auditor: "\EA0B";
 .icon-Auditor {
   &:before {
     content: $icon-Auditor;
   }
 }
+
+
+$icon-Back-Android: "\EA0C";
 .icon-Back-Android {
   &:before {
     content: $icon-Back-Android;
   }
 }
+
+
+$icon-Back-iOS: "\EA0D";
 .icon-Back-iOS {
   &:before {
     content: $icon-Back-iOS;
   }
 }
+
+
+$icon-Back: "\EA0E";
 .icon-Back {
   &:before {
     content: $icon-Back;
   }
 }
+
+
+$icon-Bookmark: "\EA0F";
 .icon-Bookmark {
   &:before {
     content: $icon-Bookmark;
   }
 }
+
+
+$icon-Bookmarks-filled: "\EA10";
 .icon-Bookmarks-filled {
   &:before {
     content: $icon-Bookmarks-filled;
   }
 }
+
+
+$icon-Business: "\EA11";
 .icon-Business {
   &:before {
     content: $icon-Business;
   }
 }
+
+
+$icon-Calendar: "\EA12";
 .icon-Calendar {
   &:before {
     content: $icon-Calendar;
   }
 }
+
+
+$icon-Callcenter: "\EA13";
 .icon-Callcenter {
   &:before {
     content: $icon-Callcenter;
   }
 }
-.icon-cancel-filled {
-  &:before {
-    content: $icon-cancel-filled;
-  }
-}
+
+
+$icon-Category: "\EA14";
 .icon-Category {
   &:before {
     content: $icon-Category;
   }
 }
+
+
+$icon-Check-list: "\EA15";
 .icon-Check-list {
   &:before {
     content: $icon-Check-list;
   }
 }
+
+
+$icon-Checkbox-selected: "\EA16";
 .icon-Checkbox-selected {
   &:before {
     content: $icon-Checkbox-selected;
   }
 }
+
+
+$icon-Checkbox: "\EA17";
 .icon-Checkbox {
   &:before {
     content: $icon-Checkbox;
   }
 }
+
+
+$icon-Checked: "\EA18";
 .icon-Checked {
   &:before {
     content: $icon-Checked;
   }
 }
+
+
+$icon-Circle-filled: "\EA19";
 .icon-Circle-filled {
   &:before {
     content: $icon-Circle-filled;
   }
 }
+
+
+$icon-Classroom: "\EA1A";
 .icon-Classroom {
   &:before {
     content: $icon-Classroom;
   }
 }
+
+
+$icon-Close-or-Reject: "\EA1B";
 .icon-Close-or-Reject {
   &:before {
     content: $icon-Close-or-Reject;
   }
 }
+
+
+$icon-Company: "\EA1C";
 .icon-Company {
   &:before {
     content: $icon-Company;
   }
 }
+
+
+$icon-Content-copy: "\EA1D";
 .icon-Content-copy {
   &:before {
     content: $icon-Content-copy;
   }
 }
-.icon-Dash {
-  &:before {
-    content: $icon-Dash;
-  }
-}
-.icon-Date {
-  &:before {
-    content: $icon-Date;
-  }
-}
-.icon-Decrease {
-  &:before {
-    content: $icon-Decrease;
-  }
-}
-.icon-Delete {
-  &:before {
-    content: $icon-Delete;
-  }
-}
+
+
+$icon-DOC: "\EA1E";
 .icon-DOC {
   &:before {
     content: $icon-DOC;
   }
 }
+
+
+$icon-Dash: "\EA1F";
+.icon-Dash {
+  &:before {
+    content: $icon-Dash;
+  }
+}
+
+
+$icon-Date: "\EA20";
+.icon-Date {
+  &:before {
+    content: $icon-Date;
+  }
+}
+
+
+$icon-Decrease: "\EA21";
+.icon-Decrease {
+  &:before {
+    content: $icon-Decrease;
+  }
+}
+
+
+$icon-Delete: "\EA22";
+.icon-Delete {
+  &:before {
+    content: $icon-Delete;
+  }
+}
+
+
+$icon-Document-1: "\EA23";
 .icon-Document-1 {
   &:before {
     content: $icon-Document-1;
   }
 }
+
+
+$icon-Document: "\EA24";
 .icon-Document {
   &:before {
     content: $icon-Document;
   }
 }
+
+
+$icon-Documents: "\EA25";
 .icon-Documents {
   &:before {
     content: $icon-Documents;
   }
 }
+
+
+$icon-Down: "\EA26";
 .icon-Down {
   &:before {
     content: $icon-Down;
   }
 }
+
+
+$icon-Download: "\EA27";
 .icon-Download {
   &:before {
     content: $icon-Download;
   }
 }
-.icon-Edit-filled {
-  &:before {
-    content: $icon-Edit-filled;
-  }
-}
-.icon-Edit {
-  &:before {
-    content: $icon-Edit;
-  }
-}
-.icon-Email {
-  &:before {
-    content: $icon-Email;
-  }
-}
+
+
+$icon-ESG: "\EA28";
 .icon-ESG {
   &:before {
     content: $icon-ESG;
   }
 }
+
+
+$icon-Edit-filled: "\EA29";
+.icon-Edit-filled {
+  &:before {
+    content: $icon-Edit-filled;
+  }
+}
+
+
+$icon-Edit: "\EA2A";
+.icon-Edit {
+  &:before {
+    content: $icon-Edit;
+  }
+}
+
+
+$icon-Email: "\EA2B";
+.icon-Email {
+  &:before {
+    content: $icon-Email;
+  }
+}
+
+
+$icon-Euro: "\EA2C";
 .icon-Euro {
   &:before {
     content: $icon-Euro;
   }
 }
+
+
+$icon-Exit: "\EA2D";
 .icon-Exit {
   &:before {
     content: $icon-Exit;
   }
 }
+
+
+$icon-External-link: "\EA2E";
 .icon-External-link {
   &:before {
     content: $icon-External-link;
   }
 }
+
+
+$icon-Eye-close: "\EA2F";
 .icon-Eye-close {
   &:before {
     content: $icon-Eye-close;
   }
 }
+
+
+$icon-Eye: "\EA30";
 .icon-Eye {
   &:before {
     content: $icon-Eye;
   }
 }
+
+
+$icon-Fax: "\EA31";
 .icon-Fax {
   &:before {
     content: $icon-Fax;
   }
 }
+
+
+$icon-File-upload: "\EA32";
 .icon-File-upload {
   &:before {
     content: $icon-File-upload;
   }
 }
+
+
+$icon-Fill-color: "\EA33";
 .icon-Fill-color {
   &:before {
     content: $icon-Fill-color;
   }
 }
+
+
+$icon-Filter: "\EA34";
 .icon-Filter {
   &:before {
     content: $icon-Filter;
   }
 }
+
+
+$icon-Fire: "\EA35";
 .icon-Fire {
   &:before {
     content: $icon-Fire;
   }
 }
+
+
+$icon-Folder-open: "\EA36";
 .icon-Folder-open {
   &:before {
     content: $icon-Folder-open;
   }
 }
+
+
+$icon-Github: "\EA37";
 .icon-Github {
   &:before {
     content: $icon-Github;
   }
 }
+
+
+$icon-Help: "\EA38";
 .icon-Help {
   &:before {
     content: $icon-Help;
   }
 }
+
+
+$icon-Home-filled: "\EA39";
 .icon-Home-filled {
   &:before {
     content: $icon-Home-filled;
   }
 }
+
+
+$icon-Home: "\EA3A";
 .icon-Home {
   &:before {
     content: $icon-Home;
   }
 }
+
+
+$icon-Increase: "\EA3B";
 .icon-Increase {
   &:before {
     content: $icon-Increase;
   }
 }
+
+
+$icon-Information: "\EA3C";
 .icon-Information {
   &:before {
     content: $icon-Information;
   }
 }
+
+
+$icon-Language: "\EA3D";
 .icon-Language {
   &:before {
     content: $icon-Language;
   }
 }
+
+
+$icon-Link: "\EA3E";
 .icon-Link {
   &:before {
     content: $icon-Link;
   }
 }
+
+
+$icon-Location: "\EA3F";
 .icon-Location {
   &:before {
     content: $icon-Location;
   }
 }
+
+
+$icon-Lock: "\EA40";
 .icon-Lock {
   &:before {
     content: $icon-Lock;
   }
 }
+
+
+$icon-Logout: "\EA41";
 .icon-Logout {
   &:before {
     content: $icon-Logout;
   }
 }
+
+
+$icon-Main-Component-filled: "\EA42";
 .icon-Main-Component-filled {
   &:before {
     content: $icon-Main-Component-filled;
   }
 }
+
+
+$icon-Market: "\EA43";
 .icon-Market {
   &:before {
     content: $icon-Market;
   }
 }
+
+
+$icon-Maximize-arrow: "\EA44";
 .icon-Maximize-arrow {
   &:before {
     content: $icon-Maximize-arrow;
   }
 }
+
+
+$icon-Maximize-filled: "\EA45";
 .icon-Maximize-filled {
   &:before {
     content: $icon-Maximize-filled;
   }
 }
+
+
+$icon-Minimize-arrow: "\EA46";
 .icon-Minimize-arrow {
   &:before {
     content: $icon-Minimize-arrow;
   }
 }
+
+
+$icon-Minimize-filled: "\EA47";
 .icon-Minimize-filled {
   &:before {
     content: $icon-Minimize-filled;
   }
 }
+
+
+$icon-Mobile-phone: "\EA48";
 .icon-Mobile-phone {
   &:before {
     content: $icon-Mobile-phone;
   }
 }
+
+
+$icon-More-Android: "\EA49";
 .icon-More-Android {
   &:before {
     content: $icon-More-Android;
   }
 }
+
+
+$icon-More-iOS: "\EA4A";
 .icon-More-iOS {
   &:before {
     content: $icon-More-iOS;
   }
 }
+
+
+$icon-More-Hamburger: "\EA4B";
 .icon-More-Hamburger {
   &:before {
     content: $icon-More-Hamburger;
   }
 }
+
+
+$icon-Mouse-cursor-filled: "\EA4C";
 .icon-Mouse-cursor-filled {
   &:before {
     content: $icon-Mouse-cursor-filled;
   }
 }
+
+
+$icon-Move: "\EA4D";
 .icon-Move {
   &:before {
     content: $icon-Move;
   }
 }
+
+
+$icon-News-filled: "\EA4E";
 .icon-News-filled {
   &:before {
     content: $icon-News-filled;
   }
 }
+
+
+$icon-News: "\EA4F";
 .icon-News {
   &:before {
     content: $icon-News;
   }
 }
+
+
+$icon-Next-big: "\EA50";
 .icon-Next-big {
   &:before {
     content: $icon-Next-big;
   }
 }
+
+
+$icon-Next: "\EA51";
 .icon-Next {
   &:before {
     content: $icon-Next;
   }
 }
+
+
+$icon-Notification-filled: "\EA52";
 .icon-Notification-filled {
   &:before {
     content: $icon-Notification-filled;
   }
 }
+
+
+$icon-Notification: "\EA53";
 .icon-Notification {
   &:before {
     content: $icon-Notification;
   }
 }
+
+
+$icon-One-Report: "\EA54";
 .icon-One-Report {
   &:before {
     content: $icon-One-Report;
   }
 }
-.icon-Page-filled {
-  &:before {
-    content: $icon-Page-filled;
-  }
-}
-.icon-PDF-EN {
-  &:before {
-    content: $icon-PDF-EN;
-  }
-}
-.icon-PDF-TH {
-  &:before {
-    content: $icon-PDF-TH;
-  }
-}
+
+
+$icon-PDF: "\EA55";
 .icon-PDF {
   &:before {
     content: $icon-PDF;
   }
 }
+
+
+$icon-Page-filled: "\EA56";
+.icon-Page-filled {
+  &:before {
+    content: $icon-Page-filled;
+  }
+}
+
+
+$icon-Phone-call-filled: "\EA57";
 .icon-Phone-call-filled {
   &:before {
     content: $icon-Phone-call-filled;
   }
 }
+
+
+$icon-Phone: "\EA58";
 .icon-Phone {
   &:before {
     content: $icon-Phone;
   }
 }
+
+
+$icon-Picture: "\EA59";
 .icon-Picture {
   &:before {
     content: $icon-Picture;
   }
 }
+
+
+$icon-Printer: "\EA5A";
 .icon-Printer {
   &:before {
     content: $icon-Printer;
   }
 }
+
+
+$icon-Profile-filled: "\EA5B";
 .icon-Profile-filled {
   &:before {
     content: $icon-Profile-filled;
   }
 }
+
+
+$icon-Profile: "\EA5C";
 .icon-Profile {
   &:before {
     content: $icon-Profile;
   }
 }
+
+
+$icon-Push-pin: "\EA5D";
 .icon-Push-pin {
   &:before {
     content: $icon-Push-pin;
   }
 }
+
+
+$icon-Radio-button-selected: "\EA5E";
 .icon-Radio-button-selected {
   &:before {
     content: $icon-Radio-button-selected;
   }
 }
+
+
+$icon-Radio-button: "\EA5F";
 .icon-Radio-button {
   &:before {
     content: $icon-Radio-button;
   }
 }
+
+
+$icon-Reader: "\EA60";
 .icon-Reader {
   &:before {
     content: $icon-Reader;
   }
 }
+
+
+$icon-Refresh: "\EA61";
 .icon-Refresh {
   &:before {
     content: $icon-Refresh;
   }
 }
+
+
+$icon-Search: "\EA62";
 .icon-Search {
   &:before {
     content: $icon-Search;
   }
 }
+
+
+$icon-Set-link: "\EA63";
 .icon-Set-link {
   &:before {
     content: $icon-Set-link;
   }
 }
+
+
+$icon-Set: "\EA64";
 .icon-Set {
   &:before {
     content: $icon-Set;
   }
 }
+
+
+$icon-Setting: "\EA65";
 .icon-Setting {
   &:before {
     content: $icon-Setting;
   }
 }
+
+
+$icon-Settings-suggest: "\EA66";
 .icon-Settings-suggest {
   &:before {
     content: $icon-Settings-suggest;
   }
 }
+
+
+$icon-Sorting: "\EA67";
 .icon-Sorting {
   &:before {
     content: $icon-Sorting;
   }
 }
+
+
+$icon-Star-Filled: "\EA68";
 .icon-Star-Filled {
   &:before {
     content: $icon-Star-Filled;
   }
 }
+
+
+$icon-Star: "\EA69";
 .icon-Star {
   &:before {
     content: $icon-Star;
   }
 }
+
+
+$icon-Status-circle: "\EA6A";
 .icon-Status-circle {
   &:before {
     content: $icon-Status-circle;
   }
 }
+
+
+$icon-Suitcase: "\EA6B";
 .icon-Suitcase {
   &:before {
     content: $icon-Suitcase;
   }
 }
+
+
+$icon-Supervisor: "\EA6C";
 .icon-Supervisor {
   &:before {
     content: $icon-Supervisor;
   }
 }
+
+
+$icon-Sushi: "\EA6D";
 .icon-Sushi {
   &:before {
     content: $icon-Sushi;
   }
 }
-.icon-Table-view {
-  &:before {
-    content: $icon-Table-view;
-  }
-}
-.icon-Table {
-  &:before {
-    content: $icon-Table;
-  }
-}
-.icon-Terrain {
-  &:before {
-    content: $icon-Terrain;
-  }
-}
-.icon-Thumb-up-filled {
-  &:before {
-    content: $icon-Thumb-up-filled;
-  }
-}
-.icon-Thumbnail {
-  &:before {
-    content: $icon-Thumbnail;
-  }
-}
-.icon-Time {
-  &:before {
-    content: $icon-Time;
-  }
-}
-.icon-TXT-EN {
-  &:before {
-    content: $icon-TXT-EN;
-  }
-}
-.icon-TXT-TH {
-  &:before {
-    content: $icon-TXT-TH;
-  }
-}
+
+
+$icon-TXT: "\EA6E";
 .icon-TXT {
   &:before {
     content: $icon-TXT;
   }
 }
+
+
+$icon-Table-view: "\EA6F";
+.icon-Table-view {
+  &:before {
+    content: $icon-Table-view;
+  }
+}
+
+
+$icon-Table: "\EA70";
+.icon-Table {
+  &:before {
+    content: $icon-Table;
+  }
+}
+
+
+$icon-Terrain: "\EA71";
+.icon-Terrain {
+  &:before {
+    content: $icon-Terrain;
+  }
+}
+
+
+$icon-Thumb-up-filled: "\EA72";
+.icon-Thumb-up-filled {
+  &:before {
+    content: $icon-Thumb-up-filled;
+  }
+}
+
+
+$icon-Thumbnail: "\EA73";
+.icon-Thumbnail {
+  &:before {
+    content: $icon-Thumbnail;
+  }
+}
+
+
+$icon-Time: "\EA74";
+.icon-Time {
+  &:before {
+    content: $icon-Time;
+  }
+}
+
+
+$icon-Unchange: "\EA75";
 .icon-Unchange {
   &:before {
     content: $icon-Unchange;
   }
 }
+
+
+$icon-Underline: "\EA76";
 .icon-Underline {
   &:before {
     content: $icon-Underline;
   }
 }
+
+
+$icon-Up: "\EA77";
 .icon-Up {
   &:before {
     content: $icon-Up;
   }
 }
+
+
+$icon-Video: "\EA78";
 .icon-Video {
   &:before {
     content: $icon-Video;
   }
 }
+
+
+$icon-Vpn-key: "\EA79";
 .icon-Vpn-key {
   &:before {
     content: $icon-Vpn-key;
   }
 }
+
+
+$icon-Waiting: "\EA7A";
 .icon-Waiting {
   &:before {
     content: $icon-Waiting;
   }
 }
+
+
+$icon-Warning: "\EA7B";
 .icon-Warning {
   &:before {
     content: $icon-Warning;
   }
 }
+
+
+$icon-Web: "\EA7C";
 .icon-Web {
   &:before {
     content: $icon-Web;
   }
 }
+
+
+$icon-XML: "\EA7D";
 .icon-XML {
   &:before {
     content: $icon-XML;
   }
 }
+
+
+$icon-Zoom-in: "\EA7E";
 .icon-Zoom-in {
   &:before {
     content: $icon-Zoom-in;
   }
 }
+
+
+$icon-Zoom-out: "\EA7F";
 .icon-Zoom-out {
   &:before {
     content: $icon-Zoom-out;
   }
 }
 
+
+$icon-cancel-filled: "\EA80";
+.icon-cancel-filled {
+  &:before {
+    content: $icon-cancel-filled;
+  }
+}

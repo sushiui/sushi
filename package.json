@@ -17,6 +17,10 @@
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-pretty-html": "^2.0.10",
-    "sass": "^1.42.1"
+    "sass": "^1.42.1",
+    "gulp-iconfont": "^11.0.1",
+    "async": "^3.2.2",
+    "gulp-consolidate": "^0.2.0",
+    "gulp-iconfont-css": "^3.0.0"
   }
 }

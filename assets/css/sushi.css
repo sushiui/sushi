@@ -877,6 +877,21 @@ UL.ss-menu-woven > li {
 
 UL.ss-menu-woven > li.selected {
   --background: #fef3e6;
+  position: relative;
+}
+
+UL.ss-menu-woven > li.selected:after {
+  content: "";
+  position: absolute;
+  background-color: #fcb034;
+  width: 4px;
+  border-radius: 4px;
+  height: 1.25rem;
+  right: 4px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 UL.ss-menu-woven > li:first-child {

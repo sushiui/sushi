@@ -1,0 +1,32 @@
+extends ../base/base.pug
+
+block append page-variable
+  - var current = "header"
+
+block content
+
+  H3.page-header Page Header
+
+  .card.content
+    .page-header
+
+      H3
+        span(class='ss-icon-Back-iOS')
+        | Page Header but on card
+
+    | นอกจากสถานการณ์การแพร่ระบาดของโควิดแล้ว สิ่งที่นักลงทุนจากทั่วโลกให้ความสนใจมากขึ้น
+    | ในปีที่ผ่านมาคือ การลงทุนที่ให้ความความสำคัญในเรื่องสิ่งแวดล้อม สังคม และธรรมาภิบาล
+    | หรือที่เรียกสั้น ๆ ว่า ESG (Environment, Social, Governance) โดยในสิ้นปี 2563
+    | มีการออกตราสารหนี้ในลักษณะนี้ทำสถิติสูงสุดกว่า 2.7 แสนล้านดอลลาร์สหรัฐฯ และมีแนวโน้มเพิ่มขึ้น
+    | ต่อเนื่อง คาดว่าในปีนี้จะเพิ่มเกือบเท่าตัวอยู่ที่ 4.5 แสนล้านดอลลาร์สหรัฐฯ บางขุนพรหมชวนคิดในวันนี้จึงขอใช้โอกาสนี้พูดถึงประเด็นนี้ค่ะ
+
+  .card
+    .card-header
+      H3 Card Header
+
+    .content
+
+      .form-header Form Header for form
+
+      | Form header is second level of header after Card header
+

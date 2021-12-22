@@ -551,12 +551,6 @@ BODY, INPUT, TEXTAREA, BUTTON {
   font-size: 1em;
 }
 
-H3 {
-  font-weight: 800;
-  font-size: 1.5em;
-  line-height: 145%;
-}
-
 BODY {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -586,8 +580,11 @@ TABLE TH, TABLE TD {
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  padding: 16px;
   margin: 28px;
+}
+
+.card.padding {
+  padding: 16px;
   background-color: #FFFFFF;
 }
 
@@ -646,9 +643,6 @@ TABLE TH, TABLE TD {
 }
 
 .content {
-  -webkit-box-flex: 0;
-  -ms-flex: none;
-  flex: none;
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
@@ -1060,4 +1054,26 @@ UL.ss-menu-woven .relative-box .line .line-background {
   font-family: "SET-icon";
   padding-left: 10px !important;
   vertical-align: middle;
+}
+
+H3 {
+  font-weight: 800;
+  font-size: 1.5em;
+  line-height: 145%;
+}
+
+H3.page-header {
+  Margin: 28px 28px 0px 28px;
+}
+
+.card .page-header {
+  padding: 16px;
+}
+
+.card .page-header H3 {
+  Margin: 0px;
+}
+
+.card.content, .card .content {
+  background-color: #FFFFFF;
 }

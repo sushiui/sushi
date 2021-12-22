@@ -1,0 +1,22 @@
+H3 {
+  font-weight: 800;
+  font-size: $font-size-h3;
+  line-height: 145%;
+}
+
+H3.page-header {
+  Margin: 28px 28px 0px 28px;
+}
+
+.card {
+  .page-header {
+    padding: 16px;
+    H3 {
+      Margin: 0px;
+    }
+  }
+
+  &.content, .content {
+    background-color: $primary-white;
+  }
+}

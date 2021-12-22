@@ -13,12 +13,6 @@ BODY, INPUT, TEXTAREA, BUTTON {
   font-size: $font-size-body;
 }
 
-H3 {
-  font-weight: 800;
-  font-size: $font-size-h3;
-  line-height: 145%;
-}
-
 BODY {
   display: flex;
   flex-direction: column;
@@ -42,9 +36,12 @@ TABLE {
 .card {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   border-radius: $radius;
-  padding: 16px;
   margin: 28px;
-  background-color: $primary-white;
+
+  &.padding {
+    padding: 16px;
+    background-color: $primary-white;
+  }
 }
 
 .header {
@@ -78,8 +75,8 @@ TABLE {
 }
 
 .content {
-  flex: none;
   order: 1;
   flex-grow: 1;
   align-self: stretch;
+
 }

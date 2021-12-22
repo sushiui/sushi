@@ -47,21 +47,15 @@ a.ss-link {
 
 BUTTON, a.ss-button, a.ss-link {
   display: inline-flex;
-  flex-direction: row;
-  flex-basis: auto;
   align-items: center;
   padding: 6px 12px;
-  margin: 0 -4px;
   gap: 4px;
-  position: relative;
   width: fit-content;
   border: none;
   outline: var(--outline);
   text-decoration: none;
   border-radius: 4px;
   cursor: pointer;
-  float: left;
-
   color: var(--color);
   background: var(--background);
 

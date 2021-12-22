@@ -1,11 +1,12 @@
 # sushi
 Sushi is Design System build for SET
 
-## Demo
+## Preview
 
-https://apirak.com/sushi/
+![Sushi screen](assets/images/preview.png)
 
-_will move to SET domain when ready_
+https://sushidesignsystem.github.io/sushi
+
 
 ## Install
 
@@ -23,9 +24,12 @@ If you don't have npm
 * Execute `npm start` or `gulp`.
 * Open http://localhost:8080/ on your web browser.
 
-## Build
+## Compile icon SET
 
-* Execute `gulp build`.
+* Prepare SVG icons in `/assets/icons`
+* Execute `gulp compile-font-icon`
+
+New fonts (eot, ttf and woff) will generate in `/assets/fonts` along with `/src/scss/icon_font.scss`
 
 ## Folder Structure
 
@@ -33,7 +37,7 @@ If you don't have npm
 + assets : Asset after compiled
   + css
   + fonts
-  + images 
+  + images
   + js
 + src
   + pug
@@ -56,11 +60,11 @@ If you don't have npm
 
 https://rscss.apirak.com/
 
-![This is an image](assets/images/rscss.png)
+![RSCSS Website](assets/images/rscss.png)
 
 ## Why Pug & SCSS
 
-It's not just about beautiful syntax. Pug and SCSS allow us to write modular and reusable markup. 
+It's not just about beautiful syntax. Pug and SCSS allow us to write modular and reusable markup.
 
 * Learn Pug https://www.sitepoint.com/a-beginners-guide-to-pug/
 * Learn SASS https://sass-lang.com/guide

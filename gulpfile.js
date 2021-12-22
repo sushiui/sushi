@@ -76,9 +76,9 @@ function views() {
 }
 
 
-var fontName = 'SET';
+var fontName = 'SET-icon';
 
-gulp.task('Iconfont', function(){
+gulp.task('compile-icon-font', function(){
   return gulp.src(['assets/icons/*.svg'])
     .pipe(iconfont({
       fontName: fontName, // required
@@ -91,22 +91,17 @@ gulp.task('Iconfont', function(){
       normalize: true,
       descent: 60
     }))
-      .on('glyphs', function(glyphs, options) {
-
-        console.log("start");
-
-        gulp.src('templates/icon_font.scss')
-          .pipe(consolidate('lodash', {
-            glyphs: glyphs,
-            fontName: fontName,
-            fontPath: '../fonts',
-            className: 'icon',
-          }))
-          .pipe(gulp.dest('src/scss/'));
-
-        console.log(glyphs, options);
-        console.log("stop");
-      })
+    .on('glyphs', function(glyphs, options) {
+      gulp.src('templates/icon_font.scss')
+        .pipe(consolidate('lodash', {
+          glyphs: glyphs,
+          fontName: fontName,
+          fontPath: '../fonts',
+          className: 'ss-icon',
+          cacheBuster: (Math.random() + 1).toString(36).substring(7)
+        }))
+        .pipe(gulp.dest('src/scss/'));
+    })
     .pipe(gulp.dest('assets/fonts'));
 });
 

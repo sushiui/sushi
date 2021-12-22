@@ -580,6 +580,7 @@ TABLE TH, TABLE TD {
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+  overflow: hidden;
   margin: 28px;
 }
 
@@ -651,6 +652,7 @@ TABLE TH, TABLE TD {
   flex-grow: 1;
   -ms-flex-item-align: stretch;
   align-self: stretch;
+  background-color: #857FB6;
 }
 
 BUTTON, a.ss-button {
@@ -1072,6 +1074,23 @@ H3.page-header {
 
 .card .page-header H3 {
   Margin: 0px;
+}
+
+.card .card-header {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card .card-header span.label {
+  height: 40px;
+}
+
+.card H4 {
+  font-weight: bold;
+  margin: 0px 16px;
+}
+
+.card p {
+  margin: 0px 16px;
 }
 
 .card.content, .card .content {

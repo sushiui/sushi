@@ -36,6 +36,7 @@ TABLE {
 .card {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   border-radius: $radius;
+  overflow: hidden;
   margin: 28px;
 
   &.padding {
@@ -78,5 +79,5 @@ TABLE {
   order: 1;
   flex-grow: 1;
   align-self: stretch;
-
+  background-color: #857FB6;
 }

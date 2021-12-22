@@ -16,6 +16,23 @@ H3.page-header {
     }
   }
 
+  .card-header {
+    background-color: rgba(255, 255, 255, 0.8);
+    span.label {
+      height: 40px;
+    }
+  }
+
+  H4 {
+    font-weight: bold;
+    margin: 0px 16px;
+
+  }
+
+  p {
+    margin: 0px 16px;
+  }
+
   &.content, .content {
     background-color: $primary-white;
   }

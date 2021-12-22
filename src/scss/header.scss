@@ -1,0 +1,71 @@
+H3 {
+  font-weight: 800;
+  font-size: $font-size-h3;
+  line-height: 145%;
+}
+
+H3.page-header {
+  Margin: 28px 28px 0px 28px;
+}
+
+.card {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border-radius: $radius;
+  overflow: hidden;
+  margin: 28px;
+
+  .page-header {
+    padding: 0px 16px 0px 16px;
+    H3 {
+      Margin: 0px;
+    }
+  }
+
+  .card-header {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.8);
+    gap: 8px;
+    padding: 4px 16px;
+    align-items: center;
+
+    span.label {
+      display: inline-flex;
+      align-items: center;
+      height: 30px;
+      flex-grow: 1;
+      font-weight: bold;
+    }
+  }
+
+  H4 {
+    font-weight: bold;
+    margin: 0px $common-gap;
+
+  }
+
+  p {
+    margin: 0px $common-gap;
+  }
+
+  &.padding {
+    padding: $common-gap;
+    background-color: $transparent-white-96;
+  }
+
+  &.content, .content {
+    background-color: $primary-white;
+    padding: $common-gap 0px;
+    display: flex;
+    flex-direction: column;
+    gap: $common-gap;
+    border-top: 1px solid $transparent-black-6;
+
+    &.padding-side {
+      padding: 0px $common-gap;
+    }
+
+    &.padding {
+      padding: $common-gap;
+    }
+  }
+}

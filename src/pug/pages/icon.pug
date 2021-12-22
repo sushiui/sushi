@@ -140,44 +140,45 @@ block content
       "Zoom-in",
       "Zoom-out"]
 
-  .card
-    h1 Icon
+  H3.page-header Icon
 
   .card
+    .card-header
+      span.label All icon
 
-    h3 All icon
+    .content.padding
+      pre
+        code.language-html
+          |
+          | &lt;span class="ss-icon-Access-alarm">&lt;/span>
+          | &nbsp;
 
-    pre
-      code.language-html
-        |
-        | &lt;span class="icon-Access-alarm">&lt;/span>
-        | &nbsp;
-
-    .show-icons
-      each fileName in iconFiles
-        .each-icon
-          span(class="ss-icon-"+fileName)
-          br
-          = "ss-icon-"+fileName
+      .show-icons
+        each fileName in iconFiles
+          .each-icon
+            span(class="ss-icon-"+fileName)
+            br
+            = "ss-icon-"+fileName
 
   .card
+    .card-header
+      span.label Font icon from css
 
-    h3 Font icon from css
+    .content.padding
+      pre
+        code.language-css
+          |
+          | .card {
+          |   .icon-in-css:after {
+          |     content: ss-icon-Close-or-Reject;
+          |     font-family: 'ss-SET';
+          |     padding-left: 10px !important;
+          |     vertical-align: middle;
+          |   }
+          | }
+          | &nbsp;
 
-    pre
-      code.language-css
-        |
-        | .card {
-        |   .icon-in-css:after {
-        |     content: $icon-Close-or-Reject;
-        |     font-family: 'ss-SET';
-        |     padding-left: 10px !important;
-        |     vertical-align: middle;
-        |   }
-        | }
-        | &nbsp;
-
-    | Show x icon ->
-
-    span.icon-in-css
+      span
+        | Show x icon ->
+        span.sample-icon-in-css
 

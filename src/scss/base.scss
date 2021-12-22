@@ -13,12 +13,6 @@ BODY, INPUT, TEXTAREA, BUTTON {
   font-size: $font-size-body;
 }
 
-H3 {
-  font-weight: 800;
-  font-size: $font-size-h3;
-  line-height: 145%;
-}
-
 BODY {
   display: flex;
   flex-direction: column;
@@ -30,6 +24,10 @@ BODY {
 TABLE {
   border: 1px solid #EEE;
 
+  TH {
+    text-align: left;
+  }
+
   TH, TD {
     padding: 20px;
   }
@@ -37,14 +35,6 @@ TABLE {
 
 .small {
   font-size: 0.429em;
-}
-
-.card {
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-  border-radius: $radius;
-  padding: 16px;
-  margin: 28px;
-  background-color: $primary-white;
 }
 
 .header {
@@ -71,14 +61,13 @@ TABLE {
   flex: none;
   order: 0;
   flex-grow: 0;
-  background-color: $transparent-white-80;
+  background-color: $transparent-white-96;
   align-self: stretch;
   width: 200px;
   box-shadow: $shadow-10;
 }
 
 .content {
-  flex: none;
   order: 1;
   flex-grow: 1;
   align-self: stretch;

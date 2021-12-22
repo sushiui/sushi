@@ -92,9 +92,6 @@ gulp.task('Iconfont', function(){
       descent: 60
     }))
       .on('glyphs', function(glyphs, options) {
-
-        console.log("start");
-
         gulp.src('templates/icon_font.scss')
           .pipe(consolidate('lodash', {
             glyphs: glyphs,
@@ -103,9 +100,6 @@ gulp.task('Iconfont', function(){
             className: 'icon',
           }))
           .pipe(gulp.dest('src/scss/'));
-
-        console.log(glyphs, options);
-        console.log("stop");
       })
     .pipe(gulp.dest('assets/fonts'));
 });

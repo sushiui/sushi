@@ -710,19 +710,11 @@ BUTTON, a.ss-button, a.ss-link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   padding: 6px 12px;
-  margin: 0 -4px;
   gap: 4px;
-  position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -731,7 +723,6 @@ BUTTON, a.ss-button, a.ss-link {
   text-decoration: none;
   border-radius: 4px;
   cursor: pointer;
-  float: left;
   color: var(--color);
   background: var(--background);
 }

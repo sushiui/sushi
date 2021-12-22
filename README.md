@@ -24,9 +24,12 @@ If you don't have npm
 * Execute `npm start` or `gulp`.
 * Open http://localhost:8080/ on your web browser.
 
-## Build
+## Compile icon SET
 
-* Execute `gulp build`.
+* Prepare SVG icons in `/assets/icons`
+* Execute `gulp compile-font-icon`
+
+New fonts (eot, ttf and woff) will generate in `/assets/fonts` along with `/src/scss/icon_font.scss`
 
 ## Folder Structure
 

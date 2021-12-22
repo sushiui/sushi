@@ -1,16 +1,16 @@
 @font-face {
-  font-family: "SET";
+  font-family: "SET-icon";
   src:
-    url('../fonts/SET.ttf?355p9m') format('truetype'),
-    url('../fonts/SET.woff?355p9m') format('woff');
+    url('../fonts/SET-icon.ttf?5lopf') format('truetype'),
+    url('../fonts/SET-icon.woff?5lopf') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="ss-icon-"], [class*=" ss-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'SET' !important;
+  font-family: 'SET-icon' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,1026 +25,1026 @@
 
 
 
-
-$icon-Access-alarm: "\EA01";
-.icon-Access-alarm {
+  
+$ss-icon-Access-alarm: "\EA01";
+.ss-icon-Access-alarm {
   &:before {
-    content: $icon-Access-alarm;
+    content: $ss-icon-Access-alarm;
   }
 }
-
 
-$icon-Account-circle: "\EA02";
-.icon-Account-circle {
+  
+$ss-icon-Account-circle: "\EA02";
+.ss-icon-Account-circle {
   &:before {
-    content: $icon-Account-circle;
+    content: $ss-icon-Account-circle;
   }
 }
 
-
-$icon-Add: "\EA03";
-.icon-Add {
+  
+$ss-icon-Add: "\EA03";
+.ss-icon-Add {
   &:before {
-    content: $icon-Add;
+    content: $ss-icon-Add;
   }
 }
-
 
-$icon-Alert: "\EA04";
-.icon-Alert {
+  
+$ss-icon-Alert: "\EA04";
+.ss-icon-Alert {
   &:before {
-    content: $icon-Alert;
+    content: $ss-icon-Alert;
   }
 }
 
-
-$icon-Approve: "\EA05";
-.icon-Approve {
+  
+$ss-icon-Approve: "\EA05";
+.ss-icon-Approve {
   &:before {
-    content: $icon-Approve;
+    content: $ss-icon-Approve;
   }
 }
-
 
-$icon-Approves-filled: "\EA06";
-.icon-Approves-filled {
+  
+$ss-icon-Approves-filled: "\EA06";
+.ss-icon-Approves-filled {
   &:before {
-    content: $icon-Approves-filled;
+    content: $ss-icon-Approves-filled;
   }
 }
 
-
-$icon-Approves: "\EA07";
-.icon-Approves {
+  
+$ss-icon-Approves: "\EA07";
+.ss-icon-Approves {
   &:before {
-    content: $icon-Approves;
+    content: $ss-icon-Approves;
   }
 }
-
 
-$icon-Assign: "\EA08";
-.icon-Assign {
+  
+$ss-icon-Assign: "\EA08";
+.ss-icon-Assign {
   &:before {
-    content: $icon-Assign;
+    content: $ss-icon-Assign;
   }
 }
 
-
-$icon-Attach-Money: "\EA09";
-.icon-Attach-Money {
+  
+$ss-icon-Attach-Money: "\EA09";
+.ss-icon-Attach-Money {
   &:before {
-    content: $icon-Attach-Money;
+    content: $ss-icon-Attach-Money;
   }
 }
-
 
-$icon-Attachment: "\EA0A";
-.icon-Attachment {
+  
+$ss-icon-Attachment: "\EA0A";
+.ss-icon-Attachment {
   &:before {
-    content: $icon-Attachment;
+    content: $ss-icon-Attachment;
   }
 }
 
-
-$icon-Auditor: "\EA0B";
-.icon-Auditor {
+  
+$ss-icon-Auditor: "\EA0B";
+.ss-icon-Auditor {
   &:before {
-    content: $icon-Auditor;
+    content: $ss-icon-Auditor;
   }
 }
-
 
-$icon-Back-Android: "\EA0C";
-.icon-Back-Android {
+  
+$ss-icon-Back-Android: "\EA0C";
+.ss-icon-Back-Android {
   &:before {
-    content: $icon-Back-Android;
+    content: $ss-icon-Back-Android;
   }
 }
 
-
-$icon-Back-iOS: "\EA0D";
-.icon-Back-iOS {
+  
+$ss-icon-Back-iOS: "\EA0D";
+.ss-icon-Back-iOS {
   &:before {
-    content: $icon-Back-iOS;
+    content: $ss-icon-Back-iOS;
   }
 }
-
 
-$icon-Back: "\EA0E";
-.icon-Back {
+  
+$ss-icon-Back: "\EA0E";
+.ss-icon-Back {
   &:before {
-    content: $icon-Back;
+    content: $ss-icon-Back;
   }
 }
 
-
-$icon-Bookmark: "\EA0F";
-.icon-Bookmark {
+  
+$ss-icon-Bookmark: "\EA0F";
+.ss-icon-Bookmark {
   &:before {
-    content: $icon-Bookmark;
+    content: $ss-icon-Bookmark;
   }
 }
-
 
-$icon-Bookmarks-filled: "\EA10";
-.icon-Bookmarks-filled {
+  
+$ss-icon-Bookmarks-filled: "\EA10";
+.ss-icon-Bookmarks-filled {
   &:before {
-    content: $icon-Bookmarks-filled;
+    content: $ss-icon-Bookmarks-filled;
   }
 }
 
-
-$icon-Business: "\EA11";
-.icon-Business {
+  
+$ss-icon-Business: "\EA11";
+.ss-icon-Business {
   &:before {
-    content: $icon-Business;
+    content: $ss-icon-Business;
   }
 }
-
 
-$icon-Calendar: "\EA12";
-.icon-Calendar {
+  
+$ss-icon-Calendar: "\EA12";
+.ss-icon-Calendar {
   &:before {
-    content: $icon-Calendar;
+    content: $ss-icon-Calendar;
   }
 }
 
-
-$icon-Callcenter: "\EA13";
-.icon-Callcenter {
+  
+$ss-icon-Callcenter: "\EA13";
+.ss-icon-Callcenter {
   &:before {
-    content: $icon-Callcenter;
+    content: $ss-icon-Callcenter;
   }
 }
-
 
-$icon-Category: "\EA14";
-.icon-Category {
+  
+$ss-icon-Category: "\EA14";
+.ss-icon-Category {
   &:before {
-    content: $icon-Category;
+    content: $ss-icon-Category;
   }
 }
 
-
-$icon-Check-list: "\EA15";
-.icon-Check-list {
+  
+$ss-icon-Check-list: "\EA15";
+.ss-icon-Check-list {
   &:before {
-    content: $icon-Check-list;
+    content: $ss-icon-Check-list;
   }
 }
-
 
-$icon-Checkbox-selected: "\EA16";
-.icon-Checkbox-selected {
+  
+$ss-icon-Checkbox-selected: "\EA16";
+.ss-icon-Checkbox-selected {
   &:before {
-    content: $icon-Checkbox-selected;
+    content: $ss-icon-Checkbox-selected;
   }
 }
 
-
-$icon-Checkbox: "\EA17";
-.icon-Checkbox {
+  
+$ss-icon-Checkbox: "\EA17";
+.ss-icon-Checkbox {
   &:before {
-    content: $icon-Checkbox;
+    content: $ss-icon-Checkbox;
   }
 }
-
 
-$icon-Checked: "\EA18";
-.icon-Checked {
+  
+$ss-icon-Checked: "\EA18";
+.ss-icon-Checked {
   &:before {
-    content: $icon-Checked;
+    content: $ss-icon-Checked;
   }
 }
 
-
-$icon-Circle-filled: "\EA19";
-.icon-Circle-filled {
+  
+$ss-icon-Circle-filled: "\EA19";
+.ss-icon-Circle-filled {
   &:before {
-    content: $icon-Circle-filled;
+    content: $ss-icon-Circle-filled;
   }
 }
-
 
-$icon-Classroom: "\EA1A";
-.icon-Classroom {
+  
+$ss-icon-Classroom: "\EA1A";
+.ss-icon-Classroom {
   &:before {
-    content: $icon-Classroom;
+    content: $ss-icon-Classroom;
   }
 }
 
-
-$icon-Close-or-Reject: "\EA1B";
-.icon-Close-or-Reject {
+  
+$ss-icon-Close-or-Reject: "\EA1B";
+.ss-icon-Close-or-Reject {
   &:before {
-    content: $icon-Close-or-Reject;
+    content: $ss-icon-Close-or-Reject;
   }
 }
-
 
-$icon-Company: "\EA1C";
-.icon-Company {
+  
+$ss-icon-Company: "\EA1C";
+.ss-icon-Company {
   &:before {
-    content: $icon-Company;
+    content: $ss-icon-Company;
   }
 }
 
-
-$icon-Content-copy: "\EA1D";
-.icon-Content-copy {
+  
+$ss-icon-Content-copy: "\EA1D";
+.ss-icon-Content-copy {
   &:before {
-    content: $icon-Content-copy;
+    content: $ss-icon-Content-copy;
   }
 }
-
 
-$icon-DOC: "\EA1E";
-.icon-DOC {
+  
+$ss-icon-DOC: "\EA1E";
+.ss-icon-DOC {
   &:before {
-    content: $icon-DOC;
+    content: $ss-icon-DOC;
   }
 }
 
-
-$icon-Dash: "\EA1F";
-.icon-Dash {
+  
+$ss-icon-Dash: "\EA1F";
+.ss-icon-Dash {
   &:before {
-    content: $icon-Dash;
+    content: $ss-icon-Dash;
   }
 }
-
 
-$icon-Date: "\EA20";
-.icon-Date {
+  
+$ss-icon-Date: "\EA20";
+.ss-icon-Date {
   &:before {
-    content: $icon-Date;
+    content: $ss-icon-Date;
   }
 }
 
-
-$icon-Decrease: "\EA21";
-.icon-Decrease {
+  
+$ss-icon-Decrease: "\EA21";
+.ss-icon-Decrease {
   &:before {
-    content: $icon-Decrease;
+    content: $ss-icon-Decrease;
   }
 }
-
 
-$icon-Delete: "\EA22";
-.icon-Delete {
+  
+$ss-icon-Delete: "\EA22";
+.ss-icon-Delete {
   &:before {
-    content: $icon-Delete;
+    content: $ss-icon-Delete;
   }
 }
 
-
-$icon-Document-1: "\EA23";
-.icon-Document-1 {
+  
+$ss-icon-Document-1: "\EA23";
+.ss-icon-Document-1 {
   &:before {
-    content: $icon-Document-1;
+    content: $ss-icon-Document-1;
   }
 }
-
 
-$icon-Document: "\EA24";
-.icon-Document {
+  
+$ss-icon-Document: "\EA24";
+.ss-icon-Document {
   &:before {
-    content: $icon-Document;
+    content: $ss-icon-Document;
   }
 }
 
-
-$icon-Documents: "\EA25";
-.icon-Documents {
+  
+$ss-icon-Documents: "\EA25";
+.ss-icon-Documents {
   &:before {
-    content: $icon-Documents;
+    content: $ss-icon-Documents;
   }
 }
-
 
-$icon-Down: "\EA26";
-.icon-Down {
+  
+$ss-icon-Down: "\EA26";
+.ss-icon-Down {
   &:before {
-    content: $icon-Down;
+    content: $ss-icon-Down;
   }
 }
 
-
-$icon-Download: "\EA27";
-.icon-Download {
+  
+$ss-icon-Download: "\EA27";
+.ss-icon-Download {
   &:before {
-    content: $icon-Download;
+    content: $ss-icon-Download;
   }
 }
-
 
-$icon-ESG: "\EA28";
-.icon-ESG {
+  
+$ss-icon-ESG: "\EA28";
+.ss-icon-ESG {
   &:before {
-    content: $icon-ESG;
+    content: $ss-icon-ESG;
   }
 }
 
-
-$icon-Edit-filled: "\EA29";
-.icon-Edit-filled {
+  
+$ss-icon-Edit-filled: "\EA29";
+.ss-icon-Edit-filled {
   &:before {
-    content: $icon-Edit-filled;
+    content: $ss-icon-Edit-filled;
   }
 }
-
 
-$icon-Edit: "\EA2A";
-.icon-Edit {
+  
+$ss-icon-Edit: "\EA2A";
+.ss-icon-Edit {
   &:before {
-    content: $icon-Edit;
+    content: $ss-icon-Edit;
   }
 }
 
-
-$icon-Email: "\EA2B";
-.icon-Email {
+  
+$ss-icon-Email: "\EA2B";
+.ss-icon-Email {
   &:before {
-    content: $icon-Email;
+    content: $ss-icon-Email;
   }
 }
-
 
-$icon-Euro: "\EA2C";
-.icon-Euro {
+  
+$ss-icon-Euro: "\EA2C";
+.ss-icon-Euro {
   &:before {
-    content: $icon-Euro;
+    content: $ss-icon-Euro;
   }
 }
 
-
-$icon-Exit: "\EA2D";
-.icon-Exit {
+  
+$ss-icon-Exit: "\EA2D";
+.ss-icon-Exit {
   &:before {
-    content: $icon-Exit;
+    content: $ss-icon-Exit;
   }
 }
-
 
-$icon-External-link: "\EA2E";
-.icon-External-link {
+  
+$ss-icon-External-link: "\EA2E";
+.ss-icon-External-link {
   &:before {
-    content: $icon-External-link;
+    content: $ss-icon-External-link;
   }
 }
 
-
-$icon-Eye-close: "\EA2F";
-.icon-Eye-close {
+  
+$ss-icon-Eye-close: "\EA2F";
+.ss-icon-Eye-close {
   &:before {
-    content: $icon-Eye-close;
+    content: $ss-icon-Eye-close;
   }
 }
-
 
-$icon-Eye: "\EA30";
-.icon-Eye {
+  
+$ss-icon-Eye: "\EA30";
+.ss-icon-Eye {
   &:before {
-    content: $icon-Eye;
+    content: $ss-icon-Eye;
   }
 }
 
-
-$icon-Fax: "\EA31";
-.icon-Fax {
+  
+$ss-icon-Fax: "\EA31";
+.ss-icon-Fax {
   &:before {
-    content: $icon-Fax;
+    content: $ss-icon-Fax;
   }
 }
-
 
-$icon-File-upload: "\EA32";
-.icon-File-upload {
+  
+$ss-icon-File-upload: "\EA32";
+.ss-icon-File-upload {
   &:before {
-    content: $icon-File-upload;
+    content: $ss-icon-File-upload;
   }
 }
 
-
-$icon-Fill-color: "\EA33";
-.icon-Fill-color {
+  
+$ss-icon-Fill-color: "\EA33";
+.ss-icon-Fill-color {
   &:before {
-    content: $icon-Fill-color;
+    content: $ss-icon-Fill-color;
   }
 }
-
 
-$icon-Filter: "\EA34";
-.icon-Filter {
+  
+$ss-icon-Filter: "\EA34";
+.ss-icon-Filter {
   &:before {
-    content: $icon-Filter;
+    content: $ss-icon-Filter;
   }
 }
 
-
-$icon-Fire: "\EA35";
-.icon-Fire {
+  
+$ss-icon-Fire: "\EA35";
+.ss-icon-Fire {
   &:before {
-    content: $icon-Fire;
+    content: $ss-icon-Fire;
   }
 }
-
 
-$icon-Folder-open: "\EA36";
-.icon-Folder-open {
+  
+$ss-icon-Folder-open: "\EA36";
+.ss-icon-Folder-open {
   &:before {
-    content: $icon-Folder-open;
+    content: $ss-icon-Folder-open;
   }
 }
 
-
-$icon-Github: "\EA37";
-.icon-Github {
+  
+$ss-icon-Github: "\EA37";
+.ss-icon-Github {
   &:before {
-    content: $icon-Github;
+    content: $ss-icon-Github;
   }
 }
-
 
-$icon-Help: "\EA38";
-.icon-Help {
+  
+$ss-icon-Help: "\EA38";
+.ss-icon-Help {
   &:before {
-    content: $icon-Help;
+    content: $ss-icon-Help;
   }
 }
 
-
-$icon-Home-filled: "\EA39";
-.icon-Home-filled {
+  
+$ss-icon-Home-filled: "\EA39";
+.ss-icon-Home-filled {
   &:before {
-    content: $icon-Home-filled;
+    content: $ss-icon-Home-filled;
   }
 }
-
 
-$icon-Home: "\EA3A";
-.icon-Home {
+  
+$ss-icon-Home: "\EA3A";
+.ss-icon-Home {
   &:before {
-    content: $icon-Home;
+    content: $ss-icon-Home;
   }
 }
 
-
-$icon-Increase: "\EA3B";
-.icon-Increase {
+  
+$ss-icon-Increase: "\EA3B";
+.ss-icon-Increase {
   &:before {
-    content: $icon-Increase;
+    content: $ss-icon-Increase;
   }
 }
-
 
-$icon-Information: "\EA3C";
-.icon-Information {
+  
+$ss-icon-Information: "\EA3C";
+.ss-icon-Information {
   &:before {
-    content: $icon-Information;
+    content: $ss-icon-Information;
   }
 }
 
-
-$icon-Language: "\EA3D";
-.icon-Language {
+  
+$ss-icon-Language: "\EA3D";
+.ss-icon-Language {
   &:before {
-    content: $icon-Language;
+    content: $ss-icon-Language;
   }
 }
-
 
-$icon-Link: "\EA3E";
-.icon-Link {
+  
+$ss-icon-Link: "\EA3E";
+.ss-icon-Link {
   &:before {
-    content: $icon-Link;
+    content: $ss-icon-Link;
   }
 }
 
-
-$icon-Location: "\EA3F";
-.icon-Location {
+  
+$ss-icon-Location: "\EA3F";
+.ss-icon-Location {
   &:before {
-    content: $icon-Location;
+    content: $ss-icon-Location;
   }
 }
-
 
-$icon-Lock: "\EA40";
-.icon-Lock {
+  
+$ss-icon-Lock: "\EA40";
+.ss-icon-Lock {
   &:before {
-    content: $icon-Lock;
+    content: $ss-icon-Lock;
   }
 }
 
-
-$icon-Logout: "\EA41";
-.icon-Logout {
+  
+$ss-icon-Logout: "\EA41";
+.ss-icon-Logout {
   &:before {
-    content: $icon-Logout;
+    content: $ss-icon-Logout;
   }
 }
-
 
-$icon-Main-Component-filled: "\EA42";
-.icon-Main-Component-filled {
+  
+$ss-icon-Main-Component-filled: "\EA42";
+.ss-icon-Main-Component-filled {
   &:before {
-    content: $icon-Main-Component-filled;
+    content: $ss-icon-Main-Component-filled;
   }
 }
 
-
-$icon-Market: "\EA43";
-.icon-Market {
+  
+$ss-icon-Market: "\EA43";
+.ss-icon-Market {
   &:before {
-    content: $icon-Market;
+    content: $ss-icon-Market;
   }
 }
-
 
-$icon-Maximize-arrow: "\EA44";
-.icon-Maximize-arrow {
+  
+$ss-icon-Maximize-arrow: "\EA44";
+.ss-icon-Maximize-arrow {
   &:before {
-    content: $icon-Maximize-arrow;
+    content: $ss-icon-Maximize-arrow;
   }
 }
 
-
-$icon-Maximize-filled: "\EA45";
-.icon-Maximize-filled {
+  
+$ss-icon-Maximize-filled: "\EA45";
+.ss-icon-Maximize-filled {
   &:before {
-    content: $icon-Maximize-filled;
+    content: $ss-icon-Maximize-filled;
   }
 }
-
 
-$icon-Minimize-arrow: "\EA46";
-.icon-Minimize-arrow {
+  
+$ss-icon-Minimize-arrow: "\EA46";
+.ss-icon-Minimize-arrow {
   &:before {
-    content: $icon-Minimize-arrow;
+    content: $ss-icon-Minimize-arrow;
   }
 }
 
-
-$icon-Minimize-filled: "\EA47";
-.icon-Minimize-filled {
+  
+$ss-icon-Minimize-filled: "\EA47";
+.ss-icon-Minimize-filled {
   &:before {
-    content: $icon-Minimize-filled;
+    content: $ss-icon-Minimize-filled;
   }
 }
-
 
-$icon-Mobile-phone: "\EA48";
-.icon-Mobile-phone {
+  
+$ss-icon-Mobile-phone: "\EA48";
+.ss-icon-Mobile-phone {
   &:before {
-    content: $icon-Mobile-phone;
+    content: $ss-icon-Mobile-phone;
   }
 }
 
-
-$icon-More-Android: "\EA49";
-.icon-More-Android {
+  
+$ss-icon-More-Android: "\EA49";
+.ss-icon-More-Android {
   &:before {
-    content: $icon-More-Android;
+    content: $ss-icon-More-Android;
   }
 }
-
 
-$icon-More-iOS: "\EA4A";
-.icon-More-iOS {
+  
+$ss-icon-More-iOS: "\EA4A";
+.ss-icon-More-iOS {
   &:before {
-    content: $icon-More-iOS;
+    content: $ss-icon-More-iOS;
   }
 }
 
-
-$icon-More-Hamburger: "\EA4B";
-.icon-More-Hamburger {
+  
+$ss-icon-More-Hamburger: "\EA4B";
+.ss-icon-More-Hamburger {
   &:before {
-    content: $icon-More-Hamburger;
+    content: $ss-icon-More-Hamburger;
   }
 }
-
 
-$icon-Mouse-cursor-filled: "\EA4C";
-.icon-Mouse-cursor-filled {
+  
+$ss-icon-Mouse-cursor-filled: "\EA4C";
+.ss-icon-Mouse-cursor-filled {
   &:before {
-    content: $icon-Mouse-cursor-filled;
+    content: $ss-icon-Mouse-cursor-filled;
   }
 }
 
-
-$icon-Move: "\EA4D";
-.icon-Move {
+  
+$ss-icon-Move: "\EA4D";
+.ss-icon-Move {
   &:before {
-    content: $icon-Move;
+    content: $ss-icon-Move;
   }
 }
-
 
-$icon-News-filled: "\EA4E";
-.icon-News-filled {
+  
+$ss-icon-News-filled: "\EA4E";
+.ss-icon-News-filled {
   &:before {
-    content: $icon-News-filled;
+    content: $ss-icon-News-filled;
   }
 }
 
-
-$icon-News: "\EA4F";
-.icon-News {
+  
+$ss-icon-News: "\EA4F";
+.ss-icon-News {
   &:before {
-    content: $icon-News;
+    content: $ss-icon-News;
   }
 }
-
 
-$icon-Next-big: "\EA50";
-.icon-Next-big {
+  
+$ss-icon-Next-big: "\EA50";
+.ss-icon-Next-big {
   &:before {
-    content: $icon-Next-big;
+    content: $ss-icon-Next-big;
   }
 }
 
-
-$icon-Next: "\EA51";
-.icon-Next {
+  
+$ss-icon-Next: "\EA51";
+.ss-icon-Next {
   &:before {
-    content: $icon-Next;
+    content: $ss-icon-Next;
   }
 }
-
 
-$icon-Notification-filled: "\EA52";
-.icon-Notification-filled {
+  
+$ss-icon-Notification-filled: "\EA52";
+.ss-icon-Notification-filled {
   &:before {
-    content: $icon-Notification-filled;
+    content: $ss-icon-Notification-filled;
   }
 }
 
-
-$icon-Notification: "\EA53";
-.icon-Notification {
+  
+$ss-icon-Notification: "\EA53";
+.ss-icon-Notification {
   &:before {
-    content: $icon-Notification;
+    content: $ss-icon-Notification;
   }
 }
-
 
-$icon-One-Report: "\EA54";
-.icon-One-Report {
+  
+$ss-icon-One-Report: "\EA54";
+.ss-icon-One-Report {
   &:before {
-    content: $icon-One-Report;
+    content: $ss-icon-One-Report;
   }
 }
 
-
-$icon-PDF: "\EA55";
-.icon-PDF {
+  
+$ss-icon-PDF: "\EA55";
+.ss-icon-PDF {
   &:before {
-    content: $icon-PDF;
+    content: $ss-icon-PDF;
   }
 }
-
 
-$icon-Page-filled: "\EA56";
-.icon-Page-filled {
+  
+$ss-icon-Page-filled: "\EA56";
+.ss-icon-Page-filled {
   &:before {
-    content: $icon-Page-filled;
+    content: $ss-icon-Page-filled;
   }
 }
 
-
-$icon-Phone-call-filled: "\EA57";
-.icon-Phone-call-filled {
+  
+$ss-icon-Phone-call-filled: "\EA57";
+.ss-icon-Phone-call-filled {
   &:before {
-    content: $icon-Phone-call-filled;
+    content: $ss-icon-Phone-call-filled;
   }
 }
-
 
-$icon-Phone: "\EA58";
-.icon-Phone {
+  
+$ss-icon-Phone: "\EA58";
+.ss-icon-Phone {
   &:before {
-    content: $icon-Phone;
+    content: $ss-icon-Phone;
   }
 }
 
-
-$icon-Picture: "\EA59";
-.icon-Picture {
+  
+$ss-icon-Picture: "\EA59";
+.ss-icon-Picture {
   &:before {
-    content: $icon-Picture;
+    content: $ss-icon-Picture;
   }
 }
-
 
-$icon-Printer: "\EA5A";
-.icon-Printer {
+  
+$ss-icon-Printer: "\EA5A";
+.ss-icon-Printer {
   &:before {
-    content: $icon-Printer;
+    content: $ss-icon-Printer;
   }
 }
 
-
-$icon-Profile-filled: "\EA5B";
-.icon-Profile-filled {
+  
+$ss-icon-Profile-filled: "\EA5B";
+.ss-icon-Profile-filled {
   &:before {
-    content: $icon-Profile-filled;
+    content: $ss-icon-Profile-filled;
   }
 }
-
 
-$icon-Profile: "\EA5C";
-.icon-Profile {
+  
+$ss-icon-Profile: "\EA5C";
+.ss-icon-Profile {
   &:before {
-    content: $icon-Profile;
+    content: $ss-icon-Profile;
   }
 }
 
-
-$icon-Push-pin: "\EA5D";
-.icon-Push-pin {
+  
+$ss-icon-Push-pin: "\EA5D";
+.ss-icon-Push-pin {
   &:before {
-    content: $icon-Push-pin;
+    content: $ss-icon-Push-pin;
   }
 }
-
 
-$icon-Radio-button-selected: "\EA5E";
-.icon-Radio-button-selected {
+  
+$ss-icon-Radio-button-selected: "\EA5E";
+.ss-icon-Radio-button-selected {
   &:before {
-    content: $icon-Radio-button-selected;
+    content: $ss-icon-Radio-button-selected;
   }
 }
 
-
-$icon-Radio-button: "\EA5F";
-.icon-Radio-button {
+  
+$ss-icon-Radio-button: "\EA5F";
+.ss-icon-Radio-button {
   &:before {
-    content: $icon-Radio-button;
+    content: $ss-icon-Radio-button;
   }
 }
-
 
-$icon-Reader: "\EA60";
-.icon-Reader {
+  
+$ss-icon-Reader: "\EA60";
+.ss-icon-Reader {
   &:before {
-    content: $icon-Reader;
+    content: $ss-icon-Reader;
   }
 }
 
-
-$icon-Refresh: "\EA61";
-.icon-Refresh {
+  
+$ss-icon-Refresh: "\EA61";
+.ss-icon-Refresh {
   &:before {
-    content: $icon-Refresh;
+    content: $ss-icon-Refresh;
   }
 }
-
 
-$icon-Search: "\EA62";
-.icon-Search {
+  
+$ss-icon-Search: "\EA62";
+.ss-icon-Search {
   &:before {
-    content: $icon-Search;
+    content: $ss-icon-Search;
   }
 }
 
-
-$icon-Set-link: "\EA63";
-.icon-Set-link {
+  
+$ss-icon-Set-link: "\EA63";
+.ss-icon-Set-link {
   &:before {
-    content: $icon-Set-link;
+    content: $ss-icon-Set-link;
   }
 }
-
 
-$icon-Set: "\EA64";
-.icon-Set {
+  
+$ss-icon-Set: "\EA64";
+.ss-icon-Set {
   &:before {
-    content: $icon-Set;
+    content: $ss-icon-Set;
   }
 }
 
-
-$icon-Setting: "\EA65";
-.icon-Setting {
+  
+$ss-icon-Setting: "\EA65";
+.ss-icon-Setting {
   &:before {
-    content: $icon-Setting;
+    content: $ss-icon-Setting;
   }
 }
-
 
-$icon-Settings-suggest: "\EA66";
-.icon-Settings-suggest {
+  
+$ss-icon-Settings-suggest: "\EA66";
+.ss-icon-Settings-suggest {
   &:before {
-    content: $icon-Settings-suggest;
+    content: $ss-icon-Settings-suggest;
   }
 }
 
-
-$icon-Sorting: "\EA67";
-.icon-Sorting {
+  
+$ss-icon-Sorting: "\EA67";
+.ss-icon-Sorting {
   &:before {
-    content: $icon-Sorting;
+    content: $ss-icon-Sorting;
   }
 }
-
 
-$icon-Star-Filled: "\EA68";
-.icon-Star-Filled {
+  
+$ss-icon-Star-Filled: "\EA68";
+.ss-icon-Star-Filled {
   &:before {
-    content: $icon-Star-Filled;
+    content: $ss-icon-Star-Filled;
   }
 }
 
-
-$icon-Star: "\EA69";
-.icon-Star {
+  
+$ss-icon-Star: "\EA69";
+.ss-icon-Star {
   &:before {
-    content: $icon-Star;
+    content: $ss-icon-Star;
   }
 }
-
 
-$icon-Status-circle: "\EA6A";
-.icon-Status-circle {
+  
+$ss-icon-Status-circle: "\EA6A";
+.ss-icon-Status-circle {
   &:before {
-    content: $icon-Status-circle;
+    content: $ss-icon-Status-circle;
   }
 }
 
-
-$icon-Suitcase: "\EA6B";
-.icon-Suitcase {
+  
+$ss-icon-Suitcase: "\EA6B";
+.ss-icon-Suitcase {
   &:before {
-    content: $icon-Suitcase;
+    content: $ss-icon-Suitcase;
   }
 }
-
 
-$icon-Supervisor: "\EA6C";
-.icon-Supervisor {
+  
+$ss-icon-Supervisor: "\EA6C";
+.ss-icon-Supervisor {
   &:before {
-    content: $icon-Supervisor;
+    content: $ss-icon-Supervisor;
   }
 }
 
-
-$icon-Sushi: "\EA6D";
-.icon-Sushi {
+  
+$ss-icon-Sushi: "\EA6D";
+.ss-icon-Sushi {
   &:before {
-    content: $icon-Sushi;
+    content: $ss-icon-Sushi;
   }
 }
-
 
-$icon-TXT: "\EA6E";
-.icon-TXT {
+  
+$ss-icon-TXT: "\EA6E";
+.ss-icon-TXT {
   &:before {
-    content: $icon-TXT;
+    content: $ss-icon-TXT;
   }
 }
 
-
-$icon-Table-view: "\EA6F";
-.icon-Table-view {
+  
+$ss-icon-Table-view: "\EA6F";
+.ss-icon-Table-view {
   &:before {
-    content: $icon-Table-view;
+    content: $ss-icon-Table-view;
   }
 }
-
 
-$icon-Table: "\EA70";
-.icon-Table {
+  
+$ss-icon-Table: "\EA70";
+.ss-icon-Table {
   &:before {
-    content: $icon-Table;
+    content: $ss-icon-Table;
   }
 }
 
-
-$icon-Terrain: "\EA71";
-.icon-Terrain {
+  
+$ss-icon-Terrain: "\EA71";
+.ss-icon-Terrain {
   &:before {
-    content: $icon-Terrain;
+    content: $ss-icon-Terrain;
   }
 }
-
 
-$icon-Thumb-up-filled: "\EA72";
-.icon-Thumb-up-filled {
+  
+$ss-icon-Thumb-up-filled: "\EA72";
+.ss-icon-Thumb-up-filled {
   &:before {
-    content: $icon-Thumb-up-filled;
+    content: $ss-icon-Thumb-up-filled;
   }
 }
 
-
-$icon-Thumbnail: "\EA73";
-.icon-Thumbnail {
+  
+$ss-icon-Thumbnail: "\EA73";
+.ss-icon-Thumbnail {
   &:before {
-    content: $icon-Thumbnail;
+    content: $ss-icon-Thumbnail;
   }
 }
-
 
-$icon-Time: "\EA74";
-.icon-Time {
+  
+$ss-icon-Time: "\EA74";
+.ss-icon-Time {
   &:before {
-    content: $icon-Time;
+    content: $ss-icon-Time;
   }
 }
 
-
-$icon-Unchange: "\EA75";
-.icon-Unchange {
+  
+$ss-icon-Unchange: "\EA75";
+.ss-icon-Unchange {
   &:before {
-    content: $icon-Unchange;
+    content: $ss-icon-Unchange;
   }
 }
-
 
-$icon-Underline: "\EA76";
-.icon-Underline {
+  
+$ss-icon-Underline: "\EA76";
+.ss-icon-Underline {
   &:before {
-    content: $icon-Underline;
+    content: $ss-icon-Underline;
   }
 }
 
-
-$icon-Up: "\EA77";
-.icon-Up {
+  
+$ss-icon-Up: "\EA77";
+.ss-icon-Up {
   &:before {
-    content: $icon-Up;
+    content: $ss-icon-Up;
   }
 }
-
 
-$icon-Video: "\EA78";
-.icon-Video {
+  
+$ss-icon-Video: "\EA78";
+.ss-icon-Video {
   &:before {
-    content: $icon-Video;
+    content: $ss-icon-Video;
   }
 }
 
-
-$icon-Vpn-key: "\EA79";
-.icon-Vpn-key {
+  
+$ss-icon-Vpn-key: "\EA79";
+.ss-icon-Vpn-key {
   &:before {
-    content: $icon-Vpn-key;
+    content: $ss-icon-Vpn-key;
   }
 }
-
 
-$icon-Waiting: "\EA7A";
-.icon-Waiting {
+  
+$ss-icon-Waiting: "\EA7A";
+.ss-icon-Waiting {
   &:before {
-    content: $icon-Waiting;
+    content: $ss-icon-Waiting;
   }
 }
 
-
-$icon-Warning: "\EA7B";
-.icon-Warning {
+  
+$ss-icon-Warning: "\EA7B";
+.ss-icon-Warning {
   &:before {
-    content: $icon-Warning;
+    content: $ss-icon-Warning;
   }
 }
-
 
-$icon-Web: "\EA7C";
-.icon-Web {
+  
+$ss-icon-Web: "\EA7C";
+.ss-icon-Web {
   &:before {
-    content: $icon-Web;
+    content: $ss-icon-Web;
   }
 }
 
-
-$icon-XML: "\EA7D";
-.icon-XML {
+  
+$ss-icon-XML: "\EA7D";
+.ss-icon-XML {
   &:before {
-    content: $icon-XML;
+    content: $ss-icon-XML;
   }
 }
-
 
-$icon-Zoom-in: "\EA7E";
-.icon-Zoom-in {
+  
+$ss-icon-Zoom-in: "\EA7E";
+.ss-icon-Zoom-in {
   &:before {
-    content: $icon-Zoom-in;
+    content: $ss-icon-Zoom-in;
   }
 }
 
-
-$icon-Zoom-out: "\EA7F";
-.icon-Zoom-out {
+  
+$ss-icon-Zoom-out: "\EA7F";
+.ss-icon-Zoom-out {
   &:before {
-    content: $icon-Zoom-out;
+    content: $ss-icon-Zoom-out;
   }
 }
-
 
-$icon-cancel-filled: "\EA80";
-.icon-cancel-filled {
+  
+$ss-icon-cancel-filled: "\EA80";
+.ss-icon-cancel-filled {
   &:before {
-    content: $icon-cancel-filled;
+    content: $ss-icon-cancel-filled;
   }
 }

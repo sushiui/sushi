@@ -39,6 +39,10 @@ $accessible-orange: #E55F14;
 
 $shadow-10: 0px 0px 8px rgba(0, 0, 0, 0.1);
 
+// Gap
+
+$common-gap: 16px;
+
 // Font
 
 $font-size-body: 1em;
@@ -51,6 +55,14 @@ $radius: 4px;
 // Icon
 
 $body-icon: 1.142em;
+
+// Ghost
+
+.ghost {
+  width: 0px;
+  height: 0px;
+  background-color: none;
+}
 
 :root {
   --primary-yellow: #{$primary-yellow};

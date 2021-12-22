@@ -532,6 +532,12 @@
   content: "\ea80";
 }
 
+.ghost {
+  width: 0px;
+  height: 0px;
+  background-color: none;
+}
+
 :root {
   --primary-yellow: #FCB034;
 }
@@ -568,25 +574,16 @@ TABLE {
   border: 1px solid #EEE;
 }
 
+TABLE TH {
+  text-align: left;
+}
+
 TABLE TH, TABLE TD {
   padding: 20px;
 }
 
 .small {
   font-size: 0.429em;
-}
-
-.card {
-  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  overflow: hidden;
-  margin: 28px;
-}
-
-.card.padding {
-  padding: 16px;
-  background-color: #FFFFFF;
 }
 
 .header {
@@ -635,7 +632,7 @@ TABLE TH, TABLE TD {
   order: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.96);
   -ms-flex-item-align: stretch;
   align-self: stretch;
   width: 200px;
@@ -652,7 +649,6 @@ TABLE TH, TABLE TD {
   flex-grow: 1;
   -ms-flex-item-align: stretch;
   align-self: stretch;
-  background-color: #857FB6;
 }
 
 BUTTON, a.ss-button {
@@ -1051,7 +1047,8 @@ UL.ss-menu-woven .relative-box .line .line-background {
   font-size: 1.142em;
 }
 
-.card .icon-in-css:after {
+.sample-icon-in-css:after {
+  display: inline;
   content: "\ea1b";
   font-family: "SET-icon";
   padding-left: 10px !important;
@@ -1068,8 +1065,16 @@ H3.page-header {
   Margin: 28px 28px 0px 28px;
 }
 
+.card {
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 28px;
+}
+
 .card .page-header {
-  padding: 16px;
+  padding: 0px 16px 0px 16px;
 }
 
 .card .page-header H3 {
@@ -1077,11 +1082,29 @@ H3.page-header {
 }
 
 .card .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: rgba(255, 255, 255, 0.8);
+  gap: 8px;
+  padding: 4px 16px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .card .card-header span.label {
-  height: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 30px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-weight: bold;
 }
 
 .card H4 {
@@ -1093,6 +1116,29 @@ H3.page-header {
   margin: 0px 16px;
 }
 
+.card.padding {
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.96);
+}
+
 .card.content, .card .content {
   background-color: #FFFFFF;
+  padding: 16px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.card.content.padding-side, .card .content.padding-side {
+  padding: 0px 16px;
+}
+
+.card.content.padding, .card .content.padding {
+  padding: 16px;
 }

@@ -24,6 +24,10 @@ BODY {
 TABLE {
   border: 1px solid #EEE;
 
+  TH {
+    text-align: left;
+  }
+
   TH, TD {
     padding: 20px;
   }
@@ -31,18 +35,6 @@ TABLE {
 
 .small {
   font-size: 0.429em;
-}
-
-.card {
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-  border-radius: $radius;
-  overflow: hidden;
-  margin: 28px;
-
-  &.padding {
-    padding: 16px;
-    background-color: $primary-white;
-  }
 }
 
 .header {
@@ -69,7 +61,7 @@ TABLE {
   flex: none;
   order: 0;
   flex-grow: 0;
-  background-color: $transparent-white-80;
+  background-color: $transparent-white-96;
   align-self: stretch;
   width: 200px;
   box-shadow: $shadow-10;
@@ -79,5 +71,4 @@ TABLE {
   order: 1;
   flex-grow: 1;
   align-self: stretch;
-  background-color: #857FB6;
 }

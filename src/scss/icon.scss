@@ -1,10 +1,10 @@
-.card .show-icons {
+.show-icons {
   display: flex;
   flex-wrap: wrap;
   width: 800px;
   margin-top: 16px;
 
-  .each-icon {
+  > .each-icon {
     width: 200px;
     height: 72px;
     text-align: center;

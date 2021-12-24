@@ -5,7 +5,7 @@ block append page-variable
 
 block workspace
 
-  .pageheader.-nobreadcrumbs
+  .ss-pageheader.-nobreadcrumbs
     span.label
       a.ss-link(href="javascript:void(0)")
         span(class='ss-icon-Back-iOS')
@@ -17,8 +17,8 @@ block workspace
       span.ss-icon-PDF
       | Preview
 
-  .card.-content
-    .pageheader
+  .ss-card.-content
+    .ss-pageheader
       span.label
         a.ss-link(href="javascript:void(0)")
           span(class='ss-icon-Back-iOS')
@@ -30,8 +30,9 @@ block workspace
         span.ss-icon-PDF
         | Preview
 
-    H4
-      | การใช้ไฟฟ้า
+    .ss-contentheader
+      span.label
+        | Content Header
 
     P
       | นอกจากสถานการณ์การแพร่ระบาดของโควิดแล้ว สิ่งที่นักลงทุนจากทั่วโลกให้ความสนใจมากขึ้น
@@ -41,9 +42,9 @@ block workspace
       | ต่อเนื่อง คาดว่าในปีนี้จะเพิ่มเกือบเท่าตัวอยู่ที่ 4.5 แสนล้านดอลลาร์สหรัฐฯ
       | บางขุนพรหมชวนคิดในวันนี้จึงขอใช้โอกาสนี้พูดถึงประเด็นนี้ค่ะ
 
-  .card
+  .ss-card
 
-    .cardheader
+    .ss-cardheader
       span.label Card Header
       button.secondary
         span.ss-icon-Add
@@ -52,19 +53,27 @@ block workspace
         span.ss-icon-PDF
         | Preview
 
-    .content
+    .ss-content
 
-      H4
-        | Content Header
+      .ss-contentheader
+        span.label
+          | Content Header
+        a.ss-link(href="javascript:void(0)")
+          span.ss-icon-External-link
+          | preview
+        a.ss-link(href="javascript:void(0)")
+          span.ss-icon-Search
+          | Search
 
       P
         | นอกจากสถานการณ์การแพร่ระบาดของโควิดแล้ว สิ่งที่นักลงทุนจากทั่วโลกให้ความสนใจ
         | มากขึ้นในปีที่ผ่านมา
 
-      .ghost
+      .ss-ghost
 
-      H4
-        | การใช้ไฟฟ้า
+      .ss-contentheader
+        span.label
+          | Content Header
 
       P
         | นอกจากสถานการณ์การแพร่ระบาดของโควิดแล้ว สิ่งที่นักลงทุนจากทั่วโลกให้ความสนใจมากขึ้น

@@ -1,3 +1,5 @@
+// Icon page
+
 .show-icons {
   display: flex;
   flex-wrap: wrap;
@@ -15,11 +17,16 @@
   }
 }
 
-
 .sample-icon-in-css:after {
   display: inline;
   content: $ss-icon-Close-or-Reject;
   font-family: 'SET-icon';
   padding-left: 10px !important;
   vertical-align: middle;
+}
+
+// Menu page
+
+.ss-card .menu {
+  width: 240px;
 }

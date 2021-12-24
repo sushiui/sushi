@@ -61,7 +61,7 @@ BUTTON, a.ss-button, a.ss-link {
   color: var(--color);
   background: var(--background);
 
-  span{
+  > span{
     font-size: $body-icon;
   }
 

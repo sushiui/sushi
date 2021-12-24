@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,500;0,800;1,500&display=swap");
 @font-face {
   font-family: "SET-icon";
-  src: url("../fonts/SET-icon.ttf?5lopf") format("truetype"), url("../fonts/SET-icon.woff?5lopf") format("woff");
+  src: url("../fonts/SET-icon.ttf?smhdel") format("truetype"), url("../fonts/SET-icon.woff?smhdel") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -734,7 +734,7 @@ BUTTON, a.ss-button, a.ss-link {
   background: var(--background);
 }
 
-BUTTON span, a.ss-button span, a.ss-link span {
+BUTTON > span, a.ss-button > span, a.ss-link > span {
   font-size: 1.142em;
 }
 
@@ -1052,13 +1052,13 @@ UL.ss-menu-woven .relative-box .line .line-background {
   margin-top: 16px;
 }
 
-.card .show-icons .each-icon {
+.card .show-icons > .each-icon {
   width: 200px;
   height: 72px;
   text-align: center;
 }
 
-.card .show-icons .each-icon span {
+.card .show-icons > .each-icon span {
   font-size: 1.142em;
 }
 
@@ -1125,20 +1125,7 @@ H4, .contentheader > span.label {
   flex-grow: 1;
 }
 
-.card {
-  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  overflow: hidden;
-  margin: 0px 16px;
-}
-
-.card > .pageheader {
-  padding: 0px 16px;
-  margin: 0px;
-}
-
-.card > .cardheader {
+.cardheader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1150,7 +1137,7 @@ H4, .contentheader > span.label {
   align-items: center;
 }
 
-.card > .cardheader > span.label {
+.cardheader > span.label {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1164,7 +1151,21 @@ H4, .contentheader > span.label {
   font-weight: bold;
 }
 
-.card p {
+.card {
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0px 16px;
+}
+
+.card > .pageheader {
+  padding: 0px 16px;
+  margin: 0px;
+}
+
+.card > p,
+.card .content > p {
   margin: 0px 16px;
 }
 

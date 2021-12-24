@@ -5,7 +5,13 @@ block append page-variable
 
 block workspace
 
-  .ss-pageheader.-nobreadcrumbs
+  .ss-page-header.-nobreadcrumbs
+    span.label
+      | Header and Card
+
+  .ghost
+
+  .ss-page-header
     span.label
       a.ss-link(href="javascript:void(0)")
         span(class='ss-icon-Back-iOS')
@@ -17,8 +23,8 @@ block workspace
       span.ss-icon-PDF
       | Preview
 
-  .ss-card.-content
-    .ss-pageheader
+  .ss-card.-body
+    .ss-page-header
       span.label
         a.ss-link(href="javascript:void(0)")
           span(class='ss-icon-Back-iOS')
@@ -30,7 +36,7 @@ block workspace
         span.ss-icon-PDF
         | Preview
 
-    .ss-contentheader
+    .header
       span.label
         | Content Header
 
@@ -44,7 +50,7 @@ block workspace
 
   .ss-card
 
-    .ss-cardheader
+    .header
       span.label Card Header
       button.secondary
         span.ss-icon-Add
@@ -53,14 +59,14 @@ block workspace
         span.ss-icon-PDF
         | Preview
 
-    .ss-content
+    .body
 
-      .ss-contentheader
+      .header
         span.label
           | Content Header
         a.ss-link(href="javascript:void(0)")
           span.ss-icon-External-link
-          | preview
+          | Preview
         a.ss-link(href="javascript:void(0)")
           span.ss-icon-Search
           | Search
@@ -71,7 +77,7 @@ block workspace
 
       .ss-ghost
 
-      .ss-contentheader
+      .header
         span.label
           | Content Header
 

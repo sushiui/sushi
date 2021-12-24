@@ -1,0 +1,52 @@
+.ss-card {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border-radius: $radius;
+  overflow: hidden;
+  margin: 0px $common-gap;
+
+  > .ss-page-header {
+    padding: 0px $common-gap;
+    margin: 0px;
+  }
+
+  > .header:first-child {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0px;
+    padding: 4px 16px;
+
+    > span.label {
+      display: inline-flex;
+      align-items: center;
+      height: 30px;
+    }
+  }
+
+  > .header,
+  .body > .header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0px $common-gap;
+
+    > span.label {
+      flex-grow: 1;
+      font-weight: bold;
+    }
+  }
+
+  > p,
+  .body > p {
+    margin: 0px $common-gap;
+  }
+
+  &.-body,
+  > .body {
+    background-color: $primary-white;
+    padding: $common-gap 0px;
+    display: flex;
+    flex-direction: column;
+    gap: $common-gap;
+    border-top: 1px solid $transparent-black-6;
+  }
+}
+

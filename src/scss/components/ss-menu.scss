@@ -1,0 +1,80 @@
+// Generic Menu
+
+UL.ss-menu li {
+  --color: #{$primary-black};
+  --background: none;
+  --hover-background: #{$level10-orange};
+  --active-color: #{$primary-black};
+  --active-background: #{$primary-white};
+  --disable-background: #{$transparent-black-10};
+}
+
+UL.ss-menu li.selected {
+  --color: #{$primary-black};
+  --background: #{$level10-orange};
+  --hover-background: #{$level10-orange};
+  --active-color: #{$primary-black};
+  --active-background: #{$primary-white};
+  --disable-background: #{$transparent-black-10};
+}
+
+UL.ss-menu {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0px;
+  padding: 16px;
+  gap: 8px;
+
+  li {
+    flex-grow: 0;
+
+    a {
+      display: flex;
+      flex-direction: row;
+      flex-basis: auto;
+      align-items: center;
+      padding: 4px 6px;
+      margin: 0 -4px;
+      gap: 4px;
+      position: relative;
+      border: none;
+      outline: var(--outline);
+      text-decoration: none;
+      border-radius: $radius;
+      cursor: pointer;
+
+      color: var(--color);
+      background: var(--background);
+
+      span{
+        font-size: $body-icon;
+        flex-grow: 0;
+        &.label {
+          font-size: 1em;
+          flex-grow: 1;
+        }
+      }
+
+      .selected-box{
+        background-color: $primary-yellow;
+        width: $radius;
+        border-radius: $radius;
+      }
+
+      &:hover {
+        background: var(--hover-background);
+      }
+
+      &:active {
+        color: var(--active-color);
+        background: var(--active-background);
+      }
+
+      &.disable{
+        color: $transparent-black-35;
+        pointer-events: none;
+      }
+    }
+  }
+}

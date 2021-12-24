@@ -67,8 +67,20 @@ TABLE {
   box-shadow: $shadow-10;
 }
 
-.content {
+.workspace {
+  display: flex;
+  flex-direction: column;
+  gap: $common-gap;
+
   order: 1;
   flex-grow: 1;
   align-self: stretch;
+
+  padding-bottom: $common-gap;
+}
+
+// Helper
+
+._padding {
+  padding: $common-gap !important;
 }

@@ -3,16 +3,32 @@ extends ../base/base.pug
 block append page-variable
   - var current = "header"
 
-block content
+block workspace
 
-  H3.page-header Header and Card
-
-  .card.content
-    .page-header
-
-      H3
+  .pageheader.-nobreadcrumbs
+    span.label
+      a.ss-link(href="javascript:void(0)")
         span(class='ss-icon-Back-iOS')
-        | Page Header but on card
+      | Page Header on floor
+    button.secondary
+      span.ss-icon-Add
+      | Add
+    button
+      span.ss-icon-PDF
+      | Preview
+
+  .card.-content
+    .pageheader
+      span.label
+        a.ss-link(href="javascript:void(0)")
+          span(class='ss-icon-Back-iOS')
+        | Page Header on card
+      button.secondary
+        span.ss-icon-Add
+        | Add
+      button
+        span.ss-icon-PDF
+        | Preview
 
     H4
       | การใช้ไฟฟ้า
@@ -27,14 +43,14 @@ block content
 
   .card
 
-    .card-header
+    .cardheader
       span.label Card Header
-      button
-        span.ss-icon-Search
-        | Primary Button
       button.secondary
-        span.ss-icon-Search
-        | Secondary Button
+        span.ss-icon-Add
+        | Add
+      button
+        span.ss-icon-PDF
+        | Preview
 
     .content
 

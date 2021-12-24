@@ -4,6 +4,10 @@ extends ../base/base.pug
 block append page-variable
   - var current = "index"
 
-block content
-  include ../content/font.pug
-  include ../content/icon.pug
+block workspace
+
+  .pageheader.-nobreadcrumbs
+    span.label Welcome
+
+  include ../content/example.pug
+  include ../content/start.pug

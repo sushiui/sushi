@@ -3,14 +3,16 @@ extends ../base/base.pug
 block append page-variable
   - var current = "menu"
 
-block content
-  H3.page-header Menu
+block workspace
+
+  .pageheader.-nobreadcrumbs
+    span.label Menu
 
   .card
-    .card-header
+    .cardheader
       span.label Generic Menu
 
-    .content.padding
+    .content._padding
       pre
         code.language-html
           |
@@ -61,10 +63,10 @@ block content
               span.label Note
 
   .card
-    .card-header
+    .cardheader
       span.label Woven Menu
 
-    .content.padding
+    .content._padding
       pre
         code.language-html
           |

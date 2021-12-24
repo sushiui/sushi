@@ -11,6 +11,36 @@ var gulp    = require('gulp'),
     consolidate  = require('gulp-consolidate');
 
 
+var fontName = 'SET-icon';
+
+gulp.task('compile-icon-font', function(){
+  return gulp.src(['assets/icons/*.svg'])
+    .pipe(iconfont({
+      fontName: fontName, // required
+      formats: ['ttf', 'eot', 'woff'], // default, 'woff2' and 'svg' are available
+      timestamp: runTimestamp, // recommended to get consistent builds when watching files
+      fontHeight: 1024,
+      fixedWidth: true,
+      centerhorizontally: true,
+      centervertically: true,
+      normalize: true,
+      descent: 60
+    }))
+    .on('glyphs', function(glyphs, options) {
+      gulp.src('templates/icon_font.scss')
+        .pipe(consolidate('lodash', {
+          glyphs: glyphs,
+          fontName: fontName,
+          fontPath: '../fonts',
+          className: 'ss-icon',
+          cacheBuster: (Math.random() + 1).toString(36).substring(7)
+        }))
+        .pipe(gulp.dest('src/scss/'));
+    })
+    .pipe(gulp.dest('assets/fonts'));
+});
+
+
 var runTimestamp = Math.round(Date.now()/1000);
 
 function reload(done) {
@@ -34,7 +64,7 @@ function styles() {
     .pipe(gulp.dest('assets/css'))
     // .pipe(sass({outputStyle: 'compressed'}))
     // .pipe(rename('styles.min.css'))
-    .pipe(gulp.dest('assets/css'))
+    // .pipe(gulp.dest('assets/css'))
     .pipe(connect.reload())
   );
 }
@@ -74,37 +104,6 @@ function views() {
     .pipe(connect.reload())
   )
 }
-
-
-var fontName = 'SET-icon';
-
-gulp.task('compile-icon-font', function(){
-  return gulp.src(['assets/icons/*.svg'])
-    .pipe(iconfont({
-      fontName: fontName, // required
-      formats: ['ttf', 'eot', 'woff'], // default, 'woff2' and 'svg' are available
-      timestamp: runTimestamp, // recommended to get consistent builds when watching files
-      fontHeight: 1024,
-      fixedWidth: true,
-      centerhorizontally: true,
-      centervertically: true,
-      normalize: true,
-      descent: 60
-    }))
-    .on('glyphs', function(glyphs, options) {
-      gulp.src('templates/icon_font.scss')
-        .pipe(consolidate('lodash', {
-          glyphs: glyphs,
-          fontName: fontName,
-          fontPath: '../fonts',
-          className: 'ss-icon',
-          cacheBuster: (Math.random() + 1).toString(36).substring(7)
-        }))
-        .pipe(gulp.dest('src/scss/'));
-    })
-    .pipe(gulp.dest('assets/fonts'));
-});
-
 
 function watchTask(done) {
   gulp.watch('*.html', html);

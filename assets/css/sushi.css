@@ -1077,6 +1077,10 @@ H3, .pageheader > span.label {
   margin: 0px;
 }
 
+H4, .contentheader > span.label {
+  font-weight: bold;
+}
+
 .pageheader {
   margin: 0px 16px;
   display: -webkit-box;
@@ -1102,6 +1106,23 @@ H3, .pageheader > span.label {
 
 .pageheader.-nobreadcrumbs {
   padding-top: 16px;
+}
+
+.contentheader {
+  margin: 0px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.contentheader > span.label {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .card {
@@ -1141,11 +1162,6 @@ H3, .pageheader > span.label {
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-weight: bold;
-}
-
-.card H4 {
-  font-weight: bold;
-  margin: 0px 16px;
 }
 
 .card p {

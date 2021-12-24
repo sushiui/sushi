@@ -532,7 +532,7 @@
   content: "\ea80";
 }
 
-.ghost {
+.ss-ghost {
   width: 0px;
   height: 0px;
   background-color: none;
@@ -755,7 +755,7 @@ BUTTON.disable, BUTTON:DISABLED, a.ss-button.disable, a.ss-button:DISABLED, a.ss
   pointer-events: none;
 }
 
-.card .menu {
+.ss-card .menu {
   width: 240px;
 }
 
@@ -1042,7 +1042,7 @@ UL.ss-menu-woven .relative-box .line .line-background {
   flex-grow: 0;
 }
 
-.card .show-icons {
+.show-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1052,13 +1052,13 @@ UL.ss-menu-woven .relative-box .line .line-background {
   margin-top: 16px;
 }
 
-.card .show-icons > .each-icon {
+.show-icons > .each-icon {
   width: 200px;
   height: 72px;
   text-align: center;
 }
 
-.card .show-icons > .each-icon span {
+.show-icons > .each-icon span {
   font-size: 1.142em;
 }
 
@@ -1070,18 +1070,18 @@ UL.ss-menu-woven .relative-box .line .line-background {
   vertical-align: middle;
 }
 
-H3, .pageheader > span.label {
+H3, .ss-pageheader > span.label {
   font-weight: 800;
   font-size: 1.5em;
   line-height: 145%;
   margin: 0px;
 }
 
-H4, .contentheader > span.label {
+H4, .ss-contentheader > span.label {
   font-weight: bold;
 }
 
-.pageheader {
+.ss-pageheader {
   margin: 0px 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1092,7 +1092,7 @@ H4, .contentheader > span.label {
   gap: 8px;
 }
 
-.pageheader > span.label {
+.ss-pageheader > span.label {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -1104,11 +1104,11 @@ H4, .contentheader > span.label {
   align-items: center;
 }
 
-.pageheader.-nobreadcrumbs {
+.ss-pageheader.-nobreadcrumbs {
   padding-top: 16px;
 }
 
-.contentheader {
+.ss-contentheader {
   margin: 0px 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1119,13 +1119,13 @@ H4, .contentheader > span.label {
   gap: 8px;
 }
 
-.contentheader > span.label {
+.ss-contentheader > span.label {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.cardheader {
+.ss-cardheader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1137,7 +1137,7 @@ H4, .contentheader > span.label {
   align-items: center;
 }
 
-.cardheader > span.label {
+.ss-cardheader > span.label {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1151,7 +1151,7 @@ H4, .contentheader > span.label {
   font-weight: bold;
 }
 
-.card {
+.ss-card {
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
@@ -1159,18 +1159,18 @@ H4, .contentheader > span.label {
   margin: 0px 16px;
 }
 
-.card > .pageheader {
+.ss-card > .ss-pageheader {
   padding: 0px 16px;
   margin: 0px;
 }
 
-.card > p,
-.card .content > p {
+.ss-card > p,
+.ss-card .ss-content > p {
   margin: 0px 16px;
 }
 
-.card.-content,
-.card > .content {
+.ss-card.-content,
+.ss-card > .ss-content {
   background-color: #FFFFFF;
   padding: 16px 0px;
   display: -webkit-box;

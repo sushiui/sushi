@@ -9,7 +9,7 @@ H4 {
   font-weight: bold;
 }
 
-.pageheader {
+.ss-pageheader {
   margin: 0px $common-gap;
   display: flex;
   align-items: center;
@@ -27,7 +27,7 @@ H4 {
   }
 }
 
-.contentheader {
+.ss-contentheader {
   margin: 0px $common-gap;
   display: flex;
   align-items: center;
@@ -39,7 +39,7 @@ H4 {
   }
 }
 
-.cardheader {
+.ss-cardheader {
   display: flex;
   background-color: rgba(255, 255, 255, 0.8);
   gap: 8px;
@@ -55,24 +55,24 @@ H4 {
   }
 }
 
-.card {
+.ss-card {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   border-radius: $radius;
   overflow: hidden;
   margin: 0px $common-gap;
 
-  > .pageheader {
+  > .ss-pageheader {
     padding: 0px $common-gap;
     margin: 0px;
   }
 
   > p,
-  .content > p {
+  .ss-content > p {
     margin: 0px $common-gap;
   }
 
   &.-content,
-  > .content {
+  > .ss-content {
     background-color: $primary-white;
     padding: $common-gap 0px;
     display: flex;

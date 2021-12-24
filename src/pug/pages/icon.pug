@@ -3,7 +3,7 @@ extends ../base/base.pug
 block append page-variable
   - var current = "icon"
 
-block content
+block workspace
 
   -
     var iconFiles = [
@@ -140,13 +140,14 @@ block content
       "Zoom-in",
       "Zoom-out"]
 
-  H3.page-header Icon
+  .pageheader.-nobreadcrumbs
+    span.label Icon
 
   .card
-    .card-header
+    .cardheader
       span.label All icon
 
-    .content.padding
+    .content._padding
       pre
         code.language-html
           |
@@ -161,10 +162,10 @@ block content
             = "ss-icon-"+fileName
 
   .card
-    .card-header
+    .cardheader
       span.label Font icon from css
 
-    .content.padding
+    .content._padding
       pre
         code.language-css
           |

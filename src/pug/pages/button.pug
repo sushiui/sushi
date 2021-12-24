@@ -3,14 +3,16 @@ extends ../base/base.pug
 block append page-variable
   - var current = "button"
 
-block content
-  H3.page-header Button
+block workspace
+
+  .pageheader.-nobreadcrumbs
+    span.label Button
 
   .card
-    .card-header
+    .cardheader
       span.label Link &lt;a&gt; as a button
 
-    .content.padding
+    .content._padding
       pre
         code.language-html
           |
@@ -73,10 +75,10 @@ block content
               span.icon-Next
 
   .card
-    .card-header
+    .cardheader
       span.label Link &lt;a&gt; as a link
 
-    .content.padding
+    .content._padding
       pre
         code.language-html
           |
@@ -107,10 +109,10 @@ block content
               span.icon-Next
 
   .card
-    .card-header
+    .cardheader
       span.label Button &lt;button&gt;
 
-    .content.padding
+    .content._padding
       pre
         code.language-html
           |
@@ -173,10 +175,10 @@ block content
               span.icon-Next
 
   .card
-    .card-header
+    .cardheader
       span.label TEST edge case
 
-    .content.padding
+    .content._padding
       table
         tr
           th For long text

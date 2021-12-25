@@ -1054,8 +1054,8 @@ UL.ss-menu-woven > li > .relative > .line > .background {
 }
 
 .ss-card > .ss-page-header {
-  padding: 0px 16px;
-  margin: 0px;
+  padding: 0px;
+  margin: 0px 0px 8px 0px;
 }
 
 .ss-card > .header:first-child {
@@ -1074,7 +1074,7 @@ UL.ss-menu-woven > li > .relative > .line > .background {
   height: 30px;
 }
 
-.ss-card > .header, .ss-card .body > .header {
+.ss-card > .header, .ss-card .body > .header, .ss-card.-body > .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1082,10 +1082,10 @@ UL.ss-menu-woven > li > .relative > .line > .background {
   -ms-flex-align: center;
   align-items: center;
   gap: 8px;
-  margin: 0px 16px;
+  margin: 0px;
 }
 
-.ss-card > .header > span.label, .ss-card .body > .header > span.label {
+.ss-card > .header > span.label, .ss-card .body > .header > span.label, .ss-card.-body > .header > span.label {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -1093,12 +1093,12 @@ UL.ss-menu-woven > li > .relative > .line > .background {
 }
 
 .ss-card > p, .ss-card .body > p {
-  margin: 0px 16px;
+  margin: 0px;
 }
 
 .ss-card.-body, .ss-card > .body {
   background-color: #FFFFFF;
-  padding: 16px 0px;
+  padding: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1106,7 +1106,7 @@ UL.ss-menu-woven > li > .relative > .line > .background {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 

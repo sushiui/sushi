@@ -56,11 +56,11 @@ New fonts (eot, ttf and woff) will generate in `/assets/fonts` along with `/src/
 - index.html : Prebuild HTML file.
 ```
 
-### SASS Guideline
-
-https://rscss.apirak.com/
+## SASS Guideline
 
 ![RSCSS Website](assets/images/rscss.png)
+
+https://rscss.apirak.com/
 
 ## Why Pug & SCSS
 

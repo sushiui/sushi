@@ -1,0 +1,23 @@
+.ss-page-header {
+  margin: 0px $common-gap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  > span.label {
+    flex-grow: 1;
+
+    display: flex;
+    font-weight: 800;
+    font-size: $font-size-h3;
+    line-height: 145%;
+    margin: 0px;
+
+    align-items: center;
+  }
+
+  &.-nobreadcrumbs {
+    padding-top: $common-gap;
+  }
+}
+

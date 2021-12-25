@@ -1,0 +1,81 @@
+// Generic Menu
+
+UL.ss-menu {
+  > li {
+    --color: #{$primary-black};
+    --background: none;
+    --hover-background: #{$level10-orange};
+    --active-color: #{$primary-black};
+    --active-background: #{$primary-white};
+    --disable-background: #{$transparent-black-10};
+  }
+
+  > li.selected {
+    --color: #{$primary-black};
+    --background: #{$level10-orange};
+    --hover-background: #{$level10-orange};
+    --active-color: #{$primary-black};
+    --active-background: #{$primary-white};
+    --disable-background: #{$transparent-black-10};
+  }
+}
+
+UL.ss-menu {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0px;
+  padding: 8px;
+  gap: 4px;
+
+  > li {
+    flex-grow: 0;
+  }
+
+  > li.selected > a::after {
+    content: "\00a0";
+    position: relative;
+    background-color: $primary-yellow;
+    width: $radius;
+    border-radius: calc($radius / 2);
+  }
+}
+
+UL.ss-menu > li > a {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 8px;
+  border: none;
+  outline: var(--outline);
+  text-decoration: none;
+  border-radius: $radius;
+  cursor: pointer;
+
+  color: var(--color);
+  background: var(--background);
+
+  > span {
+    font-size: $body-icon;
+    flex-grow: 0;
+  }
+
+  > span.label {
+    font-size: 1em;
+    flex-grow: 1;
+  }
+
+  &:hover {
+    background: var(--hover-background);
+  }
+
+  &:active {
+    color: var(--active-color);
+    background: var(--active-background);
+  }
+
+  &.disable{
+    color: $transparent-black-35;
+    pointer-events: none;
+  }
+}

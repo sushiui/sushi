@@ -1,4 +1,8 @@
 doctype html
+
+block page-variable
+  - var current = "home"
+
 html(lang="en")
   head
     meta(charset="utf-8")
@@ -9,17 +13,14 @@ html(lang="en")
     link(href="./assets/css/prism.css", rel="stylesheet")
     link(rel="icon", type="image/svg+xml", href="./assets/images/favicon.svg")
     link(rel="icon", type="image/png", href="./assets/images/favicon.png")
-  body
 
-    block page-variable
-      - var current = "home"
-
-    .header
+  body(class= current +'-page')
+    .ss-site-header
       h3 Sushi Design System
 
-    .container
+    .ss-container
       include ../base/main-menu.pug
-      .workspace
+      .ss-workspace
         block workspace
 
     script(src="./assets/js/prism.js")

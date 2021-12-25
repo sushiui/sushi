@@ -1,0 +1,46 @@
+// Icon page
+
+.icon-page {
+  .show-icons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    margin-top: 16px;
+
+    > .each-icon {
+      width: 200px;
+      height: 72px;
+      text-align: center;
+
+      span {
+        font-size: $body-icon;
+      }
+    }
+  }
+
+  .sample-icon-in-css:after {
+    display: inline;
+    content: $ss-icon-Close-or-Reject;
+    font-family: 'SET-icon';
+    padding-left: 10px !important;
+    vertical-align: middle;
+  }
+}
+
+// Menu page
+
+.menu-page {
+  .ss-card .menu {
+    width: 240px;
+  }
+}
+
+
+// Button page
+
+.button-page {
+  .two-button {
+    display: flex;
+    gap: 8px;
+  }
+}

@@ -37,24 +37,36 @@ TABLE {
   font-size: 0.429em;
 }
 
-.header {
+.ss-site-header {
   background-color: $primary-white;
   height: 44px;
   border-bottom: 4px solid $primary-yellow;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px 0px 0px 32px;
+  padding: 0px 0px 0px $common-gap;
   box-shadow: $shadow-10;
 }
 
-.container {
+.ss-container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   height: 100%;
   flex-grow: 1;
   background-color: $background-gray-basic;
+}
+
+.ss-workspace {
+  display: flex;
+  flex-direction: column;
+  gap: $common-gap;
+
+  order: 1;
+  flex-grow: 1;
+  align-self: stretch;
+
+  padding-bottom: $common-gap;
 }
 
 .menu {
@@ -65,18 +77,6 @@ TABLE {
   align-self: stretch;
   width: 200px;
   box-shadow: $shadow-10;
-}
-
-.workspace {
-  display: flex;
-  flex-direction: column;
-  gap: $common-gap;
-
-  order: 1;
-  flex-grow: 1;
-  align-self: stretch;
-
-  padding-bottom: $common-gap;
 }
 
 // Helper

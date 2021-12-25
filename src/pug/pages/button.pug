@@ -5,14 +5,14 @@ block append page-variable
 
 block workspace
 
-  .ss-pageheader.-nobreadcrumbs
+  .ss-page-header.-nobreadcrumbs
     span.label Button
 
   .ss-card
-    .ss-cardheader
+    .header
       span.label Link &lt;a&gt; as a button
 
-    .ss-content._padding
+    .body._padding
       pre
         code.language-html
           |
@@ -75,10 +75,10 @@ block workspace
               span.ss-icon-Next
 
   .ss-card
-    .ss-cardheader
+    .header
       span.label Link &lt;a&gt; as a link
 
-    .ss-content._padding
+    .body._padding
       pre
         code.language-html
           |
@@ -109,10 +109,10 @@ block workspace
               span.ss-icon-Next
 
   .ss-card
-    .ss-cardheader
+    .header
       span.label Button &lt;button&gt;
 
-    .ss-content._padding
+    .body._padding
       pre
         code.language-html
           |
@@ -134,51 +134,51 @@ block workspace
           td
             button
               span.ss-icon-Search
-              | Primary Button
+              | Primary
               span.ss-icon-Next
           td
             button.secondary
               span.ss-icon-Search
-              | Secondary Button
+              | Secondary
               span.ss-icon-Next
           td
             button.color
               span.ss-icon-Search
-              | Color Button
+              | Color
               span.ss-icon-Next
           td
             button.color.green
               span.ss-icon-Search
-              | Color green Button
+              | Color green
               span.ss-icon-Next
         tr
           td Disable
           td
             button(disabled)
               span.ss-icon-Search
-              | Primary Button
+              | Primary
               span.ss-icon-Next
           td
             button.secondary(disabled)
               span.ss-icon-Search
-              | Secondary Button
+              | Secondary
               span.ss-icon-Next
           td
             button.color(disabled)
               span.ss-icon-Search
-              | Color Button
+              | Color
               span.ss-icon-Next
           td
             button.color.green(disabled)
               span.ss-icon-Search
-              | Color Green Button
+              | Color Green
               span.ss-icon-Next
 
   .ss-card
-    .ss-cardheader
+    .header
       span.label TEST edge case
 
-    .ss-content._padding
+    .body._padding
       table
         tr
           th For long text
@@ -193,7 +193,8 @@ block workspace
               br
               | แบบมีหลายบรรทัด
               span.ss-icon-External-link
-          td
+
+          td.two-button
             button
               span.ss-icon-Search
               | Primary Button

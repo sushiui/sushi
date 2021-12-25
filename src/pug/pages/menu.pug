@@ -5,14 +5,14 @@ block append page-variable
 
 block workspace
 
-  .ss-pageheader.-nobreadcrumbs
+  .ss-page-header.-nobreadcrumbs
     span.label Menu
 
   .ss-card
-    .ss-cardheader
+    .header
       span.label Generic Menu
 
-    .ss-content._padding
+    .body._padding
       pre
         code.language-html
           |
@@ -48,7 +48,6 @@ block workspace
             a(href="javascript:void(0);")
               span.ss-icon-Status-circle
               span.label Button
-              .selected-box &nbsp;
           li
             a(href="javascript:void(0);")
               span.ss-icon-Status-circle
@@ -63,20 +62,20 @@ block workspace
               span.label Note
 
   .ss-card
-    .ss-cardheader
+    .header
       span.label Woven Menu
 
-    .ss-content._padding
+    .body._padding
       pre
         code.language-html
           |
           | &lt;ul class="ss-menu-woven">
-          |   &lt;li class="first">
+          |   &lt;li>
           |     &lt;div class="relative-box">
           |       &lt;div class="line">
-          |         &lt;div class="line-top">&lt;/div>
-          |         &lt;div class="line-background">&lt;/div>
-          |         &lt;div class="line-bottom">&lt;/div>
+          |         &lt;div class="top">&lt;/div>
+          |         &lt;div class="background">&lt;/div>
+          |         &lt;div class="bottom">&lt;/div>
           |       &lt;/div>
           |     &lt;/div>&lt;a href="javascript:void(0);">
           |       &lt;div class="status">
@@ -89,43 +88,43 @@ block workspace
 
       .menu
         ul.ss-menu-woven
-          li.first
-            .relative-box
+          li
+            .relative
               .line
-                .line-top
-                .line-background
-                .line-bottom
+                .top
+                .background
+                .bottom
             a(href="javascript:void(0);")
               .status
-                .big-circle &nbsp;
+                .circle.-big &nbsp;
               span.label รายงานการขาย
           li
-            .relative-box
+            .relative
               .line
-                .line-top
-                .line-background
-                .line-bottom
+                .top
+                .background
+                .bottom
             a(href="javascript:void(0);")
               .status
                 .circle &nbsp;
               span.label รายงานการขาย
           li.selected
-            .relative-box
+            .relative
               .line
-                .line-top
-                .line-background
-                .line-bottom
+                .top
+                .background
+                .bottom
             a(href="javascript:void(0);")
               .status
                 .circle &nbsp;
               span.label รายงานการขาย
-              .selected-box &nbsp;
+              .selectedbox &nbsp;
           li
-            .relative-box
+            .relative
               .line
-                .line-top
-                .line-background
-                .line-bottom
+                .top
+                .background
+                .bottom
             a(href="javascript:void(0);")
               .status
                 .circle &nbsp;
@@ -134,31 +133,31 @@ block workspace
                 | จะได้เห็นว่ามันยาวได้จริงหรือเปล่า
                 | แม้แต่สี่บรรทัดก็ทำได้
           li
-            .relative-box
+            .relative
               .line
-                .line-top
-                .line-background
-                .line-bottom
+                .top
+                .background
+                .bottom
             a(href="javascript:void(0);")
               .status
-                .big-circle &nbsp;
+                .circle.-big &nbsp;
               span.label รายงานการขาย
           li
-            .relative-box
+            .relative
               .line
-                .line-top
-                .line-background
-                .line-bottom
+                .top
+                .background
+                .bottom
             a.disable(href="javascript:void(0);")
               .status
                 .circle &nbsp;
               span.label Disable ผลการขาย
-          li.last
-            .relative-box
+          li
+            .relative
               .line
-                .line-top
-                .line-background
-                .line-bottom
+                .top
+                .background
+                .bottom
             a(href="javascript:void(0);")
               .status
                 .circle &nbsp;

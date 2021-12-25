@@ -11,7 +11,7 @@ BUTTON, a.ss-button {
   --padding: 6px 12px;
 }
 
-BUTTON.secondary, a.ss-button.secondary {
+BUTTON.-secondary, a.ss-button.-secondary {
   --background: #{$gradient-white};
   --hover-background: #{$gradient-white};
   --hover-outline: solid 1px #{$primary-yellow};
@@ -20,7 +20,7 @@ BUTTON.secondary, a.ss-button.secondary {
   --outline: solid 1px #{$transparent-black-10};
 }
 
-BUTTON.color, a.ss-button.color {
+BUTTON.-color, a.ss-button.-color {
   --color: #{$primary-white};
   --background: #{$gradient-dark};
   --hover-background: #{$secondary-Midle-gray};
@@ -31,7 +31,7 @@ BUTTON.color, a.ss-button.color {
   --outline: none;
 }
 
-BUTTON.color.green, a.ss-button.color.green {
+BUTTON.-color.-green, a.ss-button.-color.-green {
   --color: #{$primary-black};
   --background: #{$gradient-green};
   --hover-background: #{$secondary-Midle-green};
@@ -57,6 +57,7 @@ BUTTON, a.ss-button, a.ss-link {
   outline: var(--outline);
   text-decoration: none;
   border-radius: 4px;
+  -webkit-border-radius: 4px;
   cursor: pointer;
   color: var(--color);
   background: var(--background);

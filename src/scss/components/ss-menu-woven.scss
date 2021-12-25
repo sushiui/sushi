@@ -1,7 +1,6 @@
 // Woven Menu
 
 UL.ss-menu-woven {
-
   > li {
     --color: #{$primary-black};
     --background: none;
@@ -26,19 +25,11 @@ UL.ss-menu-woven {
   }
 }
 
-
 UL.ss-menu-woven {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  margin: 0px;
-  padding: 16px;
-  gap: 4px;
+  @extend .ss-menu;
 
   > li {
-    flex-grow: 0;
     display: flex;
-    flex-direction: row;
   }
 }
 
@@ -50,8 +41,8 @@ UL.ss-menu-woven > li > a {
   align-items: center;
   text-decoration: none;
   border-radius: $radius;
-  padding: 4px 6px;
-  gap: 4px;
+  padding: 4px 8px;
+  gap: 8px;
   color: var(--color);
   background: var(--background);
 
@@ -86,12 +77,6 @@ UL.ss-menu-woven > li > a {
     width: 80px;
   }
 
-  > .selectedbox{
-    background-color: $primary-yellow;
-    width: $radius;
-    border-radius: $radius;
-  }
-
   &:hover {
     background: var(--hover-background);
   }
@@ -114,7 +99,7 @@ UL.ss-menu-woven > li > .relative {
 
   > .line {
     width: 0px;
-    margin: 0px 0px 0px 18px;
+    margin: 0px 0px 0px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,500;0,800;1,500&display=swap");
 /*
 
@@ -610,7 +611,7 @@ TABLE TH, TABLE TD {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0px 0px 0px 32px;
+  padding: 0px 0px 0px 16px;
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
@@ -672,17 +673,6 @@ TABLE TH, TABLE TD {
 
 ._padding {
   padding: 16px !important;
-}
-
-H3 {
-  font-weight: 800;
-  font-size: 1.5em;
-  line-height: 145%;
-  margin: 0px;
-}
-
-H4 {
-  font-weight: bold;
 }
 
 .ss-page-header {
@@ -807,7 +797,7 @@ BUTTON.disable, BUTTON:DISABLED, a.ss-button.disable, a.ss-button:DISABLED, a.ss
   pointer-events: none;
 }
 
-UL.ss-menu li {
+UL.ss-menu > li, UL.ss-menu-woven > li {
   --color: #231F20;
   --background: none;
   --hover-background: #FEF4E9;
@@ -816,7 +806,7 @@ UL.ss-menu li {
   --disable-background: rgba(0, 0, 0, 0.1);
 }
 
-UL.ss-menu li.selected {
+UL.ss-menu > li.selected, UL.ss-menu-woven > li.selected {
   --color: #231F20;
   --background: #FEF4E9;
   --hover-background: #FEF4E9;
@@ -825,7 +815,7 @@ UL.ss-menu li.selected {
   --disable-background: rgba(0, 0, 0, 0.1);
 }
 
-UL.ss-menu {
+UL.ss-menu, UL.ss-menu-woven {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -835,33 +825,33 @@ UL.ss-menu {
   flex-direction: column;
   list-style-type: none;
   margin: 0px;
-  padding: 16px;
-  gap: 8px;
+  padding: 8px;
+  gap: 4px;
 }
 
-UL.ss-menu li {
+UL.ss-menu > li, UL.ss-menu-woven > li {
   -webkit-box-flex: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
 }
 
-UL.ss-menu li a {
+UL.ss-menu > li.selected > a::after, UL.ss-menu-woven > li.selected > a::after {
+  content: " ";
+  position: relative;
+  background-color: #FCB034;
+  width: 4px;
+  border-radius: 2px;
+}
+
+UL.ss-menu > li > a, UL.ss-menu-woven > li > a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 4px 6px;
-  margin: 0 -4px;
-  gap: 4px;
-  position: relative;
+  padding: 4px 8px;
+  gap: 8px;
   border: none;
   outline: var(--outline);
   text-decoration: none;
@@ -871,36 +861,30 @@ UL.ss-menu li a {
   background: var(--background);
 }
 
-UL.ss-menu li a span {
+UL.ss-menu > li > a > span, UL.ss-menu-woven > li > a > span {
   font-size: 1.142em;
   -webkit-box-flex: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
 }
 
-UL.ss-menu li a span.label {
+UL.ss-menu > li > a > span.label, UL.ss-menu-woven > li > a > span.label {
   font-size: 1em;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-UL.ss-menu li a .selected-box {
-  background-color: #FCB034;
-  width: 4px;
-  border-radius: 4px;
-}
-
-UL.ss-menu li a:hover {
+UL.ss-menu > li > a:hover, UL.ss-menu-woven > li > a:hover {
   background: var(--hover-background);
 }
 
-UL.ss-menu li a:active {
+UL.ss-menu > li > a:active, UL.ss-menu-woven > li > a:active {
   color: var(--active-color);
   background: var(--active-background);
 }
 
-UL.ss-menu li a.disable {
+UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   color: rgba(0, 0, 0, 0.35);
   pointer-events: none;
 }
@@ -928,31 +912,10 @@ UL.ss-menu-woven > li:last-child {
   --line-bottom-background: rgba(0, 0, 0, 0.0);
 }
 
-UL.ss-menu-woven {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  list-style-type: none;
-  margin: 0px;
-  padding: 16px;
-  gap: 4px;
-}
-
 UL.ss-menu-woven > li {
-  -webkit-box-flex: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
 }
 
 UL.ss-menu-woven > li > a {
@@ -973,8 +936,8 @@ UL.ss-menu-woven > li > a {
   align-items: center;
   text-decoration: none;
   border-radius: 4px;
-  padding: 4px 6px;
-  gap: 4px;
+  padding: 4px 8px;
+  gap: 8px;
   color: var(--color);
   background: var(--background);
 }
@@ -1014,12 +977,6 @@ UL.ss-menu-woven > li > a > .label {
   width: 80px;
 }
 
-UL.ss-menu-woven > li > a > .selectedbox {
-  background-color: #FCB034;
-  width: 4px;
-  border-radius: 4px;
-}
-
 UL.ss-menu-woven > li > a:hover {
   background: var(--hover-background);
 }
@@ -1043,7 +1000,7 @@ UL.ss-menu-woven > li > .relative {
 
 UL.ss-menu-woven > li > .relative > .line {
   width: 0px;
-  margin: 0px 0px 0px 18px;
+  margin: 0px 0px 0px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1117,8 +1074,7 @@ UL.ss-menu-woven > li > .relative > .line > .background {
   height: 30px;
 }
 
-.ss-card > .header,
-.ss-card .body > .header {
+.ss-card > .header, .ss-card .body > .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1129,21 +1085,18 @@ UL.ss-menu-woven > li > .relative > .line > .background {
   margin: 0px 16px;
 }
 
-.ss-card > .header > span.label,
-.ss-card .body > .header > span.label {
+.ss-card > .header > span.label, .ss-card .body > .header > span.label {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-weight: bold;
 }
 
-.ss-card > p,
-.ss-card .body > p {
+.ss-card > p, .ss-card .body > p {
   margin: 0px 16px;
 }
 
-.ss-card.-body,
-.ss-card > .body {
+.ss-card.-body, .ss-card > .body {
   background-color: #FFFFFF;
   padding: 16px 0px;
   display: -webkit-box;
@@ -1157,7 +1110,7 @@ UL.ss-menu-woven > li > .relative > .line > .background {
   border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-.show-icons {
+.icon-page .show-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1167,17 +1120,17 @@ UL.ss-menu-woven > li > .relative > .line > .background {
   margin-top: 16px;
 }
 
-.show-icons > .each-icon {
+.icon-page .show-icons > .each-icon {
   width: 200px;
   height: 72px;
   text-align: center;
 }
 
-.show-icons > .each-icon span {
+.icon-page .show-icons > .each-icon span {
   font-size: 1.142em;
 }
 
-.sample-icon-in-css:after {
+.icon-page .sample-icon-in-css:after {
   display: inline;
   content: "\ea1b";
   font-family: "SET-icon";
@@ -1185,6 +1138,13 @@ UL.ss-menu-woven > li > .relative > .line > .background {
   vertical-align: middle;
 }
 
-.ss-card .menu {
+.menu-page .ss-card .menu {
   width: 240px;
+}
+
+.button-page .two-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
 }

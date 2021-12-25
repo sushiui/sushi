@@ -21,8 +21,7 @@
     }
   }
 
-  > .header,
-  .body > .header {
+  > .header, .body > .header {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -34,13 +33,11 @@
     }
   }
 
-  > p,
-  .body > p {
+  > p, .body > p {
     margin: 0px $common-gap;
   }
 
-  &.-body,
-  > .body {
+  &.-body, > .body {
     background-color: $primary-white;
     padding: $common-gap 0px;
     display: flex;

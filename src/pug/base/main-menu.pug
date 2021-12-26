@@ -1,16 +1,6 @@
 .menu
-  -
-    var items = {
-      index: ['Home','index','ss-icon-Home'],
-      icon: ['Icon','icon','ss-icon-Settings-suggest'],
-      component: ['Component','','ss-icon-Main-Component-filled'],
-      menu: ['Menu','menu','ss-icon-Status-circle'],
-      button: ['Button','button','ss-icon-Status-circle'],
-      header: ['Header and Card','header','ss-icon-Status-circle']
-    }
-
   ul.ss-menu
-    each val, key in items
+    each val, key in menuItems
       - var url = key
       if(val[1] == current)
         li.selected

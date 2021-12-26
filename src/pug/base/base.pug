@@ -1,14 +1,28 @@
 doctype html
 
 block page-variable
-  - var current = "home"
+  -
+    /* Index, Name, Filename, Icon */
+    /* we can't use Filename as index because pug variable can't use dash */
+    var menuItems = {
+      index: ['Home','index','ss-icon-Home'],
+      icon: ['Icon','icon','ss-icon-Settings-suggest'],
+      component: ['Component','','ss-icon-Main-Component-filled'],
+      menu: ['Menu','menu','ss-icon-Status-circle'],
+      button: ['Button','button','ss-icon-Status-circle'],
+      header: ['Header and Card','header','ss-icon-Status-circle']
+    }
+
+  - var current = "index"
 
 html(lang="en")
   head
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
-    title Demo Sushi framework
+    title
+      | #{current == "index" ? "" : menuItems[current][0] + " · "}
+      | Sushi v.0.1
     link(href="./assets/css/sushi.css", rel="stylesheet")
     link(href="./assets/css/prism.css", rel="stylesheet")
     link(rel="icon", type="image/svg+xml", href="./assets/images/favicon.svg")

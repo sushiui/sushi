@@ -1,7 +1,7 @@
 extends ../base/base.pug
 
 block append page-variable
-  - var current = "account"
+  - var current = "navigation"
 
 block workspace
 
@@ -9,8 +9,17 @@ block workspace
     span.label Account
 
   .ss-card
-    .ss-site-header
+    nav.ss-site-header
       h3 Sushi Design System
+
+      ul
+        li Document
+        li Github
+        li Getting Start
+
+      | Apirak
+
+      span.ss-icon-Account-circle
 
     .body
       span.label Account

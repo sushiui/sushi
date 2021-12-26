@@ -8,10 +8,10 @@ block page-variable
       index: ['Home','index','ss-icon-Home'],
       icon: ['Icon','icon','ss-icon-Settings-suggest'],
       component: ['Component','','ss-icon-Main-Component-filled'],
-      account: ['Account','account','ss-icon-Status-circle'],
       button: ['Button','button','ss-icon-Status-circle'],
       header: ['Header and Card','header','ss-icon-Status-circle'],
       menu: ['Menu','menu','ss-icon-Status-circle'],
+      navigation: ['Navigation','navigation','ss-icon-Status-circle'],
     }
 
   - var current = "index"
@@ -30,7 +30,7 @@ html(lang="en")
     link(rel="icon", type="image/png", href="./assets/images/favicon.png")
 
   body(class= current +'-page')
-    .ss-site-header
+    nav.ss-site-header
       h3 Sushi Design System
 
     .ss-container

@@ -1,3 +1,15 @@
+// All page
+
+.menu {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: $transparent-white-96;
+  align-self: stretch;
+  width: 200px;
+  box-shadow: $shadow-10;
+}
+
 // Icon page
 
 .icon-page {

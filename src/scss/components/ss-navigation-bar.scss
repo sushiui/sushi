@@ -1,9 +1,13 @@
 .ss-navigation-bar > ul > li.selected {
   --background: #{$gradient-yellow};
+  --hover-background: #{$primary-yellow};
+  --hover-color: #{$primary-black};
 }
 
 .ss-navigation-bar > ul > li {
-  --background: #{none};
+  --background: none;
+  --hover-background: none;
+  --hover-color: #{$secondary-blue};
 }
 
 .ss-navigation-bar {
@@ -50,6 +54,12 @@
         padding: 0px 12px 4px 12px;
         text-decoration: none;
         color: $primary-black;
+
+        &:hover {
+          color: var(--hover-color);
+          background: var(--hover-background);
+        }
+
       }
     }
   }

@@ -1046,10 +1046,14 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
 
 .ss-navigation-bar > ul > li.selected {
   --background: linear-gradient(180deg, #FFCF36 0%, #FCB034 88.02%);
+  --hover-background: #FCB034;
+  --hover-color: #231F20;
 }
 
 .ss-navigation-bar > ul > li {
   --background: none;
+  --hover-background: none;
+  --hover-color: #009FD4;
 }
 
 .ss-navigation-bar {
@@ -1115,6 +1119,11 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   padding: 0px 12px 4px 12px;
   text-decoration: none;
   color: #231F20;
+}
+
+.ss-navigation-bar > ul > li > a:hover {
+  color: var(--hover-color);
+  background: var(--hover-background);
 }
 
 .ss-navigation-bar > span.account {

@@ -1,13 +1,11 @@
-# sushi
-Sushi Design System help us work together to build a great experience for all of SET co-worker and listed company.
+# Sushi
+Sushi Design System helps us work together to build great experience for all of SET co-workers and listed companies.
 
-We prepare HTML/CSS component as building block as you develop new product and feature. We also prepare Figma component for design can prepare prototype before develop.
+We prepare HTML/CSS component as building blocks when you develop new products and features. We also prepare Figma's components for designers who prepare prototypes before development.
 
 ![Sushi screen](assets/images/preview.png)
 
-To see the actual result you can preview it from
-
-https://sushidesignsystem.github.io/sushi
+See the actual result here: https://sushidesignsystem.github.io/sushi
 
 
 ## Install

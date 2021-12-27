@@ -13,17 +13,6 @@ block workspace
       span.label Generic Menu
 
     .body._padding
-      pre
-        code.language-html
-          |
-          | &lt;ul class="ss-menu">
-          |  &lt;li>
-          |   &lt;a href="index.html">
-          |     &lt;span class="ss-icon-Home"></span>
-          |     &lt;span class="label">Home</span></a>
-          |  &lt;/li>
-          | &lt;ul>
-          | &nbsp;
       .menu
         ul.ss-menu
           li
@@ -40,7 +29,7 @@ block workspace
               span.label Icon
               span.ss-icon-Maximize-arrow
           li
-            a(href="javascript:void(0);")
+            .title
               span.ss-icon-Main-Component-filled
               span.label Component
               span.ss-icon-Maximize-arrow
@@ -60,32 +49,23 @@ block workspace
             a.disable(href="javascript:void(0);")
               span.ss-icon-Document
               span.label Note
+      pre
+        code.language-html
+          |
+          | &lt;ul class="ss-menu">
+          |  &lt;li>
+          |   &lt;a href="index.html">
+          |     &lt;span class="ss-icon-Home"></span>
+          |     &lt;span class="label">Home</span></a>
+          |  &lt;/li>
+          | &lt;ul>
+          | &nbsp;
 
   .ss-card
     .header
       span.label Woven Menu
 
     .body._padding
-      pre
-        code.language-html
-          |
-          | &lt;ul class="ss-menu-woven">
-          |   &lt;li>
-          |     &lt;div class="relative-box">
-          |       &lt;div class="line">
-          |         &lt;div class="top">&lt;/div>
-          |         &lt;div class="background">&lt;/div>
-          |         &lt;div class="bottom">&lt;/div>
-          |       &lt;/div>
-          |     &lt;/div>&lt;a href="javascript:void(0);">
-          |       &lt;div class="status">
-          |         &lt;div class="big-circle">&nbsp;&lt;/div>
-          |       &lt;/div>&lt;span class="label">รายงานการขาย&lt;/span>
-          |     &lt;/a>
-          |   &lt;/li>
-          | &lt;/ul>
-          | &nbsp;
-
       .menu
         ul.ss-menu-woven
           li
@@ -162,3 +142,23 @@ block workspace
               .status
                 .circle &nbsp;
               span.label ชื่อสั้นๆ ในเมนูสั้นๆ
+
+      pre
+        code.language-html
+          |
+          | &lt;ul class="ss-menu-woven">
+          |   &lt;li>
+          |     &lt;div class="relative-box">
+          |       &lt;div class="line">
+          |         &lt;div class="top">&lt;/div>
+          |         &lt;div class="background">&lt;/div>
+          |         &lt;div class="bottom">&lt;/div>
+          |       &lt;/div>
+          |     &lt;/div>&lt;a href="javascript:void(0);">
+          |       &lt;div class="status">
+          |         &lt;div class="big-circle">&nbsp;&lt;/div>
+          |       &lt;/div>&lt;span class="label">รายงานการขาย&lt;/span>
+          |     &lt;/a>
+          |   &lt;/li>
+          | &lt;/ul>
+          | &nbsp;

@@ -13,15 +13,6 @@ block workspace
       span.label Link &lt;a&gt; as a button
 
     .body._padding
-      pre
-        code.language-html
-          |
-          | &lt;a class="ss-button color green" href="#">
-          |    &lt;span class="ss-icon-Search">&lt;/span>
-          |    Color green Link
-          |    &lt;span class="ss-icon-Next">&lt;/span>
-          | &lt;/a>
-          | &nbsp;
       table
         tr
           th &nbsp;
@@ -73,22 +64,21 @@ block workspace
               span.ss-icon-Search
               | Color green Link
               span.ss-icon-Next
-
-  .ss-card
-    .header
-      span.label Link &lt;a&gt; as a link
-
-    .body._padding
       pre
         code.language-html
           |
-          | &lt;a class="ss-link color green" href="#">
+          | &lt;a class="ss-button color green" href="#">
           |    &lt;span class="ss-icon-Search">&lt;/span>
           |    Color green Link
           |    &lt;span class="ss-icon-Next">&lt;/span>
           | &lt;/a>
           | &nbsp;
 
+  .ss-card
+    .header
+      span.label Link &lt;a&gt; as a link
+
+    .body._padding
       table
         tr
           th &nbsp;
@@ -108,20 +98,21 @@ block workspace
               | General Link
               span.ss-icon-Next
 
+      pre
+        code.language-html
+          |
+          | &lt;a class="ss-link color green" href="#">
+          |    &lt;span class="ss-icon-Search">&lt;/span>
+          |    Color green Link
+          |    &lt;span class="ss-icon-Next">&lt;/span>
+          | &lt;/a>
+          | &nbsp;
+
   .ss-card
     .header
       span.label Button &lt;button&gt;
 
     .body._padding
-      pre
-        code.language-html
-          |
-          |  &lt;button>
-          |    &lt;span class="ss-icon-Search">&lt;/span>
-          |    Primary Button
-          |    &lt;span class="ss-icon-Next">&lt;/span>
-          |  &lt;/button>
-          |  &nbsp;
       table
         tr
           th &nbsp;
@@ -173,6 +164,15 @@ block workspace
               span.ss-icon-Search
               | Color Green
               span.ss-icon-Next
+      pre
+        code.language-html
+          |
+          |  &lt;button>
+          |    &lt;span class="ss-icon-Search">&lt;/span>
+          |    Primary Button
+          |    &lt;span class="ss-icon-Next">&lt;/span>
+          |  &lt;/button>
+          |  &nbsp;
 
   .ss-card
     .header

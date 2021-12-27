@@ -998,6 +998,24 @@ UL.ss-menu > li.selected > a::after, UL.ss-menu-woven > li.selected > a::after {
   border-radius: 2px;
 }
 
+UL.ss-menu > li > .title, UL.ss-menu-woven > li > .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 8px;
+}
+
+UL.ss-menu > li > .title > span.label, UL.ss-menu-woven > li > .title > span.label {
+  font-size: 1em;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 UL.ss-menu > li > a, UL.ss-menu-woven > li > a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1007,8 +1025,6 @@ UL.ss-menu > li > a, UL.ss-menu-woven > li > a {
   align-items: center;
   padding: 4px 8px;
   gap: 8px;
-  border: none;
-  outline: var(--outline);
   text-decoration: none;
   border-radius: 4px;
   cursor: pointer;

@@ -6,14 +6,14 @@ block append page-variable
 block workspace
 
   .ss-page-header.-nobreadcrumbs
-    span.label Account
+    span.label Navigation
 
   .ss-card
     nav.ss-navigation-bar
       span.header
         span.ss-icon-One-Report
-        | Sushi
-        span.description Design System
+        | One Report
+        span.description to rule them all
 
       ul
         li.selected
@@ -37,7 +37,37 @@ block workspace
           span.ss-icon-Account-circle
 
     .body
-      span.label Account
+
+      pre
+        code.language-html
+          |  &lt;nav class="ss-navigation-bar">
+          |    &lt;span class="header">
+          |      &lt;span class="ss-icon-One-Report">&lt;/span>Sushi
+          |      &lt;span class="description">Design System&lt;/span>
+          |    &lt;/span>
+          |
+          |    &lt;ul>
+          |      &lt;li class="selected">&lt;a href="javascript:void(0);">&lt;span class="label">Home&lt;/span>&lt;/a>&lt;/li>
+          |      &lt;li>&lt;a href="javascript:void(0);">&lt;span class="label">เมนูภาษาไทย&lt;/span>&lt;/a>&lt;/li>
+          |      &lt;li>
+          |        &lt;a href="javascript:void(0);">
+          |          &lt;span class="ss-icon-Check-list">&lt;/span>&nbsp;
+          |          &lt;span class="label">Getting Start&lt;/span>
+          |        &lt;/a>
+          |      &lt;/li>
+          |    &lt;/ul>
+          |
+          |    &lt;span class="account">
+          |      &lt;a class="ss-button -secondary" href="javascript:void(0)">
+          |        &lt;span class="ss-icon-Vpn-key">&lt;/span>Login
+          |      &lt;/a>
+          |      &lt;a class="language" href="javascript:void(0);">&nbsp;&lt;/a>
+          |      &lt;a class="-big-icon" href="javascript:void(0);">
+          |        &lt;span class="ss-icon-Account-circle">&lt;/span>
+          |      &lt;/a>
+          |    &lt;/span>
+          |  &lt;/nav>
+          | &nbsp;
 
 
 

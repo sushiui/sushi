@@ -35,13 +35,23 @@ UL.ss-menu {
   }
 }
 
+UL.ss-menu > li > .title {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 8px;
+
+  > span.label {
+    font-size: 1em;
+    flex-grow: 1;
+  }
+}
+
 UL.ss-menu > li > a {
   display: flex;
   align-items: center;
   padding: 4px 8px;
   gap: 8px;
-  border: none;
-  outline: var(--outline);
   text-decoration: none;
   border-radius: $radius;
   cursor: pointer;

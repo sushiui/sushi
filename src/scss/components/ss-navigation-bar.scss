@@ -59,7 +59,6 @@
           color: var(--hover-color);
           background: var(--hover-background);
         }
-
       }
     }
   }
@@ -70,7 +69,13 @@
     align-items: center;
 
     font-size: $font-size-body;
-    > span.account {
+    > a.language {
+      display: block;
+      width: 16px;
+      height: 16px;
+      text-decoration: none;
+      background: url(../images/Thailand.svg);
+      background-size: 16px 16px;
     }
   }
 }

@@ -1137,6 +1137,15 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   font-size: 1rem;
 }
 
+.ss-navigation-bar > span.account > a.language {
+  display: block;
+  width: 16px;
+  height: 16px;
+  text-decoration: none;
+  background: url(../images/Thailand.svg);
+  background-size: 16px 16px;
+}
+
 .ss-page-header {
   margin: 0px 16px;
   display: -webkit-box;

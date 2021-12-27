@@ -1054,7 +1054,7 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
 
 .ss-navigation-bar {
   background-color: #FFFFFF;
-  height: 32px;
+  height: 38px;
   border-bottom: 4px solid #FCB034;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1063,7 +1063,7 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding: 4px 16px 0px 16px;
+  padding: 0px 16px 0px 16px;
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
@@ -1089,6 +1089,7 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   display: -ms-flexbox;
   display: flex;
   gap: 8px;
+  padding-top: 4px;
   list-style-type: none;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -1111,7 +1112,7 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   align-items: center;
   background: var(--background);
   border-radius: 4px 4px 0px 0px;
-  padding: 0px 12px 0px 12px;
+  padding: 0px 12px 4px 12px;
   text-decoration: none;
   color: #231F20;
 }

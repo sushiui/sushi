@@ -8,11 +8,11 @@
 
 .ss-navigation-bar {
   background-color: $primary-white;
-  height: 32px;
+  height: 38px;
   border-bottom: 4px solid $primary-yellow;
   display: flex;
   flex-direction: row;
-  padding: 4px $common-gap 0px $common-gap;
+  padding: 0px $common-gap 0px $common-gap;
   box-shadow: $shadow-10;
 }
 
@@ -33,6 +33,7 @@
     display: flex;
     gap: 8px;
 
+    padding-top: 4px;
     list-style-type: none;
     flex-grow: 1;
     margin: 0px;
@@ -46,7 +47,7 @@
         background: var(--background);
         border-radius: $radius $radius 0px 0px;
 
-        padding: 0px 12px 0px 12px;
+        padding: 0px 12px 4px 12px;
         text-decoration: none;
         color: $primary-black;
       }

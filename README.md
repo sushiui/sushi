@@ -1,11 +1,11 @@
-# sushi
-Sushi is Design System build for SET
+# Sushi
+Sushi Design System helps us work together to build great experience for all of SET co-workers and listed companies.
 
-## Preview
+We prepare HTML/CSS component as building blocks when you develop new products and features. We also prepare Figma's components for designers who prepare prototypes before development.
 
 ![Sushi screen](assets/images/preview.png)
 
-https://sushidesignsystem.github.io/sushi
+See the actual result here: https://sushidesignsystem.github.io/sushi
 
 
 ## Install

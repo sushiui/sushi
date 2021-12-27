@@ -1,0 +1,55 @@
+.ss-navigation-bar > ul > li.selected {
+  --background: #{$gradient-yellow};
+}
+
+.ss-navigation-bar > ul > li {
+  --background: #{none};
+}
+
+.ss-navigation-bar {
+  background-color: $primary-white;
+  height: 44px;
+  border-bottom: 4px solid $primary-yellow;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 0px 0px $common-gap;
+  box-shadow: $shadow-10;
+}
+
+.ss-navigation-bar {
+
+  > span.header {
+    display: flex;
+    font-weight: 800;
+    gap: 8px;
+
+    align-items: flex-end;
+    margin-bottom: 8px;
+    font-size: $font-size-h3;
+    > span.description {
+      font-size: $font-size-body;
+    }
+  }
+
+  > ul {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+
+    list-style-type: none;
+    flex-grow: 1;
+    margin: 0px;
+
+    > li {
+      background: var(--background);
+      border-radius: $radius $radius 0px 0px;
+      padding: 8px 8px 8px 8px;
+      // font-weight: bold;
+
+      > a {
+        text-decoration: none;
+        color: $primary-black;
+      }
+    }
+  }
+}

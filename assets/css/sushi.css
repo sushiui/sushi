@@ -565,7 +565,7 @@ HTML {
 
 BODY, INPUT, TEXTAREA, BUTTON {
   font-family: inherit;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 BODY {
@@ -594,26 +594,7 @@ TABLE TH, TABLE TD {
 }
 
 .small {
-  font-size: 0.429em;
-}
-
-.ss-site-header {
-  background-color: #FFFFFF;
-  height: 44px;
-  border-bottom: 4px solid #FCB034;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0px 0px 0px 16px;
-  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  font-size: 0.429rem;
 }
 
 .ss-container {
@@ -1003,12 +984,6 @@ UL.ss-menu, UL.ss-menu-woven {
   gap: 4px;
 }
 
-UL.ss-menu > li, UL.ss-menu-woven > li {
-  -webkit-box-flex: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-}
-
 UL.ss-menu > li.selected > a::after, UL.ss-menu-woven > li.selected > a::after {
   content: " ";
   position: relative;
@@ -1063,6 +1038,73 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   pointer-events: none;
 }
 
+.ss-navigation-bar > ul > li.selected {
+  --background: linear-gradient(180deg, #FFCF36 0%, #FCB034 88.02%);
+}
+
+.ss-navigation-bar > ul > li {
+  --background: none;
+}
+
+.ss-navigation-bar {
+  background-color: #FFFFFF;
+  height: 44px;
+  border-bottom: 4px solid #FCB034;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 0px 0px 0px 16px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ss-navigation-bar > span.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 800;
+  gap: 8px;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+}
+
+.ss-navigation-bar > span.header > span.description {
+  font-size: 1rem;
+}
+
+.ss-navigation-bar > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  gap: 4px;
+  list-style-type: none;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin: 0px;
+}
+
+.ss-navigation-bar > ul > li {
+  background: var(--background);
+  border-radius: 4px 4px 0px 0px;
+  padding: 8px 8px 8px 8px;
+}
+
+.ss-navigation-bar > ul > li > a {
+  text-decoration: none;
+  color: #231F20;
+}
+
 .ss-page-header {
   margin: 0px 16px;
   display: -webkit-box;
@@ -1082,7 +1124,7 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   display: -ms-flexbox;
   display: flex;
   font-weight: 800;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   line-height: 145%;
   margin: 0px;
   -webkit-box-align: center;

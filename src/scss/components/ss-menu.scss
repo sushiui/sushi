@@ -1,5 +1,3 @@
-// Generic Menu
-
 UL.ss-menu {
   > li {
     --color: #{$primary-black};
@@ -27,10 +25,6 @@ UL.ss-menu {
   margin: 0px;
   padding: 8px;
   gap: 4px;
-
-  > li {
-    flex-grow: 0;
-  }
 
   > li.selected > a::after {
     content: "\00a0";

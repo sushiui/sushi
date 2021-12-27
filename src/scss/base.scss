@@ -60,6 +60,12 @@ TABLE {
 
 // Helper
 
+a.-big-icon {
+  font-size: $font-size-h3;
+  text-decoration: none;
+  color: $primary-black;
+}
+
 ._padding {
   padding: $common-gap !important;
 }

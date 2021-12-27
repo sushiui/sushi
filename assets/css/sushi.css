@@ -635,6 +635,12 @@ TABLE TH, TABLE TD {
   padding-bottom: 16px;
 }
 
+a.-big-icon {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #231F20;
+}
+
 ._padding {
   padding: 16px !important;
 }
@@ -1048,7 +1054,7 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
 
 .ss-navigation-bar {
   background-color: #FFFFFF;
-  height: 44px;
+  height: 32px;
   border-bottom: 4px solid #FCB034;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1057,7 +1063,7 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding: 0px 0px 0px 16px;
+  padding: 4px 16px 0px 16px;
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
@@ -1068,10 +1074,9 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   display: flex;
   font-weight: 800;
   gap: 8px;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  margin-bottom: 8px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 1.5rem;
 }
 
@@ -1083,10 +1088,7 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  gap: 4px;
+  gap: 8px;
   list-style-type: none;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -1095,14 +1097,34 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
 }
 
 .ss-navigation-bar > ul > li {
-  background: var(--background);
-  border-radius: 4px 4px 0px 0px;
-  padding: 8px 8px 8px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .ss-navigation-bar > ul > li > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: var(--background);
+  border-radius: 4px 4px 0px 0px;
+  padding: 0px 12px 0px 12px;
   text-decoration: none;
   color: #231F20;
+}
+
+.ss-navigation-bar > span.account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1rem;
 }
 
 .ss-page-header {

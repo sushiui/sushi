@@ -8,23 +8,21 @@
 
 .ss-navigation-bar {
   background-color: $primary-white;
-  height: 44px;
+  height: 32px;
   border-bottom: 4px solid $primary-yellow;
   display: flex;
   flex-direction: row;
-  padding: 0px 0px 0px $common-gap;
+  padding: 4px $common-gap 0px $common-gap;
   box-shadow: $shadow-10;
 }
 
 .ss-navigation-bar {
-
   > span.header {
     display: flex;
     font-weight: 800;
     gap: 8px;
+    align-items: center;
 
-    align-items: flex-end;
-    margin-bottom: 8px;
     font-size: $font-size-h3;
     > span.description {
       font-size: $font-size-body;
@@ -33,23 +31,35 @@
 
   > ul {
     display: flex;
-    align-items: flex-end;
-    gap: 4px;
+    gap: 8px;
 
     list-style-type: none;
     flex-grow: 1;
     margin: 0px;
-
     > li {
-      background: var(--background);
-      border-radius: $radius $radius 0px 0px;
-      padding: 8px 8px 8px 8px;
-      // font-weight: bold;
+      display: flex;
 
       > a {
+        display: flex;
+        align-items: center;
+
+        background: var(--background);
+        border-radius: $radius $radius 0px 0px;
+
+        padding: 0px 12px 0px 12px;
         text-decoration: none;
         color: $primary-black;
       }
+    }
+  }
+
+  > span.account {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    font-size: $font-size-body;
+    > span.account {
     }
   }
 }

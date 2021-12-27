@@ -1,0 +1,81 @@
+.ss-navigation-bar > ul > li.selected {
+  --background: #{$gradient-yellow};
+  --hover-background: #{$primary-yellow};
+  --hover-color: #{$primary-black};
+}
+
+.ss-navigation-bar > ul > li {
+  --background: none;
+  --hover-background: none;
+  --hover-color: #{$secondary-blue};
+}
+
+.ss-navigation-bar {
+  background-color: $primary-white;
+  height: 38px;
+  border-bottom: 4px solid $primary-yellow;
+  display: flex;
+  flex-direction: row;
+  padding: 0px $common-gap 0px $common-gap;
+  box-shadow: $shadow-10;
+}
+
+.ss-navigation-bar {
+  > span.header {
+    display: flex;
+    font-weight: 800;
+    gap: 8px;
+    align-items: center;
+
+    font-size: $font-size-h3;
+    > span.description {
+      font-size: $font-size-body;
+    }
+  }
+
+  > ul {
+    display: flex;
+    gap: 8px;
+
+    padding-top: 4px;
+    list-style-type: none;
+    flex-grow: 1;
+    margin: 0px;
+    > li {
+      display: flex;
+
+      > a {
+        display: flex;
+        align-items: center;
+
+        background: var(--background);
+        border-radius: $radius $radius 0px 0px;
+
+        padding: 0px 12px 4px 12px;
+        text-decoration: none;
+        color: $primary-black;
+
+        &:hover {
+          color: var(--hover-color);
+          background: var(--hover-background);
+        }
+      }
+    }
+  }
+
+  > span.account {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    font-size: $font-size-body;
+    > a.language {
+      display: block;
+      width: 16px;
+      height: 16px;
+      text-decoration: none;
+      background: url(../images/Thailand.svg);
+      background-size: 16px 16px;
+    }
+  }
+}

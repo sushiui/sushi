@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <title>Demo Sushi framework</title>
+  <title>Button ·
+    Sushi v.0.1</title>
   <link href="./assets/css/sushi.css" rel="stylesheet">
   <link href="./assets/css/prism.css" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
@@ -13,20 +14,19 @@
 </head>
 
 <body class="button-page">
-  <div class="ss-site-header">
-    <h3>Sushi Design System</h3>
-  </div>
+  <nav class="ss-navigation-bar"><span class="header"><span class="ss-icon-Sushi"></span>Sushi Design System</span></nav>
   <div class="ss-container">
     <div class="menu">
       <ul class="ss-menu">
         <li><a href="index.html"><span class="ss-icon-Home"></span><span class="label">Home</span></a></li>
         <li><a href="icon.html"><span class="ss-icon-Settings-suggest"></span><span class="label">Icon</span></a></li>
         <li><a href="javascript:void(0)"><span class="ss-icon-Main-Component-filled"></span><span class="label">Component</span><span class="ss-icon-Maximize-arrow"></span></a></li>
-        <li><a href="menu.html"><span class="ss-icon-Status-circle"></span><span class="label">Menu</span></a></li>
         <li class="selected"><a href="button.html"><span class="ss-icon-Status-circle"></span><span class="label">Button</span>
             <div class="selected-box">&nbsp;</div>
           </a></li>
         <li><a href="header.html"><span class="ss-icon-Status-circle"></span><span class="label">Header and Card</span></a></li>
+        <li><a href="menu.html"><span class="ss-icon-Status-circle"></span><span class="label">Menu</span></a></li>
+        <li><a href="navigation.html"><span class="ss-icon-Status-circle"></span><span class="label">Navigation</span></a></li>
       </ul>
     </div>
     <div class="ss-workspace">
@@ -51,16 +51,16 @@
             <tr>
               <td>Enable</td>
               <td><a class="ss-button" href="javascript:void(0)"><span class="ss-icon-Search"></span>Primary Link<span class="ss-icon-Next"></span></a></td>
-              <td><a class="ss-button secondary" href="javascript:void(0)"><span class="ss-icon-Search"></span>Secondary Link<span class="ss-icon-Next"></span></a></td>
-              <td><a class="ss-button color" href="javascript:void(0)"><span class="ss-icon-Search"></span>Color Link<span class="ss-icon-Next"></span></a></td>
-              <td><a class="ss-button color green" href="javascript:void(0)"><span class="ss-icon-Search"></span>Color green Link<span class="ss-icon-Next"></span></a></td>
+              <td><a class="ss-button -secondary" href="javascript:void(0)"><span class="ss-icon-Search"></span>Secondary Link<span class="ss-icon-Next"></span></a></td>
+              <td><a class="ss-button -color" href="javascript:void(0)"><span class="ss-icon-Search"></span>Color Link<span class="ss-icon-Next"></span></a></td>
+              <td><a class="ss-button -color -green" href="javascript:void(0)"><span class="ss-icon-Search"></span>Color green Link<span class="ss-icon-Next"></span></a></td>
             </tr>
             <tr>
               <td>Disable</td>
               <td><a class="ss-button disable" href="javascript:void(0)"><span class="ss-icon-Search"></span>Primary Link<span class="ss-icon-Next"></span></a></td>
-              <td><a class="ss-button secondary disable" href="javascript:void(0)"><span class="ss-icon-Search"></span>Secondary Link<span class="ss-icon-Next"></span></a></td>
-              <td><a class="ss-button color disable" href="javascript:void(0)"><span class="ss-icon-Search"></span>Color Link<span class="ss-icon-Next"></span></a></td>
-              <td><a class="ss-button color green disable" href="javascript:void(0)"><span class="ss-icon-Search"></span>Color green Link<span class="ss-icon-Next"></span></a></td>
+              <td><a class="ss-button -secondary disable" href="javascript:void(0)"><span class="ss-icon-Search"></span>Secondary Link<span class="ss-icon-Next"></span></a></td>
+              <td><a class="ss-button -color disable" href="javascript:void(0)"><span class="ss-icon-Search"></span>Color Link<span class="ss-icon-Next"></span></a></td>
+              <td><a class="ss-button -color -green disable" href="javascript:void(0)"><span class="ss-icon-Search"></span>Color green Link<span class="ss-icon-Next"></span></a></td>
             </tr>
           </table>
         </div>
@@ -110,16 +110,16 @@
             <tr>
               <td>Enable</td>
               <td><button><span class="ss-icon-Search"></span>Primary<span class="ss-icon-Next"></span></button></td>
-              <td><button class="secondary"><span class="ss-icon-Search"></span>Secondary<span class="ss-icon-Next"></span></button></td>
-              <td><button class="color"><span class="ss-icon-Search"></span>Color<span class="ss-icon-Next"></span></button></td>
-              <td><button class="color green"><span class="ss-icon-Search"></span>Color green<span class="ss-icon-Next"></span></button></td>
+              <td><button class="-secondary"><span class="ss-icon-Search"></span>Secondary<span class="ss-icon-Next"></span></button></td>
+              <td><button class="-color"><span class="ss-icon-Search"></span>Color<span class="ss-icon-Next"></span></button></td>
+              <td><button class="-color -green"><span class="ss-icon-Search"></span>Color green<span class="ss-icon-Next"></span></button></td>
             </tr>
             <tr>
               <td>Disable</td>
               <td><button disabled><span class="ss-icon-Search"></span>Primary<span class="ss-icon-Next"></span></button></td>
-              <td><button class="secondary" disabled><span class="ss-icon-Search"></span>Secondary<span class="ss-icon-Next"></span></button></td>
-              <td><button class="color" disabled><span class="ss-icon-Search"></span>Color<span class="ss-icon-Next"></span></button></td>
-              <td><button class="color green" disabled><span class="ss-icon-Search"></span>Color Green<span class="ss-icon-Next"></span></button></td>
+              <td><button class="-secondary" disabled><span class="ss-icon-Search"></span>Secondary<span class="ss-icon-Next"></span></button></td>
+              <td><button class="-color" disabled><span class="ss-icon-Search"></span>Color<span class="ss-icon-Next"></span></button></td>
+              <td><button class="-color -green" disabled><span class="ss-icon-Search"></span>Color Green<span class="ss-icon-Next"></span></button></td>
             </tr>
           </table>
         </div>

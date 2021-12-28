@@ -10,7 +10,131 @@ block workspace
 
   .ss-card
     .header
-      span.label Link &lt;a&gt; as a button
+      span.label &lt;button&gt;
+
+    .body._padding
+      table
+        tr
+          th &nbsp;
+          th Primary Button
+          th Secondary Button
+          th Color
+          th Color Green
+        tr
+          td Enable
+          td
+            button
+              span.ss-icon-Search
+              | Primary
+              span.ss-icon-Next
+          td
+            button.-secondary
+              span.ss-icon-Search
+              | Secondary
+              span.ss-icon-Next
+          td
+            button.-color
+              span.ss-icon-Search
+              | Color
+              span.ss-icon-Next
+          td
+            button.-color.-yellow-green
+              span.ss-icon-Search
+              | Color green
+              span.ss-icon-Next
+        tr
+          td Disable
+          td
+            button(disabled)
+              span.ss-icon-Search
+              | Primary
+              span.ss-icon-Next
+          td
+            button.-secondary(disabled)
+              span.ss-icon-Search
+              | Secondary
+              span.ss-icon-Next
+          td
+            button.-color(disabled)
+              span.ss-icon-Search
+              | Color
+              span.ss-icon-Next
+          td
+            button.-color.-yellow-green(disabled)
+              span.ss-icon-Search
+              | Color Green
+              span.ss-icon-Next
+      pre
+        code.language-html
+          |
+          |  &lt;button>
+          |    &lt;span class="ss-icon-Search">&lt;/span>
+          |    Primary Button
+          |    &lt;span class="ss-icon-Next">&lt;/span>
+          |  &lt;/button>
+          |  &nbsp;
+
+  .ss-card
+    .header
+      span.label &lt;button&gt; in all color
+
+    .body._padding
+      table
+        tr
+          td Black
+          td
+            button.-color.-yellow-green
+              span.ss-icon-Search
+              | Yellow green
+              span.ss-icon-Next
+          td
+            button.-color.-yellow
+              span.ss-icon-Search
+              | Yellow
+              span.ss-icon-Next
+          td
+            button.-color.-orange
+              span.ss-icon-Search
+              | Orange
+              span.ss-icon-Next
+          td
+            | &nbsp;
+        tr
+          td White
+          td
+            button.-color.-sky-blue
+              span.ss-icon-Search
+              | Sky blue
+              span.ss-icon-Next
+          td
+            button.-color.-purplish-blue
+              span.ss-icon-Search
+              | Purplish blue
+              span.ss-icon-Next
+          td
+            button.-color.-purplish-red
+              span.ss-icon-Search
+              | Purplish red
+              span.ss-icon-Next
+          td
+            button.-color.-gray
+              span.ss-icon-Search
+              | Gray
+              span.ss-icon-Next
+
+      pre
+        code.language-html
+          |
+          | &lt;button class="ss-button -color -yellow-green">
+          |    &lt;span class="ss-icon-Search">&lt;/span>
+          |    Color green Link
+          |    &lt;span class="ss-icon-Next">&lt;/span>
+          | &lt;/button>
+          | &nbsp;
+
+  .ss-card
+    .header
+      span.label &lt;a&gt; as a button
 
     .body._padding
       table
@@ -67,7 +191,7 @@ block workspace
       pre
         code.language-html
           |
-          | &lt;a class="ss-button color green" href="#">
+          | &lt;a class="ss-button" href="#">
           |    &lt;span class="ss-icon-Search">&lt;/span>
           |    Color green Link
           |    &lt;span class="ss-icon-Next">&lt;/span>
@@ -76,7 +200,7 @@ block workspace
 
   .ss-card
     .header
-      span.label Link &lt;a&gt; as a link
+      span.label &lt;a&gt; as a link
 
     .body._padding
       table
@@ -101,7 +225,7 @@ block workspace
       pre
         code.language-html
           |
-          | &lt;a class="ss-link color green" href="#">
+          | &lt;a class="ss-link href="#">
           |    &lt;span class="ss-icon-Search">&lt;/span>
           |    Color green Link
           |    &lt;span class="ss-icon-Next">&lt;/span>
@@ -110,73 +234,7 @@ block workspace
 
   .ss-card
     .header
-      span.label Button &lt;button&gt;
-
-    .body._padding
-      table
-        tr
-          th &nbsp;
-          th Primary Button
-          th Secondary Button
-          th Color
-          th Color Green
-        tr
-          td Enable
-          td
-            button
-              span.ss-icon-Search
-              | Primary
-              span.ss-icon-Next
-          td
-            button.-secondary
-              span.ss-icon-Search
-              | Secondary
-              span.ss-icon-Next
-          td
-            button.-color
-              span.ss-icon-Search
-              | Color
-              span.ss-icon-Next
-          td
-            button.-color.-green
-              span.ss-icon-Search
-              | Color green
-              span.ss-icon-Next
-        tr
-          td Disable
-          td
-            button(disabled)
-              span.ss-icon-Search
-              | Primary
-              span.ss-icon-Next
-          td
-            button.-secondary(disabled)
-              span.ss-icon-Search
-              | Secondary
-              span.ss-icon-Next
-          td
-            button.-color(disabled)
-              span.ss-icon-Search
-              | Color
-              span.ss-icon-Next
-          td
-            button.-color.-green(disabled)
-              span.ss-icon-Search
-              | Color Green
-              span.ss-icon-Next
-      pre
-        code.language-html
-          |
-          |  &lt;button>
-          |    &lt;span class="ss-icon-Search">&lt;/span>
-          |    Primary Button
-          |    &lt;span class="ss-icon-Next">&lt;/span>
-          |  &lt;/button>
-          |  &nbsp;
-
-  .ss-card
-    .header
-      span.label TEST edge case
+      span.label Edge case
 
     .body._padding
       table

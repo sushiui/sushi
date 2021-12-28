@@ -611,7 +611,7 @@ TABLE TH, TABLE TD {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  background-color: #F3F3F3;
+  background-color: #F2F2F2;
 }
 
 .ss-workspace {
@@ -650,7 +650,7 @@ BUTTON, a.ss-button {
   --hover-background: #FCB034;
   --hover-outline: none;
   --active-color: #231F20;
-  --active-background: #FFD200;
+  --active-background: #ffd000;
   --active-outline: solid 1px #FCB034;
   --outline: none;
   --disable-background: rgba(0, 0, 0, 0.1);
@@ -668,27 +668,81 @@ BUTTON.-secondary, a.ss-button.-secondary {
 
 BUTTON.-color, a.ss-button.-color {
   --color: #FFFFFF;
-  --background: linear-gradient(180deg, #9DA6AD 0%, #78797B 88.02%);
-  --hover-background: #78797B;
+  --background: linear-gradient(180deg, #97989b 0%, #646568 88.02%);
+  --hover-background: #97989b;
   --hover-outline: none;
   --active-background: #9DA6AD;
-  --active-outline: solid 1px #78797B;
+  --active-outline: solid 1px #97989b;
   --active-color: #FFFFFF;
   --outline: none;
 }
 
-BUTTON.-color.-green, a.ss-button.-color.-green {
+BUTTON.-color.-yellow-green, a.ss-button.-color.-yellow-green {
   --color: #231F20;
-  --background: linear-gradient(180deg, #DAE882 0%, #C1D82F 88.02%);
-  --hover-background: #C1D82F;
-  --active-background: #DAE882;
-  --active-outline: solid 1px #C1D82F;
+  --background: linear-gradient(180deg, #d9e77e 0%, #bfd629 88.02%);
+  --hover-background: #bfd629;
+  --active-background: #d9e77e;
+  --active-outline: solid 1px #bfd629;
+  --active-color: #231F20;
+}
+
+BUTTON.-color.-yellow, a.ss-button.-color.-yellow {
+  --color: #231F20;
+  --background: linear-gradient(180deg, #ffe366 0%, #ffd000 88.02%);
+  --hover-background: #ffd000;
+  --active-background: #ffe366;
+  --active-outline: solid 1px #ffd000;
+  --active-color: #231F20;
+}
+
+BUTTON.-color.-orange, a.ss-button.-color.-orange {
+  --color: #231F20;
+  --background: linear-gradient(180deg, #fab76b 0%, #f68709 88.02%);
+  --hover-background: #f68709;
+  --active-background: #fab76b;
+  --active-outline: solid 1px #f68709;
+  --active-color: #231F20;
+}
+
+BUTTON.-color.-sky-blue, a.ss-button.-color.-sky-blue {
+  --color: #FFFFFF;
+  --background: linear-gradient(180deg, #57c3db 0%, #00a7cc 88.02%);
+  --hover-background: #00a7cc;
+  --active-background: #57c3db;
+  --active-outline: solid 1px #00a7cc;
+  --active-color: #231F20;
+}
+
+BUTTON.-color.-purplish-blue, a.ss-button.-color.-purplish-blue {
+  --color: #FFFFFF;
+  --background: linear-gradient(180deg, #827cb6 0%, #342b88 88.02%);
+  --hover-background: #342b88;
+  --active-background: #827cb6;
+  --active-outline: solid 1px #342b88;
+  --active-color: #231F20;
+}
+
+BUTTON.-color.-purplish-red, a.ss-button.-color.-purplish-red {
+  --color: #FFFFFF;
+  --background: linear-gradient(180deg, #d9598a 0%, #c60650 88.02%);
+  --hover-background: #c60650;
+  --active-background: #d9598a;
+  --active-outline: solid 1px #c60650;
+  --active-color: #231F20;
+}
+
+BUTTON.-color.-gray, a.ss-button.-color.-gray {
+  --color: #FFFFFF;
+  --background: linear-gradient(180deg, #97989b 0%, #646568 88.02%);
+  --hover-background: #646568;
+  --active-background: #97989b;
+  --active-outline: solid 1px #646568;
   --active-color: #231F20;
 }
 
 a.ss-link {
-  --color: #009FD4;
-  --active-color: #66C5DA;
+  --color: #00a7cc;
+  --active-color: #57c3db;
   --disable-background: none;
   --padding: 0px;
 }
@@ -806,14 +860,14 @@ UL.ss-menu-woven > li {
   --background: none;
   --line-top-background: rgba(0, 0, 0, 0.1);
   --line-bottom-background: rgba(0, 0, 0, 0.1);
-  --hover-background: #FEF4E9;
+  --hover-background: #fef3e6;
   --active-color: #231F20;
   --active-background: #FFFFFF;
   --disable-background: rgba(0, 0, 0, 0.1);
 }
 
 UL.ss-menu-woven > li.selected {
-  --background: #FEF4E9;
+  --background: #fef3e6;
 }
 
 UL.ss-menu-woven > li:first-child {
@@ -960,7 +1014,7 @@ UL.ss-menu-woven > li > .relative > .line > .background {
 UL.ss-menu > li, UL.ss-menu-woven > li {
   --color: #231F20;
   --background: none;
-  --hover-background: #FEF4E9;
+  --hover-background: #fef3e6;
   --active-color: #231F20;
   --active-background: #FFFFFF;
   --disable-background: rgba(0, 0, 0, 0.1);
@@ -968,8 +1022,8 @@ UL.ss-menu > li, UL.ss-menu-woven > li {
 
 UL.ss-menu > li.selected, UL.ss-menu-woven > li.selected {
   --color: #231F20;
-  --background: #FEF4E9;
-  --hover-background: #FEF4E9;
+  --background: #fef3e6;
+  --hover-background: #fef3e6;
   --active-color: #231F20;
   --active-background: #FFFFFF;
   --disable-background: rgba(0, 0, 0, 0.1);

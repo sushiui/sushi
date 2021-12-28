@@ -5,7 +5,7 @@ We prepare HTML/CSS component as building blocks when you develop new products a
 
 ![Sushi screen](assets/images/preview.png)
 
-See the actual result here: https://sushidesignsystem.github.io/sushi
+See the actual result here: https://set-design-system.github.io/sushi/
 
 
 ## Install

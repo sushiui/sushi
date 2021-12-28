@@ -1,23 +1,57 @@
-// Color
+@use "sass:color";
 
+// Primary
 $primary-yellow: #FCB034;
 $primary-black: #231F20;
 $primary-white: #FFFFFF;
 
+
+// Secondary
+
 $secondary-blue: #009FD4;
-
 $secondary-Light-gray: #9DA6AD;
-$secondary-Midle-gray: #78797B;
 
-$secondary-Light-green: #DAE882;
-$secondary-Midle-green: #C1D82F;
 
-$tertiary100-yellow: #FFD200;
-$tertiary60-sky-blue: #66C5DA;
+// Tretiary
+// Number after color is simulate percent of transparent with white background under
 
-$level10-orange: #FEF4E9;
+$tertiary-yellow-green-100: hsl(68, 68%, 50%);
+$tertiary-yellow-green-60: hsl(68, 68%, 70%);
+$tertiary-yellow-green-30: hsl(68, 68%, 90%);
+$tertiary-yellow-green-10: hsl(68, 68%, 95%);
 
-$background-gray-basic: #F3F3F3;
+$tertiary-yellow-100: hsl(49, 100%, 50%);
+$tertiary-yellow-60: hsl(49, 100%, 70%);
+$tertiary-yellow-30: hsl(49, 100%, 90%);
+$tertiary-yellow-10: hsl(49, 100%, 95%);
+
+$tertiary-orange-100: hsl(32, 93%, 50%);
+$tertiary-orange-60: hsl(32, 93%, 70%);
+$tertiary-orange-30: hsl(32, 93%, 90%);
+$tertiary-orange-10: hsl(32, 93%, 95%);
+
+$tertiary-sky-blue-100: hsl(191, 100%, 40%);
+$tertiary-sky-blue-60: hsl(191, 65%, 60%);
+$tertiary-sky-blue-30: hsl(191, 65%, 80%);
+$tertiary-sky-blue-10: hsl(191, 65%, 90%);
+
+$tertiary-purplish-blue-100: hsl(246, 52%, 35%);
+$tertiary-purplish-blue-60: hsl(246, 28%, 60%);
+$tertiary-purplish-blue-30: hsl(246, 28%, 80%);
+$tertiary-purplish-blue-10: hsl(246, 28%, 90%);
+
+$tertiary-purplish-red-100: hsl(337, 94%, 40%);
+$tertiary-purplish-red-60: hsl(337, 63%, 60%);
+$tertiary-purplish-red-30: hsl(337, 63%, 80%);
+$tertiary-purplish-red-10: hsl(337, 63%, 90%);
+
+$tertiary-gray-100: hsl(220, 2%, 40%);
+$tertiary-gray-60: hsl(220, 2%, 60%);
+$tertiary-gray-30: hsl(220, 2%, 90%);
+$tertiary-gray-10: hsl(220, 2%, 95%);
+
+
+// Transparent
 
 $transparent-yellow-30: rgba(255, 210, 0, 0.3);
 $transparent-white-80: rgba(255, 255, 255, 0.8);
@@ -26,18 +60,24 @@ $transparent-black-6: rgba(0, 0, 0, 0.06);
 $transparent-black-10: rgba(0, 0, 0, 0.1);
 $transparent-black-35: rgba(0, 0, 0, 0.35);
 
-$gradient-yellow: linear-gradient(180deg, #FFCF36 0%, #FCB034 88.02%);
-$gradient-white: linear-gradient(180deg, #FFFFFF 0%, #EFEFEF 88.02%);
 
-$gradient-dark: linear-gradient(180deg, $secondary-Light-gray 0%, $secondary-Midle-gray 88.02%);
-$gradient-green: linear-gradient(180deg, $secondary-Light-green 0%, $secondary-Midle-green 88.02%);
+// Gradient
+
+$gradient-yellow: linear-gradient(180deg, #FFCF36 0%, #FCB034 88.02%);
+$gradient-white: linear-gradient(180deg, $tertiary-gray-10 0%, $tertiary-gray-30 88.02%);
+
+// Accessible
 
 $accessible-blue: #0064C5;
 $accessible-red: #B60000;
 $accessible-green: #006600;
 $accessible-orange: #E55F14;
 
+// Shadow
+
 $shadow-10: 0px 0px 8px rgba(0, 0, 0, 0.1);
+
+$background-gray-basic: #F2F2F2;
 
 // Gap
 

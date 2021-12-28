@@ -36,7 +36,9 @@ New fonts (eot, ttf and woff) will generate in `/assets/fonts` along with `/src/
 ```
 + assets : Asset after compiled
   + css
+  + download
   + fonts
+  + icons
   + images
   + js
 + src
@@ -44,17 +46,28 @@ New fonts (eot, ttf and woff) will generate in `/assets/fonts` along with `/src/
     + base
       - base.pug : HTML, HEADER, BODY, CSS, Java Script.
     + content
-      - [component].png : Each component will implement here
+      - [content].pug : Content that not component
     + pages
       - index.pug : Main index.
+      - [compoent].pug : Each components will have their own page.
   + sass
     + components
-      - _components.sass : will put component style here
-    - sushi.sass : All Style here (for now)
-    - font_icon.sass: Font name
-    - font_variables.sass : Font code;
-- index.html : Prebuild HTML file.
+      - ss-[components].sass : Put components style here
+    - base.scss: Style that use across all component
+    - icon_font.sass: Config name of icons
+    - sushi-page.scss: Style for this site but not relate to component
+    - sushi.sass : Import all component here
+    - variables.sass : All SCSS variable define here;
+- index.html : Home page.
+- [component].html : Page for each components.
 ```
+
+## Todo
+
+[ ] Programatic color
+[ ] TextField
+[ ] Basic Table (Complicate table will change in future)
+[ ] Move from gulp (to parcel to avoid scss bug and better js management in future)
 
 ## SASS Guideline
 
@@ -68,17 +81,3 @@ It's not just about beautiful syntax. Pug and SCSS allow us to write modular and
 
 * Learn Pug https://www.sitepoint.com/a-beginners-guide-to-pug/
 * Learn SASS https://sass-lang.com/guide
-
-
-## Gulp Plugins
-
-* [gulp-connect](https://www.npmjs.com/package/gulp-connect) : Run webserver (with livereload).
-* [gulp-plumber](https://www.npmjs.com/package/gulp-plumber) : Prevent pipe breaking caused by errors from gulp plugins.
-* [gulp-pug](https://www.npmjs.com/package/gulp-pug) : Gulp plugin for compiling Pug templates, compile Pug into HTML.
-* [gulp-rename](https://www.npmjs.com/package/gulp-rename) : Gulp plugin to rename files easily, adding `.min` suffix.
-* [gulp-sass](https://www.npmjs.com/package/gulp-sass) : Compile your Sass into CSS.
-* [gulp-uglify](https://www.npmjs.com/package/gulp-uglify) : Minify your JS.
-
-## Special Thank
-
-* https://github.com/sulistryono/pug-sass-starter

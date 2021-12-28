@@ -658,86 +658,89 @@ BUTTON, a.ss-button {
 }
 
 BUTTON.-secondary, a.ss-button.-secondary {
-  --background: linear-gradient(180deg, #FFFFFF 0%, #EFEFEF 88.02%);
-  --hover-background: linear-gradient(180deg, #FFFFFF 0%, #EFEFEF 88.02%);
+  --background: linear-gradient(180deg, #f2f2f3 0%, #e5e5e6 88.02%);
+  --hover-background: linear-gradient(180deg, #f2f2f3 0%, #e5e5e6 88.02%);
   --hover-outline: solid 1px #FCB034;
-  --active-background: linear-gradient(180deg, #FFFFFF 0%, #EFEFEF 88.02%);
+  --active-background: linear-gradient(180deg, #f2f2f3 0%, #e5e5e6 88.02%);
   --active-outline: solid 1px #FFFFFF;
   --outline: solid 1px rgba(0, 0, 0, 0.1);
 }
 
-BUTTON.-color, a.ss-button.-color {
-  --color: #FFFFFF;
-  --background: linear-gradient(180deg, #97989b 0%, #646568 88.02%);
-  --hover-background: #97989b;
-  --hover-outline: none;
-  --active-background: #9DA6AD;
-  --active-outline: solid 1px #97989b;
-  --active-color: #FFFFFF;
-  --outline: none;
-}
-
-BUTTON.-color.-yellow-green, a.ss-button.-color.-yellow-green {
+BUTTON.-yellow-green, a.ss-button.-yellow-green {
   --color: #231F20;
   --background: linear-gradient(180deg, #d9e77e 0%, #bfd629 88.02%);
   --hover-background: #bfd629;
+  --hover-outline: none;
   --active-background: #d9e77e;
   --active-outline: solid 1px #bfd629;
   --active-color: #231F20;
+  --outline: none;
 }
 
-BUTTON.-color.-yellow, a.ss-button.-color.-yellow {
+BUTTON.-yellow, a.ss-button.-yellow {
   --color: #231F20;
   --background: linear-gradient(180deg, #ffe366 0%, #ffd000 88.02%);
   --hover-background: #ffd000;
+  --hover-outline: none;
   --active-background: #ffe366;
   --active-outline: solid 1px #ffd000;
   --active-color: #231F20;
+  --outline: none;
 }
 
-BUTTON.-color.-orange, a.ss-button.-color.-orange {
+BUTTON.-orange, a.ss-button.-orange {
   --color: #231F20;
   --background: linear-gradient(180deg, #fab76b 0%, #f68709 88.02%);
   --hover-background: #f68709;
+  --hover-outline: none;
   --active-background: #fab76b;
   --active-outline: solid 1px #f68709;
   --active-color: #231F20;
+  --outline: none;
 }
 
-BUTTON.-color.-sky-blue, a.ss-button.-color.-sky-blue {
+BUTTON.-sky-blue, a.ss-button.-sky-blue {
   --color: #FFFFFF;
   --background: linear-gradient(180deg, #57c3db 0%, #00a7cc 88.02%);
   --hover-background: #00a7cc;
+  --hover-outline: none;
   --active-background: #57c3db;
   --active-outline: solid 1px #00a7cc;
   --active-color: #231F20;
+  --outline: none;
 }
 
-BUTTON.-color.-purplish-blue, a.ss-button.-color.-purplish-blue {
+BUTTON.-purplish-blue, a.ss-button.-purplish-blue {
   --color: #FFFFFF;
   --background: linear-gradient(180deg, #827cb6 0%, #342b88 88.02%);
   --hover-background: #342b88;
+  --hover-outline: none;
   --active-background: #827cb6;
   --active-outline: solid 1px #342b88;
   --active-color: #231F20;
+  --outline: none;
 }
 
-BUTTON.-color.-purplish-red, a.ss-button.-color.-purplish-red {
+BUTTON.-purplish-red, a.ss-button.-purplish-red {
   --color: #FFFFFF;
   --background: linear-gradient(180deg, #d9598a 0%, #c60650 88.02%);
   --hover-background: #c60650;
+  --hover-outline: none;
   --active-background: #d9598a;
   --active-outline: solid 1px #c60650;
   --active-color: #231F20;
+  --outline: none;
 }
 
-BUTTON.-color.-gray, a.ss-button.-color.-gray {
+BUTTON.-gray, a.ss-button.-gray {
   --color: #FFFFFF;
   --background: linear-gradient(180deg, #97989b 0%, #646568 88.02%);
   --hover-background: #646568;
+  --hover-outline: none;
   --active-background: #97989b;
   --active-outline: solid 1px #646568;
   --active-color: #231F20;
+  --outline: none;
 }
 
 a.ss-link {

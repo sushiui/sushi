@@ -20,17 +20,6 @@ BUTTON.-secondary, a.ss-button.-secondary {
   --outline: solid 1px #{$transparent-black-10};
 }
 
-BUTTON.-color, a.ss-button.-color {
-  --color: #{$primary-white};
-  --background: #{$gradient-dark};
-  --hover-background: #{$tertiary-gray-60};
-  --hover-outline: none;
-  --active-background: #{$secondary-Light-gray};
-  --active-outline: solid 1px #{$tertiary-gray-60};
-  --active-color: #{$primary-white};
-  --outline: none;
-}
-
 $button-colors:
   "yellow-green" $tertiary-yellow-green-100 $tertiary-yellow-green-60 $primary-black,
   "yellow" $tertiary-yellow-100 $tertiary-yellow-60 $primary-black,
@@ -44,13 +33,15 @@ $button-colors:
 
   $color-gradient: linear-gradient(180deg, $color-60 0%, $color-100 88.02%);
 
-  BUTTON.-color.-#{$name}, a.ss-button.-color.-#{$name} {
+  BUTTON.-#{$name}, a.ss-button.-#{$name} {
     --color: #{$color};
     --background: #{$color-gradient};
     --hover-background: #{$color-100};
+    --hover-outline: none;
     --active-background: #{$color-60};
     --active-outline: solid 1px #{$color-100};
     --active-color: #{$primary-black};
+    --outline: none;
   }
 }
 

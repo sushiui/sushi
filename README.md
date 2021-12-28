@@ -7,6 +7,7 @@ We prepare HTML/CSS component as building blocks when you develop new products a
 
 See the actual result here: https://sushidesignsystem.github.io/sushi
 
+See Figma file here: [SET Main web](https://www.figma.com/file/YMSF7WZuIfrg33Rk9v1kYg/%E2%9D%96-SET-MAIN-%2F-Web?node-id=496%3A7663)
 
 ## Install
 

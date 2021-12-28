@@ -6,14 +6,14 @@ UL.ss-menu-woven {
     --background: none;
     --line-top-background: rgba(0, 0, 0, 0.1);
     --line-bottom-background: rgba(0, 0, 0, 0.1);
-    --hover-background: #{$level10-orange};
+    --hover-background: #{$tertiary-orange-10};
     --active-color: #{$primary-black};
     --active-background: #{$primary-white};
     --disable-background: #{$transparent-black-10};
   }
 
   > li.selected {
-    --background: #{$level10-orange};
+    --background: #{$tertiary-orange-10};
   }
 
   > li:first-child {

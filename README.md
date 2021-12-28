@@ -65,10 +65,11 @@ New fonts (eot, ttf and woff) will generate in `/assets/fonts` along with `/src/
 
 ## Todo
 
-[ ] Programatic color
-[ ] TextField @mike
-[ ] Basic Table (Complicate table will change in future)
-[ ] Move from gulp (to parcel to avoid scss bug and better js management in future)
+- [x] Programatic color
+- [ ] https://github.com/SET-Design-System/sushi/issues/1
+- [ ] TextField @mike
+- [ ] Basic Table (Complicate table will change in future)
+- [ ] Move from gulp (to parcel to avoid scss bug and better js management in future)
 
 ## SASS Guideline
 

@@ -66,10 +66,11 @@ New fonts (eot, ttf and woff) will generate in `/assets/fonts` along with `/src/
 ## Todo
 
 - [x] Programatic color
-- [ ] Button bug on safari [#1](https://github.com/SET-Design-System/sushi/issues/1)
+- [x] Move from gulp to parcel (Parcel design for application not simple web and we solve gulp-scss stability already)
 - [ ] TextField @mike
+- [ ] Button bug on safari [#1](https://github.com/SET-Design-System/sushi/issues/1)
 - [ ] Basic Table (Complicate table will change in future)
-- [ ] Move from gulp (to parcel to avoid scss bug and better js management in future)
+
 
 ## SASS Guideline
 

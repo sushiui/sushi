@@ -35,9 +35,18 @@ html(lang="en")
         span.ss-icon-Sushi
         | Sushi Design System
 
+      ._flex-grow-1
+
+      span.account
+        button.ss-button.-secondary(onclick="changeBackground()")
+          span.ss-icon-Picture
+          | Background
+
+
     .ss-container
       include ../base/main-menu.pug
       .ss-workspace
         block workspace
 
     script(src="./assets/js/prism.js")
+    script(src="./assets/js/sushi.js")

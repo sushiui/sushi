@@ -55,7 +55,12 @@ function styles() {
   return (
     gulp.src('src/scss/sushi.scss')
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(sass()
+      .on('error', function (err) {
+        sass.logError(err);
+        this.emit('end');
+      })
+    )
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 3 versions'],
       cascade: false

@@ -712,7 +712,7 @@ BUTTON.-sky-blue, a.ss-button.-sky-blue {
   --hover-outline: none;
   --active-background: #57c3db;
   --active-outline: solid 1px #00a7cc;
-  --active-color: #231F20;
+  --active-color: #FFFFFF;
   --outline: none;
 }
 
@@ -723,7 +723,7 @@ BUTTON.-purplish-blue, a.ss-button.-purplish-blue {
   --hover-outline: none;
   --active-background: #827cb6;
   --active-outline: solid 1px #342b88;
-  --active-color: #231F20;
+  --active-color: #FFFFFF;
   --outline: none;
 }
 
@@ -734,7 +734,7 @@ BUTTON.-purplish-red, a.ss-button.-purplish-red {
   --hover-outline: none;
   --active-background: #d9598a;
   --active-outline: solid 1px #c60650;
-  --active-color: #231F20;
+  --active-color: #FFFFFF;
   --outline: none;
 }
 
@@ -745,7 +745,7 @@ BUTTON.-gray, a.ss-button.-gray {
   --hover-outline: none;
   --active-background: #97989b;
   --active-outline: solid 1px #646568;
-  --active-color: #231F20;
+  --active-color: #FFFFFF;
   --outline: none;
 }
 

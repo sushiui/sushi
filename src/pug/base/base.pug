@@ -35,10 +35,16 @@ html(lang="en")
         span.ss-icon-Sushi
         | Sushi Design System
 
+      ._flex-grow-1
+
+      span.account
+        button.ss-button.-secondary(onclick="changeBackground()")
+          span.ss-icon-Picture
+          | Background
     .body
       include ../base/main-menu.pug
-      //- .ss-workspace
       .ss-page
         block page-block
 
     script(src="./assets/js/prism.js")
+    script(src="./assets/js/sushi.js")

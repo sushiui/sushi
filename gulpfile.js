@@ -55,7 +55,12 @@ function styles() {
   return (
     gulp.src('src/scss/sushi.scss')
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(sass()
+      .on('error', function (err) {
+        sass.logError(err);
+        this.emit('end');
+      })
+    )
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 3 versions'],
       cascade: false
@@ -69,17 +74,17 @@ function styles() {
   );
 }
 
-// function scripts() {
-//   return (
-//     gulp.src('src/js/scripts.js')
-//     .pipe(plumber())
-//     .pipe(gulp.dest('assets/js'))
-//     .pipe(uglify())
-//     .pipe(rename('scripts.min.js'))
-//     .pipe(gulp.dest('assets/js'))
-//     .pipe(connect.reload())
-//   );
-// }
+function scripts() {
+  return (
+    gulp.src('src/js/sushi.js')
+    .pipe(plumber())
+    .pipe(gulp.dest('assets/js'))
+    .pipe(uglify())
+    .pipe(rename('sushi.min.js'))
+    .pipe(gulp.dest('assets/js'))
+    .pipe(connect.reload())
+  );
+}
 
 function html() {
   return (
@@ -109,17 +114,16 @@ function watchTask(done) {
   gulp.watch('*.html', html);
   gulp.watch('src/scss/**/*.scss', styles);
   gulp.watch('src/pug/**/*.pug', views);
-  // gulp.watch('src/js/scripts.js', scripts);
+  gulp.watch('src/js/sushi.js', scripts);
   done();
 }
 
 const watch = gulp.parallel(watchTask, reload);
-const build = gulp.series(gulp.parallel(styles, html, views));
-// const build = gulp.series(gulp.parallel(styles, scripts, html, views));
+const build = gulp.series(gulp.parallel(styles, scripts, html, views));
 
 exports.reload = reload;
 exports.styles = styles;
-// exports.scripts = scripts;
+exports.scripts = scripts;
 exports.html = html;
 exports.views = views;
 exports.watch = watch;

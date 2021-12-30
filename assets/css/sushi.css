@@ -644,6 +644,12 @@ a.-big-icon {
   padding: 16px !important;
 }
 
+._flex-grow-1 {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 BUTTON, a.ss-button {
   --color: #231F20;
   --background: linear-gradient(180deg, #FFCF36 0%, #FCB034 88.02%);
@@ -846,7 +852,9 @@ BUTTON.disable, BUTTON:DISABLED, a.ss-button.disable, a.ss-button:DISABLED, a.ss
 }
 
 .ss-card.-body, .ss-card > .body {
-  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.96);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   padding: 16px;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -3,7 +3,7 @@ extends ../base/base.pug
 block append page-variable
   - var current = "icon"
 
-block workspace
+block page-block
 
   -
     var iconFiles = [
@@ -140,44 +140,45 @@ block workspace
       "Zoom-in",
       "Zoom-out"]
 
-  .ss-page-header.-nobreadcrumbs
+  .header.-nobreadcrumbs
     span.label Icon
 
-  .ss-card
-    .header
-      span.label All icon
+  .body
+    .ss-card
+      .header
+        span.label All icon
 
-    .body._padding
-      pre
-        code.language-html
-          |
-          | &lt;span class="ss-icon-Access-alarm">&lt;/span>
-          | &nbsp;
+      .body._padding
+        pre
+          code.language-html
+            |
+            | &lt;span class="ss-icon-Access-alarm">&lt;/span>
+            | &nbsp;
 
-      .show-icons
-        each fileName in iconFiles
-          .each-icon
-            span(class="ss-icon-"+fileName)
-            br
-            = "ss-icon-"+fileName
+        .show-icons
+          each fileName in iconFiles
+            .each-icon
+              span(class="ss-icon-"+fileName)
+              br
+              = "ss-icon-"+fileName
 
-  .ss-card
-    .header
-      span.label Font icon from css
+    .ss-card
+      .header
+        span.label Font icon from css
 
-    .body._padding
-      pre
-        code.language-css
-          |
-          | .icon-in-css:after {
-          |   content: ss-icon-Close-or-Reject;
-          |   font-family: 'ss-SET';
-          |   padding-left: 10px !important;
-          |   vertical-align: middle;
-          | }
-          | &nbsp;
+      .body._padding
+        pre
+          code.language-css
+            |
+            | .icon-in-css:after {
+            |   content: ss-icon-Close-or-Reject;
+            |   font-family: 'ss-SET';
+            |   padding-left: 10px !important;
+            |   vertical-align: middle;
+            | }
+            | &nbsp;
 
-      span
-        | Show x icon ->
-        span.sample-icon-in-css
+        span
+          | Show x icon ->
+          span.sample-icon-in-css
 

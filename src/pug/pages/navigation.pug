@@ -3,71 +3,73 @@ extends ../base/base.pug
 block append page-variable
   - var current = "navigation"
 
-block workspace
+block page-block
 
-  .ss-page-header.-nobreadcrumbs
+  //- .ss-page-header.-nobreadcrumbs
+  .header.-nobreadcrumbs
     span.label Navigation
 
-  .ss-card
-    nav.ss-navigation-bar
-      span.header
-        span.ss-icon-One-Report
-        | One Report
-        span.description to rule them all
+  .body
+    .ss-card
+      nav.ss-site-header
+        span.sitename
+          span.ss-icon-One-Report
+          | One Report
+          span.description to rule them all
 
-      ul
-        li.selected
-          a(href="javascript:void(0);")
-            span.label Home
-        li
-          a(href="javascript:void(0);")
-            span.label เมนูภาษาไทย
-        li
-          a(href="javascript:void(0);")
-            span.ss-icon-Check-list
+        ul
+          li.selected
+            a(href="javascript:void(0);")
+              span.label Home
+          li
+            a(href="javascript:void(0);")
+              span.label เมนูภาษาไทย
+          li
+            a(href="javascript:void(0);")
+              span.ss-icon-Check-list
+              | &nbsp;
+              span.label Getting Start
+
+        span.account
+          a.ss-button.-secondary(href="javascript:void(0)")
+            span.ss-icon-Vpn-key
+            | Login
+          a.language(href="javascript:void(0);") &nbsp;
+          a.-big-icon(href="javascript:void(0);")
+            span.ss-icon-Account-circle
+
+      .body
+
+        pre
+          code.language-html
+            |  &lt;nav class="ss-navigation-bar">
+            |    &lt;span class="header">
+            |      &lt;span class="ss-icon-One-Report">&lt;/span>Sushi
+            |      &lt;span class="description">Design System&lt;/span>
+            |    &lt;/span>
+            |
+            |    &lt;ul>
+            |      &lt;li class="selected">&lt;a href="javascript:void(0);">&lt;span class="label">Home&lt;/span>&lt;/a>&lt;/li>
+            |      &lt;li>&lt;a href="javascript:void(0);">&lt;span class="label">เมนูภาษาไทย&lt;/span>&lt;/a>&lt;/li>
+            |      &lt;li>
+            |        &lt;a href="javascript:void(0);">
+            |          &lt;span class="ss-icon-Check-list">&lt;/span>&nbsp;
+            |          &lt;span class="label">Getting Start&lt;/span>
+            |        &lt;/a>
+            |      &lt;/li>
+            |    &lt;/ul>
+            |
+            |    &lt;span class="account">
+            |      &lt;a class="ss-button -secondary" href="javascript:void(0)">
+            |        &lt;span class="ss-icon-Vpn-key">&lt;/span>Login
+            |      &lt;/a>
+            |      &lt;a class="language" href="javascript:void(0);">&nbsp;&lt;/a>
+            |      &lt;a class="-big-icon" href="javascript:void(0);">
+            |        &lt;span class="ss-icon-Account-circle">&lt;/span>
+            |      &lt;/a>
+            |    &lt;/span>
+            |  &lt;/nav>
             | &nbsp;
-            span.label Getting Start
-
-      span.account
-        a.ss-button.-secondary(href="javascript:void(0)")
-          span.ss-icon-Vpn-key
-          | Login
-        a.language(href="javascript:void(0);") &nbsp;
-        a.-big-icon(href="javascript:void(0);")
-          span.ss-icon-Account-circle
-
-    .body
-
-      pre
-        code.language-html
-          |  &lt;nav class="ss-navigation-bar">
-          |    &lt;span class="header">
-          |      &lt;span class="ss-icon-One-Report">&lt;/span>Sushi
-          |      &lt;span class="description">Design System&lt;/span>
-          |    &lt;/span>
-          |
-          |    &lt;ul>
-          |      &lt;li class="selected">&lt;a href="javascript:void(0);">&lt;span class="label">Home&lt;/span>&lt;/a>&lt;/li>
-          |      &lt;li>&lt;a href="javascript:void(0);">&lt;span class="label">เมนูภาษาไทย&lt;/span>&lt;/a>&lt;/li>
-          |      &lt;li>
-          |        &lt;a href="javascript:void(0);">
-          |          &lt;span class="ss-icon-Check-list">&lt;/span>&nbsp;
-          |          &lt;span class="label">Getting Start&lt;/span>
-          |        &lt;/a>
-          |      &lt;/li>
-          |    &lt;/ul>
-          |
-          |    &lt;span class="account">
-          |      &lt;a class="ss-button -secondary" href="javascript:void(0)">
-          |        &lt;span class="ss-icon-Vpn-key">&lt;/span>Login
-          |      &lt;/a>
-          |      &lt;a class="language" href="javascript:void(0);">&nbsp;&lt;/a>
-          |      &lt;a class="-big-icon" href="javascript:void(0);">
-          |        &lt;span class="ss-icon-Account-circle">&lt;/span>
-          |      &lt;/a>
-          |    &lt;/span>
-          |  &lt;/nav>
-          | &nbsp;
 
 
 

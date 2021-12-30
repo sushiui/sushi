@@ -1,16 +1,18 @@
-.ss-navigation-bar > ul > li.selected {
-  --background: #{$gradient-yellow};
-  --hover-background: #{$primary-yellow};
-  --hover-color: #{$primary-black};
+.ss-site > .header, .ss-site-header {
+  > ul > li.selected {
+    --background: #{$gradient-yellow};
+    --hover-background: #{$primary-yellow};
+    --hover-color: #{$primary-black};
+  }
+
+  > ul > li {
+    --background: none;
+    --hover-background: none;
+    --hover-color: #{$secondary-blue};
+  }
 }
 
-.ss-navigation-bar > ul > li {
-  --background: none;
-  --hover-background: none;
-  --hover-color: #{$secondary-blue};
-}
-
-.ss-navigation-bar {
+.ss-site > .header, .ss-site-header {
   background-color: $primary-white;
   height: 38px;
   border-bottom: 4px solid $primary-yellow;
@@ -18,10 +20,8 @@
   flex-direction: row;
   padding: 0px $common-gap 0px $common-gap;
   box-shadow: $shadow-10;
-}
 
-.ss-navigation-bar {
-  > span.header {
+  > span.sitename {
     display: flex;
     font-weight: 800;
     gap: 8px;

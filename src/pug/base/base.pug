@@ -29,15 +29,16 @@ html(lang="en")
     link(rel="icon", type="image/svg+xml", href="./assets/images/favicon.svg")
     link(rel="icon", type="image/png", href="./assets/images/favicon.png")
 
-  body(class= current +'-page')
-    nav.ss-navigation-bar
-      span.header
+  body(class="ss-site " + current +"-page")
+    .header
+      span.sitename
         span.ss-icon-Sushi
         | Sushi Design System
 
-    .ss-container
+    .body
       include ../base/main-menu.pug
-      .ss-workspace
-        block workspace
+      //- .ss-workspace
+      .ss-page
+        block page-block
 
     script(src="./assets/js/prism.js")

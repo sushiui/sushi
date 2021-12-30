@@ -1,12 +1,8 @@
-.ss-page-header {
+.ss-page > .header, .ss-page-header {
   margin: 0px $common-gap;
   display: flex;
   align-items: center;
   gap: 8px;
-
-  > span.header {
-
-  }
 
   > span.label {
     flex-grow: 1;
@@ -25,3 +21,10 @@
   }
 }
 
+.ss-page > .body {
+  display: flex;
+  flex-direction: column;
+  gap: $common-gap;
+
+  padding: 0 $common-gap;
+}

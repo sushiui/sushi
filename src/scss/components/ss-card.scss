@@ -38,8 +38,7 @@
   }
 
   &.-body, > .body {
-    background-color: $transparent-white-96;
-    backdrop-filter: blur(20px);
+    background-color: $primary-white;
     padding: $common-gap;
     display: flex;
     flex-direction: column;

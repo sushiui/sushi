@@ -812,14 +812,14 @@ BUTTON.disable, BUTTON:DISABLED, a.ss-button.disable, a.ss-button:DISABLED, a.ss
   background-color: #FFFFFF;
 }
 
-.ss-card > .header:first-child {
+.ss-card > .header {
   background-color: rgba(255, 255, 255, 0.8);
   margin: 0px;
   padding: 4px 16px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-.ss-card > .header:first-child > span.label {
+.ss-card > .header > span.label {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;

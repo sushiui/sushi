@@ -1,8 +1,10 @@
 .ss-page > .header, .ss-page-header {
-  margin: 0px $common-gap;
   display: flex;
-  align-items: center;
   gap: 8px;
+  align-items: center;
+
+  // margin: 0px $common-gap;
+  padding: 0px $common-gap;
 
   > span.label {
     flex-grow: 1;
@@ -18,6 +20,14 @@
 
   &.-nobreadcrumbs {
     padding-top: $common-gap;
+  }
+
+  &.-withbackground {
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    background-color: $transparent-white-96;
+    box-shadow: $shadow-10;
   }
 }
 

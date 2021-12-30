@@ -1,15 +1,13 @@
 extends ../base/base.pug
 
 block append page-variable
-  - var current = "header"
+  - var current = "pageheader"
 
 block page-block
 
-  .header.-nobreadcrumbs
+  .header.-withbackground.-nobreadcrumbs
     span.label
-      | Header and Card
-
-  .ghost
+      | Page Header
 
   .header
     span.label
@@ -66,6 +64,7 @@ block page-block
             | &lt;!-- Content Header -->
             | &lt;span class="label">Content Header&lt;/span>
             | &nbsp;
+
 
     .ss-card
 

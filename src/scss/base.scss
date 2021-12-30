@@ -36,7 +36,7 @@ TABLE {
   font-size: 0.429rem;
 }
 
-.ss-container {
+.ss-site > .body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -45,7 +45,7 @@ TABLE {
   background-color: $background-gray-basic;
 }
 
-.ss-workspace {
+.ss-page {
   display: flex;
   flex-direction: column;
   gap: $common-gap;

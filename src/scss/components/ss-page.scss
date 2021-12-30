@@ -1,0 +1,40 @@
+.ss-page > .header, .ss-page-header {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  // margin: 0px $common-gap;
+  padding: 0px $common-gap;
+
+  > span.label {
+    flex-grow: 1;
+
+    display: flex;
+
+    font-weight: 800;
+    font-size: $font-size-h3;
+    line-height: 145%;
+    margin: 0px;
+    align-items: center;
+  }
+
+  &.-nobreadcrumbs {
+    padding-top: $common-gap;
+  }
+
+  &.-withbackground {
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    background-color: $transparent-white-96;
+    box-shadow: $shadow-10;
+  }
+}
+
+.ss-page > .body {
+  display: flex;
+  flex-direction: column;
+  gap: $common-gap;
+
+  padding: 0 $common-gap;
+}

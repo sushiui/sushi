@@ -70,6 +70,7 @@ New fonts (eot, ttf and woff) will generate in `/assets/fonts` along with `/src/
 - [ ] TextField @mike
 - [ ] Button bug on safari [#1](https://github.com/SET-Design-System/sushi/issues/1)
 - [ ] Basic Table (Complicate table will change in future)
+- [ ] Fix SVG icon for some missing render
 
 
 ## SASS Guideline

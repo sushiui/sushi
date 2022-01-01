@@ -887,7 +887,7 @@ UL.ss-menu-woven > li.selected:after {
   width: 4px;
   border-radius: 4px;
   height: 1.25rem;
-  right: 4px;
+  right: 8px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -1065,14 +1065,6 @@ UL.ss-menu, UL.ss-menu-woven {
   margin: 0px;
   padding: 8px;
   gap: 4px;
-}
-
-UL.ss-menu > li.selected > a::after, UL.ss-menu-woven > li.selected > a::after {
-  content: " ";
-  position: relative;
-  background-color: #FCB034;
-  width: 4px;
-  border-radius: 2px;
 }
 
 UL.ss-menu > li > .title, UL.ss-menu-woven > li > .title {

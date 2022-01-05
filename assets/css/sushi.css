@@ -12,7 +12,7 @@ $ gulp compile-icon-font
 */
 @font-face {
   font-family: "SET-icon";
-  src: url("../fonts/SET-icon.ttf?2f57p") format("truetype"), url("../fonts/SET-icon.woff?2f57p") format("woff");
+  src: url("../fonts/SET-icon.ttf?z6r7d") format("truetype"), url("../fonts/SET-icon.woff?z6r7d") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -645,9 +645,13 @@ a.-big-icon {
 }
 
 ._flex-grow-1 {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  -webkit-box-flex: 1 !important;
+  -ms-flex-positive: 1 !important;
+  flex-grow: 1 !important;
+}
+
+._font-size-header {
+  font-size: 1.5rem !important;
 }
 
 BUTTON, a.ss-button {

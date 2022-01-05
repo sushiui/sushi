@@ -70,5 +70,9 @@ a.-big-icon {
 }
 
 ._flex-grow-1 {
-  flex-grow: 1;
+  flex-grow: 1 !important;
+}
+
+._font-size-header {
+  font-size: $font-size-h3 !important;
 }

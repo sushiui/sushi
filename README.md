@@ -32,6 +32,8 @@ If you don't have npm
 
 New fonts (eot, ttf and woff) will generate in `/assets/fonts` along with `/src/scss/icon_font.scss`
 
+[Note] Certain export formats (e.g. TrueType fonts) only support SVG's the non-zero fill rule. You can use [Fill-Rule-Editor](https://www.figma.com/community/plugin/771155994770327940/Fill-Rule-Editor) plugin to manually convert even-odd to non-zero to make the exporters for these formats work. Here is [Youtube](https://www.youtube.com/watch?v=j6dZw3K_E3M) for manual
+
 ## Folder Structure
 
 ```

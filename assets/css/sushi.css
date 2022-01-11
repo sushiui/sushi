@@ -877,21 +877,6 @@ UL.ss-menu-woven > li {
 
 UL.ss-menu-woven > li.selected {
   --background: #fef3e6;
-  position: relative;
-}
-
-UL.ss-menu-woven > li.selected::after {
-  content: "";
-  position: absolute;
-  background-color: #fcb034;
-  width: 4px;
-  border-radius: 4px;
-  height: 1.25rem;
-  right: 8px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 
 UL.ss-menu-woven > li:first-child {
@@ -1065,6 +1050,24 @@ UL.ss-menu, UL.ss-menu-woven {
   margin: 0px;
   padding: 8px;
   gap: 4px;
+}
+
+UL.ss-menu > li, UL.ss-menu-woven > li {
+  position: relative;
+}
+
+UL.ss-menu > li.selected::after, UL.ss-menu-woven > li.selected::after {
+  content: " ";
+  position: absolute;
+  background-color: #FCB034;
+  width: 4px;
+  border-radius: 2px;
+  height: calc(100% - 8px);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 8px;
 }
 
 UL.ss-menu > li > .title, UL.ss-menu-woven > li > .title {

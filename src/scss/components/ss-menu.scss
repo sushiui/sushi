@@ -26,12 +26,20 @@ UL.ss-menu {
   padding: 8px;
   gap: 4px;
 
-  > li.selected > a::after {
-    content: "\00a0";
+  > li {
     position: relative;
+  }
+
+  > li.selected::after {
+    content: "\00a0";
+    position: absolute;
     background-color: $primary-yellow;
     width: $radius;
     border-radius: calc($radius / 2);
+    height: calc(100% - 8px);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
   }
 }
 

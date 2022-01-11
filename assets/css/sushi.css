@@ -880,7 +880,7 @@ UL.ss-menu-woven > li.selected {
   position: relative;
 }
 
-UL.ss-menu-woven > li.selected:after {
+UL.ss-menu-woven > li.selected::after {
   content: "";
   position: absolute;
   background-color: #fcb034;

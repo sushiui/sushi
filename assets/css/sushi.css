@@ -1282,6 +1282,88 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   padding: 0 16px;
 }
 
+TEXTFILED, input.ss-textfield {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  gap: 4px;
+  float: left;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 6px 12px;
+  margin: 0 -4px;
+  outline: solid 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 180px;
+  border: none;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: text;
+  color: #231F20;
+  background: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+TEXTFILED::-webkit-search-cancel-button, input.ss-textfield::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  font-family: "SET";
+  background: url("../../assets/icons/Close-or-Reject.svg");
+  cursor: pointer;
+  background-size: 16px 16px;
+}
+
+TEXTFILED:focus, input.ss-textfield:focus {
+  padding-bottom: 4px;
+  border-bottom: solid 2px #FCB034;
+}
+
+TEXTFILED.-error, input.ss-textfield.-error {
+  padding-bottom: 4px;
+  border-bottom: solid 2px #B60000;
+  margin-bottom: 0px;
+  content: attr("errorMessage");
+}
+
+TEXTFILED:DISABLED, TEXTFILED.-disable, input.ss-textfield:DISABLED, input.ss-textfield.-disable {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+}
+
+TEXTFILED.-viewOnly, input.ss-textfield.-viewOnly {
+  background-color: #FFFFFF;
+  outline: none;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  padding-bottom: 5px;
+}
+
+.textfield {
+  height: 50px;
+}
+
+.errortextfield {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 1.142em;
+  color: #B60000;
+  line-height: 20px;
+}
+
 .menu {
   -webkit-box-flex: 0;
   -ms-flex: none;

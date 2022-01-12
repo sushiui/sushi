@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Textfield ·
+    Sushi v.0.1</title>
+  <link href="./assets/css/sushi.css" rel="stylesheet">
+  <link href="./assets/css/prism.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+  <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+</head>
+
+<body class="ss-site textfield-page">
+  <div class="header"><span class="sitename"><span class="ss-icon-Sushi"></span>Sushi Design System</span>
+    <div class="_flex-grow-1"></div><span class="account"><button class="ss-button -secondary" onclick="changeBackground()"><span class="ss-icon-Picture"></span>Background</button></span>
+  </div>
+  <div class="body">
+    <div class="menu">
+      <ul class="ss-menu">
+        <li><a href="index.html"><span class="ss-icon-Home"></span><span class="label">Home</span></a></li>
+        <li><a href="icon.html"><span class="ss-icon-Settings-suggest"></span><span class="label">Icon</span></a></li>
+        <li><a href="javascript:void(0)"><span class="ss-icon-Table-view"></span><span class="label">Component</span><span class="ss-icon-Maximize-arrow"></span></a></li>
+        <li><a href="button.html"><span class="ss-icon-Status-circle"></span><span class="label">Button</span></a></li>
+        <li class="selected"><a href="textfield.html"><span class="ss-icon-Status-circle"></span><span class="label">Textfield</span>
+            <div class="selected-box">&nbsp;</div>
+          </a></li>
+        <li><a href="menu.html"><span class="ss-icon-Status-circle"></span><span class="label">Page Menu</span></a></li>
+        <li><a href="pageheader.html"><span class="ss-icon-Status-circle"></span><span class="label">Page Header</span></a></li>
+        <li><a href="siteheader.html"><span class="ss-icon-Status-circle"></span><span class="label">Site Header</span></a></li>
+      </ul>
+    </div>
+    <div class="ss-page">
+      <div class="header -nobreadcrumbs"><span class="label">Textfield</span></div>
+      <div class="body">
+        <div class="ss-card">
+          <div class="header"><span class="label">&lt;TextField&gt;</span></div>
+          <div class="body _padding">
+            <table>
+              <tr>
+                <th>Normal textfield</th>
+                <th>Error textfield</th>
+                <th>Disable textfield</th>
+                <th>View only textfield</th>
+              </tr>
+              <tr>
+                <td>
+                  <div class="textfield"> <input class="ss-textfield" type="search"></div>
+                </td>
+                <td>
+                  <div class="errortextfield"> <input class="ss-textfield -error" type="search">Long error message</div>
+                </td>
+                <td>
+                  <div class="textfield"> <input class="ss-textfield -disable" type="search" value="Disable input"></div>
+                </td>
+                <td>
+                  <div class="textfield"> <input class="ss-textfield -viewOnly" type="search" value="View only input"></div>
+                </td>
+              </tr>
+            </table><pre><code class="language-html">
+ &lt;div class="textfield">
+   &lt;input class="ss-textfield" type="search">
+ &lt;/div>
+ &nbsp;
+ &lt;div class="errortextfield">
+   &lt;input class="ss-textfield -error" type="search">
+    | Long error message
+ &lt;/div>
+ &nbsp;
+ &lt;div class="textfield">
+   &lt;input class="ss-textfield -disable" type="search" value="Disable input">
+ &lt;/div>
+ &nbsp;
+ &lt;div class="textfield">
+   &lt;input class="ss-textfield -viewonly" type="search" value="View only input">
+ &lt;/div>
+ &nbsp;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/prism.js"></script>
+  <script src="./assets/js/sushi.js"></script>
+</body>
+
+</html>

@@ -23,35 +23,35 @@ block page-block
 
           tr 
             td
-              .textfield 
-                input.ss-textfield(type="search")
+              .ss-textfield
+                input(type="search")
             td
-              .errortextfield 
-                input.ss-textfield.-error(type="search")
+              .ss-textfield.-error  
+                input(type="search" value="Error input")
                 | Long error message
             td 
-              .textfield 
-                input.ss-textfield.-disable(type="search" value="Disable input")
+              .ss-textfield.-disable
+                input(type="search" value="Disable input")
             td 
-              .textfield 
-                input.ss-textfield.-viewOnly(type="search" value="View only input")
+              .ss-textfield.-viewonly
+                input(type="search" value="View only input")
         pre
           code.language-html
             |
             |  &lt;div class="textfield">
-            |    &lt;input class="ss-textfield" type="search">
+            |    &lt;input class="ss-textfield" type="search" >
             |  &lt;/div>
             |  &nbsp;
-            |  &lt;div class="errortextfield">
-            |    &lt;input class="ss-textfield -error" type="search">
+            |  &lt;div class=".-error">
+            |    &lt;input class="ss-textfield" type="search" value="Error input">
             |     | Long error message
             |  &lt;/div>
             |  &nbsp;
-            |  &lt;div class="textfield">
-            |    &lt;input class="ss-textfield -disable" type="search" value="Disable input">
+            |  &lt;div class="textfield-disable">
+            |    &lt;input class="ss-textfield" type="search" value="Disable input">
             |  &lt;/div>
             |  &nbsp;
-            |  &lt;div class="textfield">
-            |    &lt;input class="ss-textfield -viewonly" type="search" value="View only input">
+            |  &lt;div class="textfield -viewonly">
+            |    &lt;input class="ss-textfield" type="search" value="View only input">
             |  &lt;/div>
             |  &nbsp;

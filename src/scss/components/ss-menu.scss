@@ -32,6 +32,9 @@ UL.ss-menu {
     background-color: $primary-yellow;
     width: $radius;
     border-radius: calc($radius / 2);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
   }
 }
 

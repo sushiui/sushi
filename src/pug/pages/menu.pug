@@ -42,6 +42,12 @@ block page-block
               a(href="javascript:void(0);")
                 span.ss-icon-Status-circle
                 span.label Menu
+            li.selected
+              a(href="javascript:void(0);")
+                span.ss-icon-Status-circle
+                span.label
+                  | Long menu label to test
+                  | two line menu
             li
               a(href="javascript:void(0);")
                 span.ss-icon-Status-circle
@@ -113,6 +119,18 @@ block page-block
                   | ชื่อยาวๆ ในเมนู ยาวๆ หลายบรรทัด
                   | จะได้เห็นว่ามันยาวได้จริงหรือเปล่า
                   | แม้แต่สี่บรรทัดก็ทำได้
+            li.selected
+              .relative
+                .line
+                  .top
+                  .background
+                  .bottom
+              a(href="javascript:void(0);")
+                .status
+                  .circle &nbsp;
+                span.label
+                  | ชื่อยาวๆ ในเมนู ยาวๆ
+                  | หลายบรรทัด
             li
               .relative
                 .line

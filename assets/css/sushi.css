@@ -1289,6 +1289,7 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   --pointer: "text";
   --paddingBottom: 6px;
   --borderBottom: none;
+  --focusBorderBottom: solid 2px #FCB034;
   --outline: solid 1px rgba(0, 0, 0, 0.1);
   --pointerEvent: auto;
 }
@@ -1366,7 +1367,7 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
 
 .ss-textfield > input:focus {
   padding-bottom: 4px;
-  border-bottom: var(--borderBottom);
+  border-bottom: var(--focusBorderBottom);
 }
 
 .ss-textfield > input.-error {

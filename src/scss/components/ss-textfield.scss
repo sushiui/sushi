@@ -7,6 +7,7 @@
   --pointer: "text";
   --paddingBottom: 6px;
   --borderBottom: none;
+  --focusBorderBottom: solid 2px #{$primary-yellow};
   --outline: solid 1px #{$transparent-black-10};
   --pointerEvent: auto;
 
@@ -20,19 +21,12 @@
     
     --paddingBottom: 4px;
     --borderBottom: solid 2px #{$accessible-red};
-    // padding-bottom: 4px;
-    // border-bottom: solid 2px $accessible-red;
-    // margin-bottom: 0px;
-    // content: attr('errorMessage');
   }
 
   &.-disable{
     --backgroundColor: #{$transparent-black-10};
     --color: #{$transparent-black-35};
     --pointerEvent: none;
-    // background-color: $transparent-black-10;
-    // color: $transparent-black-35;
-    // pointer-events: none;
   }
 
   &.-viewonly{
@@ -41,11 +35,6 @@
     --paddingBottom: 5px;
     --outline: none;
     --pointerEvent: none;
-    // background-color: $primary-white;
-    // outline: none;
-    // border-bottom: solid 1px $transparent-black-10;
-    // pointer-events: none;
-    // padding-bottom: 5px;
   }
 
 }
@@ -88,7 +77,7 @@
 
   &:focus {
     padding-bottom: 4px;
-    border-bottom: var(--borderBottom);
+    border-bottom: var(--focusBorderBottom);
   }
 
   &.-error {

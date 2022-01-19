@@ -1,18 +1,13 @@
-.ss-site > .header, .ss-site-header {
-  > ul > li.selected {
-    --background: #{$gradient-yellow};
-    --hover-background: #{$primary-yellow};
-    --hover-color: #{$primary-black};
-  }
-
-  > ul > li {
-    --background: none;
-    --hover-background: none;
-    --hover-color: #{$secondary-blue};
-  }
+.ss-site {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 100vh;
+  background-color: $primary-white;
 }
 
-.ss-site > .header, .ss-site-header {
+.ss-site > .header,
+.ss-site-header {
   flex-direction: row;
 
   position: relative;
@@ -24,7 +19,19 @@
 
   display: flex;
   padding: 0px $common-gap 0px $common-gap;
-  box-shadow: 0px 0px 8px  rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+
+  > ul > li.selected {
+    --background: #{$gradient-yellow};
+    --hover-background: #{$primary-yellow};
+    --hover-color: #{$primary-black};
+  }
+
+  > ul > li {
+    --background: none;
+    --hover-background: none;
+    --hover-color: #{$secondary-blue};
+  }
 
   > span.sitename {
     display: flex;
@@ -83,4 +90,13 @@
       background-size: 16px 16px;
     }
   }
+}
+
+.ss-site > .body {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 100%;
+  flex-grow: 1;
+  background-color: $background-gray-basic;
 }

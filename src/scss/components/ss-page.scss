@@ -1,3 +1,15 @@
+.ss-page {
+  display: flex;
+  flex-direction: column;
+  gap: $common-gap;
+
+  order: 1;
+  flex-grow: 1;
+  align-self: stretch;
+
+  padding-bottom: $common-gap;
+}
+
 .ss-page > .header,
 .ss-page-header {
   display: flex;

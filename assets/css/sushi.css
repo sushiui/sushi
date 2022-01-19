@@ -1352,7 +1352,6 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   background: var(--backgroundColor);
   border-bottom: var(--borderBottom);
   pointer-events: var(--pointerEvent);
-  font-size: 14px;
 }
 
 .ss-textfield > input::-webkit-search-cancel-button {

@@ -29,7 +29,7 @@ UL.ss-menu {
   > li.selected {
     --background: #fef3e6;
     position: relative;
-    
+
     &::after {
       content: "\00a0";
       position: absolute;
@@ -87,7 +87,7 @@ UL.ss-menu > li > a {
     background: var(--active-background);
   }
 
-  &.disable{
+  &.disable {
     color: $transparent-black-35;
     pointer-events: none;
   }

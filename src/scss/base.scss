@@ -1,5 +1,5 @@
 HTML {
-  font-family: 'Sarabun', sans-serif;
+  font-family: "Sarabun", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 145%;
@@ -7,54 +7,38 @@ HTML {
   height: 100%;
 }
 
-BODY, INPUT, TEXTAREA, BUTTON {
+BODY,
+INPUT,
+TEXTAREA,
+BUTTON {
   font-family: inherit;
   font-size: $font-size-body;
 }
 
+#root {
+  min-height: 100vh;
+}
+
 BODY {
-  display: flex;
-  flex-direction: column;
-  margin: 0px;
   min-height: 100%;
-  background-color: $primary-white;
+  margin: 0px;
 }
 
 TABLE {
-  border: 1px solid #EEE;
+  border: 1px solid #eee;
 
   TH {
     text-align: left;
   }
 
-  TH, TD {
+  TH,
+  TD {
     padding: 20px;
   }
 }
 
 .small {
   font-size: 0.429rem;
-}
-
-.ss-site > .body {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  height: 100%;
-  flex-grow: 1;
-  background-color: $background-gray-basic;
-}
-
-.ss-page {
-  display: flex;
-  flex-direction: column;
-  gap: $common-gap;
-
-  order: 1;
-  flex-grow: 1;
-  align-self: stretch;
-
-  padding-bottom: $common-gap;
 }
 
 // Helper

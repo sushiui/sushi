@@ -1129,7 +1129,7 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   position: relative;
   z-index: 4;
   background-color: #FFFFFF;
-  height: 38px;
+  min-height: 38px;
   border-bottom: 4px solid #FCB034;
   display: -webkit-box;
   display: -ms-flexbox;

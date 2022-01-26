@@ -74,7 +74,7 @@ function styles() {
     .pipe(sass({ outputStyle: "expanded" }))
     .pipe(gulp.dest("assets/css"))
     .pipe(sass({ outputStyle: "compressed" }))
-    .pipe(rename("styles.min.css"))
+    .pipe(rename("sushi.min.css"))
     .pipe(gulp.dest("assets/css"))
     .pipe(connect.reload());
 }

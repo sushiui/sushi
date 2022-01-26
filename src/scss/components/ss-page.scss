@@ -1,10 +1,23 @@
-.ss-page > .header, .ss-page-header {
+.ss-page {
   display: flex;
+  flex-direction: column;
+  gap: $common-gap;
+
+  order: 1;
+  flex-grow: 1;
+  align-self: stretch;
+
+  padding-bottom: $common-gap;
+}
+
+.ss-page > .header,
+.ss-page-header {
+  display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   align-items: center;
 
-  // margin: 0px $common-gap;
-  padding: 0px $common-gap;
+  padding: 4px $common-gap 0px $common-gap;
 
   > span.label {
     flex-grow: 1;
@@ -23,9 +36,9 @@
   }
 
   &.-withbackground {
-    padding-right: 16px;
-    padding-bottom: 16px;
-    padding-left: 16px;
+    padding-right: $common-gap;
+    padding-bottom: $common-gap;
+    padding-left: $common-gap;
     background-color: $transparent-white-96;
     box-shadow: $shadow-10;
   }

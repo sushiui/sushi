@@ -26,12 +26,21 @@ UL.ss-menu {
   padding: 8px;
   gap: 4px;
 
-  > li.selected > a::after {
-    content: "\00a0";
+  > li.selected {
+    --background: #fef3e6;
     position: relative;
-    background-color: $primary-yellow;
-    width: $radius;
-    border-radius: calc($radius / 2);
+
+    &::after {
+      content: "\00a0";
+      position: absolute;
+      background-color: $primary-yellow;
+      width: $radius;
+      border-radius: calc($radius / 2);
+      height: 1.25rem;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 8px;
+    }
   }
 }
 
@@ -78,7 +87,7 @@ UL.ss-menu > li > a {
     background: var(--active-background);
   }
 
-  &.disable{
+  &.disable {
     color: $transparent-black-35;
     pointer-events: none;
   }

@@ -1,5 +1,4 @@
-
-.ss-textfield{
+.ss-textfield {
   height: 50px;
 
   --backgroundColor: #{$primary-white};
@@ -11,7 +10,7 @@
   --outline: solid 1px #{$transparent-black-10};
   --pointerEvent: auto;
 
-  &.-error{
+  &.-error {
     display: flex;
     flex-direction: column;
     font-size: 10px;
@@ -22,24 +21,22 @@
     --borderBottom: solid 2px #{$accessible-red};
   }
 
-  &.-disable{
+  &.-disable {
     --backgroundColor: #{$transparent-black-10};
     --color: #{$transparent-black-35};
     --pointerEvent: none;
   }
 
-  &.-viewonly{
+  &.-viewonly {
     --backgroundColor: #{$primary-white};
     --borderBottom: solid 1px #{$transparent-black-10};
     --paddingBottom: 5px;
     --outline: none;
     --pointerEvent: none;
   }
-
 }
 
-
-.ss-textfield > input{
+.ss-textfield > input {
   display: flex;
   flex-direction: column;
   flex-basis: auto;
@@ -62,14 +59,14 @@
   border-bottom: var(--borderBottom);
   pointer-events: var(--pointerEvent);
 
-  &::-webkit-search-cancel-button{
+  &::-webkit-search-cancel-button {
     -webkit-appearance: none;
     height: 16px;
     width: 16px;
-    font-family: 'SET';
-    background: url('../../assets/icons/Close-or-Reject.svg');
+    font-family: "SET";
+    background: url("../../assets/icons/Close-or-Reject.svg");
     cursor: pointer;
-    
+
     background-size: 16px 16px;
   }
 
@@ -82,14 +79,15 @@
     padding-bottom: 4px;
     border-bottom: solid 2px $accessible-red;
     margin-bottom: 0px;
-    content: attr('errorMessage');
+    content: attr("errorMessage");
   }
 
-  &:DISABLED, &.-disable {
+  &:disabled,
+  &.-disable {
     background-color: $transparent-black-10;
     color: $transparent-black-35;
     pointer-events: none;
-  } 
+  }
 
   &.-viewonly {
     background-color: $primary-white;

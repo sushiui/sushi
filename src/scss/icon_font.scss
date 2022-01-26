@@ -11,17 +11,17 @@ $ gulp compile-icon-font
 
 @font-face {
   font-family: "SET-icon";
-  src:
-    url('../fonts/SET-icon.ttf?z6r7d') format('truetype'),
-    url('../fonts/SET-icon.woff?z6r7d') format('woff');
+  src: url("../fonts/SET-icon.ttf?z6r7d") format("truetype"),
+    url("../fonts/SET-icon.woff?z6r7d") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="ss-icon-"], [class*=" ss-icon-"] {
+[class^="ss-icon-"],
+[class*=" ss-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'SET-icon' !important;
+  font-family: "SET-icon" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -34,16 +34,12 @@ $ gulp compile-icon-font
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
-
 $ss-icon-Access-alarm: "\EA01";
 .ss-icon-Access-alarm {
   &:before {
     content: $ss-icon-Access-alarm;
   }
 }
-
 
 $ss-icon-Account-circle: "\EA02";
 .ss-icon-Account-circle {
@@ -52,14 +48,12 @@ $ss-icon-Account-circle: "\EA02";
   }
 }
 
-
 $ss-icon-Add: "\EA03";
 .ss-icon-Add {
   &:before {
     content: $ss-icon-Add;
   }
 }
-
 
 $ss-icon-Alert: "\EA04";
 .ss-icon-Alert {
@@ -68,14 +62,12 @@ $ss-icon-Alert: "\EA04";
   }
 }
 
-
 $ss-icon-Approve: "\EA05";
 .ss-icon-Approve {
   &:before {
     content: $ss-icon-Approve;
   }
 }
-
 
 $ss-icon-Approves-filled: "\EA06";
 .ss-icon-Approves-filled {
@@ -84,14 +76,12 @@ $ss-icon-Approves-filled: "\EA06";
   }
 }
 
-
 $ss-icon-Approves: "\EA07";
 .ss-icon-Approves {
   &:before {
     content: $ss-icon-Approves;
   }
 }
-
 
 $ss-icon-Assign: "\EA08";
 .ss-icon-Assign {
@@ -100,14 +90,12 @@ $ss-icon-Assign: "\EA08";
   }
 }
 
-
 $ss-icon-Attach-Money: "\EA09";
 .ss-icon-Attach-Money {
   &:before {
     content: $ss-icon-Attach-Money;
   }
 }
-
 
 $ss-icon-Attachment: "\EA0A";
 .ss-icon-Attachment {
@@ -116,14 +104,12 @@ $ss-icon-Attachment: "\EA0A";
   }
 }
 
-
 $ss-icon-Auditor: "\EA0B";
 .ss-icon-Auditor {
   &:before {
     content: $ss-icon-Auditor;
   }
 }
-
 
 $ss-icon-Back-Android: "\EA0C";
 .ss-icon-Back-Android {
@@ -132,14 +118,12 @@ $ss-icon-Back-Android: "\EA0C";
   }
 }
 
-
 $ss-icon-Back-iOS: "\EA0D";
 .ss-icon-Back-iOS {
   &:before {
     content: $ss-icon-Back-iOS;
   }
 }
-
 
 $ss-icon-Back: "\EA0E";
 .ss-icon-Back {
@@ -148,14 +132,12 @@ $ss-icon-Back: "\EA0E";
   }
 }
 
-
 $ss-icon-Bookmark: "\EA0F";
 .ss-icon-Bookmark {
   &:before {
     content: $ss-icon-Bookmark;
   }
 }
-
 
 $ss-icon-Bookmarks-filled: "\EA10";
 .ss-icon-Bookmarks-filled {
@@ -164,14 +146,12 @@ $ss-icon-Bookmarks-filled: "\EA10";
   }
 }
 
-
 $ss-icon-Business: "\EA11";
 .ss-icon-Business {
   &:before {
     content: $ss-icon-Business;
   }
 }
-
 
 $ss-icon-Calendar: "\EA12";
 .ss-icon-Calendar {
@@ -180,14 +160,12 @@ $ss-icon-Calendar: "\EA12";
   }
 }
 
-
 $ss-icon-Callcenter: "\EA13";
 .ss-icon-Callcenter {
   &:before {
     content: $ss-icon-Callcenter;
   }
 }
-
 
 $ss-icon-Category: "\EA14";
 .ss-icon-Category {
@@ -196,14 +174,12 @@ $ss-icon-Category: "\EA14";
   }
 }
 
-
 $ss-icon-Check-list: "\EA15";
 .ss-icon-Check-list {
   &:before {
     content: $ss-icon-Check-list;
   }
 }
-
 
 $ss-icon-Checkbox-selected: "\EA16";
 .ss-icon-Checkbox-selected {
@@ -212,14 +188,12 @@ $ss-icon-Checkbox-selected: "\EA16";
   }
 }
 
-
 $ss-icon-Checkbox: "\EA17";
 .ss-icon-Checkbox {
   &:before {
     content: $ss-icon-Checkbox;
   }
 }
-
 
 $ss-icon-Checked: "\EA18";
 .ss-icon-Checked {
@@ -228,14 +202,12 @@ $ss-icon-Checked: "\EA18";
   }
 }
 
-
 $ss-icon-Circle-filled: "\EA19";
 .ss-icon-Circle-filled {
   &:before {
     content: $ss-icon-Circle-filled;
   }
 }
-
 
 $ss-icon-Classroom: "\EA1A";
 .ss-icon-Classroom {
@@ -244,14 +216,12 @@ $ss-icon-Classroom: "\EA1A";
   }
 }
 
-
 $ss-icon-Close-or-Reject: "\EA1B";
 .ss-icon-Close-or-Reject {
   &:before {
     content: $ss-icon-Close-or-Reject;
   }
 }
-
 
 $ss-icon-Company: "\EA1C";
 .ss-icon-Company {
@@ -260,14 +230,12 @@ $ss-icon-Company: "\EA1C";
   }
 }
 
-
 $ss-icon-Content-copy: "\EA1D";
 .ss-icon-Content-copy {
   &:before {
     content: $ss-icon-Content-copy;
   }
 }
-
 
 $ss-icon-DOC: "\EA1E";
 .ss-icon-DOC {
@@ -276,14 +244,12 @@ $ss-icon-DOC: "\EA1E";
   }
 }
 
-
 $ss-icon-Dash: "\EA1F";
 .ss-icon-Dash {
   &:before {
     content: $ss-icon-Dash;
   }
 }
-
 
 $ss-icon-Date: "\EA20";
 .ss-icon-Date {
@@ -292,14 +258,12 @@ $ss-icon-Date: "\EA20";
   }
 }
 
-
 $ss-icon-Decrease: "\EA21";
 .ss-icon-Decrease {
   &:before {
     content: $ss-icon-Decrease;
   }
 }
-
 
 $ss-icon-Delete: "\EA22";
 .ss-icon-Delete {
@@ -308,14 +272,12 @@ $ss-icon-Delete: "\EA22";
   }
 }
 
-
 $ss-icon-Document-1: "\EA23";
 .ss-icon-Document-1 {
   &:before {
     content: $ss-icon-Document-1;
   }
 }
-
 
 $ss-icon-Document: "\EA24";
 .ss-icon-Document {
@@ -324,14 +286,12 @@ $ss-icon-Document: "\EA24";
   }
 }
 
-
 $ss-icon-Documents: "\EA25";
 .ss-icon-Documents {
   &:before {
     content: $ss-icon-Documents;
   }
 }
-
 
 $ss-icon-Down: "\EA26";
 .ss-icon-Down {
@@ -340,14 +300,12 @@ $ss-icon-Down: "\EA26";
   }
 }
 
-
 $ss-icon-Download: "\EA27";
 .ss-icon-Download {
   &:before {
     content: $ss-icon-Download;
   }
 }
-
 
 $ss-icon-ESG: "\EA28";
 .ss-icon-ESG {
@@ -356,14 +314,12 @@ $ss-icon-ESG: "\EA28";
   }
 }
 
-
 $ss-icon-Edit-filled: "\EA29";
 .ss-icon-Edit-filled {
   &:before {
     content: $ss-icon-Edit-filled;
   }
 }
-
 
 $ss-icon-Edit: "\EA2A";
 .ss-icon-Edit {
@@ -372,14 +328,12 @@ $ss-icon-Edit: "\EA2A";
   }
 }
 
-
 $ss-icon-Email: "\EA2B";
 .ss-icon-Email {
   &:before {
     content: $ss-icon-Email;
   }
 }
-
 
 $ss-icon-Euro: "\EA2C";
 .ss-icon-Euro {
@@ -388,14 +342,12 @@ $ss-icon-Euro: "\EA2C";
   }
 }
 
-
 $ss-icon-Exit: "\EA2D";
 .ss-icon-Exit {
   &:before {
     content: $ss-icon-Exit;
   }
 }
-
 
 $ss-icon-External-link: "\EA2E";
 .ss-icon-External-link {
@@ -404,14 +356,12 @@ $ss-icon-External-link: "\EA2E";
   }
 }
 
-
 $ss-icon-Eye-close: "\EA2F";
 .ss-icon-Eye-close {
   &:before {
     content: $ss-icon-Eye-close;
   }
 }
-
 
 $ss-icon-Eye: "\EA30";
 .ss-icon-Eye {
@@ -420,14 +370,12 @@ $ss-icon-Eye: "\EA30";
   }
 }
 
-
 $ss-icon-Fax: "\EA31";
 .ss-icon-Fax {
   &:before {
     content: $ss-icon-Fax;
   }
 }
-
 
 $ss-icon-File-upload: "\EA32";
 .ss-icon-File-upload {
@@ -436,14 +384,12 @@ $ss-icon-File-upload: "\EA32";
   }
 }
 
-
 $ss-icon-Fill-color: "\EA33";
 .ss-icon-Fill-color {
   &:before {
     content: $ss-icon-Fill-color;
   }
 }
-
 
 $ss-icon-Filter: "\EA34";
 .ss-icon-Filter {
@@ -452,14 +398,12 @@ $ss-icon-Filter: "\EA34";
   }
 }
 
-
 $ss-icon-Fire: "\EA35";
 .ss-icon-Fire {
   &:before {
     content: $ss-icon-Fire;
   }
 }
-
 
 $ss-icon-Folder-open: "\EA36";
 .ss-icon-Folder-open {
@@ -468,14 +412,12 @@ $ss-icon-Folder-open: "\EA36";
   }
 }
 
-
 $ss-icon-Github: "\EA37";
 .ss-icon-Github {
   &:before {
     content: $ss-icon-Github;
   }
 }
-
 
 $ss-icon-Help: "\EA38";
 .ss-icon-Help {
@@ -484,14 +426,12 @@ $ss-icon-Help: "\EA38";
   }
 }
 
-
 $ss-icon-Home-filled: "\EA39";
 .ss-icon-Home-filled {
   &:before {
     content: $ss-icon-Home-filled;
   }
 }
-
 
 $ss-icon-Home: "\EA3A";
 .ss-icon-Home {
@@ -500,14 +440,12 @@ $ss-icon-Home: "\EA3A";
   }
 }
 
-
 $ss-icon-Increase: "\EA3B";
 .ss-icon-Increase {
   &:before {
     content: $ss-icon-Increase;
   }
 }
-
 
 $ss-icon-Information: "\EA3C";
 .ss-icon-Information {
@@ -516,14 +454,12 @@ $ss-icon-Information: "\EA3C";
   }
 }
 
-
 $ss-icon-Language: "\EA3D";
 .ss-icon-Language {
   &:before {
     content: $ss-icon-Language;
   }
 }
-
 
 $ss-icon-Link: "\EA3E";
 .ss-icon-Link {
@@ -532,14 +468,12 @@ $ss-icon-Link: "\EA3E";
   }
 }
 
-
 $ss-icon-Location: "\EA3F";
 .ss-icon-Location {
   &:before {
     content: $ss-icon-Location;
   }
 }
-
 
 $ss-icon-Lock: "\EA40";
 .ss-icon-Lock {
@@ -548,14 +482,12 @@ $ss-icon-Lock: "\EA40";
   }
 }
 
-
 $ss-icon-Logout: "\EA41";
 .ss-icon-Logout {
   &:before {
     content: $ss-icon-Logout;
   }
 }
-
 
 $ss-icon-Main-Component-filled: "\EA42";
 .ss-icon-Main-Component-filled {
@@ -564,14 +496,12 @@ $ss-icon-Main-Component-filled: "\EA42";
   }
 }
 
-
 $ss-icon-Market: "\EA43";
 .ss-icon-Market {
   &:before {
     content: $ss-icon-Market;
   }
 }
-
 
 $ss-icon-Maximize-arrow: "\EA44";
 .ss-icon-Maximize-arrow {
@@ -580,14 +510,12 @@ $ss-icon-Maximize-arrow: "\EA44";
   }
 }
 
-
 $ss-icon-Maximize-filled: "\EA45";
 .ss-icon-Maximize-filled {
   &:before {
     content: $ss-icon-Maximize-filled;
   }
 }
-
 
 $ss-icon-Minimize-arrow: "\EA46";
 .ss-icon-Minimize-arrow {
@@ -596,14 +524,12 @@ $ss-icon-Minimize-arrow: "\EA46";
   }
 }
 
-
 $ss-icon-Minimize-filled: "\EA47";
 .ss-icon-Minimize-filled {
   &:before {
     content: $ss-icon-Minimize-filled;
   }
 }
-
 
 $ss-icon-Mobile-phone: "\EA48";
 .ss-icon-Mobile-phone {
@@ -612,14 +538,12 @@ $ss-icon-Mobile-phone: "\EA48";
   }
 }
 
-
 $ss-icon-More-Android: "\EA49";
 .ss-icon-More-Android {
   &:before {
     content: $ss-icon-More-Android;
   }
 }
-
 
 $ss-icon-More-iOS: "\EA4A";
 .ss-icon-More-iOS {
@@ -628,14 +552,12 @@ $ss-icon-More-iOS: "\EA4A";
   }
 }
 
-
 $ss-icon-More-Hamburger: "\EA4B";
 .ss-icon-More-Hamburger {
   &:before {
     content: $ss-icon-More-Hamburger;
   }
 }
-
 
 $ss-icon-Mouse-cursor-filled: "\EA4C";
 .ss-icon-Mouse-cursor-filled {
@@ -644,14 +566,12 @@ $ss-icon-Mouse-cursor-filled: "\EA4C";
   }
 }
 
-
 $ss-icon-Move: "\EA4D";
 .ss-icon-Move {
   &:before {
     content: $ss-icon-Move;
   }
 }
-
 
 $ss-icon-News-filled: "\EA4E";
 .ss-icon-News-filled {
@@ -660,14 +580,12 @@ $ss-icon-News-filled: "\EA4E";
   }
 }
 
-
 $ss-icon-News: "\EA4F";
 .ss-icon-News {
   &:before {
     content: $ss-icon-News;
   }
 }
-
 
 $ss-icon-Next-big: "\EA50";
 .ss-icon-Next-big {
@@ -676,14 +594,12 @@ $ss-icon-Next-big: "\EA50";
   }
 }
 
-
 $ss-icon-Next: "\EA51";
 .ss-icon-Next {
   &:before {
     content: $ss-icon-Next;
   }
 }
-
 
 $ss-icon-Notification-filled: "\EA52";
 .ss-icon-Notification-filled {
@@ -692,14 +608,12 @@ $ss-icon-Notification-filled: "\EA52";
   }
 }
 
-
 $ss-icon-Notification: "\EA53";
 .ss-icon-Notification {
   &:before {
     content: $ss-icon-Notification;
   }
 }
-
 
 $ss-icon-One-Report: "\EA54";
 .ss-icon-One-Report {
@@ -708,14 +622,12 @@ $ss-icon-One-Report: "\EA54";
   }
 }
 
-
 $ss-icon-PDF: "\EA55";
 .ss-icon-PDF {
   &:before {
     content: $ss-icon-PDF;
   }
 }
-
 
 $ss-icon-Page-filled: "\EA56";
 .ss-icon-Page-filled {
@@ -724,14 +636,12 @@ $ss-icon-Page-filled: "\EA56";
   }
 }
 
-
 $ss-icon-Phone-call-filled: "\EA57";
 .ss-icon-Phone-call-filled {
   &:before {
     content: $ss-icon-Phone-call-filled;
   }
 }
-
 
 $ss-icon-Phone: "\EA58";
 .ss-icon-Phone {
@@ -740,14 +650,12 @@ $ss-icon-Phone: "\EA58";
   }
 }
 
-
 $ss-icon-Picture: "\EA59";
 .ss-icon-Picture {
   &:before {
     content: $ss-icon-Picture;
   }
 }
-
 
 $ss-icon-Printer: "\EA5A";
 .ss-icon-Printer {
@@ -756,14 +664,12 @@ $ss-icon-Printer: "\EA5A";
   }
 }
 
-
 $ss-icon-Profile-filled: "\EA5B";
 .ss-icon-Profile-filled {
   &:before {
     content: $ss-icon-Profile-filled;
   }
 }
-
 
 $ss-icon-Profile: "\EA5C";
 .ss-icon-Profile {
@@ -772,14 +678,12 @@ $ss-icon-Profile: "\EA5C";
   }
 }
 
-
 $ss-icon-Push-pin: "\EA5D";
 .ss-icon-Push-pin {
   &:before {
     content: $ss-icon-Push-pin;
   }
 }
-
 
 $ss-icon-Radio-button-selected: "\EA5E";
 .ss-icon-Radio-button-selected {
@@ -788,14 +692,12 @@ $ss-icon-Radio-button-selected: "\EA5E";
   }
 }
 
-
 $ss-icon-Radio-button: "\EA5F";
 .ss-icon-Radio-button {
   &:before {
     content: $ss-icon-Radio-button;
   }
 }
-
 
 $ss-icon-Reader: "\EA60";
 .ss-icon-Reader {
@@ -804,14 +706,12 @@ $ss-icon-Reader: "\EA60";
   }
 }
 
-
 $ss-icon-Refresh: "\EA61";
 .ss-icon-Refresh {
   &:before {
     content: $ss-icon-Refresh;
   }
 }
-
 
 $ss-icon-Search: "\EA62";
 .ss-icon-Search {
@@ -820,14 +720,12 @@ $ss-icon-Search: "\EA62";
   }
 }
 
-
 $ss-icon-Set-link: "\EA63";
 .ss-icon-Set-link {
   &:before {
     content: $ss-icon-Set-link;
   }
 }
-
 
 $ss-icon-Set: "\EA64";
 .ss-icon-Set {
@@ -836,14 +734,12 @@ $ss-icon-Set: "\EA64";
   }
 }
 
-
 $ss-icon-Setting: "\EA65";
 .ss-icon-Setting {
   &:before {
     content: $ss-icon-Setting;
   }
 }
-
 
 $ss-icon-Settings-suggest: "\EA66";
 .ss-icon-Settings-suggest {
@@ -852,14 +748,12 @@ $ss-icon-Settings-suggest: "\EA66";
   }
 }
 
-
 $ss-icon-Sorting: "\EA67";
 .ss-icon-Sorting {
   &:before {
     content: $ss-icon-Sorting;
   }
 }
-
 
 $ss-icon-Star-Filled: "\EA68";
 .ss-icon-Star-Filled {
@@ -868,14 +762,12 @@ $ss-icon-Star-Filled: "\EA68";
   }
 }
 
-
 $ss-icon-Star: "\EA69";
 .ss-icon-Star {
   &:before {
     content: $ss-icon-Star;
   }
 }
-
 
 $ss-icon-Status-circle: "\EA6A";
 .ss-icon-Status-circle {
@@ -884,14 +776,12 @@ $ss-icon-Status-circle: "\EA6A";
   }
 }
 
-
 $ss-icon-Suitcase: "\EA6B";
 .ss-icon-Suitcase {
   &:before {
     content: $ss-icon-Suitcase;
   }
 }
-
 
 $ss-icon-Supervisor: "\EA6C";
 .ss-icon-Supervisor {
@@ -900,14 +790,12 @@ $ss-icon-Supervisor: "\EA6C";
   }
 }
 
-
 $ss-icon-Sushi: "\EA6D";
 .ss-icon-Sushi {
   &:before {
     content: $ss-icon-Sushi;
   }
 }
-
 
 $ss-icon-TXT: "\EA6E";
 .ss-icon-TXT {
@@ -916,14 +804,12 @@ $ss-icon-TXT: "\EA6E";
   }
 }
 
-
 $ss-icon-Table-view: "\EA6F";
 .ss-icon-Table-view {
   &:before {
     content: $ss-icon-Table-view;
   }
 }
-
 
 $ss-icon-Table: "\EA70";
 .ss-icon-Table {
@@ -932,14 +818,12 @@ $ss-icon-Table: "\EA70";
   }
 }
 
-
 $ss-icon-Terrain: "\EA71";
 .ss-icon-Terrain {
   &:before {
     content: $ss-icon-Terrain;
   }
 }
-
 
 $ss-icon-Thumb-up-filled: "\EA72";
 .ss-icon-Thumb-up-filled {
@@ -948,14 +832,12 @@ $ss-icon-Thumb-up-filled: "\EA72";
   }
 }
 
-
 $ss-icon-Thumbnail: "\EA73";
 .ss-icon-Thumbnail {
   &:before {
     content: $ss-icon-Thumbnail;
   }
 }
-
 
 $ss-icon-Time: "\EA74";
 .ss-icon-Time {
@@ -964,14 +846,12 @@ $ss-icon-Time: "\EA74";
   }
 }
 
-
 $ss-icon-Unchange: "\EA75";
 .ss-icon-Unchange {
   &:before {
     content: $ss-icon-Unchange;
   }
 }
-
 
 $ss-icon-Underline: "\EA76";
 .ss-icon-Underline {
@@ -980,14 +860,12 @@ $ss-icon-Underline: "\EA76";
   }
 }
 
-
 $ss-icon-Up: "\EA77";
 .ss-icon-Up {
   &:before {
     content: $ss-icon-Up;
   }
 }
-
 
 $ss-icon-Video: "\EA78";
 .ss-icon-Video {
@@ -996,14 +874,12 @@ $ss-icon-Video: "\EA78";
   }
 }
 
-
 $ss-icon-Vpn-key: "\EA79";
 .ss-icon-Vpn-key {
   &:before {
     content: $ss-icon-Vpn-key;
   }
 }
-
 
 $ss-icon-Waiting: "\EA7A";
 .ss-icon-Waiting {
@@ -1012,14 +888,12 @@ $ss-icon-Waiting: "\EA7A";
   }
 }
 
-
 $ss-icon-Warning: "\EA7B";
 .ss-icon-Warning {
   &:before {
     content: $ss-icon-Warning;
   }
 }
-
 
 $ss-icon-Web: "\EA7C";
 .ss-icon-Web {
@@ -1028,14 +902,12 @@ $ss-icon-Web: "\EA7C";
   }
 }
 
-
 $ss-icon-XML: "\EA7D";
 .ss-icon-XML {
   &:before {
     content: $ss-icon-XML;
   }
 }
-
 
 $ss-icon-Zoom-in: "\EA7E";
 .ss-icon-Zoom-in {
@@ -1044,14 +916,12 @@ $ss-icon-Zoom-in: "\EA7E";
   }
 }
 
-
 $ss-icon-Zoom-out: "\EA7F";
 .ss-icon-Zoom-out {
   &:before {
     content: $ss-icon-Zoom-out;
   }
 }
-
 
 $ss-icon-cancel-filled: "\EA80";
 .ss-icon-cancel-filled {

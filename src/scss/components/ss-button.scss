@@ -1,4 +1,5 @@
-BUTTON, a.ss-button {
+BUTTON,
+a.ss-button {
   --color: #{$primary-black};
   --background: #{$gradient-yellow};
   --hover-background: #{$primary-yellow};
@@ -11,7 +12,8 @@ BUTTON, a.ss-button {
   --padding: 6px 12px;
 }
 
-BUTTON.-secondary, a.ss-button.-secondary {
+BUTTON.-secondary,
+a.ss-button.-secondary {
   --background: #{$gradient-white};
   --hover-background: #{$gradient-white};
   --hover-outline: solid 1px #{$primary-yellow};
@@ -20,20 +22,22 @@ BUTTON.-secondary, a.ss-button.-secondary {
   --outline: solid 1px #{$transparent-black-10};
 }
 
-$button-colors:
-  "yellow-green" $tertiary-yellow-green-100 $tertiary-yellow-green-60 $primary-black,
+$button-colors: "yellow-green" $tertiary-yellow-green-100
+    $tertiary-yellow-green-60 $primary-black,
   "yellow" $tertiary-yellow-100 $tertiary-yellow-60 $primary-black,
   "orange" $tertiary-orange-100 $tertiary-orange-60 $primary-black,
   "sky-blue" $tertiary-sky-blue-100 $tertiary-sky-blue-60 $primary-white,
-  "purplish-blue" $tertiary-purplish-blue-100 $tertiary-purplish-blue-60 $primary-white,
-  "purplish-red" $tertiary-purplish-red-100 $tertiary-purplish-red-60 $primary-white,
+  "purplish-blue" $tertiary-purplish-blue-100 $tertiary-purplish-blue-60
+    $primary-white,
+  "purplish-red" $tertiary-purplish-red-100 $tertiary-purplish-red-60
+    $primary-white,
   "gray" $tertiary-gray-100 $tertiary-gray-60 $primary-white;
 
 @each $name, $color-100, $color-60, $color in $button-colors {
-
   $color-gradient: linear-gradient(180deg, $color-60 0%, $color-100 88.02%);
 
-  BUTTON.-#{$name}, a.ss-button.-#{$name} {
+  BUTTON.-#{$name},
+  a.ss-button.-#{$name} {
     --color: #{$color};
     --background: #{$color-gradient};
     --hover-background: #{$color-100};
@@ -52,7 +56,9 @@ a.ss-link {
   --padding: 0px;
 }
 
-BUTTON, a.ss-button, a.ss-link {
+BUTTON,
+a.ss-button,
+a.ss-link {
   display: inline-flex;
   align-items: center;
   padding: var(--padding);
@@ -67,7 +73,7 @@ BUTTON, a.ss-button, a.ss-link {
   color: var(--color);
   background: var(--background);
 
-  > span{
+  > span {
     font-size: $body-icon;
   }
 
@@ -82,7 +88,8 @@ BUTTON, a.ss-button, a.ss-link {
     outline: var(--active-outline);
   }
 
-  &.disable, &:DISABLED{
+  &.disable,
+  &:disabled {
     background: var(--disable-background);
     color: $transparent-black-35;
     pointer-events: none;

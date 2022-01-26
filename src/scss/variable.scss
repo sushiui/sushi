@@ -1,16 +1,14 @@
 @use "sass:color";
 
 // Primary
-$primary-yellow: #FCB034;
-$primary-black: #231F20;
-$primary-white: #FFFFFF;
-
+$primary-yellow: #fcb034;
+$primary-black: #231f20;
+$primary-white: #ffffff;
 
 // Secondary
 
-$secondary-blue: #009FD4;
-$secondary-Light-gray: #9DA6AD;
-
+$secondary-blue: #009fd4;
+$secondary-Light-gray: #9da6ad;
 
 // Tretiary
 // Number after color is simulate percent of transparent with white background under
@@ -50,7 +48,6 @@ $tertiary-gray-60: hsl(220, 2%, 60%);
 $tertiary-gray-30: hsl(220, 2%, 90%);
 $tertiary-gray-10: hsl(220, 2%, 95%);
 
-
 // Transparent
 
 $transparent-yellow-30: rgba(255, 210, 0, 0.3);
@@ -60,24 +57,27 @@ $transparent-black-6: rgba(0, 0, 0, 0.06);
 $transparent-black-10: rgba(0, 0, 0, 0.1);
 $transparent-black-35: rgba(0, 0, 0, 0.35);
 
-
 // Gradient
 
-$gradient-yellow: linear-gradient(180deg, #FFCF36 0%, #FCB034 88.02%);
-$gradient-white: linear-gradient(180deg, $tertiary-gray-10 0%, $tertiary-gray-30 88.02%);
+$gradient-yellow: linear-gradient(180deg, #ffcf36 0%, #fcb034 88.02%);
+$gradient-white: linear-gradient(
+  180deg,
+  $tertiary-gray-10 0%,
+  $tertiary-gray-30 88.02%
+);
 
 // Accessible
 
-$accessible-blue: #0064C5;
-$accessible-red: #B60000;
+$accessible-blue: #0064c5;
+$accessible-red: #b60000;
 $accessible-green: #006600;
-$accessible-orange: #E55F14;
+$accessible-orange: #e55f14;
 
 // Shadow
 
 $shadow-10: 0px 0px 8px rgba(0, 0, 0, 0.1);
 
-$background-gray-basic: #F2F2F2;
+$background-gray-basic: #f2f2f2;
 
 // Gap
 

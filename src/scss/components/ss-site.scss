@@ -1,4 +1,5 @@
-.ss-site > .header, .ss-site-header {
+.ss-site > .header,
+.ss-site-header {
   > ul > li.selected {
     --background: #{$gradient-yellow};
     --hover-background: #{$primary-yellow};
@@ -12,7 +13,8 @@
   }
 }
 
-.ss-site > .header, .ss-site-header {
+.ss-site > .header,
+.ss-site-header {
   flex-direction: row;
 
   position: relative;
@@ -24,7 +26,7 @@
 
   display: flex;
   padding: 0px $common-gap 0px $common-gap;
-  box-shadow: 0px 0px 8px  rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 
   > span.sitename {
     display: flex;

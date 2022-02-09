@@ -16,20 +16,20 @@ block page-block
       .body._padding
         form.ss-form
           .ss-field
-            .ss-label Last Name
-            .ss-textfield
-                input(type="search")
-          .ss-field
             .ss-label
               | First Name
               span.ss-icon-Information
             .ss-textfield.-error
-                input(type="search")
-                | Too long messsage
+              input(type="search" value="very long first name")
+              | Too long messsage
+          .ss-field
+            .ss-label Last Name
+            .ss-textfield
+              input(type="search" placeholder="Your lastname")
           .ss-field
             .ss-label Last Name
             .ss-textfield.-viewonly
-                input(type="search")
+              input(type="search" value="Sample value")
           button
             span.ss-icon-Approve
             | Primary
@@ -42,13 +42,21 @@ block page-block
         form.ss-form
           .ss-fields
             .ss-field
-              .ss-label First Name
-              .ss-textfield
-                  input(type="search")
+              .ss-label
+                | First Name
+                span.ss-icon-Information
+              .ss-textfield.-error
+                input(type="search" value="very long first name")
+                | Too long messsage
             .ss-field
               .ss-label Last Name
               .ss-textfield
-                  input(type="search")
+                input(type="search" placeholder="Your lastname")
+            .ss-field
+              .ss-label Last Name
+              .ss-textfield.-viewonly
+                input(type="search" value="Sample value")
+          .ss-fields
             button
               span.ss-icon-Approve
               | Primary

@@ -1,8 +1,14 @@
 .ss-field {
   display: flex;
   flex-direction: column;
+  gap: 4px;
 
   .ss-textfield {
     flex: 1;
   }
+}
+
+.ss-fields {
+  display: flex;
+  gap: $common-gap;
 }

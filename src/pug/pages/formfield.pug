@@ -1,0 +1,54 @@
+extends ../base/base.pug
+
+block append page-variable
+  - var current = "formfield"
+
+block page-block
+
+  .header.-nobreadcrumbs
+    span.label Form field
+
+  .body
+    .ss-card
+      .header
+        span.label &lt;Vertical field&gt;
+
+      .body._padding
+        form.ss-form
+          .ss-field
+            .ss-label Last Name
+            .ss-textfield
+                input(type="search")
+          .ss-field
+            .ss-label
+              | First Name
+              span.ss-icon-Information
+            .ss-textfield.-error
+                input(type="search")
+                | Too long messsage
+          .ss-field
+            .ss-label Last Name
+            .ss-textfield.-viewonly
+                input(type="search")
+          button
+            span.ss-icon-Approve
+            | Primary
+
+    .ss-card
+      .header
+        span.label &lt;Holizontal field&gt;
+
+      .body._padding
+        form.ss-form
+          .ss-fields
+            .ss-field
+              .ss-label First Name
+              .ss-textfield
+                  input(type="search")
+            .ss-field
+              .ss-label Last Name
+              .ss-textfield
+                  input(type="search")
+            button
+              span.ss-icon-Approve
+              | Primary

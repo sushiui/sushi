@@ -1,0 +1,8 @@
+.ss-field {
+  display: flex;
+  flex-direction: column;
+
+  .ss-textfield {
+    flex: 1;
+  }
+}

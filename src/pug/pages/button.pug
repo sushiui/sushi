@@ -135,6 +135,37 @@ block page-block
 
     .ss-card
       .header
+        span.label &lt;button&gt; as link
+
+      .body._padding
+        table
+          tr
+            td Enable
+            td
+              button.ss-link
+                span.ss-icon-Search
+                | Button as Link
+                span.ss-icon-Next
+          tr
+            td Disable
+            td
+              button.ss-link.disable
+                span.ss-icon-Search
+                | Button as Link
+                span.ss-icon-Next
+
+        pre
+          code.language-html
+            |
+            | &lt;button class="ss-link">
+            |    &lt;span class="ss-icon-Search">&lt;/span>
+            |    Button as Link
+            |    &lt;span class="ss-icon-Next">&lt;/span>
+            | &lt;/button>
+            | &nbsp;
+
+    .ss-card
+      .header
         span.label &lt;a&gt; as a button
 
       .body._padding

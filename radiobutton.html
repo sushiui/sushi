@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <title>Textfield ·
+  <title>Radio Button ·
     Sushi v.0.1</title>
   <link href="./assets/css/sushi.css" rel="stylesheet">
   <link href="./assets/css/prism.css" rel="stylesheet">
@@ -15,7 +15,7 @@
 
 <body>
   <div id="root">
-    <div class="ss-site textfield-page">
+    <div class="ss-site radiobutton-page">
       <div class="header"><span class="sitename"><span class="ss-icon-Sushi"></span>Sushi Design System</span>
         <ul>
           <li><a href="javascript:void(0);"><span class="label">Home</span></a></li>
@@ -62,14 +62,14 @@
             <li><a href="javascript:void(0)"><span class="ss-icon-Table-view"></span><span class="label">Component</span><span class="ss-icon-Maximize-arrow"></span></a></li>
             <li><a href="breadcrumb.html"><span class="ss-icon-Status-circle"></span><span class="label">Breadcrumb</span></a></li>
             <li><a href="button.html"><span class="ss-icon-Status-circle"></span><span class="label">Button</span></a></li>
-            <li class="selected"><a href="textfield.html"><span class="ss-icon-Status-circle"></span><span class="label">Textfield</span>
-                <div class="selected-box">&nbsp;</div>
-              </a></li>
+            <li><a href="textfield.html"><span class="ss-icon-Status-circle"></span><span class="label">Textfield</span></a></li>
             <li><a href="menu.html"><span class="ss-icon-Status-circle"></span><span class="label">Page Menu</span></a></li>
             <li><a href="pageheader.html"><span class="ss-icon-Status-circle"></span><span class="label">Page Header</span></a></li>
             <li><a href="megamenu.html"><span class="ss-icon-Status-circle"></span><span class="label">Mega menu</span></a></li>
             <li><a href="siteheader.html"><span class="ss-icon-Status-circle"></span><span class="label">Site Header</span></a></li>
-            <li><a href="radiobutton.html"><span class="ss-icon-Status-circle"></span><span class="label">Radio Button</span></a></li>
+            <li class="selected"><a href="radiobutton.html"><span class="ss-icon-Status-circle"></span><span class="label">Radio Button</span>
+                <div class="selected-box">&nbsp;</div>
+              </a></li>
           </ul>
         </div>
         <div class="ss-page">
@@ -80,41 +80,44 @@
               <div class="body _padding">
                 <table>
                   <tr>
-                    <th>Normal textfield</th>
-                    <th>Error textfield</th>
-                    <th>Disable textfield</th>
-                    <th>View only textfield</th>
+                    <th>Normal radio button </th>
+                    <th>Disable radio button </th>
                   </tr>
                   <tr>
                     <td>
-                      <div class="ss-textfield"><input type="search"></div>
+                      <div class="ss-radioButton"><input type="radio" id="r1" name="radio" value="1" checked><label for="r1">Radio1</label></div>
                     </td>
                     <td>
-                      <div class="ss-textfield -error"> <input type="search" value="Error input">Long error message</div>
+                      <div class="ss-radioButton -disable"><input type="radio" id="rd1" name="radioDisable" value="2" checked><label for="rd1">Radio1Disable </label></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="ss-radioButton"><input type="radio" id="r2" name="radio" value="2"><label for="r2">Radio2</label></div>
                     </td>
                     <td>
-                      <div class="ss-textfield -disable"><input type="search" value="Disable input"></div>
-                    </td>
-                    <td>
-                      <div class="ss-textfield -viewonly"><input type="search" value="View only input"></div>
+                      <div class="ss-radioButton -disable"><input type="radio" id="rd2" name="radioDisable" value="2"><label for="rd2">Radio2Disable</label></div>
                     </td>
                   </tr>
                 </table><pre><code class="language-html">
- &lt;div class="ss-textfield">
-   &lt;input class="ss-textfield" type="search" >
+ &lt;div class="ss-radioButton">
+   &lt;input class="ss-textfield" type="radio" id="r1" name="radio" value="1" checked>
+   &lt;label for="r1">Radio1&lt;/label>
  &lt;/div>
  &nbsp;
- &lt;div class=".-error">
-   &lt;input class="ss-textfield" type="search" value="Error input">
-    | Long error message
+ &lt;div class="ss-radioButton">
+   &lt;input class="ss-textfield" type="radio" id="r2" name="radio" value="2">
+   &lt;label for="r2">Radio2&lt;/label>
  &lt;/div>
  &nbsp;
- &lt;div class="ss-textfield -disable">
-   &lt;input class="ss-textfield" type="search" value="Disable input">
+ &lt;div class="ss-radioButton -disable">
+   &lt;input class="ss-textfield" type="radio" id="rd1" name="radioDisable" value="1" checked>
+   &lt;label for="rd1">Radio1&lt;/label>
  &lt;/div>
  &nbsp;
- &lt;div class="ss-textfield -viewonly">
-   &lt;input class="ss-textfield" type="search" value="View only input">
+ &lt;div class="ss-radioButton -disable">
+   &lt;input class="ss-textfield" type="radio" id="rd21" name="radioDisable" value="2">
+   &lt;label for="rd2">Radio1&lt;/label>
  &lt;/div>
  &nbsp;</code></pre>
               </div>

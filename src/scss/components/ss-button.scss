@@ -1,25 +1,27 @@
 BUTTON,
 a.ss-button {
   --color: #{$primary-black};
-  --background: #{$gradient-yellow};
-  --hover-background: #{$primary-yellow};
-  --hover-outline: none;
   --active-color: #{$primary-black};
-  --active-background: #{$tertiary-yellow-100};
-  --active-outline: solid 1px #{$primary-yellow};
-  --outline: none;
   --disable-background: #{$transparent-black-10};
   --padding: 6px 12px;
-}
 
-BUTTON.-secondary,
-a.ss-button.-secondary {
+  // Secondary
   --background: #{$gradient-white};
   --hover-background: #{$gradient-white};
   --hover-outline: solid 1px #{$primary-yellow};
   --active-background: #{$gradient-white};
   --active-outline: solid 1px #{$primary-white};
   --outline: solid 1px #{$transparent-black-10};
+}
+
+BUTTON.-primary,
+a.ss-button.-primary {
+  --background: #{$gradient-yellow};
+  --hover-background: #{$primary-yellow};
+  --hover-outline: none;
+  --active-background: #{$tertiary-yellow-100};
+  --active-outline: solid 1px #{$primary-yellow};
+  --outline: none;
 }
 
 $button-colors: "yellow-green" $tertiary-yellow-green-100

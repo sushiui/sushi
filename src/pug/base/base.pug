@@ -13,7 +13,9 @@ block page-variable
       textfield: ['Textfield','textfield','ss-icon-Status-circle'],
       menu: ['Page Menu','menu','ss-icon-Status-circle'],
       pageheader: ['Page Header','pageheader','ss-icon-Status-circle'],
+      megamenu: ['Mega menu','megamenu','ss-icon-Status-circle'],
       siteheader: ['Site Header','siteheader','ss-icon-Status-circle'],
+      radiobutton: ['Radio Button','radiobutton','ss-icon-Status-circle'],
     }
 
   - var current = "index"
@@ -39,7 +41,68 @@ html(lang="en")
             span.ss-icon-Sushi
             | Sushi Design System
 
-          ._flex-grow-1
+          //- div class="_flex-grow-t" in case of no menu
+          //- ._flex-grow-1
+
+          ul
+            li
+              a(href="javascript:void(0);")
+                span.label Home
+            li
+              a(href="javascript:void(0);")
+                span.label เมนูภาษาไทย
+            li.selected
+              a(href="javascript:void(0);")
+                span.ss-icon-Check-list
+                | &nbsp;
+                span.label Getting Start
+            li.-dropdownMega
+              a(href="javascript:void(0);")
+                span.label More
+                | &nbsp;
+                span.ss-icon-Maximize-arrow
+                span.ss-icon-Minimize-arrow
+
+              .ss-mega-menu
+                .row
+                  ul.ss-menu
+                    li.header
+                      b ประวัติ
+                    li
+                      a(href="#") Menu ที่หนึ่ง
+                    li
+                      a(href="#") Menu ที่สอง
+                    li
+                      a(href="#") หลังเมนูที่สอง
+                  ul.ss-menu
+                    li.header
+                      b Master
+                    li
+                      a(href="#") ก่อนเมนูที่สอง
+                    li
+                      a(href="#") สงสัยจะต้องมีสาม
+                    li
+                      a(href="#") ครั้งนี้ขอมีสี่
+                    li
+                      a(href="#") สี่ขอสั้น
+                  ul.ss-menu
+                    li.header
+                      b &nbsp;
+                    li
+                      a(href="#") ลองแบบไม่มีหัว
+                    li
+                      a(href="#") สงสัยจะต้องมีสาม
+                    li
+                      a(href="#") ครั้งนี้ขอมีสี่
+                    li
+                      a(href="#") สี่ขอสั้น
+                  ul.ss-menu
+                    li.header
+                      b Center
+                    li
+                      a(href="#") ลองหาเมนูสุขใจ
+                    li
+                      a(href="#") แบบสั้นแค่สองบ้าง
 
           span.account
             button.ss-button.-secondary(onclick="changeBackground()")

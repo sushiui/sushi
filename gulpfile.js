@@ -121,6 +121,7 @@ function watchTask(done) {
 
 const watch = gulp.parallel(watchTask, reload);
 const build = gulp.series(gulp.parallel(styles, scripts, html, views));
+const start = gulp.series(gulp.parallel(styles, scripts, html, views), watch);
 
 exports.reload = reload;
 exports.styles = styles;
@@ -129,4 +130,4 @@ exports.html = html;
 exports.views = views;
 exports.watch = watch;
 exports.build = build;
-exports.default = watch;
+exports.default = start;

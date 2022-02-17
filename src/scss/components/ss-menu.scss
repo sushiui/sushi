@@ -56,6 +56,7 @@ UL.ss-menu > li > .title {
   }
 }
 
+UL.ss-menu > li > b,
 UL.ss-menu > li > a {
   display: flex;
   align-items: center;
@@ -77,7 +78,9 @@ UL.ss-menu > li > a {
     font-size: 1em;
     flex-grow: 1;
   }
+}
 
+UL.ss-menu > li > a {
   &:hover {
     background: var(--hover-background);
   }

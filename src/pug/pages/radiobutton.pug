@@ -1,0 +1,63 @@
+extends ../base/base.pug
+
+block append page-variable
+  - var current = "radiobutton"
+
+block page-block
+
+  .header.-nobreadcrumbs
+    span.label Textfield
+
+  .body
+    .ss-card
+      .header
+        span.label &lt;TextField&gt;
+
+      .body._padding
+        table 
+          tr 
+            th Normal radio button 
+            th Disable radio button 
+          tr 
+            td
+              .ss-radioButton
+                input(type="radio", id="r1", name="radio", value="1", checked)
+                label(for="r1") Radio1
+            td
+              .ss-radioButton.-disable
+                input(type="radio", id="rd1", name="radioDisable", value="2", checked)
+                label(for="rd1") Radio1Disable 
+
+          tr 
+            td
+              .ss-radioButton
+                input(type="radio", id="r2", name="radio", value="2")
+                label(for="r2") Radio2
+            td
+              .ss-radioButton.-disable
+                input(type="radio", id="rd2", name="radioDisable", value="2")
+                label(for="rd2") Radio2Disable
+
+        pre
+          code.language-html
+            |
+            |  &lt;div class="ss-radioButton">
+            |    &lt;input class="ss-textfield" type="radio" id="r1" name="radio" value="1" checked>
+            |    &lt;label for="r1">Radio1&lt;/label>
+            |  &lt;/div>
+            |  &nbsp;
+            |  &lt;div class="ss-radioButton">
+            |    &lt;input class="ss-textfield" type="radio" id="r2" name="radio" value="2">
+            |    &lt;label for="r2">Radio2&lt;/label>
+            |  &lt;/div>
+            |  &nbsp;
+            |  &lt;div class="ss-radioButton -disable">
+            |    &lt;input class="ss-textfield" type="radio" id="rd1" name="radioDisable" value="1" checked>
+            |    &lt;label for="rd1">Radio1&lt;/label>
+            |  &lt;/div>
+            |  &nbsp;
+            |  &lt;div class="ss-radioButton -disable">
+            |    &lt;input class="ss-textfield" type="radio" id="rd21" name="radioDisable" value="2">
+            |    &lt;label for="rd2">Radio1&lt;/label>
+            |  &lt;/div>
+            |  &nbsp;

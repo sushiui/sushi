@@ -1,0 +1,118 @@
+extends ../base/base.pug
+
+block append page-variable
+  - var current = "formfield"
+
+block page-block
+
+  .header.-nobreadcrumbs
+    span.label Form field
+
+  .body
+    .ss-card
+      .header
+        span.label &lt;Vertical field&gt;
+
+      .body._padding
+        form.ss-form
+          .ss-field
+            .ss-label
+              | First Name
+              span.ss-icon-Information
+            .ss-textfield.-error
+              input(type="search" value="very long first name")
+              | Too long messsage
+          .ss-field
+            .ss-label Last Name
+            .ss-textfield
+              input(type="search" placeholder="Your lastname")
+          .ss-field
+            .ss-label Last Name
+            .ss-textfield.-viewonly
+              input(type="search" value="Sample value")
+          button
+            span.ss-icon-Approve
+            | Primary
+
+    .ss-card
+      .header
+        span.label &lt;Holizontal field&gt;
+
+      .body._padding
+        form.ss-form
+          .ss-fields
+            .ss-field(style="flex-grow: 2")
+              .ss-label
+                | First Name and Last Name
+                span.ss-icon-Information
+              .ss-textfield.-error
+                input(type="search" value="very long first name")
+                | Too long messsage
+            .ss-field(style="flex-grow: 1")
+              .ss-label &nbsp;
+              .ss-textfield
+                input(type="search" placeholder="Your lastname")
+            .ss-field(style="flex-grow: 2")
+              .ss-label Last Name
+              .ss-textfield.-viewonly
+                input(type="search" value="Sample value")
+          .ss-fields
+            button
+              span.ss-icon-Approve
+              | Primary
+
+    .ss-card
+      .header
+        span.label &lt;Holizontal field: label on left &gt;
+
+      .body._padding
+        form.ss-form
+          .ss-fields.inline
+            .ss-field(style="flex: 2")
+              .ss-label
+                | First Name
+                span.ss-icon-Information
+              .ss-textfield.-error
+                input(type="search" value="very long first name")
+                | Too long messsage
+            .ss-field(style="flex: 1")
+              .ss-textfield
+                input(type="search" placeholder="Your lastname")
+            .ss-field(style="flex: 2")
+              .ss-label
+                | First Name
+              .ss-textfield.-viewonly
+                input(type="search" value="Sample value")
+          .ss-fields
+            button
+              span.ss-icon-Approve
+              | Primary
+
+    .ss-card
+      .header
+        span.label &lt;Holizontal field: label on left &gt;
+
+      .body._padding
+        form.ss-form
+          .ss-fields.inline
+            .ss-field(style="flex: 1")
+              .ss-label
+                | First Name
+                span.ss-icon-Information
+            .ss-field(style="flex: 1")
+              .ss-textfield.-error
+                input(type="search" value="very long first name")
+                | Too long messsage
+            .ss-field(style="flex: 1")
+              .ss-textfield
+                input(type="search" placeholder="Your lastname")
+            .ss-field(style="flex: 1")
+              .ss-label
+                | First Name
+            .ss-field(style="flex: 1")
+              .ss-textfield.-viewonly
+                input(type="search" value="Sample value")
+          .ss-fields
+            button
+              span.ss-icon-Approve
+              | Primary

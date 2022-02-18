@@ -1,17 +1,19 @@
+.ss-textfield {
+  display: flex;
+  flex-direction: column;
 
-.ss-textfield{
-  height: 50px;
+  min-height: 50px;
 
   --backgroundColor: #{$primary-white};
   --color: #{$primary-black};
   --pointer: "text";
   --paddingBottom: 6px;
   --borderBottom: none;
-  --focusBorderBottom: solid 2px #{$primary-yellow};
   --outline: solid 1px #{$transparent-black-10};
   --pointerEvent: auto;
+  --border-radius: #{$radius};
 
-  &.-error{
+  &.-error {
     display: flex;
     flex-direction: column;
     font-size: 10px;
@@ -22,80 +24,59 @@
     --borderBottom: solid 2px #{$accessible-red};
   }
 
-  &.-disable{
+  &.-disable {
     --backgroundColor: #{$transparent-black-10};
     --color: #{$transparent-black-35};
     --pointerEvent: none;
   }
 
-  &.-viewonly{
+  &.-viewonly {
     --backgroundColor: #{$primary-white};
     --borderBottom: solid 1px #{$transparent-black-10};
     --paddingBottom: 5px;
     --outline: none;
     --pointerEvent: none;
+    --border-radius: 0px;
   }
-
 }
 
-
-.ss-textfield > input{
-  display: flex;
-  flex-direction: column;
+.ss-textfield > input {
   flex-basis: auto;
-  gap: 4px;
 
-  float: left;
+  // float: left;
   align-items: center;
-  padding: 6px 12px;
+  padding: 6px 0px 6px 12px;
   padding-bottom: var(--paddingBottom);
-  margin: 0 -4px;
   outline: var(--outline);
-  position: relative;
-  width: 180px;
+  // position: relative;
+  min-width: 0px;
   border: none;
   text-decoration: none;
-  border-radius: $radius;
+  border-radius: var(--border-radius);
   cursor: var(--pointer);
   color: var(--color);
   background: var(--backgroundColor);
   border-bottom: var(--borderBottom);
   pointer-events: var(--pointerEvent);
 
-  &::-webkit-search-cancel-button{
+  &::-webkit-search-cancel-button {
     -webkit-appearance: none;
     height: 16px;
     width: 16px;
-    font-family: 'SET';
-    background: url('../../assets/icons/Close-or-Reject.svg');
+    font-family: "SET";
+    background: url("../../assets/icons/Close-or-Reject.svg");
     cursor: pointer;
-    
     background-size: 16px 16px;
   }
 
   &:focus {
     padding-bottom: 4px;
-    border-bottom: var(--focusBorderBottom);
+    border-bottom: solid 2px #{$primary-yellow};
   }
 
-  &.-error {
-    padding-bottom: 4px;
-    border-bottom: solid 2px $accessible-red;
-    margin-bottom: 0px;
-    content: attr('errorMessage');
-  }
-
-  &:DISABLED, &.-disable {
+  &:disabled {
     background-color: $transparent-black-10;
     color: $transparent-black-35;
     pointer-events: none;
-  } 
-
-  &.-viewonly {
-    background-color: $primary-white;
-    outline: none;
-    border-bottom: solid 1px $transparent-black-10;
-    pointer-events: none;
-    padding-bottom: 5px;
   }
 }

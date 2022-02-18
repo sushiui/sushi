@@ -1,0 +1,126 @@
+extends ../base/base.pug
+
+block append page-variable
+  - var current = "megamenu"
+
+block page-block
+
+  //- .ss-page-header.-nobreadcrumbs
+  .header.-nobreadcrumbs
+    span.label Site Header
+
+  .body
+    .ss-card
+      nav.ss-site-header
+        span.sitename
+          span.ss-icon-One-Report
+          | One Report
+          span.description to rule them all
+
+        ul
+          li
+            a(href="javascript:void(0);")
+              span.label Home
+          li
+            a(href="javascript:void(0);")
+              span.label เมนูภาษาไทย
+          li.selected
+            a(href="javascript:void(0);")
+              span.ss-icon-Check-list
+              | &nbsp;
+              span.label Getting Start
+          li.-dropdownMega
+            a(href="javascript:void(0);")
+              span.label More
+              | &nbsp;
+              span.ss-icon-Maximize-arrow
+              span.ss-icon-Minimize-arrow
+
+            .ss-mega-menu
+              .row
+                ul.ss-menu
+                  li.header
+                    b ประวัติ
+                  li
+                    a(href="#") Menu ที่หนึ่ง
+                  li
+                    a(href="#") Menu ที่สอง
+                  li
+                    a(href="#") หลังเมนูที่สอง
+                ul.ss-menu
+                  li.header
+                    b Master
+                  li
+                    a(href="#") ก่อนเมนูที่สอง
+                  li
+                    a(href="#") สงสัยจะต้องมีสาม
+                  li
+                    a(href="#") ครั้งนี้ขอมีสี่
+                  li
+                    a(href="#") สี่ขอสั้น
+                ul.ss-menu
+                  li.header
+                    b &nbsp;
+                  li
+                    a(href="#") ลองแบบไม่มีหัว
+                  li
+                    a(href="#") สงสัยจะต้องมีสาม
+                  li
+                    a(href="#") ครั้งนี้ขอมีสี่
+                  li
+                    a(href="#") สี่ขอสั้น
+                ul.ss-menu
+                  li.header
+                    b Center
+                  li
+                    a(href="#") ลองหาเมนูสุขใจ
+                  li
+                    a(href="#") แบบสั้นแค่สองบ้าง
+
+        span.account
+          a.ss-button.-secondary(href="javascript:void(0)")
+            span.ss-icon-Vpn-key
+            | Login
+          a.language(href="javascript:void(0);") &nbsp;
+          a.-big-icon(href="javascript:void(0);")
+            span.ss-icon-Account-circle
+
+
+      .body
+
+        pre
+          code.language-html
+            |&lt;nav class="ss-navigation-bar">
+            |  &lt;div class="ss-mega-menu _demo-under-card">
+            |    &lt;div class="row">
+            |      &lt;ul class="ss-menu">
+            |        &lt;li>&lt;b>Header 1&lt;/b>&lt;/li>
+            |        &lt;li>&lt;a href="#">Menu ที่หนึ่ง&lt;/a>&lt;/li>
+            |        &lt;li>&lt;a href="#">Menu ที่สอง&lt;/a>&lt;/li>
+            |        &lt;li>&lt;a href="#">หลังเมนูที่สอง&lt;/a>&lt;/li>
+            |      &lt;/ul>
+            |      &lt;ul class="ss-menu">
+            |        &lt;li>&lt;b>Header 2&lt;/b>&lt;/li>
+            |        &lt;li>&lt;a href="#">ก่อนเมนูที่สอง&lt;/a>&lt;/li>
+            |        &lt;li>&lt;a href="#">สงสัยจะต้องมีสาม&lt;/a>&lt;/li>
+            |        &lt;li>&lt;a href="#">ครั้งนี้ขอมีสี่&lt;/a>&lt;/li>
+            |        &lt;li>&lt;a href="#">สี่ขอสั้น&lt;/a>&lt;/li>
+            |      &lt;/ul>
+            |      &lt;ul class="ss-menu">
+            |        &lt;li>&lt;b>&nbsp;&lt;/b>&lt;/li>
+            |        &lt;li>&lt;a href="#">ลองแบบไม่มีหัว&lt;/a>&lt;/li>
+            |        &lt;li>&lt;a href="#">สงสัยจะต้องมีสาม&lt;/a>&lt;/li>
+            |        &lt;li>&lt;a href="#">ครั้งนี้ขอมีสี่&lt;/a>&lt;/li>
+            |        &lt;li>&lt;a href="#">สี่ขอสั้น&lt;/a>&lt;/li>
+            |      &lt;/ul>
+            |      &lt;ul class="ss-menu">
+            |        &lt;li>&lt;b>Header 3&lt;/b>&lt;/li>
+            |        &lt;li>&lt;a href="#">ลองหาเมนูสุขใจ&lt;/a>&lt;/li>
+            |        &lt;li>&lt;a href="#">แบบสั้นแค่สองบ้าง&lt;/a>&lt;/li>
+            |      &lt;/ul>
+            |    &lt;/div>
+            |  &lt;/div>
+            |&lt;/div>
+            | &nbsp;
+
+

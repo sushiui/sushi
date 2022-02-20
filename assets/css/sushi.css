@@ -1077,7 +1077,7 @@ UL.ss-menu > li.selected::after, UL.ss-menu-woven > li.selected::after {
   right: 8px;
 }
 
-UL.ss-menu > li > .title, UL.ss-menu-woven > li > .title {
+UL.ss-menu > li > .header, UL.ss-menu-woven > li > .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1088,7 +1088,7 @@ UL.ss-menu > li > .title, UL.ss-menu-woven > li > .title {
   gap: 8px;
 }
 
-UL.ss-menu > li > .title > span.label, UL.ss-menu-woven > li > .title > span.label {
+UL.ss-menu > li > .header > span.label, UL.ss-menu-woven > li > .header > span.label {
   font-size: 1em;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;

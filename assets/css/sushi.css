@@ -1490,6 +1490,10 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   flex-direction: column;
 }
 
+.ss-mega-menu > .row > ul.ss-menu > li > .header {
+  font-weight: bold;
+}
+
 li.-dropdownMega > a > span.ss-icon-Minimize-arrow {
   display: none;
 }

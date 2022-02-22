@@ -9,14 +9,14 @@
   --pointer: "text";
   --paddingBottom: 6px;
   --borderBottom: none;
-  --outline: solid 1px #{$transparent-black-10};
+  --box-shadow: 0 0 0 1px #{$transparent-black-10};
   --pointerEvent: auto;
   --border-radius: #{$radius};
 
   &.-error {
     display: flex;
     flex-direction: column;
-    font-size: 10px;
+    font-size: $font-size-comment;
     color: $accessible-red;
     line-height: 20px;
 
@@ -34,7 +34,7 @@
     --backgroundColor: #{$primary-white};
     --borderBottom: solid 1px #{$transparent-black-10};
     --paddingBottom: 5px;
-    --outline: none;
+    --box-shadow: none;
     --pointerEvent: none;
     --border-radius: 0px;
   }
@@ -47,7 +47,8 @@
   align-items: center;
   padding: 6px 0px 6px 12px;
   padding-bottom: var(--paddingBottom);
-  outline: var(--outline);
+  box-shadow: var(--box-shadow);
+  outline: none;
   // position: relative;
   min-width: 0px;
   border: none;

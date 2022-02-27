@@ -1,18 +1,20 @@
 # abort on errors
+
 set -e
 
-# change branch
+# update gh-pages
+ 
 git checkout gh-pages
+git pull git@github.com:sushiui/sushi.git main
 
 # build
+
 npm install
 npm run build
 
 # git
+
 git add -A
 git commit -m "deploy"
-
-git pull git@github.com:sushiui/sushi.git main
 git push -f git@github.com:sushiui/sushi.git main:gh-pages
-
 git checkout main

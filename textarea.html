@@ -96,12 +96,18 @@
               <div class="body _padding">
                 <table>
                   <tr>
-                    <th>Normal textfield</th>
+                    <th>Normal</th>
+                    <th>Error</th>
+                    <th>Disable</th>
+                    <th>Viewonly</th>
                   </tr>
                   <tr>
-                    <td>
-                      <div class="ss-textarea"><textarea style="height:219px;"></textarea>&nbsp;</div>
+                    <td><textarea class="ss-textarea"></textarea>&nbsp;</td>
+                    <td><textarea class="ss-textarea -error"></textarea>
+                      <div class="ss-error">Long Error</div>
                     </td>
+                    <td><textarea class="ss-textarea -diasble"></textarea>&nbsp;</td>
+                    <td><textarea class="ss-textarea -viewonly"></textarea>&nbsp;</td>
                   </tr>
                 </table><pre><code class="language-html">
  &lt;div class="ss-textfield">

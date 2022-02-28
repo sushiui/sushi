@@ -1,0 +1,49 @@
+.ss-checkbox-group {
+  display: flex;
+  gap: 0px;
+  margin-bottom: 20px;
+  align-items: center;
+  span {
+    padding: 4px 6px 6px 4px;
+  }
+
+  &.-error {
+    color: $accessible-red;
+    margin-bottom: 0px;
+  }
+}
+
+input[type="checkbox"].ss-checkbox {
+  --background: #{$primary-white};
+  --inner-dot-display: block;
+  --border: 1px solid #{$primary-yellow};
+
+  &:disabled {
+    --pointer-event: none;
+    --background: #{$transparent-black-10};
+    --inner-dot-display: none;
+    --border: 1px solid #{$transparent-black-10};
+  }
+  &:checked {
+    --background: #{$primary-yellow};
+  }
+}
+
+input[type="checkbox"].ss-checkbox {
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background: var(--background);
+  border-radius: $radius;
+  border: var(--border);
+  margin: 0px;
+
+  &::after {
+    content: $ss-icon-Approve;
+    font-family: "SET-icon";
+    color: $primary-white;
+    display: var(--inner-dot-display);
+    position: relative;
+    border-radius: 100%;
+  }
+}

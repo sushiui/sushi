@@ -102,36 +102,22 @@
                     <th>View only textfield</th>
                   </tr>
                   <tr>
-                    <td>
-                      <div class="ss-textfield"><input type="search">&nbsp;</div>
+                    <td><input class="ss-textfield" type="text">&nbsp;</td>
+                    <td><input class="ss-textfield -error" type="text" value="Error input">
+                      <div class="ss-error">Long error message</div>
                     </td>
-                    <td>
-                      <div class="ss-textfield -error"><input type="search" value="Error input">Long error message</div>
-                    </td>
-                    <td>
-                      <div class="ss-textfield -disable"><input type="search" value="Disable input">&nbsp;</div>
-                    </td>
-                    <td>
-                      <div class="ss-textfield -viewonly"><input type="search" value="View only input">&nbsp;</div>
-                    </td>
+                    <td><input class="ss-textfield -disable" type="text" value="Disable input">&nbsp;</td>
+                    <td><input class="ss-textfield -viewonly" type="text" value="View only input">&nbsp;</td>
                   </tr>
                 </table><pre><code class="language-html">
- &lt;div class="ss-textfield">
-   &lt;input class="ss-textfield" type="search" >
- &lt;/div>
- &nbsp;
- &lt;div class=".-error">
-   &lt;input class="ss-textfield" type="search" value="Error input">
-    | Long error message
- &lt;/div>
- &nbsp;
- &lt;div class="ss-textfield -disable">
-   &lt;input class="ss-textfield" type="search" value="Disable input">
- &lt;/div>
- &nbsp;
- &lt;div class="ss-textfield -viewonly">
-   &lt;input class="ss-textfield" type="search" value="View only input">
- &lt;/div>
+ &lt;input class="ss-textfield" type="search">
+
+ &lt;input class="ss-textfield -error" type="search" value="Error input">
+ &lt;div class="ss-error">Long error message &lt;/div>
+
+ &lt;input class="ss-textfield" type="search" value="Disable input">
+
+ &lt;input class="ss-textfield" type="search" value="View only input">
  &nbsp;</code></pre>
               </div>
             </div>

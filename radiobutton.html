@@ -94,28 +94,10 @@
             <div class="ss-card">
               <div class="header"><span class="label">&lt;TextField&gt;</span></div>
               <div class="body _padding">
-                <table>
-                  <tr>
-                    <th>Normal radio button</th>
-                    <th>Disable radio button</th>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="ss-radioButton"><input type="radio" id="r1" name="radio" value="1" checked><label for="r1">Radio1</label></div>
-                    </td>
-                    <td>
-                      <div class="ss-radioButton -disable"><input type="radio" id="rd1" name="radioDisable" value="2" checked><label for="rd1">Radio1Disable</label></div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="ss-radioButton"><input type="radio" id="r2" name="radio" value="2"><label for="r2">Radio2</label></div>
-                    </td>
-                    <td>
-                      <div class="ss-radioButton -disable"><input type="radio" id="rd2" name="radioDisable" value="2"><label for="rd2">Radio2Disable</label></div>
-                    </td>
-                  </tr>
-                </table><pre><code class="language-html"> &lt;div class="ss-radioButton">
+                <H2>Normal radio button</H2>
+                <div class="ss-radiobutton-group"><input class="ss-radiobutton" type="radio" id="r1" name="radio" value="1" checked><span>Radio1</span><input class="ss-radiobutton" type="radio" id="rd1" name="radio" value="2"><span>Radio1Disable</span></div>
+                <H2>Disable radio button</H2>
+                <div class="ss-radiobutton-group"><input class="ss-radiobutton -disable" type="radio" id="r1" name="radioDisable" value="1" checked><span>Radio1</span><input class="ss-radiobutton -disable" type="radio" id="rd1" name="radioDisable" value="2"><span>Radio1Disable</span></div><pre><code class="language-html"> &lt;div class="ss-radioButton">
    &lt;input type="radio" id="r1" name="radio" value="1" checked="">
    &lt;label for="r1">Radio1&lt;/label>
  &lt;/div>

@@ -96,16 +96,14 @@
               <div class="body _padding">
                 <form class="ss-form">
                   <div class="ss-field">
-                    <div class="ss-label">First Name<span class="ss-icon-Information"></span></div>
-                    <div class="ss-textfield -error"><input type="search" value="very long first name">Too long messsage</div>
+                    <div class="ss-label">First Name<span class="ss-icon-Information"></span></div><input class="ss-textfield -error" type="text" value="very long first name">
+                    <div class="ss-error">Too long messsage</div>
                   </div>
                   <div class="ss-field">
-                    <div class="ss-label">Last Name</div>
-                    <div class="ss-textfield"><input type="search" placeholder="Your lastname"></div>
+                    <div class="ss-label">Last Name</div><input class="ss-textfield" type="text" placeholder="Your lastname">
                   </div>
                   <div class="ss-field">
-                    <div class="ss-label">Last Name</div>
-                    <div class="ss-textfield -viewonly"><input type="search" value="Sample value"></div>
+                    <div class="ss-label">Last Name</div><input class="ss-textfield -viewonly" type="search" value="Sample value">
                   </div><button><span class="ss-icon-Approve"></span>Primary</button>
                 </form>
               </div>
@@ -114,67 +112,33 @@
               <div class="header"><span class="label">&lt;Holizontal field&gt;</span></div>
               <div class="body _padding">
                 <form class="ss-form">
-                  <div class="ss-fields">
-                    <div class="ss-field" style="flex-grow: 2">
-                      <div class="ss-label">First Name and Last Name<span class="ss-icon-Information"></span></div>
-                      <div class="ss-textfield -error"><input type="search" value="very long first name">Too long messsage</div>
-                    </div>
-                    <div class="ss-field" style="flex-grow: 1">
-                      <div class="ss-label">&nbsp;</div>
-                      <div class="ss-textfield"><input type="search" placeholder="Your lastname"></div>
-                    </div>
-                    <div class="ss-field" style="flex-grow: 2">
-                      <div class="ss-label">Last Name</div>
-                      <div class="ss-textfield -viewonly"><input type="search" value="Sample value"></div>
+                  <div class="row">
+                    <div class="ss-label -inline" style="flex:1">First Name and Last Name</div>
+                    <div class="ss-field" style="flex:2"><input class="ss-textfield -error" type="text" value="very long first name">
+                      <div class="ss-error">Too long messsage</div>
                     </div>
                   </div>
-                  <div class="ss-fields"><button><span class="ss-icon-Approve"></span>Primary</button></div>
-                </form>
-              </div>
-            </div>
-            <div class="ss-card">
-              <div class="header"><span class="label">&lt;Holizontal field: label on left &gt;</span></div>
-              <div class="body _padding">
-                <form class="ss-form">
-                  <div class="ss-fields inline">
+                  <div class="row">
+                    <div class="ss-label -inline" style="flex:1">Search</div>
+                    <div class="ss-field" style="flex: 2"><input class="ss-textfield" type="search" value="very long first name"></div>
+                  </div>
+                  <div class="row">
+                    <div class="ss-label -inline" style="flex:1">Animal</div>
                     <div class="ss-field" style="flex: 2">
-                      <div class="ss-label">First Name<span class="ss-icon-Information"></span></div>
-                      <div class="ss-textfield -error"><input type="search" value="very long first name">Too long messsage</div>
+                      <div class="ss-radiobutton-group -error"><input class="ss-radiobutton" type="radio" id="r1" name="radio" value="1" checked><span>Ant</span><input class="ss-radiobutton" type="radio" id="r1" name="radio" value="1" disabled><span>Cat</span><input class="ss-radiobutton" type="radio" id="r1" name="radio" value="1"><span>Bat</span></div>
+                      <div class="ss-error">Too long messsage</div>
                     </div>
-                    <div class="ss-field" style="flex: 1">
-                      <div class="ss-textfield"><input type="search" placeholder="Your lastname"></div>
-                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="ss-label -inline" style="flex: 1">Last Name</div>
                     <div class="ss-field" style="flex: 2">
-                      <div class="ss-label">First Name</div>
-                      <div class="ss-textfield -viewonly"><input type="search" value="Sample value"></div>
+                      <div class="ss-checkbox-group"><input class="ss-checkbox" type="checkbox" id="r1" name="radio" value="1" checked><span>Ant</span><input class="ss-checkbox" type="checkbox" id="r1" name="radio" value="1" disabled><span>Cat</span><input class="ss-checkbox" type="checkbox" id="r1" name="radio" value="1"><span>Bat</span></div>
                     </div>
                   </div>
-                  <div class="ss-fields"><button><span class="ss-icon-Approve"></span>Primary</button></div>
-                </form>
-              </div>
-            </div>
-            <div class="ss-card">
-              <div class="header"><span class="label">&lt;Holizontal field: label on left &gt;</span></div>
-              <div class="body _padding">
-                <form class="ss-form">
-                  <div class="ss-fields inline">
-                    <div class="ss-field" style="flex: 1">
-                      <div class="ss-label">First Name<span class="ss-icon-Information"></span></div>
-                    </div>
-                    <div class="ss-field" style="flex: 1">
-                      <div class="ss-textfield -error"><input type="search" value="very long first name">Too long messsage</div>
-                    </div>
-                    <div class="ss-field" style="flex: 1">
-                      <div class="ss-textfield"><input type="search" placeholder="Your lastname"></div>
-                    </div>
-                    <div class="ss-field" style="flex: 1">
-                      <div class="ss-label">First Name</div>
-                    </div>
-                    <div class="ss-field" style="flex: 1">
-                      <div class="ss-textfield -viewonly"><input type="search" value="Sample value"></div>
-                    </div>
+                  <div class="row">
+                    <div class="ss-label -inline" style="flex: 1">&nbsp;</div>
+                    <div class="ss-field" style="flex: 2"><button><span class="ss-icon-Approve"></span>Primary</button></div>
                   </div>
-                  <div class="ss-fields"><button><span class="ss-icon-Approve"></span>Primary</button></div>
                 </form>
               </div>
             </div>

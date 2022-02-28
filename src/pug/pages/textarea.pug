@@ -16,12 +16,23 @@ block page-block
       .body._padding
         table
           tr
-            th Normal textfield
+            th Normal
+            th Error
+            th Disable
+            th Viewonly
           tr
             td
-              .ss-textarea
-                textarea(style="height:219px;")
-                | &nbsp;
+              textarea.ss-textarea
+              | &nbsp;
+            td
+              textarea.ss-textarea.-error
+              .ss-error Long Error
+            td
+              textarea.ss-textarea.-diasble
+              | &nbsp;
+            td
+              textarea.ss-textarea.-viewonly
+              | &nbsp;
         pre
           code.language-html
             |

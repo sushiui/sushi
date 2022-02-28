@@ -1576,33 +1576,15 @@ input[type=radio].ss-radiobutton::after {
   gap: 0px;
 }
 
-.ss-fields {
+.ss-form {
+  margin: 0px;
+}
+
+.ss-form > .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 16px;
-}
-
-.ss-fields.inline > .ss-field {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  gap: 16px;
-}
-
-.ss-fields.inline > .ss-field > .ss-label {
-  padding: 7px 0px;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.ss-form {
-  margin: 0px;
 }
 
 .ss-label {
@@ -1614,6 +1596,20 @@ input[type=radio].ss-radiobutton::after {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 4px;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+}
+
+.ss-label.-inline {
+  padding: 5px 0px 6px 0px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .ss-error {

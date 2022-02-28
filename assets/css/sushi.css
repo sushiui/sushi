@@ -1376,14 +1376,6 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
 }
 
 .ss-textfield {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 50px;
   --backgroundColor: #ffffff;
   --color: #231f20;
   --pointer: "text";
@@ -1392,24 +1384,17 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   --box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
   --pointerEvent: auto;
   --border-radius: 4px;
+  --margin-bottom: 20px;
 }
 
 .ss-textfield.-error {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  font-size: 0.714rem;
-  color: #b60000;
-  line-height: 20px;
+  --margin-bottom: 0px;
+  --color: #b60000;
   --paddingBottom: 4px;
   --borderBottom: solid 2px #b60000;
 }
 
-.ss-textfield.-disable {
+.ss-textfield.-disable, .ss-textfield:disabled {
   --backgroundColor: rgba(0, 0, 0, 0.1);
   --color: rgba(0, 0, 0, 0.35);
   --pointerEvent: none;
@@ -1424,17 +1409,23 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   --border-radius: 0px;
 }
 
-.ss-textfield > input {
+.ss-textfield:focus {
+  --paddingBottom: 4px;
+  --borderBottom: solid 2px #fcb034;
+}
+
+input.ss-textfield {
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   padding: 6px 0px 6px 12px;
+  outline: none;
+  margin-bottom: var(--margin-bottom);
   padding-bottom: var(--paddingBottom);
   -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
-  outline: none;
   min-width: 0px;
   border: none;
   text-decoration: none;
@@ -1446,7 +1437,7 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   pointer-events: var(--pointerEvent);
 }
 
-.ss-textfield > input::-webkit-search-cancel-button {
+input.ss-textfield::-webkit-search-cancel-button {
   -webkit-appearance: none;
   height: 16px;
   width: 16px;
@@ -1454,17 +1445,6 @@ UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
   background: url("../../assets/icons/Close-or-Reject.svg");
   cursor: pointer;
   background-size: 16px 16px;
-}
-
-.ss-textfield > input:focus {
-  padding-bottom: 4px;
-  border-bottom: solid 2px #fcb034;
-}
-
-.ss-textfield > input:disabled {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: rgba(0, 0, 0, 0.35);
-  pointer-events: none;
 }
 
 .ss-mega-menu {
@@ -1524,82 +1504,65 @@ li.-dropdownMega:hover > .ss-mega-menu {
   display: block;
 }
 
-.ss-radioButton {
-  --active-inner: #ffffff;
-  --border: 1px solid #fcb034;
+.ss-radiobutton-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0px;
+  margin-bottom: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.ss-radiobutton-group span {
+  padding: 4px 6px 6px 4px;
+}
+
+.ss-radiobutton-group.-error {
+  color: #b60000;
+  margin-bottom: 0px;
+}
+
+input[type=radio].ss-radiobutton {
   --background: #ffffff;
-  --background-checked: #fcb034;
-  --fontColor: #231f20;
-  --cursor: pointer;
-  --pointer-event: auto;
-  color: var(--fontColor);
-  cursor: var(--cursor);
-  pointer-events: var(--pointer-event);
+  --inner-dot-display: block;
+  --border: 1px solid #fcb034;
 }
 
-.ss-radioButton.-disable {
-  --background-checked: #fab76b;
-  --fontColor: rgba(0, 0, 0, 0.35);
-  --cursor: default;
+input[type=radio].ss-radiobutton:disabled {
   --pointer-event: none;
+  --background: rgba(0, 0, 0, 0.1);
+  --inner-dot-display: none;
+  --border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.ss-radioButton input[type=radio] {
+input[type=radio].ss-radiobutton:checked {
+  --background: #fcb034;
+}
+
+input[type=radio].ss-radiobutton {
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
   height: 16px;
   width: 16px;
-  outline: none;
-  display: inline-block;
-  vertical-align: center;
-  position: relative;
-  margin: 0;
-  border: var(--border);
   background: var(--background);
   border-radius: 100%;
+  border: var(--border);
+  margin: 0px;
 }
 
-.ss-radioButton input[type=radio]:after {
+input[type=radio].ss-radiobutton::after {
   content: "";
-  display: block;
-  position: absolute;
-  -webkit-transition: -webkit-transform;
-  transition: -webkit-transform;
-  -o-transition: transform;
-  transition: transform;
-  transition: transform, -webkit-transform;
-}
-
-.ss-radioButton input[type=radio]:checked {
-  background: var(--background-checked);
-}
-
-.ss-radioButton input[type=radio]:not(.switch):after {
-  --innerOpacity: 1;
-  opacity: var(--innerOpacity);
-}
-
-.ss-radioButton input[type=radio]:not(.switch):checked {
-  --innerOpacity: 0;
-}
-
-.ss-radioButton input[type=radio] + label {
-  font-size: 1.142em;
-  line-height: 16px;
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 10px;
-  cursor: var(--cursor);
-}
-
-.ss-radioButton input[type=radio]:after {
+  display: var(--inner-dot-display);
+  position: relative;
   top: 4px;
   left: 4px;
   width: 6px;
   height: 6px;
   border-radius: 100%;
-  background: var(--active-inner);
-  opacity: 0;
+  background: #ffffff;
 }
 
 .ss-field {
@@ -1610,19 +1573,7 @@ li.-dropdownMega:hover > .ss-mega-menu {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 4px;
-}
-
-.ss-field > .ss-textfield {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.ss-field > .ss-label {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  gap: 0px;
 }
 
 .ss-fields {
@@ -1662,6 +1613,12 @@ li.-dropdownMega:hover > .ss-mega-menu {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 4px;
+}
+
+.ss-error {
+  font-size: 0.714rem;
+  color: #b60000;
 }
 
 .menu-panel {

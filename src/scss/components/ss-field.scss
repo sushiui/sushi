@@ -1,15 +1,7 @@
 .ss-field {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-
-  > .ss-textfield {
-    flex: 1;
-  }
-
-  > .ss-label {
-    flex: 1;
-  }
+  gap: 0px;
 }
 
 .ss-fields {

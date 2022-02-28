@@ -14,11 +14,11 @@ block page-block
         span.label &lt;TextField&gt;
 
       .body._padding
-        table 
-          tr 
-            th Normal radio button 
-            th Disable radio button 
-          tr 
+        table
+          tr
+            th Normal radio button
+            th Disable radio button
+          tr
             td
               .ss-radioButton
                 input(type="radio", id="r1", name="radio", value="1", checked)
@@ -26,9 +26,9 @@ block page-block
             td
               .ss-radioButton.-disable
                 input(type="radio", id="rd1", name="radioDisable", value="2", checked)
-                label(for="rd1") Radio1Disable 
+                label(for="rd1") Radio1Disable
 
-          tr 
+          tr
             td
               .ss-radioButton
                 input(type="radio", id="r2", name="radio", value="2")
@@ -40,24 +40,8 @@ block page-block
 
         pre
           code.language-html
-            |
             |  &lt;div class="ss-radioButton">
-            |    &lt;input class="ss-textfield" type="radio" id="r1" name="radio" value="1" checked>
+            |    &lt;input type="radio" id="r1" name="radio" value="1" checked="">
             |    &lt;label for="r1">Radio1&lt;/label>
-            |  &lt;/div>
-            |  &nbsp;
-            |  &lt;div class="ss-radioButton">
-            |    &lt;input class="ss-textfield" type="radio" id="r2" name="radio" value="2">
-            |    &lt;label for="r2">Radio2&lt;/label>
-            |  &lt;/div>
-            |  &nbsp;
-            |  &lt;div class="ss-radioButton -disable">
-            |    &lt;input class="ss-textfield" type="radio" id="rd1" name="radioDisable" value="1" checked>
-            |    &lt;label for="rd1">Radio1&lt;/label>
-            |  &lt;/div>
-            |  &nbsp;
-            |  &lt;div class="ss-radioButton -disable">
-            |    &lt;input class="ss-textfield" type="radio" id="rd21" name="radioDisable" value="2">
-            |    &lt;label for="rd2">Radio1&lt;/label>
             |  &lt;/div>
             |  &nbsp;

@@ -1,72 +1,52 @@
-.ss-radioButton {
-  --active-inner: #{$primary-white};
-  --border: 1px solid #{$primary-yellow};
-  --background: #{$primary-white};
-  --background-checked: #{$primary-yellow};
-  --fontColor: #{$primary-black};
-  --cursor: pointer;
-  --pointer-event: auto;
-
-  &.-disable{
-    --background-checked: #{$tertiary-orange-60};
-    --fontColor: #{$transparent-black-35};
-    --cursor: default;
-    --pointer-event: none;
+.ss-radiobutton-group {
+  display: flex;
+  gap: 0px;
+  margin-bottom: 20px;
+  align-items: center;
+  span {
+    padding: 4px 6px 6px 4px;
   }
 
-  color: var(--fontColor);
-  cursor: var(--cursor);
-  pointer-events: var(--pointer-event);
+  &.-error {
+    color: $accessible-red;
+    margin-bottom: 0px;
+  }
+}
 
+input[type="radio"].ss-radiobutton {
+  --background: #{$primary-white};
+  --inner-dot-display: block;
+  --border: 1px solid #{$primary-yellow};
 
-  input[type='radio'] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    height: 16px;
-    width: 16px;
-    outline: none;
-    display: inline-block;
-    vertical-align: center;
+  &:disabled {
+    --pointer-event: none;
+    --background: #{$transparent-black-10};
+    --inner-dot-display: none;
+    --border: 1px solid #{$transparent-black-10};
+  }
+  &:checked {
+    --background: #{$primary-yellow};
+  }
+}
+
+input[type="radio"].ss-radiobutton {
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background: var(--background);
+  border-radius: 100%;
+  border: var(--border);
+  margin: 0px;
+
+  &::after {
+    content: "";
+    display: var(--inner-dot-display);
     position: relative;
-    margin: 0;
-    border: var(--border);
-    background: var(--background);
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      transition: transform;
-    }
-    &:checked {
-      background: var(--background-checked);
-    }
-    &:not(.switch) {
-      &:after {
-        --innerOpacity: 1;
-        opacity: var(--innerOpacity);
-      }
-      &:checked {
-        --innerOpacity: 0;
-      }
-    }
-    & + label {
-      font-size: $body-icon;
-      line-height: 16px;
-      display: inline-block;
-      vertical-align: top;
-      margin-left: 10px;
-      cursor: var(--cursor);
-    }
-
+    top: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
     border-radius: 100%;
-    &:after {
-      top: 4px;
-      left: 4px;
-      width: 6px;
-      height: 6px;
-      border-radius: 100%;
-      background: var(--active-inner);
-      opacity: 0;
-    }
+    background: $primary-white;
   }
 }

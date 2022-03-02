@@ -44,9 +44,22 @@ TABLE {
 // Helper
 
 a.-big-icon {
-  font-size: $font-size-h3;
+  font-size: $font-size-menu-icon;
   text-decoration: none;
   color: $primary-black;
+}
+
+._background-blue {
+  background-color: $accessible-blue !important;
+}
+._background-red {
+  background-color: $accessible-red !important;
+}
+._background-green {
+  background-color: $accessible-green !important;
+}
+._background-orange {
+  background-color: $accessible-orange !important;
 }
 
 ._padding {

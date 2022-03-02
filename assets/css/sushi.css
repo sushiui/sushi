@@ -599,9 +599,25 @@ TABLE TD {
 }
 
 a.-big-icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
   color: #231f20;
+}
+
+._background-blue {
+  background-color: #0064c5 !important;
+}
+
+._background-red {
+  background-color: #b60000 !important;
+}
+
+._background-green {
+  background-color: #006600 !important;
+}
+
+._background-orange {
+  background-color: #e55f14 !important;
 }
 
 ._padding {
@@ -626,7 +642,7 @@ a.-big-icon {
   width: 100%;
 }
 
-BUTTON,
+BUTTON.ss-button,
 a.ss-button {
   --color: #231f20;
   --active-color: #231f20;
@@ -640,7 +656,7 @@ a.ss-button {
   --box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
-BUTTON.-primary,
+BUTTON.ss-button.-primary,
 a.ss-button.-primary {
   --background: linear-gradient(180deg, #ffcf36 0%, #fcb034 88.02%);
   --hover-background: #fcb034;
@@ -650,7 +666,7 @@ a.ss-button.-primary {
   --box-shadow: none;
 }
 
-BUTTON.-yellow-green,
+BUTTON.ss-button.-yellow-green,
 a.ss-button.-yellow-green {
   --color: #231f20;
   --background: linear-gradient(180deg, #d9e77e 0%, #bfd629 88.02%);
@@ -662,7 +678,7 @@ a.ss-button.-yellow-green {
   --box-shadow: none;
 }
 
-BUTTON.-yellow,
+BUTTON.ss-button.-yellow,
 a.ss-button.-yellow {
   --color: #231f20;
   --background: linear-gradient(180deg, #ffe366 0%, #ffd000 88.02%);
@@ -674,7 +690,7 @@ a.ss-button.-yellow {
   --box-shadow: none;
 }
 
-BUTTON.-orange,
+BUTTON.ss-button.-orange,
 a.ss-button.-orange {
   --color: #231f20;
   --background: linear-gradient(180deg, #fab76b 0%, #f68709 88.02%);
@@ -686,7 +702,7 @@ a.ss-button.-orange {
   --box-shadow: none;
 }
 
-BUTTON.-sky-blue,
+BUTTON.ss-button.-sky-blue,
 a.ss-button.-sky-blue {
   --color: #ffffff;
   --background: linear-gradient(180deg, #57c3db 0%, #00a7cc 88.02%);
@@ -698,7 +714,7 @@ a.ss-button.-sky-blue {
   --box-shadow: none;
 }
 
-BUTTON.-purplish-blue,
+BUTTON.ss-button.-purplish-blue,
 a.ss-button.-purplish-blue {
   --color: #ffffff;
   --background: linear-gradient(180deg, #827cb6 0%, #342b88 88.02%);
@@ -710,7 +726,7 @@ a.ss-button.-purplish-blue {
   --box-shadow: none;
 }
 
-BUTTON.-purplish-red,
+BUTTON.ss-button.-purplish-red,
 a.ss-button.-purplish-red {
   --color: #ffffff;
   --background: linear-gradient(180deg, #d9598a 0%, #c60650 88.02%);
@@ -722,7 +738,7 @@ a.ss-button.-purplish-red {
   --box-shadow: none;
 }
 
-BUTTON.-gray,
+BUTTON.ss-button.-gray,
 a.ss-button.-gray {
   --color: #ffffff;
   --background: linear-gradient(180deg, #97989b 0%, #646568 88.02%);
@@ -751,7 +767,7 @@ BUTTON.ss-link {
   --box-shadow: none;
 }
 
-BUTTON,
+BUTTON.ss-button,
 a.ss-button,
 a.ss-link {
   display: -webkit-inline-box;
@@ -779,13 +795,13 @@ a.ss-link {
   outline-width: 1px;
 }
 
-BUTTON > span,
+BUTTON.ss-button > span,
 a.ss-button > span,
 a.ss-link > span {
   font-size: 1.142em;
 }
 
-BUTTON:hover,
+BUTTON.ss-button:hover,
 a.ss-button:hover,
 a.ss-link:hover {
   background: var(--hover-background);
@@ -793,7 +809,7 @@ a.ss-link:hover {
   box-shadow: var(--hover-box-shadow);
 }
 
-BUTTON:active,
+BUTTON.ss-button:active,
 a.ss-button:active,
 a.ss-link:active {
   color: var(--active-color);
@@ -802,7 +818,7 @@ a.ss-link:active {
   box-shadow: var(--active-outline);
 }
 
-BUTTON.disable, BUTTON:disabled,
+BUTTON.ss-button.disable, BUTTON.ss-button:disabled,
 a.ss-button.disable,
 a.ss-button:disabled,
 a.ss-link.disable,
@@ -1736,6 +1752,38 @@ input[type=checkbox].ss-checkbox::after {
 .ss-error {
   font-size: 0.714rem;
   color: #b60000;
+}
+
+.ss-notification {
+  position: relative;
+  font-size: 2rem;
+}
+
+.ss-notification > .dot {
+  background-color: #0064c5;
+  font-size: 6px;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.ss-notification > .dot.-top-right {
+  top: 0px;
+  right: 0px;
+}
+
+.ss-notification > .dot.-center-right {
+  top: calc((2rem - 8px) / 2);
+  right: 0px;
+}
+
+.ss-notification > .dot.-bottom-right {
+  top: calc(2rem - 8px);
+  right: 0px;
 }
 
 .menu-panel {

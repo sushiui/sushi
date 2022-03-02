@@ -1,4 +1,4 @@
-BUTTON,
+BUTTON.ss-button,
 a.ss-button {
   --color: #{$primary-black};
   --active-color: #{$primary-black};
@@ -14,7 +14,7 @@ a.ss-button {
   --box-shadow: 0 0 0 1px #{$transparent-black-10};
 }
 
-BUTTON.-primary,
+BUTTON.ss-button.-primary,
 a.ss-button.-primary {
   --background: #{$gradient-yellow};
   --hover-background: #{$primary-yellow};
@@ -38,7 +38,7 @@ $button-colors: "yellow-green" $tertiary-yellow-green-100
 @each $name, $color-100, $color-60, $color in $button-colors {
   $color-gradient: linear-gradient(180deg, $color-60 0%, $color-100 88.02%);
 
-  BUTTON.-#{$name},
+  BUTTON.ss-button.-#{$name},
   a.ss-button.-#{$name} {
     --color: #{$color};
     --background: #{$color-gradient};
@@ -68,7 +68,7 @@ BUTTON.ss-link {
   --box-shadow: none;
 }
 
-BUTTON,
+BUTTON.ss-button,
 a.ss-button,
 a.ss-link {
   display: inline-flex;

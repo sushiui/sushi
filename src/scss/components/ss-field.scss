@@ -1,29 +1,5 @@
 .ss-field {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-
-  > .ss-textfield {
-    flex: 1;
-  }
-
-  > .ss-label {
-    flex: 1;
-  }
-}
-
-.ss-fields {
-  display: flex;
-  gap: $common-gap;
-}
-
-.ss-fields.inline > .ss-field {
-  flex-direction: row;
-  align-items: flex-start;
-  gap: $common-gap;
-
-  > .ss-label {
-    padding: 7px 0px;
-    justify-content: flex-end;
-  }
+  gap: 0px;
 }

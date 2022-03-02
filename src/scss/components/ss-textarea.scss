@@ -1,4 +1,4 @@
-.ss-textfield {
+.ss-textarea {
   --backgroundColor: #{$primary-white};
   --color: #{$primary-black};
   --pointer: "text";
@@ -38,7 +38,7 @@
   }
 }
 
-input.ss-textfield {
+textarea.ss-textarea {
   flex-basis: auto;
 
   // float: left;
@@ -48,6 +48,7 @@ input.ss-textfield {
   margin-bottom: var(--margin-bottom);
   padding-bottom: var(--paddingBottom);
   box-shadow: var(--box-shadow);
+  resize: vertical;
 
   // position: relative;
   min-width: 0px;
@@ -59,14 +60,4 @@ input.ss-textfield {
   background: var(--backgroundColor);
   border-bottom: var(--borderBottom);
   pointer-events: var(--pointerEvent);
-
-  &::-webkit-search-cancel-button {
-    -webkit-appearance: none;
-    height: 16px;
-    width: 16px;
-    font-family: "SET";
-    background: url("../../assets/icons/Close-or-Reject.svg");
-    cursor: pointer;
-    background-size: 16px 16px;
-  }
 }

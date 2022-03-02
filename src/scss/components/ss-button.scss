@@ -111,22 +111,3 @@ a.ss-link {
     pointer-events: none;
   }
 }
-
-// @media not all and (min-resolution: 0.001dpcm) {
-//   @supports (-webkit-appearance: none) {
-//     BUTTON {
-//       outline: none;
-//       box-shadow: 0 0 0 1px #{$transparent-black-10};
-//     }
-
-//     BUTTON:not([class]) {
-//       &:hover {
-//         outline: none;
-//         background: $tertiary-gray-10;
-//       }
-//       &:active {
-//         background: $tertiary-gray-30;
-//       }
-//     }
-//   }
-// }

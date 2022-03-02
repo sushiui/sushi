@@ -3,7 +3,7 @@
 set -e
 
 # update gh-pages
- 
+
 git checkout gh-pages
 git pull git@github.com:sushiui/sushi.git main
 

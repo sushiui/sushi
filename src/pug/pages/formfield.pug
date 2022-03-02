@@ -19,17 +19,14 @@ block page-block
             .ss-label
               | First Name
               span.ss-icon-Information
-            .ss-textfield.-error
-              input(type="search" value="very long first name")
-              | Too long messsage
+            input.ss-textfield.-error(type="text" value="very long first name")
+            .ss-error Too long messsage
           .ss-field
             .ss-label Last Name
-            .ss-textfield
-              input(type="search" placeholder="Your lastname")
+            input.ss-textfield(type="text" placeholder="Your lastname")
           .ss-field
             .ss-label Last Name
-            .ss-textfield.-viewonly
-              input(type="search" value="Sample value")
+            input.ss-textfield.-viewonly(type="search" value="Sample value")
           button
             span.ss-icon-Approve
             | Primary
@@ -40,79 +37,39 @@ block page-block
 
       .body._padding
         form.ss-form
-          .ss-fields
-            .ss-field(style="flex-grow: 2")
-              .ss-label
-                | First Name and Last Name
-                span.ss-icon-Information
-              .ss-textfield.-error
-                input(type="search" value="very long first name")
-                | Too long messsage
-            .ss-field(style="flex-grow: 1")
-              .ss-label &nbsp;
-              .ss-textfield
-                input(type="search" placeholder="Your lastname")
-            .ss-field(style="flex-grow: 2")
-              .ss-label Last Name
-              .ss-textfield.-viewonly
-                input(type="search" value="Sample value")
-          .ss-fields
-            button
-              span.ss-icon-Approve
-              | Primary
-
-    .ss-card
-      .header
-        span.label &lt;Holizontal field: label on left &gt;
-
-      .body._padding
-        form.ss-form
-          .ss-fields.inline
+          .row
+            .ss-label.-inline(style="flex:1") First Name and Last Name
+            .ss-field(style="flex:2")
+              input.ss-textfield.-error(type="text" value="very long first name")
+              .ss-error Too long messsage
+          .row
+            .ss-label.-inline(style="flex:1") Search
             .ss-field(style="flex: 2")
-              .ss-label
-                | First Name
-                span.ss-icon-Information
-              .ss-textfield.-error
-                input(type="search" value="very long first name")
-                | Too long messsage
-            .ss-field(style="flex: 1")
-              .ss-textfield
-                input(type="search" placeholder="Your lastname")
+              input.ss-textfield(type="search" value="very long first name")
+          .row
+            .ss-label.-inline(style="flex:1") Animal
             .ss-field(style="flex: 2")
-              .ss-label
-                | First Name
-              .ss-textfield.-viewonly
-                input(type="search" value="Sample value")
-          .ss-fields
-            button
-              span.ss-icon-Approve
-              | Primary
-
-    .ss-card
-      .header
-        span.label &lt;Holizontal field: label on left &gt;
-
-      .body._padding
-        form.ss-form
-          .ss-fields.inline
-            .ss-field(style="flex: 1")
-              .ss-label
-                | First Name
-                span.ss-icon-Information
-            .ss-field(style="flex: 1")
-              .ss-textfield.-error
-                input(type="search" value="very long first name")
-                | Too long messsage
-            .ss-field(style="flex: 1")
-              .ss-textfield
-                input(type="search" placeholder="Your lastname")
-            .ss-field(style="flex: 1")
-              .ss-label
-                | First Name
-            .ss-field(style="flex: 1")
-              .ss-textfield.-viewonly
-                input(type="search" value="Sample value")
-          .ss-fields
-            button
-              span.ss-icon-Approve
-              | Primary
+              .ss-radiobutton-group.-error
+                input.ss-radiobutton(type="radio", id="r1", name="radio", value="1", checked )
+                span Ant
+                input.ss-radiobutton(type="radio", id="r1", name="radio", value="1" disabled)
+                span Cat
+                input.ss-radiobutton(type="radio", id="r1", name="radio", value="1" )
+                span Bat
+              .ss-error Too long messsage
+          .row
+            .ss-label.-inline(style="flex: 1") Last Name
+            .ss-field(style="flex: 2")
+              .ss-checkbox-group
+                input.ss-checkbox(type="checkbox", id="r1", name="radio", value="1", checked)
+                span Ant
+                input.ss-checkbox(type="checkbox", id="r1", name="radio", value="1" disabled)
+                span Cat
+                input.ss-checkbox(type="checkbox", id="r1", name="radio", value="1" )
+                span Bat
+          .row
+            .ss-label.-inline(style="flex: 1") &nbsp;
+            .ss-field(style="flex: 2")
+              button
+                span.ss-icon-Approve
+                | Primary

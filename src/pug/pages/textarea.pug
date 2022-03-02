@@ -1,0 +1,55 @@
+extends ../base/base.pug
+
+block append page-variable
+  - var current = "textarea"
+
+block page-block
+
+  .header.-nobreadcrumbs
+    span.label Textarea
+
+  .body
+    .ss-card
+      .header
+        span.label &lt;TextArea&gt;
+
+      .body._padding
+        table
+          tr
+            th Normal
+            th Error
+            th Disable
+            th Viewonly
+          tr
+            td
+              textarea.ss-textarea
+              | &nbsp;
+            td
+              textarea.ss-textarea.-error
+              .ss-error Long Error
+            td
+              textarea.ss-textarea.-diasble
+              | &nbsp;
+            td
+              textarea.ss-textarea.-viewonly
+              | &nbsp;
+        pre
+          code.language-html
+            |
+            |  &lt;div class="ss-textfield">
+            |    &lt;input class="ss-textfield" type="search" >
+            |  &lt;/div>
+            |  &nbsp;
+            |  &lt;div class=".-error">
+            |    &lt;input class="ss-textfield" type="search" value="Error input">
+            |     | Long error message
+            |  &lt;/div>
+            |  &nbsp;
+            |  &lt;div class="ss-textfield -disable">
+            |    &lt;input class="ss-textfield" type="search" value="Disable input">
+            |  &lt;/div>
+            |  &nbsp;
+            |  &lt;div class="ss-textfield -viewonly">
+            |    &lt;input class="ss-textfield" type="search" value="View only input">
+            |  &lt;/div>
+            |  &nbsp;

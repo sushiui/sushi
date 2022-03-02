@@ -1,0 +1,187 @@
+extends ../base/base.pug
+
+block append page-variable
+  - var current = "allfield"
+
+block page-block
+
+  .header.-nobreadcrumbs
+    span.label All field
+
+  .body
+    .ss-card
+      .header
+        span.label No Error &lt;Text field&gt; &lt;Checkbox &gt; &lt;Radio &gt; &lt;dropdown &gt; &lt;textarea &gt;
+
+      .body._padding
+        form.ss-form
+          .row
+            .ss-field(style="flex: 1")
+              .ss-label
+                | First Name
+                span.ss-icon-Information
+              input.ss-textfield(type="text" value="very long first name")
+            .ss-field(style="flex: 1")
+              .ss-label
+                | Search
+                span.ss-icon-Information
+              input.ss-textfield(type="search" value="very long first name")
+            .ss-field(style="flex: 1")
+              .ss-label First Name
+              input.ss-textfield.-disable(type="text" value="very long first name")
+            .ss-field(style="flex: 1")
+              .ss-label First Name
+              input.ss-textfield(type="text" value="very long first name")
+          .row
+            .ss-field(style="flex: 1")
+              .ss-label First Name
+              input.ss-textfield(type="text" value="very long first name")
+            .ss-field(style="flex: 1")
+              .ss-label Last Name
+              .ss-radiobutton-group
+                input.ss-radiobutton(type="radio", id="r1", name="radio", value="1", checked )
+                span Ant
+                input.ss-radiobutton.-disable(type="radio", id="r1", name="radio", value="1" disabled)
+                span Cat
+                input.ss-radiobutton(type="radio", id="r1", name="radio", value="1" )
+                span Bat
+            .ss-field(style="flex: 1")
+              .ss-label Last Name
+              .ss-radiobutton-group
+                input.ss-checkbox(type="checkbox", id="r1", name="radio", value="1", checked )
+                span Ant
+                input.ss-checkbox.-disable(type="checkbox", id="r1", name="radio", value="1" disabled)
+                span Cat
+                input.ss-checkbox(type="checkbox", id="r1", name="radio", value="1" )
+                span Bat
+            .ss-field(style="flex: 1")
+              .ss-label Last Name
+              input.ss-textfield.-viewonly(type="text" value="very long first name")
+          .row
+            .ss-field(style="flex: 1")
+              .ss-label First Name
+              textarea.ss-textarea(type="text" value="very long first name")
+            .ss-field(style="flex: 1")
+              .ss-label Last Name
+              textarea.ss-textarea.-disable(type="text" value="Sample value")
+          .row
+            button.-primary
+              span.ss-icon-Approve
+              | Submit
+
+    .ss-card
+      .header
+        span.label &lt;Text field&gt; &lt;Checkbox &gt; &lt;Radio &gt; &lt;dropdown &gt; &lt;textarea &gt;
+
+      .body._padding
+        form.ss-form
+          .row
+            .ss-field(style="flex: 1")
+              .ss-label
+                | Last Name
+                span.ss-icon-Information
+              input.ss-textfield(type="text" value="very long first name")
+            .ss-field(style="flex: 1")
+              .ss-label
+                | Last Name
+                span.ss-icon-Information
+              input.ss-textfield.-error(type="text" value="very long first name")
+              .ss-error Too long messsage
+            .ss-field(style="flex: 1")
+              .ss-label First Name
+              input.ss-textfield.-disable(type="text" value="very long first name")
+            .ss-field(style="flex: 1")
+              .ss-label First Name
+              input.ss-textfield.-viewonly(type="text" value="very long first name")
+          .row
+            .ss-field(style="flex: 1")
+              .ss-label First Name
+              input.ss-textfield.-error(type="text" value="very long first name")
+              .ss-error Too long messsage
+            .ss-field(style="flex: 1")
+              .ss-label Last Name
+              .ss-radiobutton-group.-error
+                input.ss-radiobutton(type="radio", id="r1", name="radio", value="1", checked)
+                span Ant
+                input.ss-radiobutton(type="radio", id="r1", name="radio", value="1" disabled)
+                span Cat
+                input.ss-radiobutton(type="radio", id="r1", name="radio", value="1" )
+                span Bat
+              .ss-error Too long messsage
+            .ss-field(style="flex: 1")
+              .ss-label Last Name
+              .ss-checkbox-group.-error
+                input.ss-checkbox(type="checkbox", id="r1", name="radio", value="1", checked)
+                span Ant
+                input.ss-checkbox(type="checkbox", id="r1", name="radio", value="1" disabled)
+                span Cat
+                input.ss-checkbox(type="checkbox", id="r1", name="radio", value="1" )
+                span Bat
+              .ss-error Too long messsage
+            .ss-field(style="flex: 1")
+              .ss-label Last Name
+              .ss-textfield.-viewonly
+                input.ss-textfield(type="text" value="Sample value")
+          .row
+            .ss-field(style="flex: 1")
+              .ss-label First Name
+              textarea.ss-textarea.-error(type="text" value="very long first name")
+              .ss-error Too long messsage
+            .ss-field(style="flex: 1")
+              .ss-label Last Name
+              textarea.ss-textarea.-error.-disable(type="text" value="Sample value")
+              .ss-error Too long messsage
+          .row
+            button
+              span.ss-icon-Approve
+              | Submit
+
+
+    .ss-card
+      .header
+        span.label Inline &lt;Text field&gt; &lt;Checkbox &gt; &lt;Radio &gt; &lt;dropdown &gt; &lt;textarea &gt;
+
+      .body._padding
+        form.ss-form
+          .row
+            .ss-label.-inline(style="flex: 1")
+              | Last Name
+              span.ss-icon-Information
+            .ss-field(style="flex: 3")
+              input.ss-textfield.-viewonly(type="search" value="Sample value")
+            .ss-label.-inline(style="flex: 1") First Name
+            .ss-field(style="flex: 3")
+              input.ss-textfield.-error(type="search" value="very long first name")
+              .ss-error Too long messsage
+          .row
+            .ss-label.-inline(style="flex: 1") Last Name
+            .ss-field(style="flex: 3")
+              input.ss-textfield(type="search" value="Sample value")
+            .ss-label.-inline(style="flex: 1") Last Name
+            .ss-field(style="flex: 3")
+              .ss-radiobutton-group.-error
+                input.ss-radiobutton(type="radio", id="r1", name="radio", value="1", checked )
+                span Ant
+                input.ss-radiobutton(type="radio", id="r1", name="radio", value="1" disabled)
+                span Cat
+                input.ss-radiobutton(type="radio", id="r1", name="radio", value="1" )
+                span Bat
+              .ss-error Too long messsage
+          .row
+            .ss-label.-inline(style="flex: 1") First Name
+            .ss-field(style="flex: 3")
+              input.ss-textfield(type="search" value="very long first name")
+            .ss-label.-inline(style="flex: 1") Last Name
+            .ss-field(style="flex: 3")
+              .ss-checkbox-group.-error
+                input.ss-checkbox(type="checkbox", id="r1", name="radio", value="1", checked)
+                span Ant
+                input.ss-checkbox(type="checkbox", id="r1", name="radio", value="1" disabled)
+                span Cat
+                input.ss-checkbox(type="checkbox", id="r1", name="radio", value="1" )
+                span Bat
+              .ss-error Too long messsage
+          .row
+            button
+              span.ss-icon-Approve
+              | Submit

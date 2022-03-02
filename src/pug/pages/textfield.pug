@@ -20,41 +20,28 @@ block page-block
             th Error textfield
             th Disable textfield
             th View only textfield
-
           tr
             td
-              .ss-textfield
-                input(type="search")
-                | &nbsp;
+              input.ss-textfield(type="text")
+              | &nbsp;
             td
-              .ss-textfield.-error
-                input(type="search" value="Error input")
-                | Long error message
+              input.ss-textfield.-error(type="text" value="Error input")
+              .ss-error Long error message
             td
-              .ss-textfield.-disable
-                input(type="search" value="Disable input")
-                | &nbsp;
+              input.ss-textfield.-disable(type="text" value="Disable input")
+              | &nbsp;
             td
-              .ss-textfield.-viewonly
-                input(type="search" value="View only input")
-                | &nbsp;
+              input.ss-textfield.-viewonly(type="text" value="View only input")
+              | &nbsp;
         pre
           code.language-html
             |
-            |  &lt;div class="ss-textfield">
-            |    &lt;input class="ss-textfield" type="search" >
-            |  &lt;/div>
-            |  &nbsp;
-            |  &lt;div class=".-error">
-            |    &lt;input class="ss-textfield" type="search" value="Error input">
-            |     | Long error message
-            |  &lt;/div>
-            |  &nbsp;
-            |  &lt;div class="ss-textfield -disable">
-            |    &lt;input class="ss-textfield" type="search" value="Disable input">
-            |  &lt;/div>
-            |  &nbsp;
-            |  &lt;div class="ss-textfield -viewonly">
-            |    &lt;input class="ss-textfield" type="search" value="View only input">
-            |  &lt;/div>
+            |  &lt;input class="ss-textfield" type="search">
+            |
+            |  &lt;input class="ss-textfield -error" type="search" value="Error input">
+            |  &lt;div class="ss-error">Long error message &lt;/div>
+            |
+            |  &lt;input class="ss-textfield" type="search" value="Disable input">
+            |
+            |  &lt;input class="ss-textfield" type="search" value="View only input">
             |  &nbsp;

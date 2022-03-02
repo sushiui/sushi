@@ -79,6 +79,30 @@ function styles() {
     .pipe(connect.reload());
 }
 
+function iconStyle() {
+  return gulp
+    .src("src/scss/sushi-icon.scss")
+    .pipe(plumber())
+    .pipe(
+      sass().on("error", function (err) {
+        sass.logError(err);
+        this.emit("end");
+      })
+    )
+    .pipe(
+      autoprefixer({
+        overrideBrowserslist: ["last 3 versions"],
+        cascade: false,
+      })
+    )
+    .pipe(sass({ outputStyle: "expanded" }))
+    .pipe(gulp.dest("assets/css"))
+    .pipe(sass({ outputStyle: "compressed" }))
+    .pipe(rename("sushi-icon.min.css"))
+    .pipe(gulp.dest("assets/css"))
+    .pipe(connect.reload());
+}
+
 function scripts() {
   return gulp
     .src("src/js/sushi.js")
@@ -114,17 +138,24 @@ function views() {
 function watchTask(done) {
   gulp.watch("*.html", html);
   gulp.watch("src/scss/**/*.scss", styles);
+  gulp.watch("src/scss/icon_font.scss", iconStyle);
   gulp.watch("src/pug/**/*.pug", views);
   gulp.watch("src/js/sushi.js", scripts);
   done();
 }
 
 const watch = gulp.parallel(watchTask, reload);
-const build = gulp.series(gulp.parallel(styles, scripts, html, views));
-const start = gulp.series(gulp.parallel(styles, scripts, html, views), watch);
+const build = gulp.series(
+  gulp.parallel(iconStyle, styles, scripts, html, views)
+);
+const start = gulp.series(
+  gulp.parallel(iconStyle, styles, scripts, html, views),
+  watch
+);
 
 exports.reload = reload;
 exports.styles = styles;
+exports.iconStyle = iconStyle;
 exports.scripts = scripts;
 exports.html = html;
 exports.views = views;

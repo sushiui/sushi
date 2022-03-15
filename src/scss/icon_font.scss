@@ -11,17 +11,17 @@ $ gulp compile-icon-font
 
 @font-face {
   font-family: "SET-icon";
-  src: url("../fonts/SET-icon.ttf?z6r7d") format("truetype"),
-    url("../fonts/SET-icon.woff?z6r7d") format("woff");
+  src:
+    url('../fonts/SET-icon.ttf?bhvnt') format('truetype'),
+    url('../fonts/SET-icon.woff?bhvnt') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="ss-icon-"],
-[class*=" ss-icon-"] {
+[class^="ss-icon-"], [class*=" ss-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "SET-icon" !important;
+  font-family: 'SET-icon' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -35,6 +35,9 @@ $ gulp compile-icon-font
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
+  
 $ss-icon-Access-alarm: "\EA01";
 .ss-icon-Access-alarm {
   &:before {
@@ -42,6 +45,7 @@ $ss-icon-Access-alarm: "\EA01";
   }
 }
 
+  
 $ss-icon-Account-circle: "\EA02";
 .ss-icon-Account-circle {
   &:before {
@@ -49,6 +53,7 @@ $ss-icon-Account-circle: "\EA02";
   }
 }
 
+  
 $ss-icon-Add: "\EA03";
 .ss-icon-Add {
   &:before {
@@ -56,6 +61,7 @@ $ss-icon-Add: "\EA03";
   }
 }
 
+  
 $ss-icon-Alert: "\EA04";
 .ss-icon-Alert {
   &:before {
@@ -63,6 +69,7 @@ $ss-icon-Alert: "\EA04";
   }
 }
 
+  
 $ss-icon-Approve: "\EA05";
 .ss-icon-Approve {
   &:before {
@@ -70,6 +77,7 @@ $ss-icon-Approve: "\EA05";
   }
 }
 
+  
 $ss-icon-Approves-filled: "\EA06";
 .ss-icon-Approves-filled {
   &:before {
@@ -77,6 +85,7 @@ $ss-icon-Approves-filled: "\EA06";
   }
 }
 
+  
 $ss-icon-Approves: "\EA07";
 .ss-icon-Approves {
   &:before {
@@ -84,6 +93,7 @@ $ss-icon-Approves: "\EA07";
   }
 }
 
+  
 $ss-icon-Assign: "\EA08";
 .ss-icon-Assign {
   &:before {
@@ -91,6 +101,7 @@ $ss-icon-Assign: "\EA08";
   }
 }
 
+  
 $ss-icon-Attach-Money: "\EA09";
 .ss-icon-Attach-Money {
   &:before {
@@ -98,6 +109,7 @@ $ss-icon-Attach-Money: "\EA09";
   }
 }
 
+  
 $ss-icon-Attachment: "\EA0A";
 .ss-icon-Attachment {
   &:before {
@@ -105,6 +117,7 @@ $ss-icon-Attachment: "\EA0A";
   }
 }
 
+  
 $ss-icon-Auditor: "\EA0B";
 .ss-icon-Auditor {
   &:before {
@@ -112,6 +125,7 @@ $ss-icon-Auditor: "\EA0B";
   }
 }
 
+  
 $ss-icon-Back-Android: "\EA0C";
 .ss-icon-Back-Android {
   &:before {
@@ -119,6 +133,7 @@ $ss-icon-Back-Android: "\EA0C";
   }
 }
 
+  
 $ss-icon-Back-iOS: "\EA0D";
 .ss-icon-Back-iOS {
   &:before {
@@ -126,6 +141,7 @@ $ss-icon-Back-iOS: "\EA0D";
   }
 }
 
+  
 $ss-icon-Back: "\EA0E";
 .ss-icon-Back {
   &:before {
@@ -133,6 +149,7 @@ $ss-icon-Back: "\EA0E";
   }
 }
 
+  
 $ss-icon-Bookmark: "\EA0F";
 .ss-icon-Bookmark {
   &:before {
@@ -140,6 +157,7 @@ $ss-icon-Bookmark: "\EA0F";
   }
 }
 
+  
 $ss-icon-Bookmarks-filled: "\EA10";
 .ss-icon-Bookmarks-filled {
   &:before {
@@ -147,6 +165,7 @@ $ss-icon-Bookmarks-filled: "\EA10";
   }
 }
 
+  
 $ss-icon-Business: "\EA11";
 .ss-icon-Business {
   &:before {
@@ -154,6 +173,7 @@ $ss-icon-Business: "\EA11";
   }
 }
 
+  
 $ss-icon-Calendar: "\EA12";
 .ss-icon-Calendar {
   &:before {
@@ -161,6 +181,7 @@ $ss-icon-Calendar: "\EA12";
   }
 }
 
+  
 $ss-icon-Callcenter: "\EA13";
 .ss-icon-Callcenter {
   &:before {
@@ -168,6 +189,7 @@ $ss-icon-Callcenter: "\EA13";
   }
 }
 
+  
 $ss-icon-Category: "\EA14";
 .ss-icon-Category {
   &:before {
@@ -175,6 +197,7 @@ $ss-icon-Category: "\EA14";
   }
 }
 
+  
 $ss-icon-Check-list: "\EA15";
 .ss-icon-Check-list {
   &:before {
@@ -182,6 +205,7 @@ $ss-icon-Check-list: "\EA15";
   }
 }
 
+  
 $ss-icon-Checkbox-selected: "\EA16";
 .ss-icon-Checkbox-selected {
   &:before {
@@ -189,6 +213,7 @@ $ss-icon-Checkbox-selected: "\EA16";
   }
 }
 
+  
 $ss-icon-Checkbox: "\EA17";
 .ss-icon-Checkbox {
   &:before {
@@ -196,6 +221,7 @@ $ss-icon-Checkbox: "\EA17";
   }
 }
 
+  
 $ss-icon-Checked: "\EA18";
 .ss-icon-Checked {
   &:before {
@@ -203,6 +229,7 @@ $ss-icon-Checked: "\EA18";
   }
 }
 
+  
 $ss-icon-Circle-filled: "\EA19";
 .ss-icon-Circle-filled {
   &:before {
@@ -210,6 +237,7 @@ $ss-icon-Circle-filled: "\EA19";
   }
 }
 
+  
 $ss-icon-Classroom: "\EA1A";
 .ss-icon-Classroom {
   &:before {
@@ -217,6 +245,7 @@ $ss-icon-Classroom: "\EA1A";
   }
 }
 
+  
 $ss-icon-Close-or-Reject: "\EA1B";
 .ss-icon-Close-or-Reject {
   &:before {
@@ -224,6 +253,7 @@ $ss-icon-Close-or-Reject: "\EA1B";
   }
 }
 
+  
 $ss-icon-Company: "\EA1C";
 .ss-icon-Company {
   &:before {
@@ -231,6 +261,7 @@ $ss-icon-Company: "\EA1C";
   }
 }
 
+  
 $ss-icon-Content-copy: "\EA1D";
 .ss-icon-Content-copy {
   &:before {
@@ -238,6 +269,7 @@ $ss-icon-Content-copy: "\EA1D";
   }
 }
 
+  
 $ss-icon-DOC: "\EA1E";
 .ss-icon-DOC {
   &:before {
@@ -245,6 +277,7 @@ $ss-icon-DOC: "\EA1E";
   }
 }
 
+  
 $ss-icon-Dash: "\EA1F";
 .ss-icon-Dash {
   &:before {
@@ -252,6 +285,7 @@ $ss-icon-Dash: "\EA1F";
   }
 }
 
+  
 $ss-icon-Date: "\EA20";
 .ss-icon-Date {
   &:before {
@@ -259,6 +293,7 @@ $ss-icon-Date: "\EA20";
   }
 }
 
+  
 $ss-icon-Decrease: "\EA21";
 .ss-icon-Decrease {
   &:before {
@@ -266,6 +301,7 @@ $ss-icon-Decrease: "\EA21";
   }
 }
 
+  
 $ss-icon-Delete: "\EA22";
 .ss-icon-Delete {
   &:before {
@@ -273,6 +309,7 @@ $ss-icon-Delete: "\EA22";
   }
 }
 
+  
 $ss-icon-Document-1: "\EA23";
 .ss-icon-Document-1 {
   &:before {
@@ -280,6 +317,7 @@ $ss-icon-Document-1: "\EA23";
   }
 }
 
+  
 $ss-icon-Document: "\EA24";
 .ss-icon-Document {
   &:before {
@@ -287,6 +325,7 @@ $ss-icon-Document: "\EA24";
   }
 }
 
+  
 $ss-icon-Documents: "\EA25";
 .ss-icon-Documents {
   &:before {
@@ -294,6 +333,7 @@ $ss-icon-Documents: "\EA25";
   }
 }
 
+  
 $ss-icon-Down: "\EA26";
 .ss-icon-Down {
   &:before {
@@ -301,6 +341,7 @@ $ss-icon-Down: "\EA26";
   }
 }
 
+  
 $ss-icon-Download: "\EA27";
 .ss-icon-Download {
   &:before {
@@ -308,6 +349,7 @@ $ss-icon-Download: "\EA27";
   }
 }
 
+  
 $ss-icon-ESG: "\EA28";
 .ss-icon-ESG {
   &:before {
@@ -315,6 +357,7 @@ $ss-icon-ESG: "\EA28";
   }
 }
 
+  
 $ss-icon-Edit-filled: "\EA29";
 .ss-icon-Edit-filled {
   &:before {
@@ -322,6 +365,7 @@ $ss-icon-Edit-filled: "\EA29";
   }
 }
 
+  
 $ss-icon-Edit: "\EA2A";
 .ss-icon-Edit {
   &:before {
@@ -329,6 +373,7 @@ $ss-icon-Edit: "\EA2A";
   }
 }
 
+  
 $ss-icon-Email: "\EA2B";
 .ss-icon-Email {
   &:before {
@@ -336,6 +381,7 @@ $ss-icon-Email: "\EA2B";
   }
 }
 
+  
 $ss-icon-Euro: "\EA2C";
 .ss-icon-Euro {
   &:before {
@@ -343,6 +389,7 @@ $ss-icon-Euro: "\EA2C";
   }
 }
 
+  
 $ss-icon-Exit: "\EA2D";
 .ss-icon-Exit {
   &:before {
@@ -350,6 +397,7 @@ $ss-icon-Exit: "\EA2D";
   }
 }
 
+  
 $ss-icon-External-link: "\EA2E";
 .ss-icon-External-link {
   &:before {
@@ -357,6 +405,7 @@ $ss-icon-External-link: "\EA2E";
   }
 }
 
+  
 $ss-icon-Eye-close: "\EA2F";
 .ss-icon-Eye-close {
   &:before {
@@ -364,6 +413,7 @@ $ss-icon-Eye-close: "\EA2F";
   }
 }
 
+  
 $ss-icon-Eye: "\EA30";
 .ss-icon-Eye {
   &:before {
@@ -371,6 +421,7 @@ $ss-icon-Eye: "\EA30";
   }
 }
 
+  
 $ss-icon-Fax: "\EA31";
 .ss-icon-Fax {
   &:before {
@@ -378,6 +429,7 @@ $ss-icon-Fax: "\EA31";
   }
 }
 
+  
 $ss-icon-File-upload: "\EA32";
 .ss-icon-File-upload {
   &:before {
@@ -385,6 +437,7 @@ $ss-icon-File-upload: "\EA32";
   }
 }
 
+  
 $ss-icon-Fill-color: "\EA33";
 .ss-icon-Fill-color {
   &:before {
@@ -392,6 +445,7 @@ $ss-icon-Fill-color: "\EA33";
   }
 }
 
+  
 $ss-icon-Filter: "\EA34";
 .ss-icon-Filter {
   &:before {
@@ -399,6 +453,7 @@ $ss-icon-Filter: "\EA34";
   }
 }
 
+  
 $ss-icon-Fire: "\EA35";
 .ss-icon-Fire {
   &:before {
@@ -406,6 +461,7 @@ $ss-icon-Fire: "\EA35";
   }
 }
 
+  
 $ss-icon-Folder-open: "\EA36";
 .ss-icon-Folder-open {
   &:before {
@@ -413,6 +469,7 @@ $ss-icon-Folder-open: "\EA36";
   }
 }
 
+  
 $ss-icon-Github: "\EA37";
 .ss-icon-Github {
   &:before {
@@ -420,6 +477,7 @@ $ss-icon-Github: "\EA37";
   }
 }
 
+  
 $ss-icon-Help: "\EA38";
 .ss-icon-Help {
   &:before {
@@ -427,6 +485,7 @@ $ss-icon-Help: "\EA38";
   }
 }
 
+  
 $ss-icon-Home-filled: "\EA39";
 .ss-icon-Home-filled {
   &:before {
@@ -434,6 +493,7 @@ $ss-icon-Home-filled: "\EA39";
   }
 }
 
+  
 $ss-icon-Home: "\EA3A";
 .ss-icon-Home {
   &:before {
@@ -441,6 +501,7 @@ $ss-icon-Home: "\EA3A";
   }
 }
 
+  
 $ss-icon-Increase: "\EA3B";
 .ss-icon-Increase {
   &:before {
@@ -448,6 +509,7 @@ $ss-icon-Increase: "\EA3B";
   }
 }
 
+  
 $ss-icon-Information: "\EA3C";
 .ss-icon-Information {
   &:before {
@@ -455,6 +517,7 @@ $ss-icon-Information: "\EA3C";
   }
 }
 
+  
 $ss-icon-Language: "\EA3D";
 .ss-icon-Language {
   &:before {
@@ -462,6 +525,7 @@ $ss-icon-Language: "\EA3D";
   }
 }
 
+  
 $ss-icon-Link: "\EA3E";
 .ss-icon-Link {
   &:before {
@@ -469,6 +533,7 @@ $ss-icon-Link: "\EA3E";
   }
 }
 
+  
 $ss-icon-Location: "\EA3F";
 .ss-icon-Location {
   &:before {
@@ -476,6 +541,7 @@ $ss-icon-Location: "\EA3F";
   }
 }
 
+  
 $ss-icon-Lock: "\EA40";
 .ss-icon-Lock {
   &:before {
@@ -483,6 +549,7 @@ $ss-icon-Lock: "\EA40";
   }
 }
 
+  
 $ss-icon-Logout: "\EA41";
 .ss-icon-Logout {
   &:before {
@@ -490,6 +557,7 @@ $ss-icon-Logout: "\EA41";
   }
 }
 
+  
 $ss-icon-Main-Component-filled: "\EA42";
 .ss-icon-Main-Component-filled {
   &:before {
@@ -497,6 +565,7 @@ $ss-icon-Main-Component-filled: "\EA42";
   }
 }
 
+  
 $ss-icon-Market: "\EA43";
 .ss-icon-Market {
   &:before {
@@ -504,6 +573,7 @@ $ss-icon-Market: "\EA43";
   }
 }
 
+  
 $ss-icon-Maximize-arrow: "\EA44";
 .ss-icon-Maximize-arrow {
   &:before {
@@ -511,6 +581,7 @@ $ss-icon-Maximize-arrow: "\EA44";
   }
 }
 
+  
 $ss-icon-Maximize-filled: "\EA45";
 .ss-icon-Maximize-filled {
   &:before {
@@ -518,6 +589,7 @@ $ss-icon-Maximize-filled: "\EA45";
   }
 }
 
+  
 $ss-icon-Minimize-arrow: "\EA46";
 .ss-icon-Minimize-arrow {
   &:before {
@@ -525,6 +597,7 @@ $ss-icon-Minimize-arrow: "\EA46";
   }
 }
 
+  
 $ss-icon-Minimize-filled: "\EA47";
 .ss-icon-Minimize-filled {
   &:before {
@@ -532,6 +605,7 @@ $ss-icon-Minimize-filled: "\EA47";
   }
 }
 
+  
 $ss-icon-Mobile-phone: "\EA48";
 .ss-icon-Mobile-phone {
   &:before {
@@ -539,6 +613,7 @@ $ss-icon-Mobile-phone: "\EA48";
   }
 }
 
+  
 $ss-icon-More-Android: "\EA49";
 .ss-icon-More-Android {
   &:before {
@@ -546,6 +621,7 @@ $ss-icon-More-Android: "\EA49";
   }
 }
 
+  
 $ss-icon-More-iOS: "\EA4A";
 .ss-icon-More-iOS {
   &:before {
@@ -553,6 +629,7 @@ $ss-icon-More-iOS: "\EA4A";
   }
 }
 
+  
 $ss-icon-More-Hamburger: "\EA4B";
 .ss-icon-More-Hamburger {
   &:before {
@@ -560,6 +637,7 @@ $ss-icon-More-Hamburger: "\EA4B";
   }
 }
 
+  
 $ss-icon-Mouse-cursor-filled: "\EA4C";
 .ss-icon-Mouse-cursor-filled {
   &:before {
@@ -567,6 +645,7 @@ $ss-icon-Mouse-cursor-filled: "\EA4C";
   }
 }
 
+  
 $ss-icon-Move: "\EA4D";
 .ss-icon-Move {
   &:before {
@@ -574,6 +653,7 @@ $ss-icon-Move: "\EA4D";
   }
 }
 
+  
 $ss-icon-News-filled: "\EA4E";
 .ss-icon-News-filled {
   &:before {
@@ -581,6 +661,7 @@ $ss-icon-News-filled: "\EA4E";
   }
 }
 
+  
 $ss-icon-News: "\EA4F";
 .ss-icon-News {
   &:before {
@@ -588,6 +669,7 @@ $ss-icon-News: "\EA4F";
   }
 }
 
+  
 $ss-icon-Next-big: "\EA50";
 .ss-icon-Next-big {
   &:before {
@@ -595,6 +677,7 @@ $ss-icon-Next-big: "\EA50";
   }
 }
 
+  
 $ss-icon-Next: "\EA51";
 .ss-icon-Next {
   &:before {
@@ -602,6 +685,7 @@ $ss-icon-Next: "\EA51";
   }
 }
 
+  
 $ss-icon-Notification-filled: "\EA52";
 .ss-icon-Notification-filled {
   &:before {
@@ -609,6 +693,7 @@ $ss-icon-Notification-filled: "\EA52";
   }
 }
 
+  
 $ss-icon-Notification: "\EA53";
 .ss-icon-Notification {
   &:before {
@@ -616,6 +701,7 @@ $ss-icon-Notification: "\EA53";
   }
 }
 
+  
 $ss-icon-One-Report: "\EA54";
 .ss-icon-One-Report {
   &:before {
@@ -623,6 +709,7 @@ $ss-icon-One-Report: "\EA54";
   }
 }
 
+  
 $ss-icon-PDF: "\EA55";
 .ss-icon-PDF {
   &:before {
@@ -630,6 +717,7 @@ $ss-icon-PDF: "\EA55";
   }
 }
 
+  
 $ss-icon-Page-filled: "\EA56";
 .ss-icon-Page-filled {
   &:before {
@@ -637,6 +725,7 @@ $ss-icon-Page-filled: "\EA56";
   }
 }
 
+  
 $ss-icon-Phone-call-filled: "\EA57";
 .ss-icon-Phone-call-filled {
   &:before {
@@ -644,6 +733,7 @@ $ss-icon-Phone-call-filled: "\EA57";
   }
 }
 
+  
 $ss-icon-Phone: "\EA58";
 .ss-icon-Phone {
   &:before {
@@ -651,6 +741,7 @@ $ss-icon-Phone: "\EA58";
   }
 }
 
+  
 $ss-icon-Picture: "\EA59";
 .ss-icon-Picture {
   &:before {
@@ -658,6 +749,7 @@ $ss-icon-Picture: "\EA59";
   }
 }
 
+  
 $ss-icon-Printer: "\EA5A";
 .ss-icon-Printer {
   &:before {
@@ -665,6 +757,7 @@ $ss-icon-Printer: "\EA5A";
   }
 }
 
+  
 $ss-icon-Profile-filled: "\EA5B";
 .ss-icon-Profile-filled {
   &:before {
@@ -672,6 +765,7 @@ $ss-icon-Profile-filled: "\EA5B";
   }
 }
 
+  
 $ss-icon-Profile: "\EA5C";
 .ss-icon-Profile {
   &:before {
@@ -679,6 +773,7 @@ $ss-icon-Profile: "\EA5C";
   }
 }
 
+  
 $ss-icon-Push-pin: "\EA5D";
 .ss-icon-Push-pin {
   &:before {
@@ -686,6 +781,7 @@ $ss-icon-Push-pin: "\EA5D";
   }
 }
 
+  
 $ss-icon-Radio-button-selected: "\EA5E";
 .ss-icon-Radio-button-selected {
   &:before {
@@ -693,6 +789,7 @@ $ss-icon-Radio-button-selected: "\EA5E";
   }
 }
 
+  
 $ss-icon-Radio-button: "\EA5F";
 .ss-icon-Radio-button {
   &:before {
@@ -700,6 +797,7 @@ $ss-icon-Radio-button: "\EA5F";
   }
 }
 
+  
 $ss-icon-Reader: "\EA60";
 .ss-icon-Reader {
   &:before {
@@ -707,6 +805,7 @@ $ss-icon-Reader: "\EA60";
   }
 }
 
+  
 $ss-icon-Refresh: "\EA61";
 .ss-icon-Refresh {
   &:before {
@@ -714,6 +813,7 @@ $ss-icon-Refresh: "\EA61";
   }
 }
 
+  
 $ss-icon-Search: "\EA62";
 .ss-icon-Search {
   &:before {
@@ -721,6 +821,7 @@ $ss-icon-Search: "\EA62";
   }
 }
 
+  
 $ss-icon-Set-link: "\EA63";
 .ss-icon-Set-link {
   &:before {
@@ -728,6 +829,7 @@ $ss-icon-Set-link: "\EA63";
   }
 }
 
+  
 $ss-icon-Set: "\EA64";
 .ss-icon-Set {
   &:before {
@@ -735,6 +837,7 @@ $ss-icon-Set: "\EA64";
   }
 }
 
+  
 $ss-icon-Setting: "\EA65";
 .ss-icon-Setting {
   &:before {
@@ -742,6 +845,7 @@ $ss-icon-Setting: "\EA65";
   }
 }
 
+  
 $ss-icon-Settings-suggest: "\EA66";
 .ss-icon-Settings-suggest {
   &:before {
@@ -749,6 +853,7 @@ $ss-icon-Settings-suggest: "\EA66";
   }
 }
 
+  
 $ss-icon-Sorting: "\EA67";
 .ss-icon-Sorting {
   &:before {
@@ -756,175 +861,208 @@ $ss-icon-Sorting: "\EA67";
   }
 }
 
-$ss-icon-Star-Filled: "\EA68";
+  
+$ss-icon-Speak: "\EA68";
+.ss-icon-Speak {
+  &:before {
+    content: $ss-icon-Speak;
+  }
+}
+
+  
+$ss-icon-Star-Filled: "\EA69";
 .ss-icon-Star-Filled {
   &:before {
     content: $ss-icon-Star-Filled;
   }
 }
 
-$ss-icon-Star: "\EA69";
+  
+$ss-icon-Star: "\EA6A";
 .ss-icon-Star {
   &:before {
     content: $ss-icon-Star;
   }
 }
 
-$ss-icon-Status-circle: "\EA6A";
+  
+$ss-icon-Status-circle: "\EA6B";
 .ss-icon-Status-circle {
   &:before {
     content: $ss-icon-Status-circle;
   }
 }
 
-$ss-icon-Suitcase: "\EA6B";
+  
+$ss-icon-Suitcase: "\EA6C";
 .ss-icon-Suitcase {
   &:before {
     content: $ss-icon-Suitcase;
   }
 }
 
-$ss-icon-Supervisor: "\EA6C";
+  
+$ss-icon-Supervisor: "\EA6D";
 .ss-icon-Supervisor {
   &:before {
     content: $ss-icon-Supervisor;
   }
 }
 
-$ss-icon-Sushi: "\EA6D";
+  
+$ss-icon-Sushi: "\EA6E";
 .ss-icon-Sushi {
   &:before {
     content: $ss-icon-Sushi;
   }
 }
 
-$ss-icon-TXT: "\EA6E";
+  
+$ss-icon-TXT: "\EA6F";
 .ss-icon-TXT {
   &:before {
     content: $ss-icon-TXT;
   }
 }
 
-$ss-icon-Table-view: "\EA6F";
+  
+$ss-icon-Table-view: "\EA70";
 .ss-icon-Table-view {
   &:before {
     content: $ss-icon-Table-view;
   }
 }
 
-$ss-icon-Table: "\EA70";
+  
+$ss-icon-Table: "\EA71";
 .ss-icon-Table {
   &:before {
     content: $ss-icon-Table;
   }
 }
 
-$ss-icon-Terrain: "\EA71";
+  
+$ss-icon-Terrain: "\EA72";
 .ss-icon-Terrain {
   &:before {
     content: $ss-icon-Terrain;
   }
 }
 
-$ss-icon-Thumb-up-filled: "\EA72";
+  
+$ss-icon-Thumb-up-filled: "\EA73";
 .ss-icon-Thumb-up-filled {
   &:before {
     content: $ss-icon-Thumb-up-filled;
   }
 }
 
-$ss-icon-Thumbnail: "\EA73";
+  
+$ss-icon-Thumbnail: "\EA74";
 .ss-icon-Thumbnail {
   &:before {
     content: $ss-icon-Thumbnail;
   }
 }
 
-$ss-icon-Time: "\EA74";
+  
+$ss-icon-Time: "\EA75";
 .ss-icon-Time {
   &:before {
     content: $ss-icon-Time;
   }
 }
 
-$ss-icon-Unchange: "\EA75";
+  
+$ss-icon-Unchange: "\EA76";
 .ss-icon-Unchange {
   &:before {
     content: $ss-icon-Unchange;
   }
 }
 
-$ss-icon-Underline: "\EA76";
+  
+$ss-icon-Underline: "\EA77";
 .ss-icon-Underline {
   &:before {
     content: $ss-icon-Underline;
   }
 }
 
-$ss-icon-Up: "\EA77";
+  
+$ss-icon-Up: "\EA78";
 .ss-icon-Up {
   &:before {
     content: $ss-icon-Up;
   }
 }
 
-$ss-icon-Video: "\EA78";
+  
+$ss-icon-Video: "\EA79";
 .ss-icon-Video {
   &:before {
     content: $ss-icon-Video;
   }
 }
 
-$ss-icon-Vpn-key: "\EA79";
+  
+$ss-icon-Vpn-key: "\EA7A";
 .ss-icon-Vpn-key {
   &:before {
     content: $ss-icon-Vpn-key;
   }
 }
 
-$ss-icon-Waiting: "\EA7A";
+  
+$ss-icon-Waiting: "\EA7B";
 .ss-icon-Waiting {
   &:before {
     content: $ss-icon-Waiting;
   }
 }
 
-$ss-icon-Warning: "\EA7B";
+  
+$ss-icon-Warning: "\EA7C";
 .ss-icon-Warning {
   &:before {
     content: $ss-icon-Warning;
   }
 }
 
-$ss-icon-Web: "\EA7C";
+  
+$ss-icon-Web: "\EA7D";
 .ss-icon-Web {
   &:before {
     content: $ss-icon-Web;
   }
 }
 
-$ss-icon-XML: "\EA7D";
+  
+$ss-icon-XML: "\EA7E";
 .ss-icon-XML {
   &:before {
     content: $ss-icon-XML;
   }
 }
 
-$ss-icon-Zoom-in: "\EA7E";
+  
+$ss-icon-Zoom-in: "\EA7F";
 .ss-icon-Zoom-in {
   &:before {
     content: $ss-icon-Zoom-in;
   }
 }
 
-$ss-icon-Zoom-out: "\EA7F";
+  
+$ss-icon-Zoom-out: "\EA80";
 .ss-icon-Zoom-out {
   &:before {
     content: $ss-icon-Zoom-out;
   }
 }
 
-$ss-icon-cancel-filled: "\EA80";
+  
+$ss-icon-cancel-filled: "\EA81";
 .ss-icon-cancel-filled {
   &:before {
     content: $ss-icon-cancel-filled;

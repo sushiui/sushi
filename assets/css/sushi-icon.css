@@ -10,13 +10,12 @@ $ gulp compile-icon-font
 */
 @font-face {
   font-family: "SET-icon";
-  src: url("../fonts/SET-icon.ttf?z6r7d") format("truetype"), url("../fonts/SET-icon.woff?z6r7d") format("woff");
+  src: url("../fonts/SET-icon.ttf?bhvnt") format("truetype"), url("../fonts/SET-icon.woff?bhvnt") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
-[class^=ss-icon-],
-[class*=" ss-icon-"] {
+[class^=ss-icon-], [class*=" ss-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "SET-icon" !important;
   speak: never;
@@ -443,102 +442,106 @@ $ gulp compile-icon-font
   content: "\ea67";
 }
 
-.ss-icon-Star-Filled:before {
+.ss-icon-Speak:before {
   content: "\ea68";
 }
 
-.ss-icon-Star:before {
+.ss-icon-Star-Filled:before {
   content: "\ea69";
 }
 
-.ss-icon-Status-circle:before {
+.ss-icon-Star:before {
   content: "\ea6a";
 }
 
-.ss-icon-Suitcase:before {
+.ss-icon-Status-circle:before {
   content: "\ea6b";
 }
 
-.ss-icon-Supervisor:before {
+.ss-icon-Suitcase:before {
   content: "\ea6c";
 }
 
-.ss-icon-Sushi:before {
+.ss-icon-Supervisor:before {
   content: "\ea6d";
 }
 
-.ss-icon-TXT:before {
+.ss-icon-Sushi:before {
   content: "\ea6e";
 }
 
-.ss-icon-Table-view:before {
+.ss-icon-TXT:before {
   content: "\ea6f";
 }
 
-.ss-icon-Table:before {
+.ss-icon-Table-view:before {
   content: "\ea70";
 }
 
-.ss-icon-Terrain:before {
+.ss-icon-Table:before {
   content: "\ea71";
 }
 
-.ss-icon-Thumb-up-filled:before {
+.ss-icon-Terrain:before {
   content: "\ea72";
 }
 
-.ss-icon-Thumbnail:before {
+.ss-icon-Thumb-up-filled:before {
   content: "\ea73";
 }
 
-.ss-icon-Time:before {
+.ss-icon-Thumbnail:before {
   content: "\ea74";
 }
 
-.ss-icon-Unchange:before {
+.ss-icon-Time:before {
   content: "\ea75";
 }
 
-.ss-icon-Underline:before {
+.ss-icon-Unchange:before {
   content: "\ea76";
 }
 
-.ss-icon-Up:before {
+.ss-icon-Underline:before {
   content: "\ea77";
 }
 
-.ss-icon-Video:before {
+.ss-icon-Up:before {
   content: "\ea78";
 }
 
-.ss-icon-Vpn-key:before {
+.ss-icon-Video:before {
   content: "\ea79";
 }
 
-.ss-icon-Waiting:before {
+.ss-icon-Vpn-key:before {
   content: "\ea7a";
 }
 
-.ss-icon-Warning:before {
+.ss-icon-Waiting:before {
   content: "\ea7b";
 }
 
-.ss-icon-Web:before {
+.ss-icon-Warning:before {
   content: "\ea7c";
 }
 
-.ss-icon-XML:before {
+.ss-icon-Web:before {
   content: "\ea7d";
 }
 
-.ss-icon-Zoom-in:before {
+.ss-icon-XML:before {
   content: "\ea7e";
 }
 
-.ss-icon-Zoom-out:before {
+.ss-icon-Zoom-in:before {
   content: "\ea7f";
 }
 
-.ss-icon-cancel-filled:before {
+.ss-icon-Zoom-out:before {
   content: "\ea80";
+}
+
+.ss-icon-cancel-filled:before {
+  content: "\ea81";
 }

@@ -27,7 +27,6 @@ UL.ss-menu {
   gap: 4px;
 
   > li.selected {
-    --background: #fef3e6;
     position: relative;
 
     &::after {
@@ -41,6 +40,13 @@ UL.ss-menu {
       transform: translateY(-50%);
       right: 8px;
     }
+  }
+
+  > hr {
+    height: 1px;
+    background-color: $transparent-black-10;
+    border: 0px;
+    width: 100%;
   }
 }
 

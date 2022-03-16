@@ -1,0 +1,31 @@
+.ss-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 38px;
+  background-color: $transparent-white-96;
+  box-shadow: $shadow-10;
+}
+
+li.-dropdown {
+  > a > span.ss-icon-Minimize-arrow {
+    display: none;
+  }
+}
+
+li.-dropdown:hover {
+  > a {
+    background-color: $tertiary-orange-10 !important;
+    color: $primary-black !important;
+  }
+
+  > a > span.ss-icon-Maximize-arrow {
+    display: none;
+  }
+  > a > span.ss-icon-Minimize-arrow {
+    display: block;
+  }
+
+  > .ss-dropdown-menu {
+    display: block;
+  }
+}

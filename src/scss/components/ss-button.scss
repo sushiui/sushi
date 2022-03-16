@@ -1,27 +1,39 @@
 BUTTON.ss-button,
-a.ss-button {
+BUTTON.ss-link,
+a.ss-button,
+a.ss-link {
   --color: #{$primary-black};
   --active-color: #{$primary-black};
-  --disable-background: #{$transparent-black-10};
   --padding: 6px 12px;
+  --pointer-events: auto;
 
   // Secondary
   --background: #{$gradient-white};
+  --box-shadow: 0 0 0 1px #{$transparent-black-10};
+
+  --hover-color: #{$primary-black};
   --hover-background: #{$gradient-white};
   --hover-box-shadow: 0 0 0 1px #{$primary-yellow};
+
+  --active-color: #{$primary-black};
   --active-background: #{$gradient-white};
   --active-box-shadow: 0 0 0 1px #{$primary-white};
-  --box-shadow: 0 0 0 1px #{$transparent-black-10};
+
+  --disable-color: #{$transparent-black-35};
+  --disable-background: #{$transparent-black-10};
+  --disable-pointer-events: none;
 }
 
 BUTTON.ss-button.-primary,
 a.ss-button.-primary {
   --background: #{$gradient-yellow};
+  --box-shadow: none;
+
   --hover-background: #{$primary-yellow};
   --hover-box-shadow: none;
+
   --active-background: #{$tertiary-yellow-100};
   --active-box-shadow: 0 0 0 1px #{$primary-yellow};
-  --box-shadow: none;
 }
 
 $button-colors: "yellow-green" $tertiary-yellow-green-100
@@ -42,12 +54,15 @@ $button-colors: "yellow-green" $tertiary-yellow-green-100
   a.ss-button.-#{$name} {
     --color: #{$color};
     --background: #{$color-gradient};
+    --box-shadow: none;
+
+    --hover-color: #{$color};
     --hover-background: #{$color-100};
     --hover-box-shadow: none;
+
     --active-background: #{$color-60};
     --active-box-shadow: 0 0 0 1px #{$color-100};
     --active-color: #{$color};
-    --box-shadow: none;
   }
 }
 
@@ -57,15 +72,17 @@ BUTTON.ss-link {
   --active-color: #{$tertiary-sky-blue-60};
   --disable-background: none;
   --padding: 0px;
-}
-
-BUTTON.ss-link {
   --background: none;
+  --box-shadow: none;
+
+  --hover-color: #{$tertiary-sky-blue-60};
   --hover-background: none;
   --hover-box-shadow: none;
+
+  --active-color: #{$tertiary-sky-blue-30};
+  --active-color: #{$tertiary-sky-blue-30};
   --active-background: none;
   --active-box-shadow: none;
-  --box-shadow: none;
 }
 
 BUTTON.ss-button,
@@ -74,27 +91,26 @@ a.ss-button,
 a.ss-link {
   display: inline-flex;
   align-items: center;
-  padding: var(--padding);
   gap: 4px;
   width: fit-content;
   border: none;
-  box-shadow: var(--box-shadow);
   text-decoration: none;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   cursor: pointer;
+
+  padding: var(--padding);
+  box-shadow: var(--box-shadow);
   color: var(--color);
   background: var(--background);
+  pointer-events: var(--pointer-events);
 
   /* Accessibility: Visible in Windows high-contrast theems */
   outline-color: transparent;
   outline-width: 1px;
 
-  > span {
-    font-size: $body-icon;
-  }
-
   &:hover {
+    color: var(--hover-color);
     background: var(--hover-background);
     box-shadow: var(--hover-box-shadow);
   }
@@ -102,13 +118,17 @@ a.ss-link {
   &:active {
     color: var(--active-color);
     background: var(--active-background);
-    box-shadow: var(--active-outline);
+    box-shadow: var(--active-box-shadow);
   }
 
   &.disable,
   &:disabled {
+    color: var(--disable-color);
     background: var(--disable-background);
-    color: $transparent-black-35;
-    pointer-events: none;
+    pointer-events: var(--disable-pointer-events);
+  }
+
+  > span {
+    font-size: $body-icon;
   }
 }

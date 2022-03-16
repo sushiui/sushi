@@ -55,9 +55,9 @@ function reload(done) {
   done();
 }
 
-function styles() {
+function generalStyle(filename) {
   return gulp
-    .src("src/scss/sushi.scss")
+    .src("src/scss/" + filename + ".scss")
     .pipe(plumber())
     .pipe(
       sass().on("error", function (err) {
@@ -74,33 +74,21 @@ function styles() {
     .pipe(sass({ outputStyle: "expanded" }))
     .pipe(gulp.dest("assets/css"))
     .pipe(sass({ outputStyle: "compressed" }))
-    .pipe(rename("sushi.min.css"))
+    .pipe(rename(filename + ".min.css"))
     .pipe(gulp.dest("assets/css"))
     .pipe(connect.reload());
 }
 
+function styles() {
+  return generalStyle("sushi");
+}
+
 function iconStyle() {
-  return gulp
-    .src("src/scss/sushi-icon.scss")
-    .pipe(plumber())
-    .pipe(
-      sass().on("error", function (err) {
-        sass.logError(err);
-        this.emit("end");
-      })
-    )
-    .pipe(
-      autoprefixer({
-        overrideBrowserslist: ["last 3 versions"],
-        cascade: false,
-      })
-    )
-    .pipe(sass({ outputStyle: "expanded" }))
-    .pipe(gulp.dest("assets/css"))
-    .pipe(sass({ outputStyle: "compressed" }))
-    .pipe(rename("sushi-icon.min.css"))
-    .pipe(gulp.dest("assets/css"))
-    .pipe(connect.reload());
+  return generalStyle("sushi-icon");
+}
+
+function baseStyle() {
+  return generalStyle("base");
 }
 
 function scripts() {
@@ -146,16 +134,17 @@ function watchTask(done) {
 
 const watch = gulp.parallel(watchTask, reload);
 const build = gulp.series(
-  gulp.parallel(iconStyle, styles, scripts, html, views)
+  gulp.parallel(baseStyle, iconStyle, styles, scripts, html, views)
 );
 const start = gulp.series(
-  gulp.parallel(iconStyle, styles, scripts, html, views),
+  gulp.parallel(baseStyle, iconStyle, styles, scripts, html, views),
   watch
 );
 
 exports.reload = reload;
 exports.styles = styles;
 exports.iconStyle = iconStyle;
+exports.baseStyle = baseStyle;
 exports.scripts = scripts;
 exports.html = html;
 exports.views = views;

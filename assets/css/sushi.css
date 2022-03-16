@@ -10,23 +10,6 @@
   --primary-yellow: #fcb034;
 }
 
-HTML {
-  font-family: "Sarabun", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 145%;
-  color: #231f20;
-  height: 100%;
-}
-
-BODY,
-INPUT,
-TEXTAREA,
-BUTTON {
-  font-family: inherit;
-  font-size: 1rem;
-}
-
 #root {
   min-height: 100vh;
 }
@@ -49,44 +32,66 @@ TABLE TD {
   padding: 20px;
 }
 
-.small {
-  font-size: 0.429rem;
+.menu-panel {
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  -webkit-box-ordinal-group: 1;
+  -ms-flex-order: 0;
+  order: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.96);
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  width: 200px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
-a.-big-icon {
-  font-size: 2rem;
-  text-decoration: none;
-  color: #231f20;
+.icon-page .show-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 800px;
+  margin-top: 16px;
 }
 
-._background-blue {
-  background-color: #0064c5 !important;
+.icon-page .show-icons > .each-icon {
+  width: 200px;
+  height: 72px;
+  text-align: center;
 }
 
-._background-red {
-  background-color: #b60000 !important;
+.icon-page .show-icons > .each-icon span {
+  font-size: 1.142em;
 }
 
-._background-green {
-  background-color: #006600 !important;
+.icon-page .sample-icon-in-css:after {
+  display: inline;
+  content: "\ea1b";
+  font-family: "SET-icon";
+  padding-left: 10px !important;
+  vertical-align: middle;
 }
 
-._background-orange {
-  background-color: #e55f14 !important;
+.menu-page .ss-card .menu {
+  width: 240px;
 }
 
-._padding {
-  padding: 16px !important;
+.button-page .two-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
 }
 
-._flex-grow-1 {
-  -webkit-box-flex: 1 !important;
-  -ms-flex-positive: 1 !important;
-  flex-grow: 1 !important;
-}
-
-._font-size-header {
-  font-size: 1.5rem !important;
+.ss-mega-menu._demo-under-card {
+  position: relative;
 }
 
 .ss-breadcrumb {
@@ -1241,64 +1246,59 @@ input[type=checkbox].ss-checkbox::after {
   right: 0px;
 }
 
-.menu-panel {
-  -webkit-box-flex: 0;
-  -ms-flex: none;
-  flex: none;
-  -webkit-box-ordinal-group: 1;
-  -ms-flex-order: 0;
-  order: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-  position: relative;
-  z-index: 2;
-  background-color: rgba(255, 255, 255, 0.96);
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  width: 200px;
-  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+HTML {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+  color: #231f20;
+  height: 100%;
 }
 
-.icon-page .show-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  width: 800px;
-  margin-top: 16px;
+BODY,
+INPUT,
+TEXTAREA,
+BUTTON {
+  font-family: inherit;
+  font-size: 1rem;
 }
 
-.icon-page .show-icons > .each-icon {
-  width: 200px;
-  height: 72px;
-  text-align: center;
+.small {
+  font-size: 0.429rem;
 }
 
-.icon-page .show-icons > .each-icon span {
-  font-size: 1.142em;
+a.-big-icon {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #231f20;
 }
 
-.icon-page .sample-icon-in-css:after {
-  display: inline;
-  content: "\ea1b";
-  font-family: "SET-icon";
-  padding-left: 10px !important;
-  vertical-align: middle;
+._background-blue {
+  background-color: #0064c5 !important;
 }
 
-.menu-page .ss-card .menu {
-  width: 240px;
+._background-red {
+  background-color: #b60000 !important;
 }
 
-.button-page .two-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 8px;
+._background-green {
+  background-color: #006600 !important;
 }
 
-.ss-mega-menu._demo-under-card {
-  position: relative;
+._background-orange {
+  background-color: #e55f14 !important;
+}
+
+._padding {
+  padding: 16px !important;
+}
+
+._flex-grow-1 {
+  -webkit-box-flex: 1 !important;
+  -ms-flex-positive: 1 !important;
+  flex-grow: 1 !important;
+}
+
+._font-size-header {
+  font-size: 1.5rem !important;
 }

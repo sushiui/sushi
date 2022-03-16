@@ -1,0 +1,53 @@
+HTML {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+  color: $primary-black;
+  height: 100%;
+}
+
+BODY,
+INPUT,
+TEXTAREA,
+BUTTON {
+  font-family: inherit;
+  font-size: $font-size-body;
+}
+
+.small {
+  font-size: 0.429rem;
+}
+
+// Helper
+
+a.-big-icon {
+  font-size: $font-size-menu-icon;
+  text-decoration: none;
+  color: $primary-black;
+}
+
+._background-blue {
+  background-color: $accessible-blue !important;
+}
+._background-red {
+  background-color: $accessible-red !important;
+}
+._background-green {
+  background-color: $accessible-green !important;
+}
+._background-orange {
+  background-color: $accessible-orange !important;
+}
+
+._padding {
+  padding: $common-gap !important;
+}
+
+._flex-grow-1 {
+  flex-grow: 1 !important;
+}
+
+._font-size-header {
+  font-size: $font-size-h3 !important;
+}

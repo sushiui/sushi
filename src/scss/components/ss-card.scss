@@ -27,7 +27,7 @@
   > .header, .body > .header, &.-body > .header{
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: $small-gap;
     margin: 0px;
 
     > span.label {

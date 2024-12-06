@@ -42,7 +42,7 @@ UL.ss-menu-woven > li > a {
   text-decoration: none;
   border-radius: $radius;
   padding: 4px 8px;
-  gap: 8px;
+  gap: $small-gap;
   color: var(--color);
   background: var(--background);
 

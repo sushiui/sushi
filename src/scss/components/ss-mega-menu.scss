@@ -12,7 +12,7 @@
 
   > .row {
     display: flex;
-    gap: 32px;
+    gap: $large-gap;
   }
 
   > .column {

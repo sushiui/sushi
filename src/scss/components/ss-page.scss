@@ -14,7 +14,7 @@
 .ss-page-header {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: $small-gap;
   align-items: center;
 
   padding: 4px $common-gap 0px $common-gap;

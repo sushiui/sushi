@@ -24,7 +24,7 @@ UL.ss-menu {
   list-style-type: none;
   margin: 0px;
   padding: 8px;
-  gap: 4px;
+  gap: $mini-gap;
 
   > li.selected {
     position: relative;
@@ -54,7 +54,7 @@ UL.ss-menu > li > .header {
   display: flex;
   align-items: center;
   padding: 4px 8px;
-  gap: 8px;
+  gap: $small-gap;
 
   > span.label {
     font-size: 1em;
@@ -67,7 +67,7 @@ UL.ss-menu > li > a {
   display: flex;
   align-items: center;
   padding: 4px 8px;
-  gap: 8px;
+  gap: $small-gap;
   text-decoration: none;
   border-radius: $radius;
   cursor: pointer;

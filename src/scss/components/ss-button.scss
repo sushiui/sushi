@@ -91,7 +91,7 @@ a.ss-button,
 a.ss-link {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: $mini-gap;
   width: fit-content;
   border: none;
   text-decoration: none;

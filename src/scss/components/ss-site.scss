@@ -35,7 +35,7 @@
   > span.sitename {
     display: flex;
     font-weight: 800;
-    gap: 8px;
+    gap: $small-gap;
     align-items: center;
 
     font-size: $font-size-h3;
@@ -46,7 +46,7 @@
 
   > ul {
     display: flex;
-    gap: 8px;
+    gap: $small-gap;
 
     padding-top: 4px;
     list-style-type: none;
@@ -76,7 +76,7 @@
 
   > span.account {
     display: flex;
-    gap: 8px;
+    gap: $small-gap;
     align-items: center;
 
     font-size: $font-size-body;

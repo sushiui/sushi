@@ -1,4 +1,5 @@
 # Sushi
+
 Sushi Design System helps us work together to build great experience for all of SET co-workers and listed companies.
 
 We prepare HTML/CSS component as building blocks when you develop new products and features. We also prepare Figma's components for designers who prepare prototypes before development.
@@ -11,28 +12,46 @@ See Figma file here: [SET Main web](https://www.figma.com/file/YMSF7WZuIfrg33Rk9
 
 ## Install
 
-* Navigate to the directory where the sushi folder is located using Terminal.
-* Execute `npm install`.
+- Navigate to the directory where the sushi folder is located using Terminal.
+- Execute `npm install`.
 
 If you don't have npm
 
-* Install Homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+- Install Homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
-* Install node: `brew install node`
+- Install node: `brew install node`
 
 ## Run
 
-* Execute `npm start` or `gulp`.
-* Open http://localhost:8080/ on your web browser.
+- Execute `npm start` or `gulp`.
+- Open http://localhost:8080/ on your web browser.
 
 ## Compile icon SET
 
-* Prepare SVG icons in `/assets/icons`
-* Execute `gulp compile-font-icon`
+- Prepare SVG icons in `/assets/icons`
+- Execute `gulp compile-font-icon`
 
 New fonts (eot, ttf and woff) will generate in `/assets/fonts` along with `/src/scss/icon_font.scss`
 
 [Note] Certain export formats (e.g. TrueType fonts) only support SVG's the non-zero fill rule. You can use [Fill-Rule-Editor](https://www.figma.com/community/plugin/771155994770327940/Fill-Rule-Editor) plugin to manually convert even-odd to non-zero to make the exporters for these formats work. Here is [Youtube](https://www.youtube.com/watch?v=j6dZw3K_E3M) for manual
+
+## Deployment
+
+The site is automatically deployed to GitHub Pages whenever a new release is published. The deployment process:
+
+1. Creates a new release on GitHub
+2. Automatically triggers the GitHub Actions workflow
+3. Builds and deploys to the gh-pages branch
+4. Updates https://sushiui.github.io/sushi
+
+### Manual Deployment (if needed)
+
+You can also deploy manually using:
+
+```bash
+# From project root
+./deploy.sh
+```
 
 ## Folder Structure
 
@@ -84,5 +103,5 @@ https://rscss.apirak.com/
 
 It's not just about beautiful syntax. Pug and SCSS allow us to write modular and reusable markup.
 
-* Learn Pug https://www.sitepoint.com/a-beginners-guide-to-pug/
-* Learn SASS https://sass-lang.com/guide
+- Learn Pug https://www.sitepoint.com/a-beginners-guide-to-pug/
+- Learn SASS https://sass-lang.com/guide

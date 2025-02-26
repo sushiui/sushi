@@ -1,0 +1,125 @@
+extends ../base/base.pug
+
+block append page-variable
+  - var current = "pageheader"
+
+block page-block
+
+  .header.-withbackground.-nobreadcrumbs
+    span.label
+      | Page Header
+
+  .header
+    span.label
+      a.ss-link(href="javascript:void(0)")
+        span(class='ss-icon-Back-iOS')
+      | Page Header on floor
+    button.ss-button.secondary
+      span.ss-icon-Add
+      | Add
+    button.ss-button
+      span.ss-icon-PDF
+      | Preview
+
+  .body
+    .ss-card
+      .ss-page-header
+        span.label
+          a.ss-link(href="javascript:void(0)")
+            span(class='ss-icon-Back-iOS')
+          | Page Header on card
+        button.ss-button.secondary
+          span.ss-icon-Add
+          | Add
+        button.ss-button
+          span.ss-icon-PDF
+          | Preview
+
+      .body
+        .header
+          span.label Content Header
+
+        P
+          | นอกจากสถานการณ์การแพร่ระบาดของโควิดแล้ว สิ่งที่นักลงทุนจากทั่วโลกให้ความสนใจมากขึ้น
+          | ในปีที่ผ่านมาคือ การลงทุนที่ให้ความความสำคัญในเรื่องสิ่งแวดล้อม สังคม และธรรมาภิบาล
+          | หรือที่เรียกสั้น ๆ ว่า ESG (Environment, Social, Governance) โดยในสิ้นปี 2563
+          | มีการออกตราสารหนี้ในลักษณะนี้ทำสถิติสูงสุดกว่า 2.7 แสนล้านดอลลาร์สหรัฐฯ และมีแนวโน้มเพิ่มขึ้น
+          | ต่อเนื่อง คาดว่าในปีนี้จะเพิ่มเกือบเท่าตัวอยู่ที่ 4.5 แสนล้านดอลลาร์สหรัฐฯ
+          | บางขุนพรหมชวนคิดในวันนี้จึงขอใช้โอกาสนี้พูดถึงประเด็นนี้ค่ะ
+
+        pre
+          code.language-html
+            |  &lt;!-- Page Header on Floor -->
+            |  &lt;div class="ss-page-header">
+            |    &lt;span class="label">
+            |      &lt;a class="ss-link" href="javascript:void(0)">
+            |        &lt;span class="ss-icon-Back-iOS">&lt;/span>
+            |      &lt;/a>
+            |      Page Header on floor
+            |    &lt;/span>
+            |    &lt;button class="ss-button secondary">&lt;span class="ss-icon-Add">&lt;/span>Add&lt;/button>
+            |    &lt;button>&lt;span class="ss-button ss-icon-PDF">&lt;/span>Preview&lt;/button>
+            |  &lt;/div>
+            |
+            | &lt;!-- Content Header -->
+            | &lt;span class="label">Content Header&lt;/span>
+            | &nbsp;
+
+
+    .ss-card
+
+      .header
+        span.label Card Header
+        button.ss-button.secondary
+          span.ss-icon-Add
+          | Add
+        button.ss-button
+          span.ss-icon-PDF
+          | Preview
+
+      .body
+
+        .header
+          span.label
+            | Content Header
+          a.ss-link(href="javascript:void(0)")
+            span.ss-icon-External-link
+            | Preview
+          a.ss-link(href="javascript:void(0)")
+            span.ss-icon-Search
+            | Search
+
+        P
+          | นอกจากสถานการณ์การแพร่ระบาดของโควิดแล้ว สิ่งที่นักลงทุนจากทั่วโลกให้ความสนใจ
+          | มากขึ้นในปีที่ผ่านมา
+
+        .ss-ghost
+
+        .header
+          span.label
+            | Content Header
+
+        P
+          | นอกจากสถานการณ์การแพร่ระบาดของโควิดแล้ว สิ่งที่นักลงทุนจากทั่วโลกให้ความสนใจมากขึ้น
+          | ในปีที่ผ่านมาคือ การลงทุนที่ให้ความความสำคัญในเรื่องสิ่งแวดล้อม สังคม และธรรมาภิบาล
+          | หรือที่เรียกสั้น ๆ ว่า ESG (Environment, Social, Governance) โดยในสิ้นปี 2563
+          | มีการออกตราสารหนี้ในลักษณะนี้ทำสถิติสูงสุดกว่า 2.7 แสนล้านดอลลาร์สหรัฐฯ และมีแนวโน้มเพิ่มขึ้น
+          | ต่อเนื่อง คาดว่าในปีนี้จะเพิ่มเกือบเท่าตัวอยู่ที่ 4.5 แสนล้านดอลลาร์สหรัฐฯ
+          | บางขุนพรหมชวนคิดในวันนี้จึงขอใช้โอกาสนี้พูดถึงประเด็นนี้ค่ะ
+
+        pre
+          code.language-html
+            |  &lt;!-- Card Header -->
+            |  &lt;div class="header">
+            |    &lt;span class="label">Card Header&lt;/span>
+            |    &lt;button class="ss-button secondary">&lt;span class="ss-icon-Add">&lt;/span>Add&lt;/button>
+            |    &lt;button>&lt;span class="ss-button ss-icon-PDF">&lt;/span>Preview&lt;/button>
+            |  &lt;/div>
+            |
+            |  &lt;!-- Card Header in Card body -->
+            |  &lt;div class="header">
+            |     &lt;span class="label">Content Header&lt;/span>
+            |     &lt;a class="ss-link" href="javascript:void(0)">&lt;span class="ss-icon-External-link">&lt;/span>Preview&lt;/a>
+            |     &lt;a class="ss-link" href="javascript:void(0)">&lt;span class="ss-icon-Search">&lt;/span>Search&lt;/a>
+            | &lt;/div>
+            | &nbsp;

@@ -1,0 +1,34 @@
+$dot-size: 8px;
+$icon-size: 2rem;
+
+.ss-notification {
+  position: relative;
+  font-size: $font-size-menu-icon;
+
+  > .dot {
+    background-color: $accessible-blue;
+    font-size: calc($dot-size - 2px);
+    text-align: center;
+    vertical-align: middle;
+    color: $primary-white;
+    width: $dot-size;
+    height: $dot-size;
+    border-radius: 100%;
+    position: absolute;
+
+    &.-top-right {
+      top: 0px;
+      right: 0px;
+    }
+
+    &.-center-right {
+      top: calc(($icon-size - $dot-size) / 2);
+      right: 0px;
+    }
+
+    &.-bottom-right {
+      top: calc($icon-size - $dot-size);
+      right: 0px;
+    }
+  }
+}

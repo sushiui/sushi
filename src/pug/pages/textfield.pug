@@ -1,0 +1,47 @@
+extends ../base/base.pug
+
+block append page-variable
+  - var current = "textfield"
+
+block page-block
+
+  .header.-nobreadcrumbs
+    span.label Textfield
+
+  .body
+    .ss-card
+      .header
+        span.label &lt;TextField&gt;
+
+      .body._padding
+        table
+          tr
+            th Normal textfield
+            th Error textfield
+            th Disable textfield
+            th View only textfield
+          tr
+            td
+              input.ss-textfield(type="text")
+              | &nbsp;
+            td
+              input.ss-textfield.-error(type="text" value="Error input")
+              .ss-error Long error message
+            td
+              input.ss-textfield.-disable(type="text" value="Disable input")
+              | &nbsp;
+            td
+              input.ss-textfield.-viewonly(type="text" value="View only input")
+              | &nbsp;
+        pre
+          code.language-html
+            |
+            |  &lt;input class="ss-textfield" type="search">
+            |
+            |  &lt;input class="ss-textfield -error" type="search" value="Error input">
+            |  &lt;div class="ss-error">Long error message &lt;/div>
+            |
+            |  &lt;input class="ss-textfield" type="search" value="Disable input">
+            |
+            |  &lt;input class="ss-textfield" type="search" value="View only input">
+            |  &nbsp;

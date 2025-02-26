@@ -1,0 +1,14 @@
+extends ../base/base.pug
+
+
+block append page-variable
+  - var current = "index"
+
+block page-block
+
+  .header.-nobreadcrumbs
+    span.label Welcome
+
+  .body
+    include ../content/example.pug
+    include ../content/structure.pug

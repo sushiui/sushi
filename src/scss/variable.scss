@@ -1,0 +1,115 @@
+@use "sass:color";
+
+// Primary
+$primary-yellow: #fcb034;
+$primary-black: #231f20;
+$primary-white: #ffffff;
+
+// Secondary
+
+$secondary-blue: #009fd4;
+$secondary-Light-gray: #9da6ad;
+
+// Tretiary
+// Number after color is simulate percent of transparent with white background under
+
+$tertiary-yellow-green-100: hsl(68, 68%, 50%);
+$tertiary-yellow-green-60: hsl(68, 68%, 70%);
+$tertiary-yellow-green-30: hsl(68, 68%, 90%);
+$tertiary-yellow-green-10: hsl(68, 68%, 95%);
+
+$tertiary-yellow-100: hsl(49, 100%, 50%);
+$tertiary-yellow-60: hsl(49, 100%, 70%);
+$tertiary-yellow-30: hsl(49, 100%, 90%);
+$tertiary-yellow-10: hsl(49, 100%, 95%);
+
+$tertiary-orange-100: hsl(32, 93%, 50%);
+$tertiary-orange-60: hsl(32, 93%, 70%);
+$tertiary-orange-30: hsl(32, 93%, 90%);
+$tertiary-orange-10: hsl(32, 93%, 95%);
+
+$tertiary-sky-blue-100: hsl(191, 100%, 40%);
+$tertiary-sky-blue-60: hsl(191, 65%, 60%);
+$tertiary-sky-blue-30: hsl(191, 65%, 80%);
+$tertiary-sky-blue-10: hsl(191, 65%, 90%);
+
+$tertiary-purplish-blue-100: hsl(246, 52%, 35%);
+$tertiary-purplish-blue-60: hsl(246, 28%, 60%);
+$tertiary-purplish-blue-30: hsl(246, 28%, 80%);
+$tertiary-purplish-blue-10: hsl(246, 28%, 90%);
+
+$tertiary-purplish-red-100: hsl(337, 94%, 40%);
+$tertiary-purplish-red-60: hsl(337, 63%, 60%);
+$tertiary-purplish-red-30: hsl(337, 63%, 80%);
+$tertiary-purplish-red-10: hsl(337, 63%, 90%);
+
+$tertiary-gray-100: hsl(220, 2%, 40%);
+$tertiary-gray-60: hsl(220, 2%, 60%);
+$tertiary-gray-30: hsl(220, 2%, 90%);
+$tertiary-gray-10: hsl(220, 2%, 95%);
+
+// Transparent
+
+$transparent-yellow-30: rgba(255, 210, 0, 0.3);
+$transparent-white-80: rgba(255, 255, 255, 0.8);
+$transparent-white-96: rgba(255, 255, 255, 0.96);
+$transparent-black-6: rgba(0, 0, 0, 0.06);
+$transparent-black-10: rgba(0, 0, 0, 0.1);
+$transparent-black-35: rgba(0, 0, 0, 0.35);
+
+// Gradient
+
+$gradient-yellow: linear-gradient(180deg, #ffcf36 0%, #fcb034 88.02%);
+$gradient-white: linear-gradient(
+  180deg,
+  $tertiary-gray-10 0%,
+  $tertiary-gray-30 88.02%
+);
+
+// Accessible
+
+$accessible-blue: #0064c5;
+$accessible-red: #b60000;
+$accessible-green: #006600;
+$accessible-orange: #e55f14;
+
+// Shadow
+
+$shadow-10: 0px 0px 8px rgba(0, 0, 0, 0.1);
+
+$background-gray-basic: #f2f2f2;
+
+// Gap
+
+$large-gap: 32px;
+$common-gap: 16px;
+$small-gap: 8px;
+$mini-gap: 4px;
+
+// Font
+
+$font-size-comment: 0.714rem; //10px
+$font-size-body: 1rem; //14px
+$font-size-h3: 1.5rem; //21px
+$font-size-menu-icon: 2rem; //28px
+
+// Radius
+
+$radius: 4px;
+
+// Icon
+
+$body-icon: 1.142em;
+$ss-icon-Approve: "\EA05";
+
+// Ghost
+
+.ss-ghost {
+  width: 0px;
+  height: 0px;
+  background-color: none;
+}
+
+:root {
+  --primary-yellow: #{$primary-yellow};
+}

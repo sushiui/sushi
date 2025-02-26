@@ -1,0 +1,55 @@
+extends ../base/base.pug
+
+block append page-variable
+  - var current = "breadcrumb"
+
+block page-block
+
+  .header.-withbackground
+    .ss-breadcrumb
+      a.ss-link(href="#") Home
+      .divider /
+      a.ss-link(href="#") Component
+      .divider /
+      span Breadcrumb
+
+    span.label
+      | Breadcrump
+
+  .header
+    .ss-breadcrumb
+      a.ss-link(href="#") Home
+      .divider /
+      a.ss-link(href="#") Component
+      .divider /
+      span Breadcrumb
+
+    span.label
+      a.ss-link(href="javascript:void(0)")
+        span(class='ss-icon-Back-iOS')
+      | Page Header on floor
+    button.ss-button.secondary
+      span.ss-icon-Add
+      | Add
+    button.ss-button
+      span.ss-icon-PDF
+      | Preview
+
+  .body
+    .ss-card
+      .header
+        span.label breadcrump
+
+      .body
+        pre
+          code.language-html
+            |
+            |  &lt;div class="ss-breadcrumb">
+            |    &lt;a class="ss-link" href="#">Home&lt;/a>
+            |    &lt;div class="divider">/&lt;/div>
+            |    &lt;a class="ss-link" href="#">Component&lt;/a>
+            |    &lt;div class="divider">/&lt;/div>
+            |    &lt;span>Breadcrumb&lt;/span>
+            |  &lt;/div>
+            |  &nbsp;
+

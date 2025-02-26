@@ -1,0 +1,97 @@
+@import "variable";
+
+// General setting
+
+#root {
+  min-height: 100vh;
+}
+
+BODY {
+  min-height: 100%;
+  margin: 0px;
+}
+
+TABLE {
+  border: 1px solid #eee;
+
+  TH {
+    text-align: left;
+  }
+
+  TH,
+  TD {
+    padding: 20px;
+  }
+}
+
+// All page
+
+.menu-panel {
+  flex: none;
+
+  order: 0;
+  flex-grow: 0;
+
+  position: relative;
+  z-index: 2;
+
+  background-color: $transparent-white-96;
+  align-self: stretch;
+  width: 200px;
+  box-shadow: $shadow-10;
+  overflow-y: auto;
+}
+
+// Icon page
+
+.icon-page {
+  .show-icons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    margin-top: 16px;
+
+    > .each-icon {
+      width: 200px;
+      height: 72px;
+      text-align: center;
+
+      span {
+        font-size: $body-icon;
+      }
+    }
+  }
+
+  .sample-icon-in-css:after {
+    display: inline;
+    content: "\EA1B";
+    font-family: "SET-icon";
+    padding-left: 10px !important;
+    vertical-align: middle;
+  }
+}
+
+// Menu page
+
+.menu-page {
+  .ss-card .menu {
+    width: 240px;
+  }
+}
+
+// Button page
+
+.button-page {
+  .two-button {
+    display: flex;
+    gap: $small-gap;
+  }
+}
+
+// Mage menu page
+
+.ss-mega-menu {
+  &._demo-under-card {
+    position: relative;
+  }
+}

@@ -1,0 +1,183 @@
+extends ../base/base.pug
+
+block append page-variable
+  - var current = "menu"
+
+block page-block
+
+  .header.-nobreadcrumbs
+    span.label Menu
+
+  .body
+    .ss-card
+      .header
+        span.label Generic Menu
+
+      .body._padding
+        .menu
+          ul.ss-menu
+            li
+              a(href="javascript:void(0);")
+                span.ss-icon-Home
+                span.label Home
+            li
+              a(href="javascript:void(0);")
+                span.ss-icon-Euro
+                span.label Font
+            li
+              a(href="javascript:void(0);")
+                span.ss-icon-Terrain
+                span.label Icon
+                span.ss-icon-Maximize-arrow
+            li
+              .header
+                span.ss-icon-Main-Component-filled
+                span.label Component
+                span.ss-icon-Maximize-arrow
+            li.selected
+              a(href="javascript:void(0);")
+                span.ss-icon-Status-circle
+                span.label Button
+            li
+              a(href="javascript:void(0);")
+                span.ss-icon-Status-circle
+                span.label Menu
+            li.selected
+              a(href="javascript:void(0);")
+                span.ss-icon-Status-circle
+                span.label
+                  | Long menu label to test
+                  | two line menu
+            li
+              a(href="javascript:void(0);")
+                span.ss-icon-Status-circle
+                span.label Abc
+            li
+              a.disable(href="javascript:void(0);")
+                span.ss-icon-Document
+                span.label Note
+        pre
+          code.language-html
+            |
+            | &lt;ul class="ss-menu">
+            |  &lt;li>
+            |   &lt;a href="index.html">
+            |     &lt;span class="ss-icon-Home"></span>
+            |     &lt;span class="label">Home</span></a>
+            |  &lt;/li>
+            | &lt;ul>
+            | &nbsp;
+
+    .ss-card
+      .header
+        span.label Woven Menu
+
+      .body._padding
+        .menu
+          ul.ss-menu-woven
+            li
+              .relative
+                .line
+                  .top
+                  .background
+                  .bottom
+              a(href="javascript:void(0);")
+                .status
+                  .circle.-big &nbsp;
+                span.label รายงานการขาย
+            li
+              .relative
+                .line
+                  .top
+                  .background
+                  .bottom
+              a(href="javascript:void(0);")
+                .status
+                  .circle &nbsp;
+                span.label รายงานการขาย
+            li.selected
+              .relative
+                .line
+                  .top
+                  .background
+                  .bottom
+              a(href="javascript:void(0);")
+                .status
+                  .circle &nbsp;
+                span.label รายงานการขาย
+                .selectedbox &nbsp;
+            li
+              .relative
+                .line
+                  .top
+                  .background
+                  .bottom
+              a(href="javascript:void(0);")
+                .status
+                  .circle &nbsp;
+                span.label
+                  | ชื่อยาวๆ ในเมนู ยาวๆ หลายบรรทัด
+                  | จะได้เห็นว่ามันยาวได้จริงหรือเปล่า
+                  | แม้แต่สี่บรรทัดก็ทำได้
+            li.selected
+              .relative
+                .line
+                  .top
+                  .background
+                  .bottom
+              a(href="javascript:void(0);")
+                .status
+                  .circle &nbsp;
+                span.label
+                  | ชื่อยาวๆ ในเมนู ยาวๆ
+                  | หลายบรรทัด
+            li
+              .relative
+                .line
+                  .top
+                  .background
+                  .bottom
+              a(href="javascript:void(0);")
+                .status
+                  .circle.-big &nbsp;
+                span.label รายงานการขาย
+            li
+              .relative
+                .line
+                  .top
+                  .background
+                  .bottom
+              a.disable(href="javascript:void(0);")
+                .status
+                  .circle &nbsp;
+                span.label Disable ผลการขาย
+            li
+              .relative
+                .line
+                  .top
+                  .background
+                  .bottom
+              a(href="javascript:void(0);")
+                .status
+                  .circle &nbsp;
+                span.label ชื่อสั้นๆ ในเมนูสั้นๆ
+
+        pre
+          code.language-html
+            |
+            | &lt;ul class="ss-menu-woven">
+            |   &lt;li>
+            |     &lt;div class="relative-box">
+            |       &lt;div class="line">
+            |         &lt;div class="top">&lt;/div>
+            |         &lt;div class="background">&lt;/div>
+            |         &lt;div class="bottom">&lt;/div>
+            |       &lt;/div>
+            |     &lt;/div>&lt;a href="javascript:void(0);">
+            |       &lt;div class="status">
+            |         &lt;div class="big-circle">&nbsp;&lt;/div>
+            |       &lt;/div>&lt;span class="label">รายงานการขาย&lt;/span>
+            |     &lt;/a>
+            |   &lt;/li>
+            | &lt;/ul>
+            | &nbsp;

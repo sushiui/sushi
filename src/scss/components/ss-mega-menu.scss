@@ -1,0 +1,50 @@
+.ss-mega-menu {
+  display: none;
+  position: absolute;
+  background-color: $transparent-white-96;
+  width: 100%;
+  left: 0;
+  box-shadow: $shadow-10;
+  z-index: 100;
+  top: 38px;
+  border-top: 4px solid $primary-yellow;
+  backdrop-filter: blur(5px);
+
+  > .row {
+    display: flex;
+    gap: $large-gap;
+  }
+
+  > .column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.ss-mega-menu > .row > ul.ss-menu > li > .header {
+  font-weight: bold;
+}
+
+li.-dropdownMega {
+  > a > span.ss-icon-Minimize-arrow {
+    display: none;
+  }
+}
+
+li.-dropdownMega:hover {
+  > a {
+    background-color: $tertiary-orange-10 !important;
+    color: $primary-black !important;
+  }
+
+  > a > span.ss-icon-Maximize-arrow {
+    display: none;
+  }
+  > a > span.ss-icon-Minimize-arrow {
+    display: block;
+  }
+
+  > .ss-mega-menu {
+    display: block;
+  }
+}

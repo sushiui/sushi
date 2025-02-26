@@ -1,0 +1,134 @@
+BUTTON.ss-button,
+BUTTON.ss-link,
+a.ss-button,
+a.ss-link {
+  --color: #{$primary-black};
+  --active-color: #{$primary-black};
+  --padding: 6px 12px;
+  --pointer-events: auto;
+
+  // Secondary
+  --background: #{$gradient-white};
+  --box-shadow: 0 0 0 1px #{$transparent-black-10};
+
+  --hover-color: #{$primary-black};
+  --hover-background: #{$gradient-white};
+  --hover-box-shadow: 0 0 0 1px #{$primary-yellow};
+
+  --active-color: #{$primary-black};
+  --active-background: #{$gradient-white};
+  --active-box-shadow: 0 0 0 1px #{$primary-white};
+
+  --disable-color: #{$transparent-black-35};
+  --disable-background: #{$transparent-black-10};
+  --disable-pointer-events: none;
+}
+
+BUTTON.ss-button.-primary,
+a.ss-button.-primary {
+  --background: #{$gradient-yellow};
+  --box-shadow: none;
+
+  --hover-background: #{$primary-yellow};
+  --hover-box-shadow: none;
+
+  --active-background: #{$tertiary-yellow-100};
+  --active-box-shadow: 0 0 0 1px #{$primary-yellow};
+}
+
+$button-colors: "yellow-green" $tertiary-yellow-green-100
+    $tertiary-yellow-green-60 $primary-black,
+  "yellow" $tertiary-yellow-100 $tertiary-yellow-60 $primary-black,
+  "orange" $tertiary-orange-100 $tertiary-orange-60 $primary-black,
+  "sky-blue" $tertiary-sky-blue-100 $tertiary-sky-blue-60 $primary-white,
+  "purplish-blue" $tertiary-purplish-blue-100 $tertiary-purplish-blue-60
+    $primary-white,
+  "purplish-red" $tertiary-purplish-red-100 $tertiary-purplish-red-60
+    $primary-white,
+  "gray" $tertiary-gray-100 $tertiary-gray-60 $primary-white;
+
+@each $name, $color-100, $color-60, $color in $button-colors {
+  $color-gradient: linear-gradient(180deg, $color-60 0%, $color-100 88.02%);
+
+  BUTTON.ss-button.-#{$name},
+  a.ss-button.-#{$name} {
+    --color: #{$color};
+    --background: #{$color-gradient};
+    --box-shadow: none;
+
+    --hover-color: #{$color};
+    --hover-background: #{$color-100};
+    --hover-box-shadow: none;
+
+    --active-background: #{$color-60};
+    --active-box-shadow: 0 0 0 1px #{$color-100};
+    --active-color: #{$color};
+  }
+}
+
+a.ss-link,
+BUTTON.ss-link {
+  --color: #{$tertiary-sky-blue-100};
+  --active-color: #{$tertiary-sky-blue-60};
+  --disable-background: none;
+  --padding: 0px;
+  --background: none;
+  --box-shadow: none;
+
+  --hover-color: #{$tertiary-sky-blue-60};
+  --hover-background: none;
+  --hover-box-shadow: none;
+
+  --active-color: #{$tertiary-sky-blue-30};
+  --active-color: #{$tertiary-sky-blue-30};
+  --active-background: none;
+  --active-box-shadow: none;
+}
+
+BUTTON.ss-button,
+BUTTON.ss-link,
+a.ss-button,
+a.ss-link {
+  display: inline-flex;
+  align-items: center;
+  gap: $mini-gap;
+  width: fit-content;
+  border: none;
+  text-decoration: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  cursor: pointer;
+
+  padding: var(--padding);
+  box-shadow: var(--box-shadow);
+  color: var(--color);
+  background: var(--background);
+  pointer-events: var(--pointer-events);
+
+  /* Accessibility: Visible in Windows high-contrast theems */
+  outline-color: transparent;
+  outline-width: 1px;
+
+  &:hover {
+    color: var(--hover-color);
+    background: var(--hover-background);
+    box-shadow: var(--hover-box-shadow);
+  }
+
+  &:active {
+    color: var(--active-color);
+    background: var(--active-background);
+    box-shadow: var(--active-box-shadow);
+  }
+
+  &.disable,
+  &:disabled {
+    color: var(--disable-color);
+    background: var(--disable-background);
+    pointer-events: var(--disable-pointer-events);
+  }
+
+  > span {
+    font-size: $body-icon;
+  }
+}

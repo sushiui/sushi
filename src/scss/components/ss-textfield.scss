@@ -1,0 +1,72 @@
+.ss-textfield {
+  --backgroundColor: #{$primary-white};
+  --color: #{$primary-black};
+  --pointer: "text";
+  --paddingBottom: 6px;
+  --borderBottom: none;
+  --box-shadow: 0 0 0 1px #{$transparent-black-10};
+  --pointerEvent: auto;
+  --border-radius: #{$radius};
+  --margin-bottom: 20px;
+
+  &.-error {
+    --margin-bottom: 0px;
+    --color: #{$accessible-red};
+    --paddingBottom: 4px;
+    --borderBottom: solid 2px #{$accessible-red};
+  }
+
+  &.-disable,
+  &:disabled {
+    --backgroundColor: #{$transparent-black-10};
+    --color: #{$transparent-black-35};
+    --pointerEvent: none;
+  }
+
+  &.-viewonly {
+    --backgroundColor: #{$primary-white};
+    --borderBottom: solid 1px #{$transparent-black-10};
+    --paddingBottom: 5px;
+    --box-shadow: none;
+    --pointerEvent: none;
+    --border-radius: 0px;
+  }
+
+  &:focus {
+    --paddingBottom: 4px;
+    --borderBottom: solid 2px #{$primary-yellow};
+  }
+}
+
+input.ss-textfield {
+  flex-basis: auto;
+
+  // float: left;
+  align-items: center;
+  padding: 6px 0px 6px 12px;
+  outline: none;
+  margin-bottom: var(--margin-bottom);
+  padding-bottom: var(--paddingBottom);
+  box-shadow: var(--box-shadow);
+
+  // position: relative;
+  min-width: 0px;
+  border: none;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  cursor: var(--pointer);
+  color: var(--color);
+  background: var(--backgroundColor);
+  border-bottom: var(--borderBottom);
+  pointer-events: var(--pointerEvent);
+
+  &::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    font-family: "SET";
+    background: url("../../assets/icons/Close-or-Reject.svg");
+    cursor: pointer;
+    background-size: 16px 16px;
+  }
+}

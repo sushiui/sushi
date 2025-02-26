@@ -1,0 +1,21 @@
+.menu-panel
+  ul.ss-menu
+    each val, key in menuItems
+      - var url = key
+      if(val[1] == current)
+        li.selected
+          a(href= val[1] + '.html')
+            span(class=val[2])
+            span.label #{val[0]}
+            .selected-box &nbsp;
+      else if (val[1] != '')
+        li
+          a(href= val[1] + '.html')
+            span(class=val[2])
+            span.label #{val[0]}
+      else
+        li
+          .header
+            span(class=val[2])
+            span.label #{val[0]}
+            span.ss-icon-Maximize-arrow

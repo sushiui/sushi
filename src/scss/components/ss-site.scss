@@ -1,0 +1,105 @@
+.ss-site {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 100vh;
+  height: 100vh;
+  background-color: $primary-white;
+  overflow: hidden;
+}
+
+.ss-site > .header,
+.ss-site-header {
+  flex: 0 0 auto;
+  flex-direction: row;
+
+  position: relative;
+
+  background-color: $primary-white;
+  min-height: 38px;
+  border-bottom: 4px solid $primary-yellow;
+
+  display: flex;
+  padding: 0px $common-gap 0px $common-gap;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+
+  > ul > li.selected {
+    --background: #{$gradient-yellow};
+    --hover-background: #{$primary-yellow};
+    --hover-color: #{$primary-black};
+  }
+
+  > ul > li {
+    --background: none;
+    --hover-background: none;
+    --hover-color: #{$secondary-blue};
+  }
+
+  > span.sitename {
+    display: flex;
+    font-weight: 800;
+    gap: $small-gap;
+    align-items: center;
+
+    font-size: $font-size-h3;
+    > span.description {
+      font-size: $font-size-body;
+    }
+  }
+
+  > ul {
+    display: flex;
+    gap: $small-gap;
+
+    padding-top: 4px;
+    list-style-type: none;
+    flex-grow: 1;
+    margin: 0px;
+    > li {
+      display: flex;
+
+      > a {
+        display: flex;
+        align-items: center;
+
+        background: var(--background);
+        border-radius: $radius $radius 0px 0px;
+
+        padding: 0px 12px 4px 12px;
+        text-decoration: none;
+        color: $primary-black;
+
+        &:hover {
+          color: var(--hover-color);
+          background: var(--hover-background);
+        }
+      }
+    }
+  }
+
+  > span.account {
+    display: flex;
+    gap: $small-gap;
+    align-items: center;
+
+    font-size: $font-size-body;
+    > a.language {
+      display: block;
+      width: 16px;
+      height: 16px;
+      text-decoration: none;
+      background: url(../images/Thailand.svg);
+      background-size: 16px 16px;
+    }
+  }
+}
+
+.ss-site > .body {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 100%;
+  flex-grow: 1;
+  background-color: $background-gray-basic;
+  overflow: hidden;
+}

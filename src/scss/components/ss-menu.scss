@@ -1,0 +1,103 @@
+UL.ss-menu {
+  > li {
+    --color: #{$primary-black};
+    --background: none;
+    --hover-background: #{$tertiary-orange-10};
+    --active-color: #{$primary-black};
+    --active-background: #{$primary-white};
+    --disable-background: #{$transparent-black-10};
+  }
+
+  > li.selected {
+    --color: #{$primary-black};
+    --background: #{$tertiary-orange-10};
+    --hover-background: #{$tertiary-orange-10};
+    --active-color: #{$primary-black};
+    --active-background: #{$primary-white};
+    --disable-background: #{$transparent-black-10};
+  }
+}
+
+UL.ss-menu {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0px;
+  padding: 8px;
+  gap: $mini-gap;
+
+  > li.selected {
+    position: relative;
+
+    &::after {
+      content: "\00a0";
+      position: absolute;
+      background-color: $primary-yellow;
+      width: $radius;
+      border-radius: calc($radius / 2);
+      height: 1.25rem;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 8px;
+    }
+  }
+
+  > hr {
+    height: 1px;
+    background-color: $transparent-black-10;
+    border: 0px;
+    width: 100%;
+  }
+}
+
+UL.ss-menu > li > .header {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  gap: $small-gap;
+
+  > span.label {
+    font-size: 1em;
+    flex-grow: 1;
+  }
+}
+
+UL.ss-menu > li > b,
+UL.ss-menu > li > a {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  gap: $small-gap;
+  text-decoration: none;
+  border-radius: $radius;
+  cursor: pointer;
+
+  color: var(--color);
+  background: var(--background);
+
+  > span {
+    font-size: $body-icon;
+    flex-grow: 0;
+  }
+
+  > span.label {
+    font-size: 1em;
+    flex-grow: 1;
+  }
+}
+
+UL.ss-menu > li > a {
+  &:hover {
+    background: var(--hover-background);
+  }
+
+  &:active {
+    color: var(--active-color);
+    background: var(--active-background);
+  }
+
+  &.disable {
+    color: $transparent-black-35;
+    pointer-events: none;
+  }
+}

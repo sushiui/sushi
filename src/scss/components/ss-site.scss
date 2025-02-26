@@ -3,11 +3,14 @@
   flex-direction: column;
   margin: 0px;
   min-height: 100vh;
+  height: 100vh;
   background-color: $primary-white;
+  overflow: hidden;
 }
 
 .ss-site > .header,
 .ss-site-header {
+  flex: 0 0 auto;
   flex-direction: row;
 
   position: relative;
@@ -98,4 +101,5 @@
   height: 100%;
   flex-grow: 1;
   background-color: $background-gray-basic;
+  overflow: hidden;
 }

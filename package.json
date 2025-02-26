@@ -13,7 +13,7 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-connect": "^5.0.0",
     "gulp-consolidate": "^0.2.0",
-    "gulp-iconfont": "^12.0.0",
+    "gulp-iconfont": "^11.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-pretty-html": "^2.0.10",
     "gulp-pug": "^5.0.0",
